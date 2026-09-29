@@ -73,23 +73,19 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
       {/* Main Sticky Header */}
       <header className="sticky top-0 z-40 bg-white shadow-xs border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-2 py-3">
             {/* Brand Logo */}
             <Link
               href={`/${locale}`}
-              className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2 rounded-xl py-1"
+              className="col-span-2 sm:col-span-1 min-w-0 flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2 rounded-xl py-1"
               aria-label="Saphal Surgical House Home"
             >
               <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#15803D] flex items-center justify-center text-white shadow-sm group-hover:bg-[#166534] transition-colors shrink-0">
                 <Cross className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
               </div>
               <div className="min-w-0">
-                <span className="font-heading font-extrabold text-lg sm:text-2xl text-[#17251C] tracking-tight block leading-none truncate">
-                  {locale === 'ne' ? (
-                    <>सफल <span className="text-[#15803D]">सर्जिकल हाउस</span></>
-                  ) : (
-                    <>SAPHAL <span className="text-[#15803D]">SURGICAL HOUSE</span></>
-                  )}
+                <span lang={locale} className="font-heading font-extrabold text-[24px] sm:text-[26px] lg:text-[34px] text-[#15803D] tracking-tight block leading-[1.5]">
+                  {locale === 'ne' ? 'सफल सर्जिकल हाउस' : 'Saphal Surgical House'}
                 </span>
                 <span className="text-[10px] sm:text-[11px] font-semibold tracking-wider text-slate-500 uppercase mt-0.5 sm:mt-1 block truncate">
                   {t.siteTagline}
@@ -98,7 +94,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-semibold text-slate-700" aria-label="Main Navigation">
+            <nav className="hidden lg:flex col-span-2 row-start-2 items-center gap-8 text-sm font-semibold text-slate-700" aria-label="Main Navigation">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -116,7 +112,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             </nav>
 
             {/* Header Right Actions */}
-            <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden lg:flex col-start-2 row-start-1 items-center gap-3 whitespace-nowrap">
               <a
                 href={`tel:${siteConfig.phone.raw}`}
                 className="min-h-[44px] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-[#15803D] hover:bg-[#166534] rounded-xl shadow-xs hover:shadow transition-all inline-flex items-center gap-2"
@@ -138,7 +134,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             </div>
 
             {/* Mobile Header Controls */}
-            <div className="flex items-center gap-2 md:hidden">
+            <div className="col-span-2 sm:col-span-1 flex justify-end items-center gap-2 lg:hidden">
               <LanguageSwitcher currentLocale={locale} />
               <button
                 type="button"
@@ -157,7 +153,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
           {mobileMenuOpen && (
             <div
               id="mobile-nav-menu"
-              className="md:hidden py-4 border-t border-slate-100 flex flex-col space-y-2 pb-6 animate-in fade-in slide-in-from-top-2 duration-200"
+              className="lg:hidden py-4 border-t border-slate-100 flex flex-col space-y-2 pb-6 animate-in fade-in slide-in-from-top-2 duration-200"
               role="dialog"
               aria-modal="true"
               aria-label="Mobile Navigation"
