@@ -5,6 +5,9 @@ import { siteConfig } from '@/config/site';
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  viewportFit: 'cover',
   themeColor: '#0b192c',
 };
 

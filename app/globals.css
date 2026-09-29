@@ -13,6 +13,8 @@
 html {
   font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -21,6 +23,30 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ensure Nepali Devanagari typography has ample vertical clearance for matras */
+:lang(ne) {
+  line-height: 1.75;
+}
+
+/* Prevent unwanted horizontal overflow globally */
+* {
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+/* Minimum 44x44px touch targets on interactive elements on touch screens */
+@media (pointer: coarse) {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Accessibility Focus Ring */
@@ -45,7 +71,16 @@ select:focus-visible {
   }
 }
 
-/* Subtle background meshes and cards */
+/* Safe Area Inset Support for Notch / Home Indicator on iOS */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 1rem));
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top, 0.5rem));
+}
+
+/* Hero and Pattern meshes */
 .hero-pattern {
   background-color: #0b192c;
   background-image: 
