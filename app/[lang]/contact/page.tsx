@@ -6,7 +6,6 @@ import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
 import { BrandSymbol } from '@/components/BrandSymbol';
-import { ChairmanMessage } from '@/components/ChairmanPresentation';
 
 interface PageProps {
   params: Promise<{ lang: string }> | { lang: string };
@@ -86,8 +85,6 @@ export default async function ContactPage({ params }: PageProps) {
           <span>{isNe ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}</span>
         </a>
       </section>
-
-      <ChairmanMessage locale={lang} showPhoto={false} />
 
       {/* Contact Cards Grid (2x2 on desktop) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">

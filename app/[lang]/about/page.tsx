@@ -20,8 +20,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const t = translations[lang];
 
   return {
-    title: t.meta.aboutTitle,
-    description: t.meta.aboutDesc,
+    title: lang === 'ne'
+      ? 'अर्जुन रणाभाट | सफल सर्जिकल हाउसका अध्यक्ष'
+      : 'Arjun Ranabhat | Chairman of Saphal Surgical House',
+    description: lang === 'ne'
+      ? 'सफल सर्जिकल हाउसका अध्यक्ष अर्जुन रणाभाटको परिचय र सर्जिकल सामग्री आपूर्तिसम्बन्धी व्यवसायिक जानकारी।'
+      : 'Chairman Arjun Ranabhat and Saphal Surgical House: verified business leadership and surgical supply information.',
     alternates: {
       canonical: `${siteConfig.baseUrl}/${lang}/about`,
       languages: {

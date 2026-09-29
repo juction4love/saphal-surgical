@@ -7,6 +7,13 @@ import { WhatsAppIcon } from '@/components/Icons';
 
 type PortraitNumber = '01' | '02' | '03' | '04' | '05' | '06';
 
+const chemsanLifetimeMembersUrl = 'https://chemsan.org.np/members/lifetime-members/';
+
+const chairmanMessage = {
+  en: 'As Chairman of Saphal Surgical House, Arjun Ranabhat supports the business’s focus on surgical, hospital, operating-theatre, laboratory, medical-consumable, ENT and cleaning supplies. Saphal Surgical House welcomes enquiries from retailers, hospitals, clinics, laboratories, pharmacies and healthcare institutions. Customers may send their requirement list so that product availability, specifications, packaging and price can be confirmed.',
+  ne: 'सफल सर्जिकल हाउसका अध्यक्ष अर्जुन रणाभाटको नेतृत्वमा यस व्यवसायले सर्जिकल, अस्पताल, अपरेशन थिएटर, प्रयोगशाला, मेडिकल उपभोग्य, ENT तथा सरसफाइका सामग्रीसम्बन्धी सोधपुछ र आपूर्तिमा ध्यान केन्द्रित गर्दछ। सफल सर्जिकल हाउसले खुद्रा विक्रेता, अस्पताल, क्लिनिक, प्रयोगशाला, फार्मेसी तथा स्वास्थ्य संस्थाबाट आवश्यकताको सूची स्वीकार गर्दछ। उपलब्धता, विवरण, प्याकिङ र मूल्य सम्पर्कमार्फत पुष्टि गरिन्छ।',
+};
+
 interface ChairmanPhotoProps {
   locale: Locale;
   number: PortraitNumber;
@@ -15,7 +22,7 @@ interface ChairmanPhotoProps {
   priority?: boolean;
 }
 
-function ChairmanPhoto({ locale, number, className, sizes, priority = false }: ChairmanPhotoProps) {
+export function ChairmanPhoto({ locale, number, className, sizes, priority = false }: ChairmanPhotoProps) {
   const alt = locale === 'ne'
     ? 'सफल सर्जिकल हाउसका अध्यक्षको तस्बिर'
     : 'Chairman of Saphal Surgical House';
@@ -33,111 +40,12 @@ function ChairmanPhoto({ locale, number, className, sizes, priority = false }: C
         width={960}
         height={1280}
         sizes={sizes}
-        priority={priority}
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'auto'}
         unoptimized
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover object-[50%_18%]"
       />
     </picture>
-  );
-}
-
-interface ChairmanMessageProps {
-  locale: Locale;
-  photoNumber?: PortraitNumber;
-  showPhoto?: boolean;
-}
-
-export function ChairmanMessage({ locale, photoNumber = '02', showPhoto = true }: ChairmanMessageProps) {
-  const isNe = locale === 'ne';
-  const messages = isNe
-    ? [
-        'सफल सर्जिकल हाउस खुद्रा विक्रेता, अस्पताल, क्लिनिक, प्रयोगशाला, फार्मेसी तथा स्वास्थ्य संस्थाहरूलाई सर्जिकल, अस्पताल, अपरेशन थिएटर, प्रयोगशाला, मेडिकल उपभोग्य, ENT तथा सरसफाइका सामग्रीसम्बन्धी सेवा दिने उद्देश्यले अघि बढिरहेको छ।',
-        'आफ्नो आवश्यकताको सूची, इच्छित ब्रान्ड, साइज, प्याकिङ मात्रा र स्थान पठाउनुहोस्। हाम्रो टोलीले हालको उपलब्धता, सामग्रीको विवरण र मूल्य पुष्टि गर्न सहयोग गर्नेछ।',
-        'सफल सर्जिकल हाउसलाई सम्झनुभएकोमा धन्यवाद।',
-      ]
-    : [
-        'Saphal Surgical House is committed to serving retailers, hospitals, clinics, laboratories, pharmacies and healthcare institutions with a broad range of surgical, hospital, operating-theatre, laboratory, consumable, ENT and cleaning supplies.',
-        'We welcome requirement lists from healthcare professionals, institutions and business partners. Please share the product name, preferred brand, size, pack quantity and location so our team can confirm current availability, specifications and price.',
-        'Thank you for considering Saphal Surgical House.',
-      ];
-
-  const enquiries = isNe
-    ? [
-        {
-          label: 'खुद्रा विक्रेता सोधपुछ',
-          audience: 'खुद्रा विक्रेताका रूपमा',
-        },
-        {
-          label: 'अस्पताल तथा क्लिनिक सोधपुछ',
-          audience: 'अस्पताल वा क्लिनिकका तर्फबाट',
-        },
-        {
-          label: 'WhatsApp मा सूची पठाउनुहोस्',
-          audience: 'स्वास्थ्य संस्था वा व्यावसायिक साझेदारका तर्फबाट',
-        },
-      ]
-    : [
-        {
-          label: 'Retailer Enquiry',
-          audience: 'as a retailer',
-        },
-        {
-          label: 'Hospital & Clinic Enquiry',
-          audience: 'on behalf of a hospital or clinic',
-        },
-        {
-          label: 'Send Requirement on WhatsApp',
-          audience: 'on behalf of a healthcare institution or business partner',
-        },
-      ];
-
-  return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="chairman-message-heading">
-      <div className={`overflow-hidden rounded-2xl border border-[#D8EBDD] bg-white shadow-sm ${showPhoto ? 'grid md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]' : ''}`}>
-        {showPhoto && (
-          <ChairmanPhoto
-            locale={locale}
-            number={photoNumber}
-            sizes="(max-width: 767px) 100vw, (max-width: 1279px) 38vw, 460px"
-            priority={photoNumber === '02'}
-            className="block aspect-[4/5] w-full bg-[#F0FDF4] md:aspect-auto md:min-h-[520px]"
-          />
-        )}
-        <div className="flex flex-col justify-center bg-[#F8FCF8] p-5 sm:p-7 lg:p-9">
-          <span className="text-xs font-bold uppercase tracking-wide text-[#166534]">
-            {isNe ? 'सफल सर्जिकल हाउस' : 'Saphal Surgical House'}
-          </span>
-          <h2 id="chairman-message-heading" lang={locale} className="mt-2 font-heading font-bold text-2xl sm:text-3xl leading-tight text-[#17251C]">
-            {isNe ? 'अध्यक्षको सन्देश' : 'Message from the Chairman'}
-          </h2>
-          <div className="mt-4 max-w-2xl space-y-3 text-sm sm:text-base leading-relaxed text-[#475569]">
-            {messages.map((message) => <p key={message}>{message}</p>)}
-          </div>
-          <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
-            {enquiries.map((enquiry, index) => {
-              const message = isNe
-                ? `नमस्ते सफल सर्जिकल हाउस, म ${enquiry.audience} सामग्रीबारे सोधपुछ गर्दैछु। कृपया हालको उपलब्धता, विवरण र मूल्य पुष्टि गर्न सहयोग गर्नुहोस्। मेरो आवश्यकताको सूची: [यहाँ सामग्रीको नाम, इच्छित ब्रान्ड, साइज, प्याकिङ मात्रा र डेलिभरी स्थान थप्नुहोस्]।`
-                : `Hello Saphal Surgical House, I am enquiring ${enquiry.audience}. Please help confirm current availability, specifications, and price. My requirement list: [add product name(s), preferred brand, size, pack quantity, and delivery location].`;
-              const whatsappUrl = getWhatsAppUrl(message);
-
-              return (
-                <a
-                  key={enquiry.label}
-                  href={whatsappUrl || undefined}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`min-h-[48px] rounded-xl px-3.5 py-3 text-center text-xs sm:text-sm font-bold inline-flex items-center justify-center gap-2 transition-colors focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2 ${index === 0 ? 'bg-[#15803D] text-white hover:bg-[#166534]' : 'border border-[#CFE3D3] bg-white text-[#166534] hover:bg-[#F0FDF4]'} ${index === 2 ? 'sm:col-span-2' : ''}`}
-                >
-                  <WhatsAppIcon className="h-4 w-4 shrink-0" />
-                  <span>{enquiry.label}</span>
-                  <ArrowUpRight className="h-3.5 w-3.5 shrink-0" />
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -172,7 +80,7 @@ export function ChairmanHero({ locale }: ChairmanHeroProps) {
               height={1280}
               loading="eager"
               fetchPriority="high"
-              className="block h-auto w-full aspect-[4/5] rounded-2xl border border-[#D8EBDD] bg-[#EAF5EC] object-cover object-[50%_40%] shadow-sm md:aspect-[3/4]"
+              className="block h-auto w-full aspect-[4/5] rounded-2xl border border-[#D8EBDD] bg-[#EAF5EC] object-cover object-[50%_18%] shadow-sm md:aspect-[3/4]"
             />
           </picture>
         </div>
@@ -217,7 +125,6 @@ export function ChairmanHero({ locale }: ChairmanHeroProps) {
     </section>
   );
 }
-
 interface ChairmanProfileProps {
   locale: Locale;
 }
@@ -226,45 +133,70 @@ export function ChairmanProfile({ locale }: ChairmanProfileProps) {
   const isNe = locale === 'ne';
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="chairman-profile-heading">
-      <div className="grid overflow-hidden rounded-2xl border border-[#D8EBDD] bg-white shadow-sm lg:grid-cols-[minmax(300px,0.8fr)_minmax(0,1.2fr)]">
-        <div className="grid grid-cols-[1.15fr_0.85fr] items-end gap-2.5 bg-[#F0FDF4] p-3 sm:gap-3 sm:p-5">
-          <ChairmanPhoto
-            locale={locale}
-            number="01"
-            sizes="(max-width: 1023px) 60vw, 300px"
-            className="block aspect-[4/5] overflow-hidden rounded-xl bg-white"
-          />
-          <ChairmanPhoto
-            locale={locale}
-            number="03"
-            sizes="(max-width: 1023px) 40vw, 220px"
-            className="block aspect-[4/5] overflow-hidden rounded-xl bg-white"
-          />
-        </div>
-        <div className="flex flex-col justify-center p-5 sm:p-7 lg:p-9">
-          <span className="text-xs font-bold uppercase tracking-wide text-[#166534]">
-            {isNe ? 'अध्यक्ष' : 'Chairman'}
-          </span>
-          <h2 id="chairman-profile-heading" lang={locale} className="mt-2 font-heading font-bold text-2xl sm:text-3xl leading-tight text-[#17251C]">
-            {isNe ? 'अध्यक्षको सन्देश' : 'Message from the Chairman'}
-          </h2>
-          <div className="mt-4 max-w-2xl space-y-3 text-sm sm:text-base leading-relaxed text-[#475569]">
-            {isNe ? (
-              <>
-                <p>सफल सर्जिकल हाउस खुद्रा विक्रेता, अस्पताल, क्लिनिक, प्रयोगशाला, फार्मेसी तथा स्वास्थ्य संस्थाहरूलाई सर्जिकल, अस्पताल, अपरेशन थिएटर, प्रयोगशाला, मेडिकल उपभोग्य, ENT तथा सरसफाइका सामग्रीसम्बन्धी सेवा दिने उद्देश्यले अघि बढिरहेको छ।</p>
-                <p>आफ्नो आवश्यकताको सूची, इच्छित ब्रान्ड, साइज, प्याकिङ मात्रा र स्थान पठाउनुहोस्। हाम्रो टोलीले हालको उपलब्धता, सामग्रीको विवरण र मूल्य पुष्टि गर्न सहयोग गर्नेछ। सफल सर्जिकल हाउसलाई सम्झनुभएकोमा धन्यवाद।</p>
-              </>
-            ) : (
-              <>
-                <p>Saphal Surgical House is committed to serving healthcare institutions and business partners with a broad range of surgical, hospital, operating-theatre, laboratory, consumable, ENT and cleaning supplies.</p>
-                <p>Share your requirement list, preferred brand, size, pack quantity and location; our team will help confirm current availability, specifications and price. Thank you for considering Saphal Surgical House.</p>
-              </>
-            )}
+    <div className="space-y-8 sm:space-y-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="chairman-profile-heading">
+        <div className="grid overflow-hidden rounded-2xl border border-[#D8EBDD] bg-white shadow-sm lg:grid-cols-[minmax(300px,0.8fr)_minmax(0,1.2fr)]">
+          <div className="grid grid-cols-[1.15fr_0.85fr] items-end gap-2.5 bg-[#F0FDF4] p-3 sm:gap-3 sm:p-5">
+            <ChairmanPhoto locale={locale} number="01" sizes="(max-width: 1023px) 60vw, 300px" className="block aspect-[4/5] overflow-hidden rounded-xl bg-white" />
+            <ChairmanPhoto locale={locale} number="03" sizes="(max-width: 1023px) 40vw, 220px" className="block aspect-[4/5] overflow-hidden rounded-xl bg-white" />
+          </div>
+          <div className="flex flex-col justify-center p-5 sm:p-7 lg:p-9">
+            <span className="text-xs font-bold uppercase tracking-wide text-[#166534]">
+              {isNe ? 'सफल सर्जिकल हाउसका अध्यक्ष' : 'Chairman of Saphal Surgical House'}
+            </span>
+            <h2 id="chairman-profile-heading" className="mt-2 font-heading font-bold text-2xl sm:text-3xl leading-tight text-[#17251C]">
+              <span lang="en" className="block">Arjun Ranabhat</span>
+              <span lang="ne" className="mt-1 block">अर्जुन रणाभाट</span>
+            </h2>
+            <p className="mt-2 text-sm font-semibold text-[#166534]">
+              <span lang="en">Chairman, Saphal Surgical House</span>
+              <span aria-hidden="true"> / </span>
+              <span lang="ne">अध्यक्ष, सफल सर्जिकल हाउस</span>
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="chairman-message-heading">
+        <div className="rounded-2xl border border-[#D8EBDD] bg-[#F8FCF8] p-5 sm:p-7">
+          <h2 id="chairman-message-heading" className="font-heading font-bold text-xl sm:text-2xl text-[#17251C]">
+            {isNe ? 'अध्यक्षको सन्देश' : 'Chairman’s Message'}
+          </h2>
+          <p lang={locale} className="mt-3 max-w-4xl text-sm sm:text-base leading-relaxed text-[#475569]">
+            {chairmanMessage[locale]}
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="chairman-leadership-heading">
+        <div className="rounded-2xl border border-[#D8EBDD] bg-white p-5 shadow-sm sm:p-7">
+          <h2 id="chairman-leadership-heading" className="font-heading font-bold text-xl sm:text-2xl text-[#17251C]">
+            {isNe ? 'व्यवसायिक नेतृत्व' : 'Business Leadership'}
+          </h2>
+          <p lang={locale} className="mt-3 max-w-4xl text-sm sm:text-base leading-relaxed text-[#475569]">
+            {isNe
+              ? 'CHEMSAN को Lifetime Members निर्देशिकामा अर्जुन रणाभाटलाई चितवनस्थित Saphal Surgical House को सम्पर्क व्यक्ति भनेर सूचीकृत गरिएको छ।'
+              : 'The CHEMSAN Lifetime Members directory lists Arjun Ranabhat as the contact person for Saphal Surgical House in Chitwan.'}
+          </p>
+          <a href={chemsanLifetimeMembersUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-[#166534] underline underline-offset-4 hover:text-[#15803D]">
+            {isNe ? 'CHEMSAN Lifetime Members निर्देशिका' : 'CHEMSAN Lifetime Members directory'}
+          </a>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="chairman-services-heading">
+        <div className="rounded-2xl border border-[#D8EBDD] bg-[#F4FBF5] p-5 sm:p-7">
+          <h2 id="chairman-services-heading" className="font-heading font-bold text-xl sm:text-2xl text-[#17251C]">
+            {isNe ? 'सर्जिकल सामग्री आपूर्ति' : 'Surgical Supply Services'}
+          </h2>
+          <p lang={locale} className="mt-3 max-w-4xl text-sm sm:text-base leading-relaxed text-[#475569]">
+            {isNe
+              ? 'सफल सर्जिकल हाउसले सर्जिकल, अस्पताल, अपरेशन थिएटर, प्रयोगशाला, मेडिकल उपभोग्य, ENT तथा सरसफाइका सामग्रीबारे सोधपुछ स्वीकार गर्दछ। खुद्रा विक्रेता, अस्पताल, क्लिनिक, प्रयोगशाला, फार्मेसी तथा स्वास्थ्य संस्थाले आवश्यकताको सूची पठाउन सक्छन्। उपलब्धता, विवरण, प्याकिङ र मूल्य सम्पर्कमार्फत पुष्टि गरिन्छ।'
+              : 'Saphal Surgical House welcomes enquiries for surgical, hospital, operating-theatre, laboratory, medical-consumable, ENT and cleaning supplies. Retailers, hospitals, clinics, laboratories, pharmacies and healthcare institutions may send a requirement list so availability, specifications, packaging and price can be confirmed.'}
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }
 
@@ -284,7 +216,7 @@ export function ChairmanGallery({ locale }: ChairmanGalleryProps) {
             {isNe ? 'सफल सर्जिकल हाउस' : 'Saphal Surgical House'}
           </span>
           <h2 id="chairman-gallery-heading" lang={locale} className="mt-1 font-heading font-bold text-xl sm:text-2xl text-[#17251C]">
-            {isNe ? 'अध्यक्ष' : 'Chairman'}
+            {isNe ? 'अध्यक्षका तस्बिरहरू' : 'Chairman Photo Gallery'}
           </h2>
         </div>
       </div>
