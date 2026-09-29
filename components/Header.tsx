@@ -32,6 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
     { href: `/${locale}`, label: t.nav.home },
     { href: `/${locale}/about`, label: t.nav.about },
     { href: `/${locale}/products`, label: t.nav.products },
+    { href: `/${locale}/articles`, label: t.nav.articles },
     { href: `/${locale}/contact`, label: t.nav.contact },
   ];
 

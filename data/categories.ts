@@ -14,43 +14,82 @@ export interface CategoryData {
 
 export const CATEGORIES: CategoryData[] = [
   {
-    id: 'laboratory',
-    slug: 'laboratory',
-    name: {
-      en: 'Laboratory Equipment & Supplies',
-      ne: 'प्रयोगशाला उपकरण तथा सामग्रीहरू',
-    },
-    shortDescription: {
-      en: 'Clinical laboratory analyzers, microscopes, centrifuges, and specimen testing consumables.',
-      ne: 'क्लिनिकल ल्याब एनालाइजर, माइक्रोस्कोप, सेन्ट्रिफ्यूज तथा परीक्षण उपभोग्य सामग्रीहरू।',
-    },
-    iconName: 'FlaskConical',
-  },
-  {
     id: 'surgical-instruments',
     slug: 'surgical-instruments',
     name: {
-      en: 'Surgical Instruments',
-      ne: 'शल्यक्रिया औजारहरू',
+      en: 'Surgical Instruments & Dressing Materials',
+      ne: 'सर्जिकल औजार तथा ड्रेसिङ सामग्रीहरू',
     },
     shortDescription: {
-      en: 'Stainless steel surgical scissors, forceps, needle holders, clamps, and procedure sets.',
-      ne: 'स्टेनलेस स्टिल सर्जिकल कैंची, फोर्सेप्स, निडल होल्डर, क्ल्याम्प तथा बेसिक सेटहरू।',
+      en: 'Precision surgical steel scissors, forceps, needle holders, scalpels, sterile gauze, cotton, and bandages.',
+      ne: 'स्टेनलेस स्टिल सर्जिकल कैंची, फोर्सेप्स, निडल होल्डर, ब्लेड, स्टेराइल गज, कपास र ब्यान्डेजहरू।',
     },
     iconName: 'Scissors',
   },
   {
-    id: 'sterilization',
-    slug: 'sterilization',
+    id: 'hospital-furniture',
+    slug: 'hospital-furniture',
     name: {
-      en: 'Sterilization & Infection Control',
-      ne: 'स्टेरिलाइजेसन तथा निसङ्क्रमण',
+      en: 'Hospital Supplies & Ward Essentials',
+      ne: 'अस्पताल सामग्री तथा वार्ड फर्निचर',
     },
     shortDescription: {
-      en: 'Steam autoclaves, sterilization pouches, indicators, and disinfection supplies.',
-      ne: 'अटोक्लेभ, स्टेरिलाइजेसन पाउच, इन्डिकेटर स्ट्रिप्स तथा निसङ्क्रमण सामग्री।',
+      en: 'Patient beds, examination couches, dressing & medicine trolleys, IV stands, linen, and ward accessories.',
+      ne: 'बिरामी बेड, परीक्षण काउच, ड्रेसिङ तथा औषधि ट्रली, आईभी स्ट्यान्ड, बेडसिट र वार्ड सामग्री।',
+    },
+    iconName: 'Bed',
+  },
+  {
+    id: 'ot-supplies',
+    slug: 'ot-supplies',
+    name: {
+      en: 'Operating Theatre (OT) Supplies',
+      ne: 'अपरेशन थिएटर (OT) सामग्रीहरू',
+    },
+    shortDescription: {
+      en: 'Procedure sets, sterile gowns, surgical drapes, caps, masks, sutures, suction units, and autoclaves.',
+      ne: 'शल्यक्रिया सेट, स्टेराइल गाउन, ड्रेप्स, क्याप, मास्क, सुचर धागो, सक्सन मेसिन र अटोक्लेभ।',
     },
     iconName: 'ShieldAlert',
+  },
+  {
+    id: 'cleaning-hygiene',
+    slug: 'cleaning-hygiene',
+    name: {
+      en: 'Cleaning & Hygiene Products',
+      ne: 'सरसफाइ तथा स्वच्छता सामग्रीहरू',
+    },
+    shortDescription: {
+      en: 'Surface disinfectants, hand sanitizers, floor cleaning chemicals, wringer mops, buckets, and cleaning trolleys.',
+      ne: 'सतह निसङ्क्रमण घोल, स्यानिटाइजर, भुइँ सफाइ रसायन, डबल-बाल्टी मोप ट्रली र ब्रसहरू।',
+    },
+    iconName: 'Sparkles',
+  },
+  {
+    id: 'waste-handling',
+    slug: 'waste-handling',
+    name: {
+      en: 'Biomedical Waste & Sharps Handling',
+      ne: 'फोहोर व्यवस्थापन तथा सार्प्स सामग्री',
+    },
+    shortDescription: {
+      en: 'Color-coded segregation pedal bins, biohazard waste bags, puncture-proof sharps boxes, and needle destroyers.',
+      ne: 'रंग-संकेतयुक्त पेडल डस्टबिन, बायोहाजार्ड फोहोरका झोला, सार्प्स बक्स र निडल कटरहरू।',
+    },
+    iconName: 'Trash2',
+  },
+  {
+    id: 'laboratory',
+    slug: 'laboratory',
+    name: {
+      en: 'Laboratory Equipment & Consumables',
+      ne: 'प्रयोगशाला उपकरण तथा उपभोग्य सामग्रीहरू',
+    },
+    shortDescription: {
+      en: 'Clinical analyzers, binocular microscopes, centrifuges, micropipettes, test tubes, and vacutainers.',
+      ne: 'ल्याब एनालाइजर, माइक्रोस्कोप, सेन्ट्रिफ्यूज, माइक्रोपिपेट, टेस्ट ट्युब र भ्याकुटेनरहरू।',
+    },
+    iconName: 'FlaskConical',
   },
   {
     id: 'monitoring-diagnostics',
@@ -60,7 +99,7 @@ export const CATEGORIES: CategoryData[] = [
       ne: 'मोनिटरिङ तथा डायग्नोस्टिक्स',
     },
     shortDescription: {
-      en: 'Multi-parameter monitors, ECG machines, pulse oximeters, BP monitors, and thermometers.',
+      en: 'Multi-parameter monitors, ECG machines, pulse oximeters, digital BP monitors, and thermometers.',
       ne: 'बिरामी मोनिटर, ईसीजी मेसिन, पल्स अक्सिमिटर, रक्तचाप नाप्ने यन्त्र र थर्मोमिटर।',
     },
     iconName: 'Activity',
@@ -69,38 +108,25 @@ export const CATEGORIES: CategoryData[] = [
     id: 'respiratory-care',
     slug: 'respiratory-care',
     name: {
-      en: 'Respiratory Care',
-      ne: 'श्वासप्रश्वास सम्बन्धी उपकरणहरू',
+      en: 'Respiratory & Emergency Care',
+      ne: 'श्वासप्रश्वास तथा आकस्मिक उपकरण',
     },
     shortDescription: {
-      en: 'Medical oxygen concentrators, regulators, nebulizers, suction units, and accessories.',
-      ne: 'अक्सिजन कन्सेन्ट्रेटर, रेगुलेटर, नेबुलाइजर, सक्सन मेसिन तथा मास्क-ट्युबिङ।',
+      en: 'Medical oxygen concentrators, regulators, nebulizers, emergency suction units, and oxygen masks.',
+      ne: 'अक्सिजन कन्सेन्ट्रेटर, रेगुलेटर, नेबुलाइजर, आकस्मिक सक्सन मेसिन तथा अक्सिजन मास्क।',
     },
     iconName: 'Wind',
-  },
-  {
-    id: 'hospital-furniture',
-    slug: 'hospital-furniture',
-    name: {
-      en: 'Hospital Furniture',
-      ne: 'अस्पताल तथा क्लिनिकल फर्निचर',
-    },
-    shortDescription: {
-      en: 'Patient beds, examination couches, trolleys, wheelchairs, stretchers, and IV stands.',
-      ne: 'बिरामी बेड, परीक्षण काउच, मेडिकल ट्रली, ह्विलचेयर, स्ट्रेचर र आईभी स्ट्यान्ड।',
-    },
-    iconName: 'Bed',
   },
   {
     id: 'consumables-ppe',
     slug: 'consumables-ppe',
     name: {
-      en: 'Consumables & PPE',
-      ne: 'उपभोग्य सामग्री तथा पीपीई',
+      en: 'General Consumables & PPE',
+      ne: 'सामान्य उपभोग्य सामग्री तथा पीपीई',
     },
     shortDescription: {
-      en: 'Surgical gloves, masks, disposable gowns, syringes, cannulas, catheters, and dressings.',
-      ne: 'पञ्जा, मास्क, डिस्पोजेबल गाउन, सिरिन्ज, क्यानुला, क्याथेटर र ड्रेसिङ सामग्री।',
+      en: 'Examination gloves, disposable masks, plastic aprons, syringes, IV cannulas, and catheters.',
+      ne: 'एक्जामिनेसन पञ्जा, डिस्पोजेबल मास्क, प्लास्टिक एप्रोन, सिरिन्ज, क्यानुला र क्याथेटर।',
     },
     iconName: 'Package',
   },
@@ -109,11 +135,11 @@ export const CATEGORIES: CategoryData[] = [
     slug: 'rehabilitation-home-care',
     name: {
       en: 'Rehabilitation & Home Care',
-      ne: 'पुनर्स्थापना तथा होम केयर',
+      ne: 'पुनर्स्थापना तथा घरायसी हेरचाह',
     },
     shortDescription: {
-      en: 'Walkers, crutches, walking sticks, orthopedic supports, air mattresses, and commode chairs.',
-      ne: 'वाकर, वैशाखी, वाकिङ स्टिक, अर्थोपेडिक सपोर्ट, एयर म्याट्रेस र कमोड चेयर।',
+      en: 'Folding wheelchairs, walkers, crutches, walking sticks, air mattresses, and commode chairs.',
+      ne: 'फोल्डिङ ह्विलचेयर, वाकर, वैशाखी, वाकिङ स्टिक, एयर म्याट्रेस र कमोड चेयर।',
     },
     iconName: 'HeartPulse',
   },

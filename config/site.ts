@@ -46,14 +46,10 @@ export interface SiteConfig {
     facebook: string;
   };
   whatsapp: {
-    /**
-     * Set to true only after the owner confirms the exact WhatsApp number format.
-     * The supplied raw number 98550055060 has 11 digits (unusual for standard 10-digit Nepal mobile numbers).
-     * DO NOT guess or activate until confirmed by the business owner.
-     */
     enabled: boolean;
     rawSuppliedNumber: string;
-    confirmedInternationalDigits: string; // e.g. "9779855005506" once verified
+    confirmedInternationalDigits: string;
+    display: string;
   };
 }
 
@@ -105,15 +101,15 @@ export const siteConfig: SiteConfig = {
     facebook: "https://www.facebook.com/1032544950288241",
   },
   whatsapp: {
-    // Hidden until owner confirms the exact 10-digit mobile number format
-    enabled: false,
-    rawSuppliedNumber: "98550055060",
-    confirmedInternationalDigits: "", // Insert verified number like "9779855005506"
+    enabled: true,
+    rawSuppliedNumber: "9855055060",
+    confirmedInternationalDigits: "9779855055060",
+    display: "+977 9855055060",
   },
 };
 
 /**
- * Helper to generate WhatsApp URL with prefilled message if enabled
+ * Helper to generate direct WhatsApp URL with prefilled message if enabled
  */
 export function getWhatsAppUrl(message: string): string | null {
   if (!siteConfig.whatsapp.enabled || !siteConfig.whatsapp.confirmedInternationalDigits) {
@@ -121,4 +117,45 @@ export function getWhatsAppUrl(message: string): string | null {
   }
   const encoded = encodeURIComponent(message);
   return `https://wa.me/${siteConfig.whatsapp.confirmedInternationalDigits}?text=${encoded}`;
+}
+
+/**
+ * Helper to generate product-specific WhatsApp inquiry URL including name, brand, absolute product link, and size/quantity confirmation
+ */
+export function getProductWhatsAppUrl(
+  productName: string,
+  productSlug: string,
+  locale: 'ne' | 'en',
+  brand?: string
+): string | null {
+  const absoluteUrl = `${siteConfig.baseUrl}/${locale}/products/${productSlug}`;
+  const brandSuffix = brand ? (locale === 'ne' ? ` (ब्रान्ड: ${brand})` : ` (Brand: ${brand})`) : '';
+  const message = locale === 'ne'
+    ? `नमस्ते सफल सर्जिकल हाउस, म "${productName}"${brandSuffix} बारे सोधपुछ गर्न चाहन्छु।\nसामग्री लिङ्क: ${absoluteUrl}\nकृपया मलाई आवश्यक साइज/प्रकार, प्याकिङ, परिमाण (Quantity) र मूल्य उपलब्धताबारे जानकारी गराइदिनुहोला।`
+    : `Hello Saphal Surgical House, I would like to inquire about "${productName}"${brandSuffix}.\nProduct Link: ${absoluteUrl}\nPlease let me know the availability, required size/type options, packaging, quantity, and pricing.`;
+
+  return getWhatsAppUrl(message);
+}
+
+/**
+ * Helper to generate general WhatsApp inquiry URL
+ */
+export function getGeneralWhatsAppUrl(locale: 'ne' | 'en'): string | null {
+  const message = locale === 'ne'
+    ? `नमस्ते सफल सर्जिकल हाउस, म शल्यक्रिया तथा चिकित्सीय सामग्रीहरू बारे जानकारी लिन चाहन्छु।`
+    : `Hello Saphal Surgical House, I would like to inquire about medical and surgical supplies.`;
+
+  return getWhatsAppUrl(message);
+}
+
+/**
+ * Helper to generate article-specific WhatsApp requirement list inquiry URL
+ */
+export function getArticleWhatsAppUrl(articleTitle: string, articleSlug: string, locale: 'ne' | 'en'): string | null {
+  const absoluteUrl = `${siteConfig.baseUrl}/${locale}/articles/${articleSlug}`;
+  const message = locale === 'ne'
+    ? `नमस्ते सफल सर्जिकल हाउस, मैले "${articleTitle}" लेख पढेको छु र हाम्रो संस्थाका लागि आवश्यक सामग्रीहरूको सूची पठाउन चाहन्छु। लिङ्क: ${absoluteUrl}`
+    : `Hello Saphal Surgical House, I read your article "${articleTitle}" and would like to send our required equipment/supplies list. Link: ${absoluteUrl}`;
+
+  return getWhatsAppUrl(message);
 }

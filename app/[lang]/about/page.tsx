@@ -1,10 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Phone, MapPin, Building2, ShieldAlert, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { siteConfig } from '@/config/site';
+import { Phone, MapPin, Building2, ShieldAlert, ArrowRight, CheckCircle2, Package } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/Icons';
+import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
+import { BrandsSection } from '@/components/BrandsSection';
 
 interface PageProps {
   params: Promise<{ lang: string }> | { lang: string };
@@ -34,6 +36,7 @@ export default async function AboutPage({ params }: PageProps) {
   const lang = (resolvedParams.lang === 'en' ? 'en' : 'ne') as Locale;
   const t = translations[lang];
   const isNe = lang === 'ne';
+  const whatsAppUrl = getGeneralWhatsAppUrl(lang);
 
   return (
     <div className="py-8 sm:py-16 space-y-10 sm:space-y-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-safe">
@@ -48,6 +51,19 @@ export default async function AboutPage({ params }: PageProps) {
         <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
           {t.about.pageSubtitle}
         </p>
+      </div>
+
+      {/* Prominent Introduction Banner */}
+      <div className="bg-gradient-to-r from-teal-900 via-navy-900 to-navy-800 text-white rounded-3xl p-6 sm:p-10 shadow-m3-2 border border-teal-700/30">
+        <div className="max-w-4xl space-y-3">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-300 border border-teal-400/30">
+            <Package className="w-3.5 h-3.5" />
+            {isNe ? 'आधिकारिक आपूर्ति सूचना' : 'Official Supply Scope'}
+          </span>
+          <p className="text-base sm:text-xl font-heading font-medium text-slate-100 leading-relaxed">
+            &ldquo;{t.prominentIntro}&rdquo;
+          </p>
+        </div>
       </div>
 
       {/* Main Content Grid */}
@@ -123,6 +139,20 @@ export default async function AboutPage({ params }: PageProps) {
                 </a>
               </div>
 
+              {whatsAppUrl && (
+                <div className="p-3.5 bg-navy-800 rounded-2xl">
+                  <span className="text-slate-400 text-xs block">WhatsApp</span>
+                  <a
+                    href={whatsAppUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base sm:text-lg font-bold text-emerald-400 hover:text-emerald-300 transition-colors block mt-1"
+                  >
+                    {siteConfig.whatsapp.display}
+                  </a>
+                </div>
+              )}
+
               <div className="p-3.5 bg-navy-800 rounded-2xl">
                 <span className="text-slate-400 text-xs block">{t.common.addressLabel}</span>
                 <p className="text-slate-200 font-medium mt-1 leading-relaxed">
@@ -131,7 +161,19 @@ export default async function AboutPage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col gap-2.5">
+              {whatsAppUrl && (
+                <a
+                  href={whatsAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full min-h-[48px] py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors shadow-xs"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>{t.common.inquireByWhatsApp}</span>
+                </a>
+              )}
+
               <Link
                 href={`/${lang}/products`}
                 className="w-full min-h-[48px] py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors shadow-xs"
@@ -143,6 +185,9 @@ export default async function AboutPage({ params }: PageProps) {
           </div>
         </div>
       </div>
+
+      {/* Brands Section */}
+      <BrandsSection locale={lang} />
 
       {/* Map Section */}
       <section className="pt-4">

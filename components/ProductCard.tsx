@@ -2,8 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, ArrowRight, Tag, HelpCircle, AlertCircle } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/Icons';
 import { ProductItem } from '@/data/products';
-import { siteConfig, getWhatsAppUrl } from '@/config/site';
+import { siteConfig, getProductWhatsAppUrl } from '@/config/site';
 import { Locale } from '@/lib/translations';
 
 interface ProductCardProps {
@@ -34,11 +35,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
     ? 'विस्तृत विवरण'
     : 'View Details';
 
-  const waMessage = isNe
-    ? `नमस्ते, म सफल सर्जिकल हाउसबाट "${product.name.ne}" बारे सोधपुछ गर्न चाहन्छु।`
-    : `Hello, I would like to inquire about "${product.name.en}" from Saphal Surgical House.`;
-
-  const whatsAppUrl = getWhatsAppUrl(waMessage);
+  const whatsAppUrl = getProductWhatsAppUrl(productName, product.slug, locale, product.brand);
 
   return (
     <article className="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full">
@@ -59,6 +56,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
             <HelpCircle className="w-3 h-3 text-teal-400" />
             <span>{isNe ? 'सांकेतिक' : 'Illustrative'}</span>
           </div>
+
+          {/* Verified Brand badge if available */}
+          {product.brand && (
+            <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md border border-slate-200 shadow-xs pointer-events-none">
+              <span>{isNe ? `ब्रान्ड: ${product.brand}` : `Brand: ${product.brand}`}</span>
+            </div>
+          )}
         </div>
 
         {/* Card Body */}
@@ -125,8 +129,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
               href={whatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full min-h-[44px] py-2 px-3 text-xs font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 rounded-xl transition-colors flex items-center justify-center gap-1.5"
+              className="w-full min-h-[44px] py-2 px-3 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs"
             >
+              <WhatsAppIcon className="w-3.5 h-3.5" />
               <span>{isNe ? 'ह्वाट्सएपमा सोधपुछ' : 'Inquire on WhatsApp'}</span>
             </a>
           </div>

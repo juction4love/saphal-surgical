@@ -66,6 +66,11 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
                 </Link>
               </li>
               <li>
+                <Link href={`/${locale}/articles`} className="hover:text-teal-300 transition-colors">
+                  {t.nav.articles}
+                </Link>
+              </li>
+              <li>
                 <Link href={`/${locale}/contact`} className="hover:text-teal-300 transition-colors">
                   {t.nav.contact}
                 </Link>

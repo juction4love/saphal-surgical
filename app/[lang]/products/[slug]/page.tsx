@@ -4,7 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Phone, Tag, AlertCircle, ArrowLeft, ArrowRight, HelpCircle, CheckCircle2, ShieldAlert } from 'lucide-react';
-import { siteConfig, getWhatsAppUrl } from '@/config/site';
+import { WhatsAppIcon } from '@/components/Icons';
+import { siteConfig, getProductWhatsAppUrl } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { PRODUCTS, ProductItem } from '@/data/products';
 import { CATEGORIES } from '@/data/categories';
@@ -77,11 +78,12 @@ export default async function ProductDetailPage({ params }: PageProps) {
   const priceLabel = isNe ? 'मूल्य कुराकानीमा — सम्पर्क गर्नुहोस्' : 'Price negotiable — contact us';
   const availabilityLabel = isNe ? 'उपलब्धता बुझ्न सम्पर्क गर्नुहोस्' : 'Contact to confirm availability';
 
-  // Pre-filled WhatsApp message (if enabled in siteConfig)
-  const waMessage = isNe
-    ? `नमस्ते, म सफल सर्जिकल हाउसबाट "${product.name.ne}" बारे सोधपुछ गर्न चाहन्छु।`
-    : `Hello, I would like to inquire about "${product.name.en}" from Saphal Surgical House.`;
-  const whatsAppUrl = getWhatsAppUrl(waMessage);
+  // Pre-filled WhatsApp message with brand, item link, and size/quantity inquiry
+  const whatsAppUrl = getProductWhatsAppUrl(productName, product.slug, lang, product.brand);
+
+  const enquiryOptions = product.enquiryOptions
+    ? (isNe ? product.enquiryOptions.ne : product.enquiryOptions.en)
+    : [];
 
   // Related products from the same category
   const relatedProducts = PRODUCTS.filter(
@@ -146,6 +148,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
             <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-800 bg-teal-50 border border-teal-200 px-3.5 py-1 rounded-full">
               {category ? (isNe ? category.name.ne : category.name.en) : t.common.proposedCategoryNote}
             </span>
+            {product.brand && (
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-900 bg-slate-100 border border-slate-200 px-3.5 py-1 rounded-full">
+                {isNe ? `प्रमाणित ब्रान्ड: ${product.brand}` : `Verified Brand: ${product.brand}`}
+              </span>
+            )}
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -178,7 +185,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
           {keyPoints.length > 0 && (
             <div className="space-y-2.5 pt-1">
               <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-500">
-                {isNe ? 'प्रमुख विशेषताहरू तथा सोधपुछ बुँदा' : 'Key Specifications & Highlights'}
+                {isNe ? 'प्रमुख विशेषताहरू तथा विवरण' : 'Key Specifications & Highlights'}
               </h2>
               <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700">
                 {keyPoints.map((point, index) => (
@@ -191,6 +198,29 @@ export default async function ProductDetailPage({ params }: PageProps) {
             </div>
           )}
 
+          {/* Enquiry Options (Sizes / Variants) */}
+          {enquiryOptions.length > 0 && (
+            <div className="p-4 sm:p-5 rounded-2xl bg-teal-50/70 border border-teal-200/80 space-y-3">
+              <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-900 flex items-center gap-2">
+                <Tag className="w-4 h-4 text-teal-700" />
+                <span>{t.brands.enquiryOptionsLabel}</span>
+              </h2>
+              <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
+                {enquiryOptions.map((opt, index) => (
+                  <li key={index} className="flex items-start gap-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-teal-600 mt-2 shrink-0" />
+                    <span className="leading-relaxed font-medium">{opt}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[11px] text-teal-800 font-medium italic pt-1">
+                {isNe
+                  ? '* विशिष्ट साइज तथा प्याकिङको मौज्दात पुष्टि गर्न हामीलाई फोन वा WhatsApp गर्नुहोस्।'
+                  : '* Please contact us via phone or WhatsApp to verify availability for your specific size and packaging.'}
+              </p>
+            </div>
+          )}
+
           {/* Enquiry Actions Box with min 44px buttons */}
           <div className="p-5 sm:p-7 rounded-2xl bg-navy-900 text-white space-y-4 shadow-xl">
             <h3 className="font-heading font-bold text-base sm:text-lg text-white">
@@ -198,8 +228,8 @@ export default async function ProductDetailPage({ params }: PageProps) {
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               {isNe
-                ? `सफल सर्जिकल हाउसको आधिकारिक फोन नम्बर ${siteConfig.phone.display} मा फोन गरेर यस सामग्रीको उपलब्धता, ब्रान्ड तथा दररेट बुझ्न सक्नुहुन्छ।`
-                : `Please call our official landline ${siteConfig.phone.display} to verify live stock availability, technical brands, and wholesale/retail pricing.`}
+                ? `सफल सर्जिकल हाउसको आधिकारिक फोन नम्बर ${siteConfig.phone.display} वा ह्वाट्सएप ${siteConfig.whatsapp.display} मार्फत यस सामग्रीको उपलब्धता, ब्रान्ड तथा दररेट सोधपुछ गर्न सक्नुहुन्छ।`
+                : `Please call our official landline ${siteConfig.phone.display} or WhatsApp ${siteConfig.whatsapp.display} to verify live stock availability, technical brands, and pricing.`}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
@@ -216,8 +246,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
                   href={whatsAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="min-h-[48px] py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+                  className="flex-1 min-h-[48px] py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-xs"
                 >
+                  <WhatsAppIcon className="w-4 h-4" />
                   <span>{t.common.inquireByWhatsApp}</span>
                 </a>
               )}

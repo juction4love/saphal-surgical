@@ -44,6 +44,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
       const titleNe = item.name.ne.toLowerCase();
       const descEn = item.description.en.toLowerCase();
       const descNe = item.description.ne.toLowerCase();
+      const brand = item.brand ? item.brand.toLowerCase() : '';
       const tags = item.tags.map((t) => t.toLowerCase());
 
       return (
@@ -51,6 +52,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
         titleNe.includes(q) ||
         descEn.includes(q) ||
         descNe.includes(q) ||
+        brand.includes(q) ||
         tags.some((t) => t.includes(q))
       );
     });

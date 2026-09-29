@@ -1,8 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import { Phone, MapPin, Navigation, ShieldAlert } from 'lucide-react';
-import { FacebookIcon } from '@/components/Icons';
-import { siteConfig } from '@/config/site';
+import { FacebookIcon, WhatsAppIcon } from '@/components/Icons';
+import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
 
@@ -34,6 +34,7 @@ export default async function ContactPage({ params }: PageProps) {
   const lang = (resolvedParams.lang === 'en' ? 'en' : 'ne') as Locale;
   const t = translations[lang];
   const isNe = lang === 'ne';
+  const generalWhatsAppUrl = getGeneralWhatsAppUrl(lang);
 
   return (
     <div className="py-8 sm:py-16 space-y-10 sm:space-y-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-safe">
@@ -50,8 +51,8 @@ export default async function ContactPage({ params }: PageProps) {
         </p>
       </div>
 
-      {/* Contact Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+      {/* Contact Cards Grid (2x2 on desktop) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         {/* Telephone Card */}
         <div className="bg-white p-5 sm:p-7 rounded-3xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
           <div className="space-y-3">
@@ -74,6 +75,35 @@ export default async function ContactPage({ params }: PageProps) {
               <Phone className="w-4 h-4 text-teal-300" />
               <span>{siteConfig.phone.display}</span>
             </a>
+          </div>
+        </div>
+
+        {/* Confirmed WhatsApp Card */}
+        <div className="bg-white p-5 sm:p-7 rounded-3xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
+          <div className="space-y-3">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
+              <WhatsAppIcon className="w-6 h-6" />
+            </div>
+            <h2 className="font-heading font-bold text-lg text-slate-900">
+              {isNe ? 'ह्वाट्सएप सोधपुछ' : 'WhatsApp Enquiry'}
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+              {isNe ? 'च्याट मार्फत तुरुन्त सामग्रीको जानकारी तथा दररेट बुझ्नुहोस्।' : 'Direct chat for instant product specs, availability & pricing.'}
+            </p>
+          </div>
+          <div className="pt-2">
+            {generalWhatsAppUrl && (
+              <a
+                href={generalWhatsAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full min-h-[48px] py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm flex items-center justify-center gap-2 transition-colors shadow-xs"
+                aria-label={`WhatsApp ${siteConfig.whatsapp.display}`}
+              >
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>{siteConfig.whatsapp.display}</span>
+              </a>
+            )}
           </div>
         </div>
 
@@ -104,7 +134,7 @@ export default async function ContactPage({ params }: PageProps) {
         </div>
 
         {/* Facebook Page Card */}
-        <div className="bg-white p-5 sm:p-7 rounded-3xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4 sm:col-span-2 lg:col-span-1">
+        <div className="bg-white p-5 sm:p-7 rounded-3xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-700 flex items-center justify-center">
               <FacebookIcon className="w-6 h-6" />

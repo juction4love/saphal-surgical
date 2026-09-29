@@ -2,6 +2,7 @@ export interface ProductItem {
   id: string;
   slug: string;
   categoryId: string;
+  brand?: string;
   name: {
     en: string;
     ne: string;
@@ -15,6 +16,10 @@ export interface ProductItem {
     ne: string;
   };
   keyPoints: {
+    en: string[];
+    ne: string[];
+  };
+  enquiryOptions?: {
     en: string[];
     ne: string[];
   };
@@ -810,5 +815,694 @@ export const PRODUCTS: ProductItem[] = [
       sourceLabel: 'Photo via Unsplash (Illustrative representation)',
     },
     tags: ['air mattress', 'commode chair', 'bed sore', 'home care', 'एयर म्याट्रेस', 'कमोड चेयर', 'होम केयर'],
+  },
+
+  // 9. OPERATING THEATRE (OT) SUPPLIES
+  {
+    id: 'ot-gowns-drapes-packs',
+    slug: 'sterile-surgical-gowns-drapes-ot-packs',
+    categoryId: 'ot-supplies',
+    name: {
+      en: 'Sterile Surgical Gowns, Drapes & OT Procedure Packs',
+      ne: 'स्टेराइल सर्जिकल गाउन, ड्रेप्स तथा ओटी प्याक',
+    },
+    shortDesc: {
+      en: 'Reinforced fluid-resistant surgeon gowns, sterile surgical drapes, and specialized procedure drape packs.',
+      ne: 'रगत तथा तरल प्रतिरोधी सर्जिकल गाउन, स्टेराइल शल्यक्रिया ड्रेप्स र ओटी प्रोसिजर प्याकहरू।',
+    },
+    description: {
+      en: 'High-barrier disposable non-woven surgical gowns, sterile surgical drapes with adhesive aperture, and custom OT linen packs designed for surgical sterility. Contact us to inquire about specific drape sets and sizes.',
+      ne: 'शल्यक्रिया कक्षका लागि आवश्यक उच्चस्तरीय तरल प्रतिरोधी गाउन, ड्रेप्स र स्टेराइल कपडाहरू। आवश्यक साइज तथा प्याकिङका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: ['SMS/SMMS reinforced fluid-resistant surgical gowns', 'Adhesive surgical drape sheets and aperture towels', 'Bulk hospital carton supply on enquiry'],
+      ne: ['फ्लुइड-प्रतिरोधी सर्जिकल गाउन', 'टाँस्ने स्टेराइल ड्रेप्स र टावेलहरू', 'अस्पतालका लागि थोक उपलब्धताबारे फोन गर्नुहोस्'],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Illustrative photo of sterile surgical gowns and OT textiles',
+        ne: 'सर्जिकल गाउन तथा ओटी ड्रेप्सको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+    },
+    tags: ['surgical gowns', 'ot drapes', 'sterile drape', 'ot packs', 'सर्जिकल गाउन', 'ड्रेप्स', 'ओटी सामग्री'],
+  },
+  {
+    id: 'ot-sutures-blades-accessories',
+    slug: 'surgical-sutures-sterile-blades',
+    categoryId: 'ot-supplies',
+    name: {
+      en: 'Surgical Sutures & Sterile Carbon / Stainless Blades',
+      ne: 'सर्जिकल सुचर धागो तथा स्टेराइल ब्लेड',
+    },
+    shortDesc: {
+      en: 'Absorbable (PGA, Catgut) and non-absorbable (Silk, Nylon) sutures with sterile surgical blades (#10 to #24).',
+      ne: 'घुलनशील (PGA) तथा नघुलनशील (सिल्क, नाइलन) सुचर धागो र स्टेराइल सर्जिकल ब्लेडहरू।',
+    },
+    description: {
+      en: 'Comprehensive range of sterile surgical suture materials with varied curved needles (cutting / round body) alongside foil-sealed surgical scalpel blades. Inquire for USP sizes and needle gauges.',
+      ne: 'शल्यक्रिया तथा घाउ सिलाउन प्रयोग हुने विभिन्न प्रकारका सुचर धागोहरू र १० देखि २४ नम्बर सम्मका स्टेराइल सर्जिकल ब्लेडहरू। थप जानकारीका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: ['Absorbable PGA & Chromic Catgut sutures', 'Non-absorbable Braided Silk, Nylon, Polypropylene', 'Sterile scalpel blades sizes 10, 11, 15, 20, 22, 23, 24'],
+      ne: ['घुलनशील र नघुलनशील सुचर धागोहरू', 'विभिन्न सुइ र साइजका विकल्पहरू', '१० देखि २४ नम्बर सम्मका सर्जिकल ब्लेडहरू'],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Illustrative photo of surgical sutures and surgical blades',
+        ne: 'सर्जिकल सुचर र ब्लेडको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+    },
+    tags: ['sutures', 'surgical blades', 'silk', 'nylon', 'pga', 'सुचर', 'ब्लेड', 'ओटी धागो'],
+  },
+
+  // 10. CLEANING AND HYGIENE PRODUCTS
+  {
+    id: 'clean-surface-floor-disinfectant',
+    slug: 'hospital-surface-floor-disinfectants',
+    categoryId: 'cleaning-hygiene',
+    name: {
+      en: 'Hospital Surface Disinfectants & Floor Cleaning Solutions',
+      ne: 'अस्पताल सतह निसङ्क्रमण घोल तथा भुइँ सफाइ रसायन',
+    },
+    shortDesc: {
+      en: 'Medical-grade surface disinfectant concentrates, floor cleaning detergents, and rapid surface wiping solutions.',
+      ne: 'अस्पतालको भुइँ तथा सतह निसङ्क्रमण गर्ने मेडिकल ग्रेड घोल र क्लिनिङ डिटरजेन्टहरू।',
+    },
+    description: {
+      en: 'Environmental hygiene solutions for clinical wards, ICUs, and OPD areas. Refer to individual product labels and facility safety data sheets for dilution instructions and contact time. Contact us for bulk containers.',
+      ne: 'अस्पताल, क्लिनिक तथा वार्डको सरसफाइका लागि उच्च गुणस्तरका भुइँ सफाइ रसायन तथा सतह निसङ्क्रमण घोलहरू। थोक तथा खुद्रा दररेटका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: ['Concentrated hospital-grade floor and surface cleaners', 'Suitable for wards, corridors, and clinical surfaces', 'Bulk 5-litre and 1-litre packaging on enquiry'],
+      ne: ['भुइँ तथा सतह सफा गर्ने डिटरजेन्ट र निसङ्क्रमण रसायन', 'अस्पताल वार्ड तथा कोरिडोरका लागि उपयुक्त', '१ लिटर र ५ लिटरका जारहरू उपलब्ध'],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Illustrative photo of hospital cleaning and disinfectant supplies',
+        ne: 'अस्पताल सरसफाइ तथा निसङ्क्रमण सामग्रीको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+    },
+    tags: ['disinfectant', 'floor cleaner', 'surface disinfectant', 'cleaning', 'निसङ्क्रमण', 'सरसफाइ', 'डिसइन्फेक्टेन्ट'],
+  },
+  {
+    id: 'clean-hand-hygiene-sanitizers',
+    slug: 'alcohol-hand-rubs-antiseptic-scrubs',
+    categoryId: 'cleaning-hygiene',
+    name: {
+      en: 'Alcohol Hand Rub Sanitizers & Antiseptic Hand Scrubs',
+      ne: 'अल्कोहल ह्यान्ड रब स्यानिटाइजर तथा एन्टीसेप्टिक स्क्रब',
+    },
+    shortDesc: {
+      en: 'Hospital-grade alcohol-based hand rubs (70-80%), Chlorhexidine/Povidone surgical hand scrubs, and dispensers.',
+      ne: 'अल्कोहल-आधारित ह्यान्ड स्यानिटाइजर, क्लोरहेक्सिडिन तथा पोभिडोन सर्जिकल ह्यान्ड स्क्रब।',
+    },
+    description: {
+      en: 'Point-of-care hand hygiene solutions including alcohol hand rubs (500ml pump bottles and 5L refills) and surgical scrub solutions for OT wash stations. Contact us for dispenser brackets and institutional pricing.',
+      ne: 'हातको स्वच्छताका लागि अल्कोहल ह्यान्ड स्यानिटाइजर र अपरेशन थिएटरका लागि एन्टीसेप्टिक ह्यान्ड स्क्रब। संस्थागत खरिदका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: ['70-80% alcohol formulations for rapid hand antisepsis', 'OT scrub solutions (Chlorhexidine / Povidone Iodine)', '500ml pump dispensers and 5-litre bulk refill jars'],
+      ne: ['द्रुत हात स्वच्छताका लागि अल्कोहल स्यानिटाइजर', 'ओटीका लागि एन्टीसेप्टिक स्क्रब', '५०० मिलि पम्प र ५ लिटर जार उपलब्ध'],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Illustrative photo of alcohol hand rub sanitizer and antiseptic wash',
+        ne: 'ह्यान्ड स्यानिटाइजर तथा एन्टीसेप्टिक स्क्रबको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+    },
+    tags: ['hand sanitizer', 'hand rub', 'surgical scrub', 'antiseptic', 'स्यानिटाइजर', 'ह्यान्ड रब', 'स्क्रब'],
+  },
+  {
+    id: 'clean-mop-trolleys-accessories',
+    slug: 'double-bucket-mop-trolleys-cleaning-tools',
+    categoryId: 'cleaning-hygiene',
+    name: {
+      en: 'Double-Bucket Wringer Mop Trolleys & Cleaning Tools',
+      ne: 'डबल-बाल्टी मोप ट्रली तथा सरसफाइ सामग्री',
+    },
+    shortDesc: {
+      en: 'Dual-bucket wringer mop trolleys, replacement microfiber mop heads, scrubbing brushes, and floor wipers.',
+      ne: 'सफा र फोहोर पानी छुट्याउने डबल-बाल्टी मोप ट्रली, माइक्रोफाइबर मप, ब्रस र फ्लोर वाइपर।',
+    },
+    description: {
+      en: 'Ergonomic hospital floor cleaning systems designed to isolate contaminated rinse water from fresh disinfectant solution. Includes heavy-duty castor trolleys, press wringers, and color-coded microfiber mop heads.',
+      ne: 'अस्पतालको भुइँ प्रभावकारी रूपमा सफा गर्न प्रयोग हुने दुई बाल्टीयुक्त मोप ट्रली, निचोर्ने मेकानिज्म र माइक्रोफाइबर मपहरू। साइज र मूल्यका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: ['Heavy-duty dual-bucket chassis with side-press wringer', 'Prevents cross-contamination during large area mopping', 'Replacement mop heads, handles, and squeegees available'],
+      ne: ['बलियो फ्रेम र निचोर्ने मेकानिज्मसहितको ट्रली', 'फोहोर पानी र सफा पानी छुट्टाछुट्टै राख्ने प्रणाली', 'अतिरिक्त मप हेड र वाइपरहरू उपलब्ध'],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Illustrative photo of hospital double bucket mop trolley and cleaning tools',
+        ne: 'मोप ट्रली तथा सरसफाइ उपकरणको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+    },
+    tags: ['mop trolley', 'wringer trolley', 'microfiber mop', 'cleaning tools', 'मोप ट्रली', 'सरसफाइ ट्रली', 'मप'],
+  },
+
+  // 11. BIOMEDICAL WASTE & SHARPS HANDLING
+  {
+    id: 'waste-pedal-bins-bags',
+    slug: 'color-coded-biomedical-waste-bins-bags',
+    categoryId: 'waste-handling',
+    name: {
+      en: 'Color-Coded Biomedical Waste Bins & Biohazard Bags',
+      ne: 'रंग-संकेतयुक्त बायोमेडिकल फोहोर पेडल डस्टबिन तथा झोला',
+    },
+    shortDesc: {
+      en: 'Hands-free foot pedal segregation bins (Red, Yellow, Blue, Green, Black) and heavy-duty biohazard bags.',
+      ne: 'खुट्टाले थिचेर खुल्ने रंग-संकेतयुक्त डस्टबिन (रातो, पहेंलो, निलो, हरियो, कालो) र बायोहाजार्ड फोहोर झोला।',
+    },
+    description: {
+      en: 'Standardized healthcare waste segregation bins with foot-pedal lids for hands-free operation across wards and laboratories, paired with durable printed biohazard waste collection bags. Contact us for bulk institutional orders.',
+      ne: 'अस्पताल तथा ल्याबमा फोहोर वर्गीकरण गर्न प्रयोग हुने विभिन्न रंगका पेडल डस्टबिन र बलिया बायोहाजार्ड झोलाहरू। थोक खरिदका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: ['Color-coded segregation (Yellow, Red, Blue, Green, Black)', 'Hands-free foot pedal operation prevents contact contamination', 'Heavy-gauge leak-resistant biohazard collection bags'],
+      ne: ['रंग अनुसार फोहोर वर्गीकरण गर्ने पेडल डस्टबिन', 'हातले छुन नपर्ने खुट्टाले खुल्ने प्रणाली', 'बलियो र लिक-प्रतिरोधी फोहोर झोलाहरू'],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Illustrative photo of medical waste segregation bins and biohazard bags',
+        ne: 'फोहोर व्यवस्थापन डस्टबिन तथा बायोहाजार्ड झोलाको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+    },
+    tags: ['waste bin', 'dustbin', 'biohazard bags', 'pedal bin', 'डस्टबिन', 'फोहोर व्यवस्थापन', 'बायोहाजार्ड'],
+  },
+  {
+    id: 'waste-sharps-boxes-destroyers',
+    slug: 'puncture-proof-sharps-containers-needle-destroyers',
+    categoryId: 'waste-handling',
+    name: {
+      en: 'Puncture-Proof Sharps Containers & Needle Destroyers',
+      ne: 'सार्प्स कन्टेनर तथा निडल कटर/डिस्ट्रोयर',
+    },
+    shortDesc: {
+      en: 'Rigid puncture-resistant containers for discarded needles/blades and electrical needle burner destroyers.',
+      ne: 'प्रयोग गरिएका सुइ र ब्लेड सुरक्षित राख्ने पन्चर-प्रतिरोधी सार्प्स बक्स र निडल कटर मेसिन।',
+    },
+    description: {
+      en: 'Essential sharps injury prevention tools including rigid puncture-resistant plastic sharps collection boxes with tamper-evident lids and electric/manual needle destroyers. Inquire for sizes (1L, 3L, 5L, 10L).',
+      ne: 'सुइ र ब्लेडबाट स्वास्थ्यकर्मी तथा सरसफाइकर्मीलाई चोट लाग्नबाट बचाउने सार्प्स कन्टेनर र निडल कटरहरू। उपलब्ध साइज र मूल्य बुझ्न सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: ['Puncture-resistant rigid plastic construction with lockable lids', 'Dedicated opening for safe needle separation and drop-in', '1-litre, 3-litre, 5-litre, and 10-litre sizes available'],
+      ne: ['पन्चर नहुने बलियो प्लास्टिक संरचना र लकिङ बिर्को', 'सुइ र ब्लेड सजिलै खसाल्ने सुरक्षित प्वाल', 'विभिन्न साइजका कन्टेनर र निडल डिस्ट्रोयर'],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Illustrative photo of medical sharps disposal container and needle safety equipment',
+        ne: 'सार्प्स कन्टेनर तथा निडल सुरक्षा उपकरणको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+    },
+    tags: ['sharps container', 'needle destroyer', 'needle cutter', 'sharps box', 'सार्प्स कन्टेनर', 'निडल कटर', 'सुइ व्यवस्थापन'],
+  },
+
+  // 12. EXPANDED CONSUMABLES & OT SUPPLIES
+  {
+    id: 'cons-syringes-disposable-luer',
+    slug: 'disposable-syringes-luer-slip-lock',
+    categoryId: 'consumables-ppe',
+    name: {
+      en: 'Medical Disposable Syringes (Luer Slip & Luer Lock)',
+      ne: 'मेडिकल डिस्पोजेबल सिरिन्जहरू (लुअर स्लिप तथा लुअर लक)',
+    },
+    shortDesc: {
+      en: 'Sterile single-use medical syringes (1ml to 50ml) with options for mounted needles or bare barrels.',
+      ne: '१ मिलि देखि ५० मिलि सम्मका स्टेराइल एकल प्रयोग मेडिकल सिरिन्जहरू (सुइ सहित र सुइ बिना)।',
+    },
+    description: {
+      en: 'Comprehensive range of sterile disposable hypodermic syringes for clinical injection, medication administration, insulin delivery, and aspiration. Available in both Luer Slip and threaded Luer Lock configurations. Inquire for bulk carton packs, needle gauge combinations, and manufacturer stock.',
+      ne: 'क्लिनिकल इन्जेक्सन, औषधि दिन, इन्सुलिन तथा एस्पिरेसनका लागि प्रयोग हुने स्टेराइल डिस्पोजेबल सिरिन्जहरू। लुअर स्लिप र लुअर लक दुवै विकल्पमा उपलब्ध। आवश्यक साइज, सुइको गेज र थोक प्याकिङका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Capacity range: 1ml (Insulin/Tuberculin 40IU/100IU), 2ml, 3ml, 5ml, 10ml, 20ml, 50ml/60ml',
+        'Luer slip standard nozzle and secure screw-threaded Luer lock options',
+        'Available with pre-mounted ultra-fine needles or without needle barrels',
+        'High transparency polypropylene barrel with clear graduation markings',
+      ],
+      ne: [
+        'क्षमता: १ मिलि (इन्सुलिन), २ मिलि, ३ मिलि, ५ मिलि, १० मिलि, २० मिलि र ५०/६० मिलि',
+        'लुअर स्लिप र लक हुने लुअर लक विकल्पहरू',
+        'सुइ जडान भएको र सुइ बिनाको ब्यारेल दुवै उपलब्ध',
+        'स्पष्ट अंक तथा सफा पारदर्शी पोलिप्रोपिलीन बडी',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        '1 ml Insulin / Tuberculin syringe (30G / 31G needle)',
+        '2 ml / 3 ml Standard injection syringe (23G / 24G needle)',
+        '5 ml Syringe (22G / 23G needle)',
+        '10 ml Syringe (with or without needle)',
+        '20 ml / 50 ml / 60 ml Infusion & feeding catheter-tip syringe',
+      ],
+      ne: [
+        '१ मिलि इन्सुलिन / ट्युबरकुलिन सिरिन्ज (३०G / ३१G सुइ)',
+        '२ मिलि / ३ मिलि नियमित इन्जेक्सन सिरिन्ज (२३G / २४G सुइ)',
+        '५ मिलि सिरिन्ज (२२G / २३G सुइ)',
+        '१० मिलि सिरिन्ज (सुइ सहित वा सुइ बिना)',
+        '२० मिलि / ५० मिलि / ६० मिलि फिडिङ तथा इन्फ्युजन सिरिन्ज',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of sterile disposable medical syringes and needles',
+        ne: 'स्टेराइल मेडिकल डिस्पोजेबल सिरिन्ज र सुइहरूको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['syringes', 'disposable syringe', 'luer lock', 'insulin syringe', 'सिरिन्ज', 'सुइ', 'इन्सुलिन सिरिन्ज', 'डिस्पोजेबल'],
+  },
+  {
+    id: 'cons-iv-infusion-sets-blood',
+    slug: 'iv-infusion-sets-blood-administration',
+    categoryId: 'consumables-ppe',
+    name: {
+      en: 'IV Infusion Sets & Blood Administration Sets',
+      ne: 'आईभी इन्फ्युजन सेट तथा ब्लड ट्रान्सफ्युजन सेट',
+    },
+    shortDesc: {
+      en: 'Vented/non-vented adult IV drip sets, micro-drip pediatric burette sets, and filtered blood transfusion sets.',
+      ne: 'एयर भेन्ट सहितको वयस्क आईभी सेट, बालबालिकाका लागि ब्युरेट सेट र रगत चढाउने ब्लड सेट।',
+    },
+    description: {
+      en: 'Sterile gravity infusion giving sets designed for controlled intravenous fluid and blood product administration. Features clear flexible tubing, roller clamps for flow rate regulation, inline fluid filters, and latex/latex-free Y-injection ports. Please contact us to confirm drip chamber drop rates and packaging.',
+      ne: 'बिरामीलाई स्लाइन पानी तथा रगत चढाउन प्रयोग हुने स्टेराइल आईभी इन्फ्युजन र ब्लड ट्रान्सफ्युजन सेटहरू। रोलर क्लैम्प, ड्रप च्याम्बर र इन्जेक्सन साइट सहित। ड्रप फ्याक्टर (२० वा ६० ड्रप/मिलि) र बक्स प्याकिङबारे जानकारी लिन सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Adult IV Infusion Set: 20 drops/ml with built-in air vent and bacteria barrier filter',
+        'Pediatric Micro-Drip / Burette Set: 60 drops/ml with 100ml / 150ml graduated cylinder chamber',
+        'Blood Transfusion Set: with 200-micron mesh clot filter to prevent micro-aggregates',
+        'Kink-resistant PVC tubing with precision roller flow controller',
+      ],
+      ne: [
+        'वयस्क आईभी सेट: २० थोपा/मिलि, एयर भेन्ट र फिल्टर सहित',
+        'बालबालिका ब्युरेट सेट: ६० थोपा/मिलि, १००/१५० मिलि चेम्बर सहित',
+        'ब्लड सेट: रगतका क्लट रोक्न २०० माइक्रोन जालीदार फिल्टर सहित',
+        'मोड्दा नकिच्चिने बलियो नली र सटीक रोलर फ्लो कन्ट्रोलर',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        'Standard Adult IV Infusion Set with Air Vent (20 drops/ml)',
+        'Non-Vented IV Set for collapsible plastic bottles/bags',
+        'Pediatric 100ml / 150ml Measured Volume Burette Set (60 drops/ml)',
+        'Blood Administration / Transfusion Set with 200µm filter',
+      ],
+      ne: [
+        'एयर भेन्ट सहितको वयस्क आईभी सेट (२० drops/ml)',
+        'नन-भेन्टेड आईभी सेट (प्लास्टिक स्लाइन बोतलका लागि)',
+        'बालबालिका ब्युरेट सेट १०० मिलि / १५० मिलि (६० drops/ml)',
+        'फिल्टर सहितको ब्लड ट्रान्सफ्युजन सेट',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of medical IV infusion giving set and tubing',
+        ne: 'मेडिकल आईभी इन्फ्युजन सेट र ड्रिप नलीको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['iv set', 'infusion set', 'blood set', 'burette set', 'pediatric iv', 'आईभी सेट', 'स्लाइन सेट', 'ब्लड सेट'],
+  },
+  {
+    id: 'cons-iv-cannulas-color-coded',
+    slug: 'iv-cannulas-color-coded-gauges',
+    categoryId: 'consumables-ppe',
+    name: {
+      en: 'Color-Coded IV Cannulas / Catheters (14G to 26G)',
+      ne: 'रंग-संकेतयुक्त आईभी क्यानुला / क्याथेटरहरू (१४G देखि २६G)',
+    },
+    shortDesc: {
+      en: 'Sterile intravenous cannulas with injection port, fixation wings, and stainless steel flashback needles.',
+      ne: 'इन्जेक्सन पोर्ट र पखेटा (Wings) सहितका रंग-संकेतयुक्त स्टेराइल आईभी क्यानुलाहरू।',
+    },
+    description: {
+      en: 'ISO color-coded peripheral intravenous cannulas manufactured from biocompatible FEP/PTFE with radio-opaque lines for smooth venipuncture. Integrated with one-way injection port valve for intermittent medication delivery. Inquire for required gauge distribution, box packaging (50/100 pcs), and manufacturer brands.',
+      ne: 'नसामा सहजै सुइ राख्न प्रयोग हुने अन्तर्राष्ट्रिय रंग कोड अनुसारका स्टेराइल आईभी क्यानुलाहरू। औषधि दिन मिल्ने इन्जेक्सन पोर्ट र सुरक्षित पखेटा सहित। आवश्यक गेज (साइज), बक्स प्याकिङ र मौज्दातका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Standard Color Coding: 14G (Orange), 16G (Grey), 18G (Green), 20G (Pink), 22G (Blue), 24G (Yellow), 26G (Violet)',
+        'Siliconized stainless steel needle with back-cut bevel for painless venipuncture',
+        'Transparent flashback chamber for immediate blood visualization',
+        'One-way back-flow prevention injection port valve with secure snap cap',
+      ],
+      ne: [
+        'रंग कोड: १४G (सुन्तला), १६G (खैरो), १८G (हरियो), २०G (गुलाबी), २२G (निलो), २४G (पहेंलो), २६G (बैजनी)',
+        'बिरामीलाई कम दुख्ने धारिलो जापानी स्टिल निडल',
+        'रगत आएको तुरुन्त देखिने पारदर्शी फ्ल्यासब्याक चेम्बर',
+        'अतिरिक्त औषधि दिन मिल्ने वान-वे इन्जेक्सन पोर्ट र बिर्को',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        '14G Orange (45mm length) & 16G Grey (45mm length) for rapid fluid/blood resuscitation',
+        '18G Green (45mm length) for surgery, trauma, and blood transfusion',
+        '20G Pink (32mm length) for routine adult hospital medication and infusions',
+        '22G Blue (25mm length) for adult delicate veins and elderly patients',
+        '24G Yellow (19mm length) & 26G Violet (19mm length) for pediatric & neonatal care',
+        'Ported with wings vs non-ported straight options',
+      ],
+      ne: [
+        '१४G सुन्तला र १६G खैरो: आकस्मिक रगत तथा धेरै स्लाइन पानी छिटो चढाउन',
+        '१८G हरियो: शल्यक्रिया, ट्रमा र नियमित ब्लड ट्रान्सफ्युजनका लागि',
+        '२०G गुलाबी: वयस्क बिरामीको नियमित स्लाइन तथा औषधिका लागि',
+        '२२G निलो: कमजोर नसा भएका वृद्ध तथा महिला बिरामीका लागि',
+        '२४G पहेंलो र २६G बैजनी: बालबालिका तथा नवजात शिशुका लागि',
+        'इन्जेक्सन पोर्ट सहित र पोर्ट बिनाको विकल्प',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of color-coded medical IV cannulas',
+        ne: 'विभिन्न रंगका मेडिकल आईभी क्यानुलाहरूको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['iv cannula', 'cannula', 'intravenous catheter', '18g', '20g', '22g', '24g', 'क्यानुला', 'आईभी क्यानुला', 'सुइ'],
+  },
+  {
+    id: 'ot-surgical-sutures-absorbable-nonabsorbable',
+    slug: 'surgical-sutures-absorbable-non-absorbable',
+    categoryId: 'ot-supplies',
+    name: {
+      en: 'Sterile Surgical Sutures (Absorbable & Non-Absorbable)',
+      ne: 'स्टेराइल सर्जिकल सुचर धागोहरू (घुलनशील तथा नघुलनशील)',
+    },
+    shortDesc: {
+      en: 'Wide selection of sterile surgical sutures (PGA, Polyglactin, PDO, Catgut, Silk, Nylon, Prolene) across USP sizes 2 to 6-0.',
+      ne: 'घाउ तथा शल्यक्रिया सिलाउने विभिन्न प्रकारका घुलनशील र नघुलनशील स्टेराइल सुचर धागोहरू (USP २ देखि ६-०)।',
+    },
+    description: {
+      en: 'Broad catalogue of sterile surgical suture threads swaged to premium stainless steel curved needles (reverse cutting, round body taper point, and conventional cutting). Suture materials include synthetic absorbable polymers (PGA, Polyglactin 910, PDO), natural absorbables (Chromic / Plain Catgut), and permanent non-absorbables (Black Braided Silk, Monofilament Polyamide/Nylon, Polypropylene). Let our team know your required material, USP gauge, needle curvature, and box quantity.',
+      ne: 'शल्यक्रिया तथा घाउ सिलाउन प्रयोग हुने विभिन्न किसिमका स्टेराइल सुचर धागोहरू। विभिन्न घुमाउरो सुइ (रिभर्स कटिङ, राउन्ड बडी) सहित। घुलनशील (PGA, क्याटगट) र नघुलनशील (सिल्क, नाइलन, पोलिप्रोपिलिन) सबै प्रकारका धागो उपलब्ध छन्। आवश्यक धागोको नाम, USP नम्बर, सुइको प्रकार र बक्स परिमाणबारे फोन वा WhatsApp मार्फत बुझ्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Absorbable Range: Polyglycolic Acid (PGA braided), Polyglactin 910, Polydioxanone (PDO), Chromic & Plain Catgut',
+        'Non-Absorbable Range: Black Braided Silk, Monofilament Polyamide (Nylon), Monofilament Polypropylene',
+        'USP Sizes available: USP 2, 1, 0, 2-0, 3-0, 4-0, 5-0, 6-0',
+        'Needle Types: 3/8 circle reverse cutting, 1/2 circle round-bodied taper point, straight cutting needles',
+        'Foil-sealed sterile packaging in 12, 24, or 36 foil boxes',
+      ],
+      ne: [
+        'घुलनशील (Absorbable): पोलिग्ल्याइकोलिक एसिड (PGA), पोलिग्ल्याक्टिन, क्याटगट, पीडीओ',
+        'नघुलनशील (Non-absorbable): ब्ल्याक ब्रेडेड सिल्क, नाइलन, पोलिप्रोपिलिन',
+        'USP साइजहरू: USP २, १, ०, २-०, ३-०, ४-०, ५-०, ६-०',
+        'सुइको प्रकार: ३/८ रिभर्स कटिङ, १/२ राउन्ड बडी, सिधा सुइ',
+        'वायुरोधी स्टेराइल प्याकिङ (१२, २४ वा ३६ वटाको बक्स)',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        'PGA / Polyglactin 910 Synthetic Absorbable Braided Suture (USP 2 to 5-0)',
+        'Chromic Catgut & Plain Catgut Natural Absorbable Suture (USP 2 to 3-0)',
+        'Black Braided Silk Non-Absorbable Suture (USP 2 to 5-0)',
+        'Monofilament Polyamide / Nylon Skin Suture (USP 2-0 to 6-0)',
+        'Monofilament Polypropylene / Prolene Suture (USP 1 to 6-0)',
+        'Needle: 3/8 circle reverse cutting vs 1/2 circle round body taper',
+      ],
+      ne: [
+        'PGA / पोलिग्ल्याक्टिन घुलनशील ब्रेडेड सुचर (USP २ देखि ५-०)',
+        'क्रोमिक क्याटगट तथा प्लेन क्याटगट घुलनशील सुचर (USP २ देखि ३-०)',
+        'ब्ल्याक ब्रेडेड सिल्क नघुलनशील सुचर (USP २ देखि ५-०)',
+        'नाइलन छाला सिलाउने नघुलनशील सुचर (USP २-० देखि ६-०)',
+        'पोलिप्रोपिलिन / प्रोलिन नघुलनशील सुचर (USP १ देखि ६-०)',
+        'सुइ: ३/८ रिभर्स कटिङ अथवा १/२ राउन्ड बडी',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of sterile surgical suture packaging and needles',
+        ne: 'स्टेराइल सर्जिकल सुचर धागो र सुइको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['sutures', 'surgical thread', 'pga', 'silk suture', 'nylon suture', 'catgut', 'prolene', 'सुचर धागो', 'टाँका धागो', 'ओटी धागो'],
+  },
+  {
+    id: 'surg-ent-instruments-specula-forceps',
+    slug: 'ent-instruments-specula-forceps-sets',
+    categoryId: 'surgical-instruments',
+    name: {
+      en: 'ENT Instruments (Ear, Nose & Throat Specula, Forceps & Sets)',
+      ne: 'ईएनटी औजारहरू (कान, नाक तथा घाँटीका स्पेकुलम, फोर्सेप्स तथा सेट)',
+    },
+    shortDesc: {
+      en: 'Comprehensive range of Ear, Nose, and Throat instruments including specula, micro alligator forceps, nasal scissors, suction tips, and sets.',
+      ne: 'कान, नाक तथा घाँटी जाँच र माइनर शल्यक्रियाका लागि स्पेकुलम, माइक्रो फोर्सेप्स, कैंची, सक्सन ट्युब र सेटहरू।',
+    },
+    description: {
+      en: 'High-precision stainless steel Ear, Nose, and Throat (ENT) diagnostic and surgical instruments designed for outpatient clinics and operating theatres. We supply ear specula sets, Jobson-Horne probes, Hartmann crocodile micro-ear forceps, Tilley dressing forceps, Thudichum / Vienna nasal specula, Frazier suction tubes, tongue depressors, and complete ENT diagnostic sets. Contact us to verify individual instrument sizes and set compositions.',
+      ne: 'नाक, कान र घाँटी (ENT) को जाँच तथा शल्यक्रियामा प्रयोग हुने उच्च गुणस्तरका स्टेनलेस स्टिल औजारहरू। कानको स्पेकुलम, जब्सन-हर्न प्रोब, हार्टम्यान क्रोकोडाइल माइक्रो फोर्सेप्स, टिली फोर्सेप्स, थुडिचम/भियना नाकको स्पेकुलम, फ्रेजियर सक्सन ट्युब र टङ डिप्रेरहरू उपलब्ध छन्। आवश्यक साइज र इन्स्ट्रुमेन्ट सेटबारे जानकारी लिन सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Ear Instruments: Jobson-Horne probes, Hartmann ear specula (sizes 1-4), Hartmann crocodile micro-forceps, Tilley ear forceps, Lucae ear forceps',
+        'Nose Instruments: Thudichum nasal specula (sizes 1-3), Killian/Vienna nasal specula, Heymann nasal scissors, Frazier suction tubes (6-12 Fr)',
+        'Throat Instruments: Stainless steel & wooden tongue depressors, Boyle-Davis mouth gags, tonsil holding forceps, Yankauer suction tips',
+        'Manufactured from corrosion-resistant medical stainless steel suitable for repeated autoclave cycles',
+      ],
+      ne: [
+        'कानका औजार: जब्सन-हर्न प्रोब, हार्टम्यान कान स्पेकुलम सेट, क्रोकोडाइल माइक्रो फोर्सेप्स, टिली फोर्सेप्स',
+        'नाकका औजार: थुडिचम स्पेकुलम (१-३ नम्बर), भियना स्पेकुलम, हेइम्यान कैंची, फ्रेजियर सक्सन ट्युब',
+        'घाँटीका औजार: टङ डिप्रेशर, ब्वायल-डेभिस माउथ ग्याग, टन्सिल फोर्सेप्स, याङ्काउर सक्सन टिप',
+        'खिया नलाग्ने मेडिकल स्टेनलेस स्टिल, बारम्बार अटोक्लेभ गर्न मिल्ने',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        'Ear Specula set (Hartmann / Gruber sizes 1, 2, 3, 4)',
+        'Hartmann Alligator / Crocodile Micro Ear Forceps',
+        'Tilley Ear / Nasal Dressing Forceps (serrated tips)',
+        'Thudichum Nasal Specula (sizes 1, 2, 3)',
+        'Frazier Suction Tubes with finger cut-off valve (6 Fr, 8 Fr, 10 Fr, 12 Fr)',
+        'Complete ENT Outpatient Diagnostic & Procedure Tray Set',
+      ],
+      ne: [
+        'हार्टम्यान कान स्पेकुलम सेट (१, २, ३, ४ नम्बर)',
+        'हार्टम्यान एलिगेटर / क्रोकोडाइल माइक्रो कान फोर्सेप्स',
+        'टिली कान तथा नाक ड्रेसिङ फोर्सेप्स',
+        'थुडिचम नाक स्पेकुलम (१, २, ३ नम्बर)',
+        'फ्रेजियर सक्सन ट्युब (६, ८, १०, १२ Fr)',
+        'पूर्ण ईएनटी ओपीडी जाँच तथा प्रोसिजर ट्रे सेट',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of ENT surgical and diagnostic instruments',
+        ne: 'ईएनटी (नाक, कान, घाँटी) औजारहरूको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['ent instruments', 'ear speculum', 'crocodile forceps', 'nasal speculum', 'thudichum', 'frazier suction', 'ईएनटी औजार', 'कानको औजार', 'नाकको औजार'],
+  },
+
+  // 13. LABORATORY REAGENTS & BRANDS (CORAL, TULIP, ERBA)
+  {
+    id: 'lab-coral-clinical-systems-reagents',
+    slug: 'coral-clinical-systems-biochemistry-reagents',
+    categoryId: 'laboratory',
+    brand: 'Coral',
+    name: {
+      en: 'Coral Clinical Systems Biochemistry Reagents & Test Kits',
+      ne: 'कोरल क्लिनिकल सिस्टम्स बायोकेमिस्ट्री रिअजेन्ट तथा टेस्ट किटहरू',
+    },
+    shortDesc: {
+      en: 'Clinical chemistry diagnostic reagents from Coral for routine glucose, kidney, liver, and lipid biochemistry panels.',
+      ne: 'सुगर, मिर्गौला, कलेजो र लिपिड परीक्षणका लागि कोरल (Coral) ब्रान्डका क्लिनिकल बायोकेमिस्ट्री रिअजेन्टहरू।',
+    },
+    description: {
+      en: 'Diagnostic reagents manufactured by Coral Clinical Systems for routine and special clinical biochemistry diagnostics. Compatible with semi-automated biochemistry analyzers and manual photometers. Reagents include Glucose (GOD-POD), Urea / BUN, Creatinine, Bilirubin (Total & Direct), SGOT/AST, SGPT/ALT, Alkaline Phosphatase, Total Protein, Albumin, Uric Acid, Cholesterol, and Triglycerides. Contact us to verify kit pack sizes (e.g., 2x50ml, 4x50ml, 5x100ml), batch expiry dates, and cold-chain supply.',
+      ne: 'प्रयोगशालामा नियमित बायोकेमिकल परीक्षणका लागि प्रयोग हुने कोरल (Coral Clinical Systems) का गुणस्तरीय रिअजेन्टहरू। सेमी-अटोमेटेड बायोकेमिस्ट्री एनालाइजरमा प्रयोग गर्न उपयुक्त। सुगर, युरिया, क्रिएटिनिन, बिलिरुबिन, एसजीओटी, एसजीपिटी, एएलपी, प्रोटिन, युरिक एसिड, कोलेस्ट्रोल आदि परीक्षणका किटहरू उपलब्ध छन्। ब्याच एक्सपायरी र प्याकिङ साइज बुझ्न सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Verified Brand: Coral (Coral Clinical Systems)',
+        'Routine Panels: Blood Glucose, Renal Function (Urea, Creatinine, Uric Acid), Liver Function (Bilirubin, SGOT, SGPT, ALP, Protein/Albumin)',
+        'Lipid Profile: Cholesterol, Triglycerides, HDL Direct reagents',
+        'Liquid stable and powder-reconstitution formats with matching standards/calibrators',
+        'Cold-chain (2-8°C) storage compliant distribution',
+      ],
+      ne: [
+        'प्रमाणित ब्रान्ड: कोरल (Coral Clinical Systems)',
+        'नियमित प्यानल: सुगर, मिर्गौला जाँच (युरिया, क्रिएटिनिन, युरिक एसिड), कलेजो जाँच (बिलिरुबिन, SGOT, SGPT, ALP, प्रोटिन)',
+        'लिपिड प्रोफाइल: कोलेस्ट्रोल, ट्राइग्लिसराइड्स, एचडीएल रिअजेन्ट',
+        'क्यालिब्रेटर तथा स्ट्यान्डर्ड सहितको प्याक',
+        '२ देखि ८ डिग्री सेल्सियस तापक्रममा सुरक्षित भण्डारण',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        'Coral Glucose GOD-POD kit (2x100ml / 4x100ml)',
+        'Coral Urea Berthelot / GLDH kinetic reagent kit',
+        'Coral Creatinine Jaffe initial-rate kinetic kit',
+        'Coral SGOT / AST & SGPT / ALT UV-Kinetic reagent kits',
+        'Coral Bilirubin Total & Direct (Modified Jendrassik-Grof)',
+        'Coral Cholesterol CHOD-PAP & Triglycerides GPO-PAP kits',
+      ],
+      ne: [
+        'कोरल ग्लुकोज किट (Glucose GOD-POD)',
+        'कोरल युरिया किट (Urea Berthelot / GLDH)',
+        'कोरल क्रिएटिनिन किट (Creatinine Jaffe Kinetic)',
+        'कोरल एसजीओटी तथा एसजीपिटी किट (SGOT/AST, SGPT/ALT)',
+        'कोरल बिलिरुबिन किट (Total & Direct Bilirubin)',
+        'कोरल कोलेस्ट्रोल तथा ट्राइग्लिसराइड्स किट',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of clinical biochemistry reagent kits and laboratory diagnostic vials',
+        ne: 'बायोकेमिस्ट्री रिअजेन्ट किट तथा ल्याब डायग्नोस्टिक बोतलहरूको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['coral', 'biochemistry reagents', 'coral clinical systems', 'glucose kit', 'creatinine', 'sgpt', 'कोरल', 'बायोकेमिस्ट्री रिअजेन्ट', 'ल्याब किट'],
+  },
+  {
+    id: 'lab-tulip-diagnostics-rapid-serology',
+    slug: 'tulip-diagnostics-serology-rapid-test-kits',
+    categoryId: 'laboratory',
+    brand: 'Tulip',
+    name: {
+      en: 'Tulip Diagnostics Serology Reagents & Rapid Test Kits',
+      ne: 'ट्युलिप डायग्नोस्टिक्स सेरोलोजी रिअजेन्ट तथा र्‍यापिड टेस्ट किटहरू',
+    },
+    shortDesc: {
+      en: 'Blood grouping antisera, Widal agglutination antigen kits, rapid infectious disease cards, and latex serology from Tulip.',
+      ne: 'ब्लड ग्रुपिङ एन्टिसिरा, विडाल टेस्ट किट, र्‍यापिड कार्ड तथा ट्युलिप (Tulip) का सेरोलोजी डायग्नोस्टिक किटहरू।',
+    },
+    description: {
+      en: 'Comprehensive serology, immunology, and rapid point-of-care diagnostic test kits manufactured by Tulip Diagnostics. Products include monoclonal Blood Grouping Antisera (Anti-A, Anti-B, Anti-D / Rho), Widal Salmonella slide & tube agglutination antigens, Rapid Malaria (Pf/Pv) antigen cards, Dengue NS1 & IgG/IgM rapid cassettes, HIV, HBsAg, and HCV screening cards, Pregnancy (hCG) urine test strips, and Latex Turbidimetric kits (ASO, CRP, RA factor). Inquire for current batch lot numbers, sensitivity, and pack quantity.',
+      ne: 'ट्युलिप (Tulip Diagnostics) का सेरोलोजी, इम्युनोलोजी र र्‍यापिड डायग्नोस्टिक टेस्ट किटहरू। रगत समूह छुट्याउने ब्लड ग्रुपिङ एन्टिसिरा (Anti-A, Anti-B, Anti-D/Rh), टाइफाइड जाँच गर्ने विडाल किट, मलेरिया, डेंगु, एचआईभी, एचबीएसएजी, एचसीभी र्‍यापिड कार्ड, प्रेग्नेन्सी स्ट्रिप तथा ASO, CRP, RA लेटेक्स किटहरू उपलब्ध छन्। ब्याच विवरण र दररेटका लागि सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Verified Brand: Tulip (Tulip Diagnostics)',
+        'Blood Grouping: Monoclonal Anti-A, Anti-B, Anti-D (IgM/IgG blend) antisera vials',
+        'Febrile Serology: Widal Salmonella Typhi ‘O’, ‘H’, ‘AH’, ‘BH’ slide/tube antigens',
+        'Infectious Disease Rapid Cards: Malaria Antigen (Pf/Pv), Dengue NS1 & Combo, HIV 1/2, HBsAg, HCV',
+        'Inflammatory & Rheumatoid Latex Kits: CRP, ASO, RA / RF Factor latex agglutination',
+        'Pregnancy hCG rapid diagnostic cassettes and strips',
+      ],
+      ne: [
+        'प्रमाणित ब्रान्ड: ट्युलिप (Tulip Diagnostics)',
+        'ब्लड ग्रुपिङ: मोनोक्लोनल Anti-A, Anti-B, Anti-D (Rh) एन्टिसिरा',
+        'विडाल किट: साल्मोनेला टाइफी ‘O’, ‘H’, ‘AH’, ‘BH’ एन्टिजन',
+        'र्‍यापिड कार्ड: मलेरिया (Pf/Pv), डेंगु (NS1/IgG/IgM), एचआईभी, एचबीएसएजी, एचसीभी',
+        'लेटेक्स किट: सीआरपी (CRP), एएसओ (ASO), बाथ ज्वरो (RA factor)',
+        'गर्भ जाँच गर्ने प्रेग्नेन्सी (hCG) र्‍यापिड टेस्ट स्ट्रिप',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        'Tulip Blood Grouping Antisera Kit (Anti-A, Anti-B, Anti-D 3x10ml)',
+        'Tulip Widal Antigen Set (O, H, AH, BH 4x5ml with positive control)',
+        'Tulip Malaria Pf/Pv Antigen Rapid Test Card (Box of 25 / 50 tests)',
+        'Tulip Dengue Day 1 / NS1 Antigen Rapid Card',
+        'Tulip CRP / ASO / RA Latex Agglutination Kit (50 / 100 tests)',
+        'Tulip Rapid Pregnancy hCG Card / Strip tests',
+      ],
+      ne: [
+        'ट्युलिप ब्लड ग्रुपिङ किट (Anti-A, Anti-B, Anti-D ३x१० मिलि)',
+        'ट्युलिप विडाल एन्टिजन सेट (O, H, AH, BH ४x५ मिलि)',
+        'ट्युलिप मलेरिया र्‍यापिड कार्ड (२५/५० टेस्टको बक्स)',
+        'ट्युलिप डेंगु NS1 र्‍यापिड टेस्ट कार्ड',
+        'ट्युलिप CRP / ASO / RA लेटेक्स किट (५०/१०० टेस्ट)',
+        'ट्युलिप प्रेग्नेन्सी hCG र्‍यापिड टेस्ट कार्ड/स्ट्रिप',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of rapid diagnostic test cards and blood grouping antisera',
+        ne: 'र्‍यापिड टेस्ट कार्ड तथा ब्लड ग्रुपिङ एन्टिसिराको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['tulip', 'tulip diagnostics', 'blood grouping', 'widal', 'rapid test', 'dengue kit', 'malaria kit', 'crp kit', 'ट्युलिप', 'ब्लड ग्रुपिङ', 'विडाल'],
+  },
+  {
+    id: 'lab-erba-mannheim-reagents',
+    slug: 'erba-mannheim-clinical-chemistry-reagents-controls',
+    categoryId: 'laboratory',
+    brand: 'Erba',
+    name: {
+      en: 'Erba Mannheim Clinical Chemistry Reagents, Hematology & Controls',
+      ne: 'एर्बा म्यानहाइम क्लिनिकल बायोकेमिस्ट्री रिअजेन्ट, हेमाटोलोजी तथा कन्ट्रोल',
+    },
+    shortDesc: {
+      en: 'System-pack & open-channel clinical chemistry reagents, hematology cell counter solutions, and quality controls from Erba.',
+      ne: 'एर्बा (Erba Mannheim) का बायोकेमिस्ट्री रिअजेन्ट, हेमाटोलोजी डाइल्युएन्ट/लाइज तथा क्यालिब्रेटर कन्ट्रोलहरू।',
+    },
+    description: {
+      en: 'High-standard clinical laboratory diagnostic products manufactured by Erba Mannheim. Our enquiry catalogue includes Erba dedicated system reagent packs and open-channel clinical chemistry vials for automated and semi-automated clinical chemistry analyzers (XL-series, Chem-series), hematology 3-part / 5-part cell counter reagents (Diluent, Lyse, Cleaner), and multiconstituent calibrators/controls (Erba XL Multical, Erba Norm & Path Control Sera). Please contact us with your analyzer model to verify barcode pack compatibility and stock availability.',
+      ne: 'एर्बा (Erba Mannheim) का उच्चस्तरीय क्लिनिकल प्रयोगशाला सामग्रीहरू। बायोकेमिस्ट्री एनालाइजर (XL सिरिज तथा अन्य ओपन-सिस्टम) का लागि रिअजेन्ट प्याक, हेमाटोलोजी सेल काउन्टरका लागि डाइल्युएन्ट, लाइज, क्लिनिङ सोलुसन र क्यालिब्रेटर/कन्ट्रोल सिरमहरू (Multical, Norm/Path Control)। आफ्नो एनालाइजरको मोडेल र ब्याच उपलब्धताबारे बुझ्न सम्पर्क गर्नुहोस्।',
+    },
+    keyPoints: {
+      en: [
+        'Verified Brand: Erba (Erba Mannheim)',
+        'Clinical Chemistry: Dedicated system-pack cartridges and open-vial reagents for routine and specialized assays',
+        'Hematology Consumables: Isotonic Diluent, Cyanide-Free Lyse, and Enzymatic De-proteinizing Cleaners',
+        'Quality Assurance: Multiconstituent Calibrator (XL Multical) and assayed Normal/Pathological Control Sera',
+        'Consult with us regarding analyzer barcode compatibility and storage temperature protocols',
+      ],
+      ne: [
+        'प्रमाणित ब्रान्ड: एर्बा (Erba Mannheim)',
+        'क्लिनिकल बायोकेमिस्ट्री: अटोमेटेड एनालाइजरका लागि बारकोड सिस्टम प्याक र ओपन रिअजेन्ट',
+        'हेमाटोलोजी सोलुसन: डाइल्युएन्ट, साइनाइड-मुक्त लाइज र इन्जाइमेटिक क्लिनर',
+        'गुणस्तर नियन्त्रण: मल्टिकल क्यालिब्रेटर (Multical) र नर्मल/प्याथोलोजिकल कन्ट्रोल सिरम',
+        'आफ्नो मेसिनको मोडेल र बारकोड मिल्ने/नमिल्ने बुझ्न फोन सम्पर्क गर्नुहोस्',
+      ],
+    },
+    enquiryOptions: {
+      en: [
+        'Erba System Packs for Automated Analyzers (XL-200, XL-640, EM series)',
+        'Erba Open-Vial Clinical Chemistry Reagents (Glucose, BUN, Creatinine, LFT, Lipid)',
+        'Erba 3-Part & 5-Part Hematology Diluent, Lyse & Rinse Solutions',
+        'Erba XL Multical & Calibrator sets',
+        'Erba Normal & Pathological Assayed Control Sera (Twin Pack)',
+      ],
+      ne: [
+        'एर्बा अटोमेटेड एनालाइजर सिस्टम प्याकहरू (XL-200, XL-640 आदि)',
+        'एर्बा ओपन-भाइल बायोकेमिस्ट्री रिअजेन्टहरू (सुगर, युरिया, क्रिएटिनिन, एलएफटी, लिपिड)',
+        'एर्बा हेमाटोलोजी डाइल्युएन्ट, लाइज र क्लिनर सोलुसन',
+        'एर्बा मल्टिकल क्यालिब्रेटर (XL Multical)',
+        'एर्बा नर्मल तथा प्याथोलोजिकल कन्ट्रोल सिरम',
+      ],
+    },
+    image: {
+      url: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80',
+      alt: {
+        en: 'Representative photo of automated analyzer reagents and calibrator controls',
+        ne: 'अटोमेटेड एनालाइजर रिअजेन्ट तथा क्यालिब्रेटर कन्ट्रोलको सांकेतिक तस्बिर',
+      },
+      sourceLabel: 'Photo via Unsplash (Representative illustration)',
+    },
+    tags: ['erba', 'erba mannheim', 'chemistry analyzer', 'hematology diluent', 'lyse', 'multical', 'control serum', 'एर्बा', 'एनालाइजर रिअजेन्ट', 'कन्ट्रोल सिरम'],
   },
 ];

@@ -60,23 +60,25 @@ Every entry includes:
 
 ---
 
-## 📲 WhatsApp Configuration Note (Owner Input Required)
+## 📲 WhatsApp Configuration (Confirmed & Active)
 
-The raw WhatsApp number supplied was `98550055060` (11 digits). Because standard Nepal mobile numbers are 10 digits (e.g. `9855005506` or `9855005500`), **active WhatsApp links are disabled by default** in `config/site.ts` to prevent broken links:
+The business owner has confirmed the WhatsApp number **`9855055060`** (international format `+9779855055060`). WhatsApp direct chat is active and configured in `config/site.ts`:
 
 ```typescript
 // config/site.ts
 whatsapp: {
-  enabled: false, // Change to true once confirmed by owner
-  rawSuppliedNumber: "98550055060",
-  confirmedInternationalDigits: "", // e.g. "9779855005506"
+  enabled: true,
+  rawSuppliedNumber: "9855055060",
+  confirmedInternationalDigits: "9779855055060",
+  display: "+977 9855055060",
 }
 ```
 
-Once confirmed:
-1. Set `enabled: true`.
-2. Provide the confirmed number format in `confirmedInternationalDigits` (e.g., `"9779855005506"`).
-3. The site will automatically activate pre-filled WhatsApp enquiry buttons across the catalogue in the user's active language.
+Features enabled with WhatsApp integration:
+1. **Mobile Sticky Bottom Bar**: Quick one-tap direct WhatsApp chat with safe-area spacing.
+2. **Desktop Floating Action Button (FAB)**: Accessible floating WhatsApp button.
+3. **Product Card & Detail Enquiry**: Automatic URL-encoded message prefilled with product title and absolute canonical product URL in the visitor's selected language (Nepali/English).
+4. **Contact Page**: Dedicated WhatsApp enquiry card linking directly to `https://wa.me/9779855055060`.
 
 ---
 
