@@ -120,6 +120,18 @@ select:focus-visible {
   padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0.5rem));
 }
 
+footer a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding-bottom: 3rem;
+  }
+}
+
 .pt-safe {
   padding-top: max(0.5rem, env(safe-area-inset-top, 0.5rem));
 }

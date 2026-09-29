@@ -24,7 +24,7 @@ export interface ProductItem {
     ne: string[];
   };
   image: {
-    url: string;
+    url: string | null;
     alt: {
       en: string;
       ne: string;
@@ -591,12 +591,12 @@ export const PRODUCTS: ProductItem[] = [
       ne: ['५ र १० लिटर प्रतिमिनेट अक्सिजन क्षमता', 'ह्युमिडिफायर सहितको सिलिन्डर रेगुलेटर', 'उपलब्धता र दररेटका लागि फोन गर्नुहोस्'],
     },
     image: {
-      url: 'https://images.unsplash.com/photo-1583912267670-6575ad373678?auto=format&fit=crop&w=800&q=80',
+      url: null,
       alt: {
-        en: 'Illustrative photo of medical oxygen concentrator',
-        ne: 'मेडिकल अक्सिजन कन्सेन्ट्रेटरको सांकेतिक तस्बिर',
+        en: 'Illustrative product image unavailable for medical oxygen concentrator',
+        ne: 'मेडिकल अक्सिजन कन्सेन्ट्रेटरको सांकेतिक तस्बिर उपलब्ध छैन',
       },
-      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+      sourceLabel: 'Product image unavailable',
     },
     tags: ['oxygen concentrator', 'oxygen regulator', 'respiratory', 'अक्सिजन', 'कन्सेन्ट्रेटर', 'रेगुलेटर'],
   },
@@ -621,12 +621,12 @@ export const PRODUCTS: ProductItem[] = [
       ne: ['बालबालिका र वयस्कका लागि नेबुलाइजर मास्क सहित', 'पोर्टेबल तथा अस्पताल सक्सन मेसिन', 'सोधपुछका लागि सिधै फोन गर्नुहोस्'],
     },
     image: {
-      url: 'https://images.unsplash.com/photo-1583912267670-6575ad373678?auto=format&fit=crop&w=800&q=80',
+      url: null,
       alt: {
-        en: 'Illustrative photo of medical nebulizer and suction equipment',
-        ne: 'नेबुलाइजर तथा सक्सन उपकरणको सांकेतिक तस्बिर',
+        en: 'Illustrative product image unavailable for nebulizer and suction equipment',
+        ne: 'नेबुलाइजर तथा सक्सन उपकरणको सांकेतिक तस्बिर उपलब्ध छैन',
       },
-      sourceLabel: 'Photo via Unsplash (Illustrative representation)',
+      sourceLabel: 'Product image unavailable',
     },
     tags: ['nebulizer', 'suction machine', 'respiratory', 'नेबुलाइजर', 'सक्सन मेसिन'],
   },

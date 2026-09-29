@@ -175,11 +175,11 @@ export function ChairmanProfile({ locale }: ChairmanProfileProps) {
           </h2>
           <p lang={locale} className="mt-3 max-w-4xl text-sm sm:text-base leading-relaxed text-[#475569]">
             {isNe
-              ? 'CHEMSAN को Lifetime Members निर्देशिकामा अर्जुन रणाभाटलाई चितवनस्थित Saphal Surgical House को सम्पर्क व्यक्ति भनेर सूचीकृत गरिएको छ।'
-              : 'The CHEMSAN Lifetime Members directory lists Arjun Ranabhat as the contact person for Saphal Surgical House in Chitwan.'}
+              ? 'Chemical & Medical Suppliers Association of Nepal (CHEMSAN) को Lifetime Members निर्देशिकामा अर्जुन रणाभाटलाई चितवनस्थित Saphal Surgical House को सम्पर्क व्यक्ति भनेर सूचीकृत गरिएको छ।'
+              : 'The Chemical & Medical Suppliers Association of Nepal (CHEMSAN) Lifetime Members directory lists Arjun Ranabhat as the contact person for Saphal Surgical House in Chitwan.'}
           </p>
           <a href={chemsanLifetimeMembersUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-[#166534] underline underline-offset-4 hover:text-[#15803D]">
-            {isNe ? 'CHEMSAN Lifetime Members निर्देशिका' : 'CHEMSAN Lifetime Members directory'}
+            {isNe ? 'Chemical & Medical Suppliers Association of Nepal (CHEMSAN) को Lifetime Members निर्देशिका' : 'Chemical & Medical Suppliers Association of Nepal (CHEMSAN) Lifetime Members directory'}
           </a>
         </div>
       </section>

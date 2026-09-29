@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
   const t = translations[locale];
 
   return (
-    <footer className="bg-[#F0FDF4] text-slate-700 pt-16 pb-12 border-t border-[#DCFCE7] mt-auto">
+    <footer className="bg-[#F0FDF4] text-slate-700 pt-12 pb-[calc(6rem+env(safe-area-inset-bottom,0px))] sm:pt-16 md:pb-12 border-t border-[#DCFCE7] mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#DCFCE7]">
           {/* Brand Column */}

@@ -6,6 +6,7 @@ import { WhatsAppIcon } from '@/components/Icons';
 import { ProductItem } from '@/data/products';
 import { siteConfig, getProductWhatsAppUrl } from '@/config/site';
 import { Locale } from '@/lib/translations';
+import { ProductImageUnavailable } from './ProductImageUnavailable';
 
 interface ProductCardProps {
   product: ProductItem;
@@ -42,20 +43,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
       <div>
         {/* Product Image Box with object-contain to prevent device cropping */}
         <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#F7FAF7] p-2 flex items-center justify-center border-b border-[#EDF2ED]">
-          <Image
-            src={product.image.url}
-            alt={productAlt}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-            className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
-            loading={priority ? undefined : 'lazy'}
-            priority={priority}
-          />
+          {product.image.url ? (
+            <Image
+              src={product.image.url}
+              alt={productAlt}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+              className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+              loading={priority ? undefined : 'lazy'}
+              priority={priority}
+            />
+          ) : (
+            <ProductImageUnavailable locale={locale} alt={productAlt} />
+          )}
           {/* Illustrative Tag */}
-          <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-slate-700 border border-slate-200 text-[10px] font-medium px-2 py-0.5 rounded-md flex items-center gap-1 shadow-xs pointer-events-none">
-            <HelpCircle className="w-3 h-3 text-[#15803D]" />
-            <span>{isNe ? 'सांकेतिक' : 'Illustrative'}</span>
-          </div>
+          {product.image.url && (
+            <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-slate-700 border border-slate-200 text-[10px] font-medium px-2 py-0.5 rounded-md flex items-center gap-1 shadow-xs pointer-events-none">
+              <HelpCircle className="w-3 h-3 text-[#15803D]" />
+              <span>{isNe ? 'सांकेतिक' : 'Illustrative'}</span>
+            </div>
+          )}
 
           {/* Verified Brand badge if available */}
           {product.brand && (

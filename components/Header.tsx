@@ -150,11 +150,9 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
 
           {/* Mobile Navigation Drawer */}
           {mobileMenuOpen && (
-            <div
+            <nav
               id="mobile-nav-menu"
               className="lg:hidden py-4 border-t border-slate-100 flex flex-col space-y-2 pb-6 animate-in fade-in slide-in-from-top-2 duration-200"
-              role="dialog"
-              aria-modal="true"
               aria-label="Mobile Navigation"
             >
               {navLinks.map((link) => (
@@ -190,7 +188,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
                   <span>{t.nav.getDirections}</span>
                 </a>
               </div>
-            </div>
+            </nav>
           )}
         </div>
       </header>

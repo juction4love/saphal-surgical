@@ -10,6 +10,7 @@ import { translations, Locale } from '@/lib/translations';
 import { PRODUCTS, ProductItem } from '@/data/products';
 import { CATEGORIES } from '@/data/categories';
 import { ProductCard } from '@/components/ProductCard';
+import { ProductImageUnavailable } from '@/components/ProductImageUnavailable';
 
 interface PageProps {
   params: Promise<{ lang: string; slug: string }> | { lang: string; slug: string };
@@ -94,11 +95,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
     <div className="py-8 sm:py-14 space-y-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-safe bg-white">
       {/* Breadcrumb Navigation */}
       <nav className="flex items-center flex-wrap gap-2 text-xs sm:text-sm text-[#475569]" aria-label="Breadcrumb">
-        <Link href={`/${lang}`} className="hover:text-[#15803D] min-h-[36px] flex items-center">
+        <Link href={`/${lang}`} className="hover:text-[#15803D] min-h-[44px] flex items-center">
           {t.nav.home}
         </Link>
         <span aria-hidden="true">/</span>
-        <Link href={`/${lang}/products`} className="hover:text-[#15803D] min-h-[36px] flex items-center">
+        <Link href={`/${lang}/products`} className="hover:text-[#15803D] min-h-[44px] flex items-center">
           {t.nav.products}
         </Link>
         {category && (
@@ -106,7 +107,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
             <span aria-hidden="true">/</span>
             <Link
               href={`/${lang}/products?category=${category.id}`}
-              className="hover:text-[#15803D] min-h-[36px] flex items-center truncate max-w-[200px]"
+              className="hover:text-[#15803D] min-h-[44px] flex items-center truncate max-w-[200px]"
             >
               {isNe ? category.name.ne : category.name.en}
             </Link>
@@ -123,21 +124,27 @@ export default async function ProductDetailPage({ params }: PageProps) {
         {/* Left Column: Product Image with object-contain */}
         <div className="lg:col-span-6 space-y-3">
           <div className="relative aspect-[4/3] sm:aspect-square w-full rounded-3xl overflow-hidden border border-slate-200 bg-slate-50 shadow-2xs flex items-center justify-center p-4">
-            <Image
-              src={product.image.url}
-              alt={productAlt}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-contain p-4"
-              priority
-            />
+            {product.image.url ? (
+              <Image
+                src={product.image.url}
+                alt={productAlt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain p-4"
+                priority
+              />
+            ) : (
+              <ProductImageUnavailable locale={lang} alt={productAlt} />
+            )}
             {/* Illustrative Notice Badge */}
-            <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm border border-[#DCFCE7] text-[#17251C] text-xs p-3 rounded-2xl flex items-center gap-2 shadow-2xs pointer-events-none">
-              <HelpCircle className="w-4 h-4 text-[#15803D] shrink-0" />
-              <span className="text-[11px] sm:text-xs leading-tight text-[#475569]">
-                {product.image.sourceLabel} — {isNe ? 'वास्तविक सामानको ब्रान्ड र स्वरूप मौज्दात अनुसार फरक पर्न सक्छ।' : 'Actual brand appearance and specs depend on current stock.'}
-              </span>
-            </div>
+            {product.image.url && (
+              <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm border border-[#DCFCE7] text-[#17251C] text-xs p-3 rounded-2xl flex items-center gap-2 shadow-2xs pointer-events-none">
+                <HelpCircle className="w-4 h-4 text-[#15803D] shrink-0" />
+                <span className="text-[11px] sm:text-xs leading-tight text-[#475569]">
+                  {product.image.sourceLabel} — {isNe ? 'वास्तविक सामानको ब्रान्ड र स्वरूप मौज्दात अनुसार फरक पर्न सक्छ।' : 'Actual brand appearance and specs depend on current stock.'}
+                </span>
+              </div>
+            )}
           </div>
         </div>
 

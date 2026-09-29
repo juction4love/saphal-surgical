@@ -88,11 +88,11 @@ export default async function ArticleDetailPage({ params }: PageProps) {
     <div className="py-8 sm:py-14 space-y-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-safe bg-white">
       {/* Breadcrumb Navigation */}
       <nav className="flex items-center flex-wrap gap-2 text-xs sm:text-sm text-[#475569]" aria-label="Breadcrumb">
-        <Link href={`/${lang}`} className="hover:text-[#15803D] min-h-[36px] flex items-center">
+        <Link href={`/${lang}`} className="hover:text-[#15803D] min-h-[44px] flex items-center">
           {t.nav.home}
         </Link>
         <span aria-hidden="true">/</span>
-        <Link href={`/${lang}/articles`} className="hover:text-[#15803D] min-h-[36px] flex items-center">
+        <Link href={`/${lang}/articles`} className="hover:text-[#15803D] min-h-[44px] flex items-center">
           {t.nav.articles}
         </Link>
         <span aria-hidden="true">/</span>
