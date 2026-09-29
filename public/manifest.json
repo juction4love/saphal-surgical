@@ -1,0 +1,22 @@
+{
+  "name": "Saphal Surgical House | सफल सर्जिकल हाउस",
+  "short_name": "Saphal Surgical",
+  "start_url": "/ne",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#15803D",
+  "icons": [
+    {
+      "src": "/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

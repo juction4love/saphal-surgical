@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { Phone, MapPin, Cross, Info } from 'lucide-react';
+import { Phone, MapPin, Info } from 'lucide-react';
 import { FacebookIcon } from '@/components/Icons';
+import { BrandSymbol } from '@/components/BrandSymbol';
 import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 
@@ -19,9 +20,7 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-[#15803D] flex items-center justify-center text-white shadow-xs">
-                <Cross className="w-5 h-5 stroke-[2.5]" />
-              </div>
+              <BrandSymbol size={36} className="w-9 h-9 shrink-0" />
               <span className="font-heading font-extrabold text-xl text-[#17251C] tracking-tight">
                 {locale === 'ne' ? 'सफल सर्जिकल हाउस' : 'SAPHAL SURGICAL HOUSE'}
               </span>

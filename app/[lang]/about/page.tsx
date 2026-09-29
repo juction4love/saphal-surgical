@@ -1,12 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Phone, MapPin, Building2, ShieldAlert, ArrowRight, CheckCircle2, Package } from 'lucide-react';
+import { Phone, MapPin, ShieldAlert, ArrowRight, CheckCircle2, Package } from 'lucide-react';
 import { WhatsAppIcon } from '@/components/Icons';
 import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
 import { BrandsSection } from '@/components/BrandsSection';
+import { BrandSymbol } from '@/components/BrandSymbol';
 
 interface PageProps {
   params: Promise<{ lang: string }> | { lang: string };
@@ -73,7 +74,7 @@ export default async function AboutPage({ params }: PageProps) {
           {/* Introduction Card */}
           <div className="bg-white p-5 sm:p-8 rounded-3xl border border-slate-200 shadow-2xs space-y-3.5">
             <h2 className="text-lg sm:text-xl font-heading font-bold text-[#17251C] flex items-center gap-2">
-              <Building2 className="w-5 h-5 text-[#15803D] shrink-0" />
+              <BrandSymbol size={40} className="w-10 h-10 shrink-0" />
               <span>{t.about.introTitle}</span>
             </h2>
             <p className="text-[#475569] text-sm sm:text-base leading-relaxed">

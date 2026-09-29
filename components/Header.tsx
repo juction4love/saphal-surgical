@@ -3,10 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Phone, MapPin, Menu, X, Cross } from 'lucide-react';
+import { Phone, MapPin, Menu, X } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { BrandSymbol } from './BrandSymbol';
 
 interface HeaderProps {
   locale: Locale;
@@ -78,11 +79,9 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             <Link
               href={`/${locale}`}
               className="col-span-2 sm:col-span-1 min-w-0 flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2 rounded-xl py-1"
-              aria-label="Saphal Surgical House Home"
+              aria-label={`${siteConfig.name[locale]} home`}
             >
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#15803D] flex items-center justify-center text-white shadow-sm group-hover:bg-[#166534] transition-colors shrink-0">
-                <Cross className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
-              </div>
+              <BrandSymbol size={44} className="w-10 h-10 sm:w-11 sm:h-11 shrink-0 transition-transform group-hover:scale-[1.03]" />
               <div className="min-w-0">
                 <span lang={locale} className="font-heading font-extrabold text-[24px] sm:text-[26px] lg:text-[34px] text-[#15803D] tracking-tight block leading-[1.5]">
                   {locale === 'ne' ? 'सफल सर्जिकल हाउस' : 'Saphal Surgical House'}

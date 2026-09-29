@@ -5,6 +5,7 @@ import { FacebookIcon, WhatsAppIcon } from '@/components/Icons';
 import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
+import { BrandSymbol } from '@/components/BrandSymbol';
 
 interface PageProps {
   params: Promise<{ lang: string }> | { lang: string };
@@ -49,6 +50,13 @@ export default async function ContactPage({ params }: PageProps) {
         <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
           {t.contact.pageSubtitle}
         </p>
+      </div>
+
+      <div className="flex items-center justify-center gap-3 py-3 text-[#166534]">
+        <BrandSymbol size={40} className="w-10 h-10 shrink-0" />
+        <span lang={lang} className="font-heading font-bold text-base sm:text-lg">
+          {siteConfig.name[lang]}
+        </span>
       </div>
 
       {/* Contact Cards Grid (2x2 on desktop) */}
