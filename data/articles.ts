@@ -150,12 +150,12 @@ export const ARTICLES: ArticleItem[] = [
         },
         content: {
           en: [
-            'Syringes: Specify exact barrel volume (e.g. 1ml insulin/tuberculin, 2ml, 3ml, 5ml, 10ml, 20ml, 50ml), nozzle type (Luer slip vs threaded Luer lock), and whether pre-mounted needles are required (including desired needle gauge and length).',
-            'IV Infusion Sets: Clarify whether vented (with bacterial air inlet for glass/rigid bottles) or non-vented (for collapsible plastic bags) are needed, plus the required drop rate (standard adult 20 drops/ml vs pediatric micro-drip 60 drops/ml measured burette sets) and blood transfusion sets with 200µm clot filters.',
+            'Syringes: Specify the exact category and barrel volume—dedicated Insulin Syringes calibrated in insulin units (U-40 or U-100 with ultra-fine integrated needles), Tuberculin Syringes (1ml micro-volume with 0.01ml precision metric graduations for Mantoux TB screening/allergy dosing), or General Hypodermic Syringes (2ml, 3ml, 5ml, 10ml, 20ml, 50ml/60ml in Luer slip or Luer lock fittings with/without needles).',
+            'IV Infusion Sets: Clarify whether vented (with bacterial air inlet for glass/rigid bottles) or non-vented (for collapsible plastic bags) are needed, plus the required drop rate (standard adult 20 drops/ml vs pediatric micro-drip 60 drops/ml measured burette sets) and blood transfusion sets with clot filters.',
             'IV Cannulas: State the specific ISO color-coded gauge and length (14G/16G for emergency resuscitation, 18G/20G for routine infusions and surgery, 22G for delicate veins, 24G/26G for pediatric care) and confirm port/wing configuration (with injection port and wings vs straight).',
           ],
           ne: [
-            'सिरिन्ज: ब्यारेलको क्षमता (१ मिलि इन्सुलिन, २ मिलि, ३ मिलि, ५ मिलि, १० मिलि, २० मिलि वा ५० मिलि), नोजलको प्रकार (लुअर स्लिप वा लुअर लक) र सुइ जडान भएको वा नभएको स्पष्ट उल्लेख गर्नुहोस्।',
+            'सिरिन्ज: सही किसिम र क्षमता खुलाउनुहोस्—इन्सुलिन सिरिन्ज (U-40 वा U-100 युनिट अंकित र मसिनो सुइ जडित), ट्युबरकुलिन सिरिन्ज (१ मिलि क्षमता र ०.०१ मिलि सूक्ष्म मापन अंकित टिबी मन्टु टेस्टका लागि), वा नियमित डिस्पोजेबल सिरिन्जहरू (२ मिलि, ३ मिलि, ५ मिलि, १० मिलि, २० मिलि, ५० मिलि लुअर स्लिप वा लुअर लक)।',
             'आईभी सेट: एयर भेन्ट भएको वा नभएको, ड्रप फ्याक्टर (वयस्कका लागि २० थोपा/मिलि वा बालबालिकाका लागि ६० थोपा/मिलि ब्युरेट सेट) र रगत चढाउने ब्लड सेटको माग स्पष्ट खुलाउनुहोस्।',
             'आईभी क्यानुला: अन्तर्राष्ट्रिय रंग कोड अनुसारको गेज (१४G, १६G, १८G, २०G, २२G, २४G, २६G) र औषधि दिन मिल्ने इन्जेक्सन पोर्ट तथा पखेटा (Wings) भएको/नभएको विवरण पठाउनुहोस्।',
           ],
@@ -181,6 +181,26 @@ export const ARTICLES: ArticleItem[] = [
           ],
         },
       },
+      {
+        heading: {
+          en: '7. Confirming Manufacturer-Stated Analyzer Compatibility for Lab Reagents (Coral, Tulip, Erba)',
+          ne: '७. प्रयोगशाला रिअजेन्ट खरिद गर्दा एनालाइजर अनुकूलता (Compatibility) यकिन गर्ने तरिका',
+        },
+        content: {
+          en: [
+            'System Packs vs Open-Vial Formats: Verify whether your laboratory clinical analyzer is an open channel system (accepting standard universal vials from Coral, Tulip, or Erba) or a dedicated closed-channel system requiring barcode-matched cartridges (such as dedicated Erba XL series system packs).',
+            'Cold Chain & Storage Specifications: Verify that diagnostic reagents (such as enzymatic glucose kits, lipid reagents, blood grouping antisera, and calibrators) are maintained under strict 2°C to 8°C cold chain conditions during transit and storage. Never freeze liquid-stable reagents unless specifically stated.',
+            'Controls, Calibrators, and Pack Sizes: Ensure matching multi-constituent calibrators (e.g. Erba Multical, Coral standards) and assayed normal/pathological quality control sera are ordered alongside test packs. Verify number of tests per kit based on expected weekly laboratory workload to prevent expiration of opened vials.',
+            'Batch Expiry & Sensitivity: For serology and rapid diagnostic kits (e.g., Tulip Widal, Malaria/Dengue rapid test cards, blood grouping antisera), always verify manufacturer batch lot numbers, sensitivity ratings, and shelf-life validity prior to acceptance.',
+          ],
+          ne: [
+            'ओपन-भाइल र सिस्टम प्याक: आफ्नो प्रयोगशालाको बायोकेमिस्ट्री मेसिन ओपन-सिस्टम हो (जसमा कोरल, ट्युलिप वा एर्बाका सामान्य बोतल प्रयोग गर्न सकिन्छ) वा बारकोड भएको क्लोज्ड सिस्टम प्याक चाहिन्छ, खरिद गर्नुअघि यकिन गर्नुहोस्।',
+            'कोल्ड-चेन (२° देखि ८°C): इन्जाइमेटिक किट, लिपिड रिअजेन्ट, ब्लड ग्रुपिङ एन्टिसिरा र क्यालिब्रेटरहरूलाई २ देखि ८ डिग्री सेल्सियसको सुरक्षित चिसो तापक्रममा राख्नुपर्छ।',
+            'कन्ट्रोल र क्यालिब्रेटर: रिअजेन्टसँगै आवश्यक क्यालिब्रेटर र नर्मल/प्याथोलोजिकल कन्ट्रोल सिरमहरू पनि अर्डर गर्नुहोस्। मासिक टेस्ट संख्या अनुसार उपयुक्त साइजको किट छनोट गर्दा सामान खेर जाँदैन।',
+            'ब्याच म्याद र सेन्सिटिभिटी: सेरोलोजी तथा र्‍यापिड कार्ड (ट्युलिप विडाल, मलेरिया/डेंगु कार्ड, एन्टिसिरा) खरिद गर्दा ब्याच नम्बर र म्याद समाप्त हुने मिति स्पष्ट जाँच गर्नुहोस्।',
+          ],
+        },
+      },
     ],
     checklistTitle: {
       en: 'Requirement Planning Checklist',
@@ -190,27 +210,27 @@ export const ARTICLES: ArticleItem[] = [
       en: [
         'List exact item names, preferred sizes, gauges, and expected monthly quantity.',
         'Differentiate sterile single-use supplies from reusable instruments.',
-        'Verify compatibility of consumables with existing facility equipment (e.g. suction machine tubing diameter, ECG paper rolls).',
-        'Inspect shelf-life requirements and store in appropriate environmental conditions.',
+        'Verify compatibility of consumables with existing facility equipment (e.g. analyzer open vs closed formats, suction tubing diameter, ECG paper rolls).',
+        'Inspect shelf-life requirements and store in appropriate environmental conditions (e.g. 2-8°C cold chain for reagents).',
         'Send an itemized enquiry to confirm available brands, package units (boxes/cases), and current wholesale pricing.',
       ],
       ne: [
         'सामग्रीको स्पष्ट नाम, आवश्यक साइज, गेज र मासिक खपत परिमाण सूचीकृत गर्नुहोस्।',
         'स्टेराइल डिस्पोजेबल सामग्री र पुनःप्रयोगयोग्य औजारहरू स्पष्ट छुट्याउनुहोस्।',
-        'संस्थामा रहेका उपकरणसँग नयाँ सामग्री मिल्ने/नमिल्ने जाँच गर्नुहोस् (जस्तै सक्सन ट्युबको मोटाइ, ईसीजी रोल साइज)।',
-        'म्याद र भण्डारण वातावरण यकिन गर्नुहोस्।',
+        'संस्थामा रहेका उपकरणसँग नयाँ सामग्री मिल्ने/नमिल्ने जाँच गर्नुहोस् (जस्तै एनालाइजर सिस्टम प्याक, सक्सन ट्युबको मोटाइ, ईसीजी रोल साइज)।',
+        'म्याद र भण्डारण वातावरण (जस्तै रिअजेन्टका लागि २-८°C कोल्ड चेन) यकिन गर्नुहोस्।',
         'उपलब्ध ब्रान्ड, प्याकिङ र दररेट बुझ्न सामग्रीहरूको सूचीसहित फोन वा ह्वाट्सएपमा सोधपुछ पठाउनुहोस्।',
       ],
     },
     disclaimer: {
-      en: 'General guidance only. Material specifications, sterility protocols, and consumption ratios must conform to your institution’s clinical governance and healthcare regulatory guidelines.',
-      ne: 'यो सामान्य जानकारी तथा खरिद मार्गदर्शन मात्र हो। सामग्रीको प्राविधिक छनोट र प्रयोग संस्थाको आन्तरिक क्लिनिकल निर्देशिका अनुसार हुनुपर्छ।',
+      en: 'General guidance only. Material specifications, sterility protocols, analyzer compatibility, and consumption ratios must conform to your institution’s clinical governance and healthcare regulatory guidelines.',
+      ne: 'यो सामान्य जानकारी तथा खरिद मार्गदर्शन मात्र हो। सामग्रीको प्राविधिक छनोट, उपकरण अनुकूलता र प्रयोग संस्थाको आन्तरिक क्लिनिकल निर्देशिका अनुसार हुनुपर्छ।',
     },
     enquiryPrompt: {
-      en: 'Have your required hospital or surgical supplies list ready? Contact Saphal Surgical House directly via WhatsApp or telephone for brand options, availability, and quotation.',
-      ne: 'तपाईंसँग अस्पताल वा सर्जिकल सामग्रीको खरिद सूची छ? उपलब्ध ब्रान्ड, स्टक तथा दररेट बुझ्न सफल सर्जिकल हाउसमा तुरुन्त फोन वा ह्वाट्सएप गर्नुहोस्।',
+      en: 'Have your required hospital, surgical, or laboratory supplies list ready? Contact Saphal Surgical House directly via WhatsApp or telephone for brand options, availability, and quotation.',
+      ne: 'तपाईंसँग अस्पताल, सर्जिकल वा ल्याब सामग्रीको खरिद सूची छ? उपलब्ध ब्रान्ड, स्टक तथा दररेट बुझ्न सफल सर्जिकल हाउसमा तुरुन्त फोन वा ह्वाट्सएप गर्नुहोस्।',
     },
-    relatedCategories: ['surgical-instruments', 'hospital-furniture', 'consumables-ppe'],
+    relatedCategories: ['surgical-instruments', 'hospital-furniture', 'consumables-ppe', 'laboratory'],
   },
   {
     id: 'ot-materials-purchasing-checklist',
@@ -446,26 +466,6 @@ export const ARTICLES: ArticleItem[] = [
           ne: [
             'हातले छुनु नपर्ने खुट्टाले थिचेर खुल्ने (Pedal-operated) रंग-संकेतयुक्त डस्टबिन र बलिया बायोहाजार्ड फोहोरका झोलाहरू प्रयोग गरी फोहोरलाई स्रोतमा नै वर्गीकरण गर्नुहोस्।',
             'प्रयोग गरिएका सुइ, ब्लेड र एम्पुलहरू सुरक्षित रूपमा फाल्नका लागि पन्चर नहुने बलिया प्लास्टिकका सार्प्स कन्टेनर (Sharps Containers) र निडल कटरहरू अनिवार्य राख्नुहोस्।',
-          ],
-        },
-      },
-      {
-        heading: {
-          en: '5. Confirming Manufacturer-Stated Analyzer Compatibility for Lab Reagents (Coral, Tulip, Erba)',
-          ne: '५. प्रयोगशाला रिअजेन्ट खरिद गर्दा एनालाइजर अनुकूलता (Compatibility) यकिन गर्ने तरिका',
-        },
-        content: {
-          en: [
-            'System Packs vs Open-Vial Formats: Verify whether your laboratory clinical analyzer is an open channel system (accepting standard universal vials from Coral, Tulip, or Erba) or a dedicated closed-channel system requiring barcode-matched cartridges (such as dedicated Erba XL series system packs).',
-            'Cold Chain & Storage Specifications: Verify that diagnostic reagents (such as enzymatic glucose kits, lipid reagents, blood grouping antisera, and calibrators) are maintained under strict 2°C to 8°C cold chain conditions during transit and storage. Never freeze liquid-stable reagents unless specifically stated.',
-            'Controls, Calibrators, and Pack Sizes: Ensure matching multi-constituent calibrators (e.g. Erba Multical, Coral standards) and assayed normal/pathological quality control sera are ordered alongside test packs. Verify number of tests per kit based on expected weekly laboratory workload to prevent expiration of opened vials.',
-            'Batch Expiry & Sensitivity: For serology and rapid diagnostic kits (e.g., Tulip Widal, Malaria/Dengue rapid test cards, blood grouping antisera), always verify manufacturer batch lot numbers, sensitivity ratings, and shelf-life validity prior to acceptance.',
-          ],
-          ne: [
-            'ओपन-भाइल र सिस्टम प्याक: आफ्नो प्रयोगशालाको बायोकेमिस्ट्री मेसिन ओपन-सिस्टम हो (जसमा कोरल, ट्युलिप वा एर्बाका सामान्य बोतल प्रयोग गर्न सकिन्छ) वा बारकोड भएको क्लोज्ड सिस्टम प्याक चाहिन्छ, खरिद गर्नुअघि यकिन गर्नुहोस्।',
-            'कोल्ड-चेन (२° देखि ८°C): इन्जाइमेटिक किट, लिपिड रिअजेन्ट, ब्लड ग्रुपिङ एन्टिसिरा र क्यालिब्रेटरहरूलाई २ देखि ८ डिग्री सेल्सियसको सुरक्षित चिसो तापक्रममा राख्नुपर्छ।',
-            'कन्ट्रोल र क्यालिब्रेटर: रिअजेन्टसँगै आवश्यक क्यालिब्रेटर र नर्मल/प्याथोलोजिकल कन्ट्रोल सिरमहरू पनि अर्डर गर्नुहोस्। मासिक टेस्ट संख्या अनुसार उपयुक्त साइजको किट छनोट गर्दा सामान खेर जाँदैन।',
-            'ब्याच म्याद र सेन्सिटिभिटी: सेरोलोजी तथा र्‍यापिड कार्ड (ट्युलिप विडाल, मलेरिया/डेंगु कार्ड, एन्टिसिरा) खरिद गर्दा ब्याच नम्बर र म्याद समाप्त हुने मिति स्पष्ट जाँच गर्नुहोस्।',
           ],
         },
       },
