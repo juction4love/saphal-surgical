@@ -34,6 +34,32 @@ body {
   width: 100%;
 }
 
+/* Keep content clear of iPhone notches without hiding horizontal overflow. */
+.chairman-hero-layout {
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+}
+
+header {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+@media (min-width: 640px) {
+  .chairman-hero-layout {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .chairman-hero-layout {
+    padding-left: max(2rem, env(safe-area-inset-left, 0px));
+    padding-right: max(2rem, env(safe-area-inset-right, 0px));
+  }
+}
+
 /* Ensure Nepali Devanagari typography has ample vertical clearance for matras */
 :lang(ne) {
   line-height: 1.65;
