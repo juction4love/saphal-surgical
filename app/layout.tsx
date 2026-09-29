@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { siteConfig } from '@/config/site';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -38,6 +39,7 @@ export default function RootLayout({
     <html className="scroll-smooth">
       <body className="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
