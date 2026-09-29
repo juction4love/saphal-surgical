@@ -7,7 +7,7 @@ A production-ready, bilingual (नेपाली & English) medical and surgica
 ## 📍 Verified Business Information
 
 - **Business Name:** Saphal Surgical House (सफल सर्जिकल हाउस)
-- **Intended Domain:** [https://www.saphalsurgical.com](https://www.saphalsurgical.com)
+- **Production URL:** [https://saphal-surgical.vercel.app](https://saphal-surgical.vercel.app)
 - **Verified Telephone:** `+977 56-572060` (`tel:+97756572060`)
 - **Physical Address:** Kamal Nagar Marg, Narayangarh, Chitwan, Bagmati Province, Nepal (कमल नगर मार्ग, नारायणगढ, चितवन, बागमती प्रदेश, नेपाल)
 - **Geographic Coordinates:** `27.69473, 84.42161`

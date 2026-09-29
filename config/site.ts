@@ -63,8 +63,8 @@ export const siteConfig: SiteConfig = {
     ne: "सफल सर्जिकल हाउस",
   },
   legalName: "Saphal Surgical House",
-  domain: "www.saphalsurgical.com",
-  baseUrl: "https://www.saphalsurgical.com",
+  domain: "saphal-surgical.vercel.app",
+  baseUrl: "https://saphal-surgical.vercel.app",
   phone: {
     raw: "+97756572060",
     display: "+977 56-572060",
