@@ -8,6 +8,7 @@ import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
 import { BrandsSection } from '@/components/BrandsSection';
 import { BrandSymbol } from '@/components/BrandSymbol';
+import { ChairmanGallery, ChairmanProfile } from '@/components/ChairmanPresentation';
 
 interface PageProps {
   params: Promise<{ lang: string }> | { lang: string };
@@ -66,6 +67,9 @@ export default async function AboutPage({ params }: PageProps) {
           </p>
         </div>
       </div>
+
+      <ChairmanProfile locale={lang} />
+      <ChairmanGallery locale={lang} />
 
       {/* Main Content Grid */}
       <div className="grid lg:grid-cols-12 gap-8 items-start">

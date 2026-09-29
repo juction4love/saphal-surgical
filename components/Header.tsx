@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
   return (
     <>
       {/* Top Utility Bar */}
-      <div className="bg-[#F0FDF4] text-[#17251C] text-xs py-2 border-b border-[#DCFCE7]">
+      <div className="bg-[#F4FBF5] text-[#17251C] text-xs py-2 border-b border-[#E3EDE5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-2">
           <div className="flex items-center space-x-2 text-[11px] sm:text-xs min-w-0">
             <MapPin className="w-3.5 h-3.5 text-[#15803D] shrink-0" />
@@ -58,7 +58,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
           <div className="flex items-center space-x-4 shrink-0">
             <a
               href={`tel:${siteConfig.phone.raw}`}
-              className="hover:text-[#166534] transition-colors inline-flex items-center gap-1.5 font-bold text-[#15803D] text-xs sm:text-sm py-1"
+              className="min-h-[44px] px-1 hover:text-[#166534] transition-colors inline-flex items-center gap-1.5 font-bold text-[#15803D] text-xs sm:text-sm"
               aria-label={`Call ${siteConfig.phone.display}`}
             >
               <Phone className="w-3.5 h-3.5 text-[#15803D]" />
@@ -74,7 +74,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
       {/* Main Sticky Header */}
       <header className="sticky top-0 z-40 bg-white shadow-xs border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-2 py-3">
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-2 py-3 sm:py-3.5">
             {/* Brand Logo */}
             <Link
               href={`/${locale}`}
@@ -98,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`transition-colors py-2 px-1 focus-visible:ring-2 focus-visible:ring-[#15803D] rounded ${
+                  className={`min-h-[44px] inline-flex items-center transition-colors py-2 px-1 focus-visible:ring-2 focus-visible:ring-[#15803D] rounded ${
                     isActive(link.href)
                       ? 'text-[#15803D] font-bold border-b-2 border-[#15803D]'
                       : 'hover:text-[#15803D]'

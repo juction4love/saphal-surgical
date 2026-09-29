@@ -6,6 +6,7 @@ import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
 import { BrandSymbol } from '@/components/BrandSymbol';
+import { ChairmanMessage } from '@/components/ChairmanPresentation';
 
 interface PageProps {
   params: Promise<{ lang: string }> | { lang: string };
@@ -59,8 +60,37 @@ export default async function ContactPage({ params }: PageProps) {
         </span>
       </div>
 
+      <section className="grid gap-2.5 rounded-2xl border border-[#D8EBDD] bg-[#F4FBF5] p-4 sm:grid-cols-3 sm:p-5">
+        <a
+          href={generalWhatsAppUrl || undefined}
+          target={generalWhatsAppUrl ? '_blank' : undefined}
+          rel={generalWhatsAppUrl ? 'noopener noreferrer' : undefined}
+          className="min-h-[52px] rounded-xl bg-[#15803D] px-4 py-3 text-sm font-bold text-white inline-flex items-center justify-center gap-2 shadow-sm hover:bg-[#166534] focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2"
+          aria-label={`WhatsApp ${siteConfig.whatsapp.display}`}
+        >
+          <WhatsAppIcon className="h-4 w-4" />
+          <span>{isNe ? 'WhatsApp सोधपुछ' : 'WhatsApp Enquiry'}</span>
+        </a>
+        <a
+          href={`tel:${siteConfig.phone.primary.raw}`}
+          className="min-h-[52px] rounded-xl border border-[#D8EBDD] bg-white px-4 py-3 text-sm font-bold text-[#166534] inline-flex items-center justify-center gap-2 hover:bg-[#F8FCF8] focus-visible:ring-2 focus-visible:ring-[#15803D]"
+        >
+          <Phone className="h-4 w-4" />
+          <span>{isNe ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}</span>
+        </a>
+        <a
+          href={`tel:${siteConfig.phone.secondary.raw}`}
+          className="min-h-[52px] rounded-xl border border-[#D8EBDD] bg-white px-4 py-3 text-sm font-bold text-[#166534] inline-flex items-center justify-center gap-2 hover:bg-[#F8FCF8] focus-visible:ring-2 focus-visible:ring-[#15803D]"
+        >
+          <Phone className="h-4 w-4" />
+          <span>{isNe ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}</span>
+        </a>
+      </section>
+
+      <ChairmanMessage locale={lang} showPhoto={false} />
+
       {/* Contact Cards Grid (2x2 on desktop) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
         {/* Telephone Card */}
         <div className="bg-white p-5 sm:p-7 rounded-3xl border border-slate-200 shadow-2xs flex flex-col justify-between space-y-4">
           <div className="space-y-3">

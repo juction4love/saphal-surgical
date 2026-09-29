@@ -38,16 +38,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
   const whatsAppUrl = getProductWhatsAppUrl(productName, product.slug, locale, product.brand);
 
   return (
-    <article className="group bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-md hover:border-green-300 transition-all duration-300 flex flex-col justify-between h-full">
+    <article className="group bg-white rounded-2xl border border-[#E3EDE5] shadow-sm hover:shadow-md hover:border-[#86C995] transition-all duration-300 flex flex-col justify-between h-full overflow-hidden">
       <div>
         {/* Product Image Box with object-contain to prevent device cropping */}
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-50 p-2 flex items-center justify-center border-b border-slate-100">
+        <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#F7FAF7] p-2 flex items-center justify-center border-b border-[#EDF2ED]">
           <Image
             src={product.image.url}
             alt={productAlt}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-            className="object-contain p-2 group-hover:scale-102 transition-transform duration-300"
+            className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
             loading={priority ? undefined : 'lazy'}
             priority={priority}
           />
@@ -99,43 +99,38 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
       </div>
 
       {/* Card Footer Actions with 44px minimum touch targets */}
-      <div className="p-4 sm:p-5 pt-0 border-t border-slate-100 mt-3">
-        <div className="pt-3 flex flex-col xs:flex-row items-stretch gap-2">
-          {/* Direct Landline Call Action */}
+      <div className="p-4 sm:p-5 pt-0 border-t border-[#EDF2ED] mt-3">
+        {/* WhatsApp Button (Shown only when confirmed & enabled in config) */}
+        {whatsAppUrl && (
+          <a
+            href={whatsAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 w-full min-h-[46px] py-2.5 px-3 text-xs font-bold text-white bg-[#15803D] hover:bg-[#166534] rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-sm focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2"
+          >
+            <WhatsAppIcon className="w-4 h-4" />
+            <span>{isNe ? 'ह्वाट्सएपमा सोधपुछ' : 'Inquire on WhatsApp'}</span>
+          </a>
+        )}
+
+        <div className="mt-2 grid grid-cols-2 gap-2">
           <a
             href={`tel:${siteConfig.phone.raw}`}
-            className="flex-1 min-h-[44px] py-2.5 px-3 text-xs font-bold text-white bg-[#15803D] hover:bg-[#166534] rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs focus-visible:ring-2 focus-visible:ring-[#15803D]"
+            className="min-h-[44px] py-2 px-2.5 text-xs font-bold text-[#166534] bg-white hover:bg-[#F0FDF4] border border-[#DCE9DE] rounded-xl transition-colors flex items-center justify-center gap-1.5 focus-visible:ring-2 focus-visible:ring-[#15803D]"
             aria-label={`${enquireActionLabel} for ${productName} on ${siteConfig.phone.display}`}
           >
-            <Phone className="w-3.5 h-3.5 text-white" />
+            <Phone className="w-3.5 h-3.5 shrink-0" />
             <span>{enquireActionLabel}</span>
           </a>
-
-          {/* View Details Link */}
           <Link
             href={`/${locale}/products/${product.slug}`}
-            className="min-h-[44px] py-2.5 px-3.5 text-xs font-bold text-[#15803D] hover:text-[#166534] bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCFCE7] rounded-xl transition-colors flex items-center justify-center gap-1 focus-visible:ring-2 focus-visible:ring-[#15803D]"
+            className="min-h-[44px] py-2 px-2.5 text-xs font-bold text-[#166534] bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCE9DE] rounded-xl transition-colors flex items-center justify-center gap-1 focus-visible:ring-2 focus-visible:ring-[#15803D]"
             aria-label={`${detailLabel} - ${productName}`}
           >
             <span>{detailLabel}</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            <ArrowRight className="w-3.5 h-3.5 shrink-0" />
           </Link>
         </div>
-
-        {/* WhatsApp Button (Shown only when confirmed & enabled in config) */}
-        {whatsAppUrl && (
-          <div className="mt-2">
-            <a
-              href={whatsAppUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full min-h-[44px] py-2 px-3 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs"
-            >
-              <WhatsAppIcon className="w-3.5 h-3.5" />
-              <span>{isNe ? 'ह्वाट्सएपमा सोधपुछ' : 'Inquire on WhatsApp'}</span>
-            </a>
-          </div>
-        )}
       </div>
     </article>
   );

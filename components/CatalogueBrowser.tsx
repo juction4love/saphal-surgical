@@ -17,16 +17,19 @@ interface CatalogueBrowserProps {
 function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get('category');
+  const searchParam = searchParams.get('search') || '';
 
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(searchParam);
   const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam || 'all');
   const isNe = locale === 'ne';
 
   useEffect(() => {
-    if (categoryParam) {
-      setSelectedCategory(categoryParam);
-    }
+    setSelectedCategory(categoryParam || 'all');
   }, [categoryParam]);
+
+  useEffect(() => {
+    setSearchQuery(searchParam);
+  }, [searchParam]);
 
   // Filter products based on search term (in both languages and tags) and category
   const filteredProducts = useMemo(() => {
@@ -66,7 +69,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
   return (
     <div className="space-y-6 sm:space-y-8">
       {/* Search & Category Filter Controls */}
-      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4 sm:space-y-5">
+      <div className="bg-[#F8FCF8] p-4 sm:p-6 rounded-2xl border border-[#E3EDE5] shadow-sm space-y-4 sm:space-y-5">
         {/* Search Bar - text-base (16px) prevents iOS Safari auto-zooming */}
         <div className="relative">
           <label htmlFor="catalogue-search-input" className="sr-only">
@@ -82,8 +85,8 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={
               isNe
-                ? 'सामग्री, उपकरण वा श्रेणी खोज्नुहोस् (उदा: अक्सिजन, सीबीसी, पञ्जा)...'
-                : 'Search products by name or keyword (e.g. oxygen, centrifuge, gloves)...'
+                ? 'सामग्री, ब्रान्ड वा शब्द खोज्नुहोस्...'
+                : 'Search supplies, brands, or keywords...'
             }
             className="w-full min-h-[48px] pl-11 pr-12 py-3 rounded-xl border border-slate-300 text-base focus:outline-none focus:ring-2 focus:ring-[#15803D] focus:border-[#15803D] transition-all bg-slate-50/50"
           />
@@ -107,15 +110,15 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
           </div>
 
           <div
-            className="flex flex-wrap gap-2 pt-1"
+            className="-mx-4 flex flex-nowrap gap-2 overflow-x-auto px-4 pt-1 pb-2 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0"
             role="group"
-            aria-label="Product Category Filters"
+            aria-label={isNe ? 'सामग्री श्रेणी फिल्टर' : 'Product category filters'}
           >
             {/* All Category Button */}
             <button
               type="button"
               onClick={() => setSelectedCategory('all')}
-              className={`min-h-[44px] px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center justify-center ${
+              className={`min-h-[44px] shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2 ${
                 selectedCategory === 'all'
                   ? 'bg-[#15803D] text-white shadow-xs font-bold'
                   : 'bg-[#F0FDF4] text-[#15803D] border border-[#DCFCE7] hover:bg-[#DCFCE7]'
@@ -135,7 +138,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
                   key={cat.id}
                   type="button"
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center justify-center ${
+                  className={`min-h-[44px] shrink-0 whitespace-nowrap px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2 ${
                     isSelected
                       ? 'bg-[#15803D] text-white shadow-xs font-bold'
                       : 'bg-[#F0FDF4] text-[#15803D] border border-[#DCFCE7] hover:bg-[#DCFCE7]'
@@ -194,7 +197,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
         </div>
       ) : (
         /* Empty Search / Filter State */
-        <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-12 text-center space-y-4 max-w-lg mx-auto shadow-xs">
+        <div className="bg-white rounded-2xl border border-[#E3EDE5] p-6 sm:p-10 text-center space-y-4 max-w-lg mx-auto shadow-sm">
           <div className="w-14 h-14 rounded-full bg-green-50 text-[#15803D] flex items-center justify-center mx-auto">
             <AlertCircle className="w-7 h-7" />
           </div>

@@ -34,7 +34,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLocal
     >
       <Link
         href={getDestinationPath('ne')}
-        className={`min-h-[38px] sm:min-h-[36px] min-w-[54px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-all ${
+        className={`min-h-[44px] min-w-[58px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-colors ${
           currentLocale === 'ne'
             ? 'bg-[#15803D] text-white font-bold shadow-xs'
             : 'text-slate-700 hover:text-green-800 hover:bg-green-50'
@@ -47,7 +47,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLocal
       <span className="text-green-200 px-1 font-light" aria-hidden="true">|</span>
       <Link
         href={getDestinationPath('en')}
-        className={`min-h-[38px] sm:min-h-[36px] min-w-[54px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-all ${
+        className={`min-h-[44px] min-w-[58px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-colors ${
           currentLocale === 'en'
             ? 'bg-[#15803D] text-white font-bold shadow-xs'
             : 'text-slate-700 hover:text-green-800 hover:bg-green-50'

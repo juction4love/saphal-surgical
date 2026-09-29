@@ -197,8 +197,8 @@ export const translations: Record<Locale, TranslationDictionary> = {
     },
     home: {
       badge: 'सर्जिकल, अस्पताल, ओटी तथा ल्याब सामग्री • नारायणगढ, चितवन',
-      heroHeading: 'सर्जिकल, अस्पताल, ओटी तथा सरसफाइ सामग्रीको भरपर्दो आपूर्ति',
-      heroSubtitle: 'कमल नगर मार्ग, नारायणगढ, चितवनमा अवस्थित सफल सर्जिकल हाउस। शल्यक्रिया औजार, अस्पताल आपूर्ति, ओटी सामग्री, ल्याब उपकरण र सरसफाइ उत्पादन सम्बन्धी सोधपुछका लागि हामीलाई सम्पर्क गर्नुहोस्।',
+      heroHeading: 'सर्जिकल, अस्पताल, ओटी, ल्याब तथा सरसफाइ सामग्री',
+      heroSubtitle: 'नारायणगढबाट सामग्रीको उपलब्धता र मूल्यबारे सिधै सोधपुछ गर्नुहोस्।',
       primaryCta: 'अहिले फोन गर्नुहोस् (०५६-५९६०६०)',
       secondaryCta: 'ह्वाट्सएपमा च्याट गर्नुहोस्',
       aboutSectionHeading: 'सफल सर्जिकल हाउसको परिचय',
@@ -351,8 +351,8 @@ export const translations: Record<Locale, TranslationDictionary> = {
     },
     home: {
       badge: 'Surgical, Hospital, OT & Lab Supplies • Narayangarh, Chitwan',
-      heroHeading: 'Reliable Surgical, Hospital, OT & Cleaning Supplies',
-      heroSubtitle: 'Located at Kamal Nagar Marg, Narayangarh, Chitwan. Contact Saphal Surgical House directly for enquiries regarding surgical instruments, hospital supplies, OT essentials, laboratory equipment, and environmental hygiene products.',
+      heroHeading: 'Surgical, hospital, OT, laboratory & cleaning supplies',
+      heroSubtitle: 'Ask us directly about supply availability and pricing in Narayangarh, Chitwan.',
       primaryCta: 'Call Now (056-596060)',
       secondaryCta: 'Chat on WhatsApp',
       aboutSectionHeading: 'About Saphal Surgical House',

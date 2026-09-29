@@ -19,11 +19,11 @@ export const StickyContactBar: React.FC<StickyContactBarProps> = ({ locale }) =>
     <>
       {/* Mobile & Tablet Sticky Bottom Bar */}
       <div
-        className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-[#DCFCE7] shadow-lg pb-safe transition-all"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-[#DCFCE7] shadow-[0_-6px_24px_rgba(21,128,61,0.08)] pb-safe-bar"
         role="region"
         aria-label={isNe ? 'द्रुत सम्पर्क पट्टी' : 'Quick Contact Bar'}
       >
-        <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-2.5">
+        <div className="max-w-7xl mx-auto px-4 pt-2 pb-2 flex items-center gap-2.5">
           {/* Direct Phone Call Button */}
           <a
             href={`tel:${siteConfig.phone.raw}`}

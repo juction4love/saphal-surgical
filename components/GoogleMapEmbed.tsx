@@ -12,7 +12,7 @@ export const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({ locale, classNam
   const isNe = locale === 'ne';
 
   return (
-    <div className={`bg-white rounded-3xl border border-[#DCFCE7] overflow-hidden shadow-2xs flex flex-col ${className}`}>
+    <div className={`bg-white rounded-2xl border border-[#DCE9DE] overflow-hidden shadow-sm flex flex-col ${className}`}>
       <div className="p-4 sm:p-5 bg-[#F0FDF4] border-b border-[#DCFCE7] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-start sm:items-center gap-2 text-xs sm:text-sm font-semibold text-[#17251C] min-w-0">
           <MapPin className="w-4 h-4 text-[#15803D] shrink-0 mt-0.5 sm:mt-0" />

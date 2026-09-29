@@ -59,7 +59,7 @@ export default async function ProductsPage({ params }: PageProps) {
         </div>
         <a
           href={`tel:${siteConfig.phone.raw}`}
-          className="whitespace-nowrap px-4 py-2.5 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white font-bold text-xs flex items-center gap-1.5 transition-colors shadow-2xs shrink-0"
+          className="min-h-[44px] whitespace-nowrap px-4 py-2.5 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white font-bold text-xs flex items-center gap-1.5 transition-colors shadow-2xs shrink-0"
         >
           <Phone className="w-3.5 h-3.5 text-white" />
           <span>{t.common.inquireByPhone}</span>

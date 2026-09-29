@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +16,7 @@
 }
 
 html {
-  font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Manrope', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -36,7 +36,14 @@ body {
 
 /* Ensure Nepali Devanagari typography has ample vertical clearance for matras */
 :lang(ne) {
-  line-height: 1.75;
+  line-height: 1.65;
+}
+
+h1:lang(ne),
+h2:lang(ne),
+h3:lang(ne),
+h4:lang(ne) {
+  line-height: 1.4;
 }
 
 /* Prevent unwanted horizontal overflow globally */
@@ -83,16 +90,17 @@ select:focus-visible {
   padding-bottom: max(1rem, env(safe-area-inset-bottom, 1rem));
 }
 
+.pb-safe-bar {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0.5rem));
+}
+
 .pt-safe {
   padding-top: max(0.5rem, env(safe-area-inset-top, 0.5rem));
 }
 
 /* Bright, clean subtle medical background */
 .hero-clean-bg {
-  background-color: #ffffff;
-  background-image: 
-    radial-gradient(at 0% 0%, rgba(240, 253, 244, 0.9) 0px, transparent 60%),
-    radial-gradient(at 100% 100%, rgba(220, 252, 231, 0.5) 0px, transparent 60%);
+  background-color: #f5fbf6;
 }
 
 .clean-card-hover {

@@ -27,7 +27,7 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
     <>
       <LocalBusinessSchema lang={lang} />
       <Header locale={lang} />
-      <main className="flex-1 pb-20 md:pb-0">{children}</main>
+      <main className="flex-1 pb-24 md:pb-0">{children}</main>
       <Footer locale={lang} />
       <StickyContactBar locale={lang} />
     </>

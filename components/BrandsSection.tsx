@@ -118,7 +118,7 @@ export const BrandsSection: React.FC<BrandsSectionProps> = ({ locale, showAllLin
                 )}
                 <Link
                   href={`/${locale}/products?search=${encodeURIComponent(brand.name)}`}
-                  className="w-full min-h-[40px] py-2 px-3 rounded-xl bg-[#F0FDF4] hover:bg-[#DCFCE7] text-[#15803D] border border-[#DCFCE7] font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
+                  className="w-full min-h-[44px] py-2 px-3 rounded-xl bg-[#F0FDF4] hover:bg-[#DCFCE7] text-[#15803D] border border-[#DCFCE7] font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
                 >
                   <span>{isNe ? 'सम्बन्धित सामग्रीहरू हेर्नुहोस्' : 'View Matching Items'}</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#15803D]" />

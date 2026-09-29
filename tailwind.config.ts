@@ -49,12 +49,11 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          'Inter',
+          'Manrope',
           'Noto Sans Devanagari',
           '-apple-system',
           'BlinkMacSystemFont',
           '"Segoe UI"',
-          'Roboto',
           'sans-serif',
         ],
         heading: [
