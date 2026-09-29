@@ -150,12 +150,12 @@ export const ARTICLES: ArticleItem[] = [
         },
         content: {
           en: [
-            'Syringes: Specify the exact category and barrel volume—dedicated Insulin Syringes calibrated in insulin units (U-40 or U-100 with ultra-fine integrated needles), Tuberculin Syringes (1ml micro-volume with 0.01ml precision metric graduations for Mantoux TB screening/allergy dosing), or General Hypodermic Syringes (2ml, 3ml, 5ml, 10ml, 20ml, 50ml/60ml in Luer slip or Luer lock fittings with/without needles).',
+            'Syringes: Specify the required capacity, calibration, and intended use—Insulin Syringes (confirming U-40 or U-100 unit calibration and needle attachment from the manufacturer’s label), Tuberculin Syringes (1ml capacity for diagnostic skin testing or small-volume measurement; verify scale graduations and needle specifications), or General Hypodermic Syringes (2ml, 3ml, 5ml, 10ml, 20ml, 50ml/60ml in Luer slip or Luer lock fittings with or without needles). Always confirm manufacturer model parameters prior to ordering.',
             'IV Infusion Sets: Clarify whether vented (with bacterial air inlet for glass/rigid bottles) or non-vented (for collapsible plastic bags) are needed, plus the required drop rate (standard adult 20 drops/ml vs pediatric micro-drip 60 drops/ml measured burette sets) and blood transfusion sets with clot filters.',
             'IV Cannulas: State the specific ISO color-coded gauge and length (14G/16G for emergency resuscitation, 18G/20G for routine infusions and surgery, 22G for delicate veins, 24G/26G for pediatric care) and confirm port/wing configuration (with injection port and wings vs straight).',
           ],
           ne: [
-            'सिरिन्ज: सही किसिम र क्षमता खुलाउनुहोस्—इन्सुलिन सिरिन्ज (U-40 वा U-100 युनिट अंकित र मसिनो सुइ जडित), ट्युबरकुलिन सिरिन्ज (१ मिलि क्षमता र ०.०१ मिलि सूक्ष्म मापन अंकित टिबी मन्टु टेस्टका लागि), वा नियमित डिस्पोजेबल सिरिन्जहरू (२ मिलि, ३ मिलि, ५ मिलि, १० मिलि, २० मिलि, ५० मिलि लुअर स्लिप वा लुअर लक)।',
+            'सिरिन्ज: आवश्यक क्षमता, क्यालिब्रेसन र प्रयोगको उद्देश्य खुलाउनुहोस्—इन्सुलिन सिरिन्ज (उत्पादकको लेबल हेरी U-40 वा U-100 क्यालिब्रेसन र सुइको प्रकार यकिन गर्नुहोस्), ट्युबरकुलिन सिरिन्ज (१ मिलि क्षमता, डायग्नोस्टिक छाला परीक्षण तथा सानो परिमाणका लागि मापन स्केल र सुइको विवरण यकिन गर्नुहोस्), वा नियमित डिस्पोजेबल सिरिन्जहरू (२ मिलि, ३ मिलि, ५ मिलि, १० मिलि, २० मिलि, ५० मिलि लुअर स्लिप वा लुअर लक)। अर्डर गर्नुअघि सधैं उत्पादकको प्याकेजिङबाट विवरण पुष्टि गर्नुहोस्।',
             'आईभी सेट: एयर भेन्ट भएको वा नभएको, ड्रप फ्याक्टर (वयस्कका लागि २० थोपा/मिलि वा बालबालिकाका लागि ६० थोपा/मिलि ब्युरेट सेट) र रगत चढाउने ब्लड सेटको माग स्पष्ट खुलाउनुहोस्।',
             'आईभी क्यानुला: अन्तर्राष्ट्रिय रंग कोड अनुसारको गेज (१४G, १६G, १८G, २०G, २२G, २४G, २६G) र औषधि दिन मिल्ने इन्जेक्सन पोर्ट तथा पखेटा (Wings) भएको/नभएको विवरण पठाउनुहोस्।',
           ],
