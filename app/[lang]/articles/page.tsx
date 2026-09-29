@@ -127,8 +127,8 @@ export default async function ArticlesIndexPage({ params }: PageProps) {
         </div>
         <p className="leading-relaxed text-[#475569]">
           {isNe
-            ? 'यी लेखहरू स्वास्थ्य संस्थाहरूलाई खरिद योजना र गुणस्तर मूल्यांकनमा सहजीकरण गर्न तयार पारिएका हुन्। वास्तविक मौज्दात, उपलब्ध ब्रान्ड, प्याकिङ र दररेटका लागि सफल सर्जिकल हाउसको आधिकारिक फोन +९७७ ५६-५७२०६० वा WhatsApp +९७७ ९८५५०५५०६० मा सिधै सम्पर्क गर्नुहोस्।'
-            : 'These guides are prepared to support healthcare facilities in procurement planning and requirement verification. For live stock, specific brands, packaging units, and quotations, contact Saphal Surgical House directly via landline +977 56-572060 or WhatsApp +977 9855055060.'}
+            ? 'यी लेखहरू स्वास्थ्य संस्थाहरूलाई खरिद योजना र गुणस्तर मूल्यांकनमा सहजीकरण गर्न तयार पारिएका हुन्। वास्तविक मौज्दात, उपलब्ध ब्रान्ड, प्याकिङ र दररेटका लागि सफल सर्जिकल हाउसको आधिकारिक फोन ०५६-५९६०६० वा ०५६-५९६१२० वा WhatsApp +९७७ ९८५५०५५०६० मा सिधै सम्पर्क गर्नुहोस्।'
+            : 'These guides are prepared to support healthcare facilities in procurement planning and requirement verification. For live stock, specific brands, packaging units, and quotations, contact Saphal Surgical House directly via landlines 056-596060 / 056-596120 or WhatsApp +977 9855055060.'}
         </p>
       </div>
     </div>

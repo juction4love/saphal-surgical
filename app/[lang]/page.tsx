@@ -93,7 +93,7 @@ export default async function HomePage({ params }: PageProps) {
                   className="min-h-[48px] px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-[#17251C] border border-slate-200 font-heading font-semibold text-center transition-all flex items-center justify-center gap-2 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-[#15803D]"
                 >
                   <Phone className="w-4 h-4 text-[#15803D]" />
-                  <span>{siteConfig.phone.display}</span>
+                  <span>{isNe ? siteConfig.phone.displayNe : siteConfig.phone.display}</span>
                 </a>
               </div>
 
@@ -128,12 +128,21 @@ export default async function HomePage({ params }: PageProps) {
                     <Phone className="w-4 h-4 text-[#15803D] shrink-0 mt-1" />
                     <div>
                       <span className="text-[#475569] text-xs block">{t.common.phoneLabel}</span>
-                      <a
-                        href={`tel:${siteConfig.phone.raw}`}
-                        className="text-sm sm:text-base font-bold text-[#17251C] hover:text-[#15803D] transition-colors block mt-0.5"
-                      >
-                        {siteConfig.phone.display}
-                      </a>
+                      <div className="flex flex-wrap items-center gap-2 mt-0.5">
+                        <a
+                          href={`tel:${siteConfig.phone.primary.raw}`}
+                          className="text-sm sm:text-base font-bold text-[#17251C] hover:text-[#15803D] transition-colors"
+                        >
+                          {isNe ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}
+                        </a>
+                        <span className="text-slate-400">/</span>
+                        <a
+                          href={`tel:${siteConfig.phone.secondary.raw}`}
+                          className="text-sm sm:text-base font-bold text-[#17251C] hover:text-[#15803D] transition-colors"
+                        >
+                          {isNe ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -212,7 +221,7 @@ export default async function HomePage({ params }: PageProps) {
                 className="min-h-[44px] px-5 py-2.5 rounded-xl bg-white hover:bg-slate-50 border border-[#DCFCE7] text-[#17251C] font-bold text-xs sm:text-sm inline-flex items-center gap-2 transition-all"
               >
                 <Phone className="w-4 h-4 text-[#15803D]" />
-                <span>{siteConfig.phone.display}</span>
+                <span>{isNe ? siteConfig.phone.displayNe : siteConfig.phone.display}</span>
               </a>
             </div>
           </div>
@@ -423,5 +432,4 @@ export default async function HomePage({ params }: PageProps) {
     </div>
   );
 }
-
 

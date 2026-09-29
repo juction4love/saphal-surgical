@@ -137,7 +137,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
     siteTitle: 'सफल सर्जिकल हाउस',
     siteTagline: 'सर्जिकल, अस्पताल, ओटी तथा सरसफाइ सामग्री आपूर्तिकर्ता',
     prominentIntro:
-      'सफल सर्जिकल हाउसमा सर्जिकल उपकरण, अस्पताल तथा अपरेशन थिएटर (OT) मा प्रयोग हुने सामग्री, प्रयोगशालाका उपकरण र सरसफाइका सामानको विस्तृत दायराबारे जानकारी तथा खरिद सोधपुछ गर्न सक्नुहुन्छ। हामीकहाँ Coral, Tulip र Erba का प्रयोगशाला सामग्री तथा टेस्ट किटहरू, दैनिक प्रयोग हुने मेडिकल उपभोग्य वस्तुहरू (सिरिन्ज, आईभी सेट, क्यानुला), विभिन्न प्रकारका सुचर धागो र ENT (नाक, कान, घाँटी) औजारहरू उपलब्ध छन्। आफ्नो अस्पताल, क्लिनिक, प्रयोगशाला वा घरायसी हेरचाहका लागि आवश्यक सामानको सूची हामीलाई पठाउनुहोस्। उपलब्धता, ब्रान्ड, साइज, प्याकिङ र मूल्यबारे फोन (+९७७ ५६-५७२०६०) वा WhatsApp (+९७७ ९८५५०५५०६०) मार्फत बुझ्नुहोस्।',
+      'सफल सर्जिकल हाउसमा सर्जिकल उपकरण, अस्पताल तथा अपरेशन थिएटर (OT) मा प्रयोग हुने सामग्री, प्रयोगशालाका उपकरण र सरसफाइका सामानको विस्तृत दायराबारे जानकारी तथा खरिद सोधपुछ गर्न सक्नुहुन्छ। हामीकहाँ Coral, Tulip र Erba का प्रयोगशाला सामग्री तथा टेस्ट किटहरू, दैनिक प्रयोग हुने मेडिकल उपभोग्य वस्तुहरू (सिरिन्ज, आईभी सेट, क्यानुला), विभिन्न प्रकारका सुचर धागो र ENT (नाक, कान, घाँटी) औजारहरू उपलब्ध छन्। आफ्नो अस्पताल, क्लिनिक, प्रयोगशाला वा घरायसी हेरचाहका लागि आवश्यक सामानको सूची हामीलाई पठाउनुहोस्। उपलब्धता, ब्रान्ड, साइज, प्याकिङ र मूल्यबारे फोन (०५६-५९६०६० / ०५६-५९६१२०) वा WhatsApp (+९७७ ९८५५०५५०६०) मार्फत बुझ्नुहोस्।',
     brands: {
       sectionHeading: 'हामीले आपूर्ति गर्ने प्रमुख ब्रान्डहरू (Brands We Carry)',
       sectionSubtitle: 'प्रयोगशाला रिअजेन्ट, डायग्नोस्टिक टेस्ट किट तथा स्वास्थ्य सेवाका प्रमाणित ब्रान्डहरू',
@@ -149,7 +149,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
     },
     meta: {
       homeTitle: 'सफल सर्जिकल हाउस | सर्जिकल, अस्पताल, ओटी तथा ल्याब सामग्री, नारायणगढ',
-      homeDesc: 'सफल सर्जिकल हाउस, कमल नगर मार्ग, नारायणगढ, चितवन। सर्जिकल औजार, अस्पताल/ओटी आपूर्ति, ल्याब उपकरण र सरसफाइ सामग्रीको सोधपुछका लागि सम्पर्क: +९७७ ५६-५७२०६० / WhatsApp: +९७७ ९८५५०५५०६०।',
+      homeDesc: 'सफल सर्जिकल हाउस, कमल नगर मार्ग, नारायणगढ, चितवन। सर्जिकल औजार, अस्पताल/ओटी आपूर्ति, ल्याब उपकरण र सरसफाइ सामग्रीको सोधपुछका लागि सम्पर्क: ०५६-५९६०६०, ०५६-५९६१२० / WhatsApp: +९७७ ९८५५०५५०६०।',
       aboutTitle: 'हाम्रो बारेमा | सफल सर्जिकल हाउस, नारायणगढ, चितवन',
       aboutDesc: 'सफल सर्जिकल हाउसको परिचय र स्थान। कमल नगर मार्ग, नारायणगढ, चितवनमा अवस्थित सर्जिकल, अस्पताल तथा ल्याब सामग्री आपूर्तिकर्ता।',
       productsTitle: 'सामग्री तथा उपकरण क्याटलग | सफल सर्जिकल हाउस',
@@ -157,7 +157,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       articlesTitle: 'स्वास्थ्य सामग्री खरिद मार्गदर्शन तथा लेखहरू | सफल सर्जिकल हाउस',
       articlesDesc: 'अस्पताल, ओटी, सरसफाइ तथा सर्जिकल सामग्री खरिद योजना र चेकलिस्ट सम्बन्धी उपयोगी लेखहरू।',
       contactTitle: 'सम्पर्क तथा नक्सा | सफल सर्जिकल हाउस, नारायणगढ',
-      contactDesc: 'सफल सर्जिकल हाउसलाई +९७७ ५६-५७२०६० मा फोन गर्नुहोस् वा WhatsApp +९७७ ९८५५०५५०६० मार्फत सिधै च्याट गर्नुहोस्। कमल नगर मार्ग, नारायणगढ, चितवन।',
+      contactDesc: 'सफल सर्जिकल हाउसलाई ०५६-५९६०६० वा ०५६-५९६१२० मा फोन गर्नुहोस् वा WhatsApp +९७७ ९८५५०५५०६० मार्फत सिधै च्याट गर्नुहोस्। कमल नगर मार्ग, नारायणगढ, चितवन।',
     },
     nav: {
       home: 'गृहपृष्ठ',
@@ -181,7 +181,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       inquireByPhone: 'फोनबाट उपलब्धता बुझ्नुहोस्',
       inquireByWhatsApp: 'ह्वाट्सएपमा सोधपुछ गर्नुहोस्',
       phoneNote: 'सामग्री मौज्दात, ब्रान्ड र मूल्य पुष्टि गर्न सिधै फोन वा WhatsApp गर्नुहोस्।',
-      availabilityDisclaimer: 'सुझाव: यी प्रस्तावित सोधपुछ श्रेणीहरू हुन्। कुनै पनि सामानको मौज्दात, प्राविधिक विवरण र मूल्यको पुष्टि फोन (+९७७ ५६-५७२०६०) वा WhatsApp (+९७७ ९८५५०५५०६०) मार्फत मात्र गरिन्छ।',
+      availabilityDisclaimer: 'सुझाव: यी प्रस्तावित सोधपुछ श्रेणीहरू हुन्। कुनै पनि सामानको मौज्दात, प्राविधिक विवरण र मूल्यको पुष्टि फोन (०५६-५९६०६० / ०५६-५९६१२०) वा WhatsApp (+९७७ ९८५५०५५०६०) मार्फत मात्र गरिन्छ।',
       notHospitalNotice: 'जानकारी: सफल सर्जिकल हाउस शल्यक्रिया, अस्पताल, ओटी तथा सरसफाइ सामग्री बिक्री गर्ने व्यवसाय हो। हामी कुनै पनि अस्पताल सेवा, डाक्टर परामर्श वा उपचार सेवा प्रदान गर्दैनौं।',
       proposedCategoryNote: 'प्रस्तावित सोधपुछ श्रेणी',
       allRightsReserved: 'सर्वाधिकार सुरक्षित।',
@@ -199,7 +199,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       badge: 'सर्जिकल, अस्पताल, ओटी तथा ल्याब सामग्री • नारायणगढ, चितवन',
       heroHeading: 'सर्जिकल, अस्पताल, ओटी तथा सरसफाइ सामग्रीको भरपर्दो आपूर्ति',
       heroSubtitle: 'कमल नगर मार्ग, नारायणगढ, चितवनमा अवस्थित सफल सर्जिकल हाउस। शल्यक्रिया औजार, अस्पताल आपूर्ति, ओटी सामग्री, ल्याब उपकरण र सरसफाइ उत्पादन सम्बन्धी सोधपुछका लागि हामीलाई सम्पर्क गर्नुहोस्।',
-      primaryCta: 'अहिले फोन गर्नुहोस् (+९७७ ५६-५७२०६०)',
+      primaryCta: 'अहिले फोन गर्नुहोस् (०५६-५९६०६०)',
       secondaryCta: 'ह्वाट्सएपमा च्याट गर्नुहोस्',
       aboutSectionHeading: 'सफल सर्जिकल हाउसको परिचय',
       aboutSectionSnippet: 'सफल सर्जिकल हाउस चितवनको मुख्य व्यापारिक केन्द्र नारायणगढ (कमल नगर मार्ग) मा अवस्थित सर्जिकल, अस्पताल, ओटी, ल्याब तथा सरसफाइ सामग्रीको आपूर्ति गर्ने संस्था हो।',
@@ -229,7 +229,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
     products: {
       pageHeading: 'सामग्री तथा उपकरण क्याटलग',
       pageSubtitle: 'प्रस्तावित सामग्री श्रेणीहरू — उपलब्धता र मूल्यको लागि कृपया फोन वा WhatsApp गर्नुहोस्',
-      disclaimerBanner: 'महत्त्वपूर्ण जानकारी: तल दिइएका श्रेणीहरू केवल सोधपुछको सहजताका लागि प्रस्तावित गरिएका हुन्। कुनै पनि सामानको वास्तविक मौज्दात, ब्रान्ड, स्पेसिफिकेसन तथा मूल्यको पुष्टि गर्न कृपया हाम्रो फोन +९७७ ५६-५७२०६० वा WhatsApp +९७७ ९८५५०५५०६० मा सम्पर्क गर्नुहोस्।',
+      disclaimerBanner: 'महत्त्वपूर्ण जानकारी: तल दिइएका श्रेणीहरू केवल सोधपुछको सहजताका लागि प्रस्तावित गरिएका हुन्। कुनै पनि सामानको वास्तविक मौज्दात, ब्रान्ड, स्पेसिफिकेसन तथा मूल्यको पुष्टि गर्न कृपया हाम्रो फोन ०५६-५९६०६० / ०५६-५९६१२० वा WhatsApp +९७७ ९८५५०५५०६० मा सम्पर्क गर्नुहोस्।',
       categories: [
         {
           id: 'surgical-instruments',
@@ -283,7 +283,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       facebookCardDesc: 'हाम्रो आधिकारिक फेसबुक पेजमा जोडिनुहोस्।',
       mapSectionTitle: 'गुगल म्याप्समा हाम्रो स्थान',
       mapSectionDesc: 'निर्देशांक: २७.६९४७३, ८४.४२१६१ (कमल नगर मार्ग, नारायणगढ)',
-      directEnquiryNotice: 'कुनै पनि जानकारी, दररेट वा मौज्दात सोधपुछका लागि हाम्रो आधिकारिक फोन नम्बर +९७७ ५६-५७२०६० वा WhatsApp +९७७ ९८५५०५५०६० मा सम्पर्क गर्नुहोला।',
+      directEnquiryNotice: 'कुनै पनि जानकारी, दररेट वा मौज्दात सोधपुछका लागि हाम्रो आधिकारिक फोन नम्बर ०५६-५९६०६० / ०५६-५९६१२० वा WhatsApp +९७७ ९८५५०५५०६० मा सम्पर्क गर्नुहोला।',
     },
   },
   en: {
@@ -291,7 +291,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
     siteTitle: 'Saphal Surgical House',
     siteTagline: 'Surgical, Hospital, OT & Cleaning Supplies Supplier',
     prominentIntro:
-      'Saphal Surgical House supplies a broad range of surgical instruments, hospital and operating-theatre essentials, laboratory equipment and cleaning materials. Customers can enquire about laboratory products from Coral, Tulip and Erba, everyday medical consumables (syringes, IV sets, cannulas), sutures, and ENT instruments for hospitals, clinics, laboratories and operating theatres. Send us your requirements for your hospital, clinic, laboratory or home-care needs. Contact us by phone (+977 56-572060) or WhatsApp (+977 9855055060) to confirm availability, brands, sizes, packaging and prices.',
+      'Saphal Surgical House supplies a broad range of surgical instruments, hospital and operating-theatre essentials, laboratory equipment and cleaning materials. Customers can enquire about laboratory products from Coral, Tulip and Erba, everyday medical consumables (syringes, IV sets, cannulas), sutures, and ENT instruments for hospitals, clinics, laboratories and operating theatres. Send us your requirements for your hospital, clinic, laboratory or home-care needs. Contact us by phone (056-596060 / 056-596120) or WhatsApp (+977 9855055060) to confirm availability, brands, sizes, packaging and prices.',
     brands: {
       sectionHeading: 'Brands We Carry',
       sectionSubtitle: 'Clinical laboratory reagents, diagnostic kits, and verified medical healthcare brands',
@@ -303,7 +303,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
     },
     meta: {
       homeTitle: 'Saphal Surgical House | Surgical, Hospital, OT & Lab Supplies in Chitwan',
-      homeDesc: 'Saphal Surgical House, Kamal Nagar Marg, Narayangarh, Chitwan. Enquire for surgical instruments, OT essentials, hospital supplies, lab equipment and cleaning materials. Phone: +977 56-572060 / WhatsApp: +977 9855055060.',
+      homeDesc: 'Saphal Surgical House, Kamal Nagar Marg, Narayangarh, Chitwan. Enquire for surgical instruments, OT essentials, hospital supplies, lab equipment and cleaning materials. Phone: 056-596060, 056-596120 / WhatsApp: +977 9855055060.',
       aboutTitle: 'About Us | Saphal Surgical House, Narayangarh, Chitwan',
       aboutDesc: 'Learn about Saphal Surgical House at Kamal Nagar Marg, Narayangarh, Chitwan, Nepal. Surgical, hospital, and laboratory supplies business.',
       productsTitle: 'Product Catalogue & Enquiries | Saphal Surgical House',
@@ -311,7 +311,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       articlesTitle: 'Healthcare Procurement Guides & Articles | Saphal Surgical House',
       articlesDesc: 'Practical purchasing checklists, OT equipment guides, hospital cleaning product selection, and requirement planning.',
       contactTitle: 'Contact & Directions | Saphal Surgical House, Narayangarh',
-      contactDesc: 'Call Saphal Surgical House at +977 56-572060 or WhatsApp +977 9855055060. Visit Kamal Nagar Marg, Narayangarh, Chitwan, Nepal.',
+      contactDesc: 'Call Saphal Surgical House at 056-596060 / 056-596120 or WhatsApp +977 9855055060. Visit Kamal Nagar Marg, Narayangarh, Chitwan, Nepal.',
     },
     nav: {
       home: 'Home',
@@ -335,7 +335,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       inquireByPhone: 'Inquire by Phone',
       inquireByWhatsApp: 'Inquire on WhatsApp',
       phoneNote: 'Call or WhatsApp directly to confirm live stock, available brands, and pricing.',
-      availabilityDisclaimer: 'Notice: These represent proposed supply categories. Please confirm item availability, current specifications, and pricing directly by calling +977 56-572060 or via WhatsApp +977 9855055060.',
+      availabilityDisclaimer: 'Notice: These represent proposed supply categories. Please confirm item availability, current specifications, and pricing directly by calling 056-596060 / 056-596120 or via WhatsApp +977 9855055060.',
       notHospitalNotice: 'Clarification: Saphal Surgical House is a surgical, hospital, and medical supplies business. We do not provide hospital services, clinical consultations, doctors, or medical treatments.',
       proposedCategoryNote: 'Proposed Enquiry Category',
       allRightsReserved: 'All rights reserved.',
@@ -353,7 +353,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       badge: 'Surgical, Hospital, OT & Lab Supplies • Narayangarh, Chitwan',
       heroHeading: 'Reliable Surgical, Hospital, OT & Cleaning Supplies',
       heroSubtitle: 'Located at Kamal Nagar Marg, Narayangarh, Chitwan. Contact Saphal Surgical House directly for enquiries regarding surgical instruments, hospital supplies, OT essentials, laboratory equipment, and environmental hygiene products.',
-      primaryCta: 'Call Now (+977 56-572060)',
+      primaryCta: 'Call Now (056-596060)',
       secondaryCta: 'Chat on WhatsApp',
       aboutSectionHeading: 'About Saphal Surgical House',
       aboutSectionSnippet: 'Saphal Surgical House is a surgical and healthcare supplies enterprise situated on Kamal Nagar Marg in Narayangarh, Chitwan. We facilitate institutional and individual supplies for hospitals, clinics, labs, and home-care.',
@@ -383,7 +383,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
     products: {
       pageHeading: 'Products & Equipment Catalogue',
       pageSubtitle: 'Explore our product categories — Contact us by Phone or WhatsApp to verify stock & prices',
-      disclaimerBanner: 'Important Notice: The categories listed below represent proposed enquiry areas. Please contact us directly at +977 56-572060 or WhatsApp +977 9855055060 to confirm live stock, manufacturer specifications, and pricing.',
+      disclaimerBanner: 'Important Notice: The categories listed below represent proposed enquiry areas. Please contact us directly at 056-596060 / 056-596120 or WhatsApp +977 9855055060 to confirm live stock, manufacturer specifications, and pricing.',
       categories: [
         {
           id: 'surgical-instruments',
@@ -437,7 +437,7 @@ export const translations: Record<Locale, TranslationDictionary> = {
       facebookCardDesc: 'Connect with our official Facebook page for updates and announcements.',
       mapSectionTitle: 'Location on Google Maps',
       mapSectionDesc: 'Coordinates: 27.69473, 84.42161 (Kamal Nagar Marg, Narayangarh)',
-      directEnquiryNotice: 'Please use our verified landline phone +977 56-572060 or WhatsApp +977 9855055060 for all authentic stock and supply enquiries.',
+      directEnquiryNotice: 'Please use our verified landline phones 056-596060 / 056-596120 or WhatsApp +977 9855055060 for all authentic stock and supply enquiries.',
     },
   },
 };

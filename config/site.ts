@@ -7,8 +7,22 @@ export interface SiteConfig {
   domain: string;
   baseUrl: string;
   phone: {
-    raw: string; // E.164 format for tel: link
+    raw: string; // Primary E.164 format for tel: link
     display: string;
+    displayNe: string;
+    local: string;
+    primary: {
+      raw: string;
+      display: string;
+      displayNe: string;
+      local: string;
+    };
+    secondary: {
+      raw: string;
+      display: string;
+      displayNe: string;
+      local: string;
+    };
   };
   address: {
     street: {
@@ -62,8 +76,22 @@ export const siteConfig: SiteConfig = {
   domain: "saphal-surgical.vercel.app",
   baseUrl: "https://saphal-surgical.vercel.app",
   phone: {
-    raw: "+97756572060",
-    display: "+977 56-572060",
+    raw: "+97756596060",
+    display: "056-596060",
+    displayNe: "०५६-५९६०६०",
+    local: "056-596060",
+    primary: {
+      raw: "+97756596060",
+      display: "056-596060",
+      displayNe: "०५६-५९६०६०",
+      local: "056-596060",
+    },
+    secondary: {
+      raw: "+97756596120",
+      display: "056-596120",
+      displayNe: "०५६-५९६१२०",
+      local: "056-596120",
+    },
   },
   address: {
     street: {

@@ -14,7 +14,7 @@ export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ lang =
     "name": isNe ? siteConfig.name.ne : siteConfig.name.en,
     "legalName": siteConfig.legalName,
     "url": siteConfig.baseUrl,
-    "telephone": siteConfig.phone.raw,
+    "telephone": [siteConfig.phone.primary.raw, siteConfig.phone.secondary.raw],
     "description": isNe
       ? "कमल नगर मार्ग, नारायणगढ, चितवनमा अवस्थित शल्यक्रिया तथा चिकित्सीय सामग्री आपूर्तिकर्ता।"
       : "Supplier of surgical instruments, medical consumables, diagnostic tools, and home-care equipment in Narayangarh, Chitwan.",

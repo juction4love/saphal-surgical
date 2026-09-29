@@ -155,8 +155,8 @@ export const PRODUCTS: ProductItem[] = [
       ne: 'हर्मोन, थाइरोइड, संक्रामक रोग तथा ट्युमर मार्कर परीक्षणका लागि इम्युनोएस्से विश्लेषक।',
     },
     description: {
-      en: 'Laboratory diagnostic system for specialized immunoassay tests. Please call +977 56-572060 to verify current technical formats and platform availability.',
-      ne: 'विशिष्ट इम्युनोएस्से तथा हर्मोन परीक्षणका लागि ल्याब विश्लेषक। उपलब्ध प्रविधि र मोडेलको जानकारीका लागि फोन गर्नुहोस्।',
+      en: 'Laboratory diagnostic system for specialized immunoassay tests. Please call 056-596060 / 056-596120 to verify current technical formats and platform availability.',
+      ne: 'विशिष्ट इम्युनोएस्से तथा हर्मोन परीक्षणका लागि ल्याब विश्लेषक। उपलब्ध प्रविधि र मोडेलको जानकारीका लागि ०५६-५९६०६० / ०५६-५९६१२० मा फोन गर्नुहोस्।',
     },
     keyPoints: {
       en: ['Thyroid, cardiac markers, fertility & infectious disease testing', 'High sensitivity diagnostic readout', 'Confirm operational specifications on enquiry'],

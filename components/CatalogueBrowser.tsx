@@ -219,7 +219,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
               className="w-full sm:w-auto min-h-[44px] px-5 py-2.5 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 shadow-xs"
             >
               <Phone className="w-3.5 h-3.5 text-white" />
-              <span>{isNe ? 'फोन सोधपुछ (+९७७ ५६-५७२०६०)' : 'Call +977 56-572060'}</span>
+              <span>{isNe ? `फोन सोधपुछ (${siteConfig.phone.primary.displayNe})` : `Call ${siteConfig.phone.primary.display}`}</span>
             </a>
           </div>
         </div>

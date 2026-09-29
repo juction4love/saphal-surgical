@@ -223,7 +223,7 @@ export default async function ArticleDetailPage({ params }: PageProps) {
             aria-label={`Call ${siteConfig.phone.display}`}
           >
             <Phone className="w-4 h-4 text-[#15803D]" />
-            <span>{t.articles.phoneEnquiry}: {siteConfig.phone.display}</span>
+            <span>{t.articles.phoneEnquiry}: {isNe ? siteConfig.phone.displayNe : siteConfig.phone.display}</span>
           </a>
         </div>
       </section>

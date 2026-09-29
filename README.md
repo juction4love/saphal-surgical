@@ -8,7 +8,7 @@ A production-ready, bilingual (नेपाली & English) medical and surgica
 
 - **Business Name:** Saphal Surgical House (सफल सर्जिकल हाउस)
 - **Production URL:** [https://saphal-surgical.vercel.app](https://saphal-surgical.vercel.app)
-- **Verified Telephone:** `+977 56-572060` (`tel:+97756572060`)
+- **Verified Telephones:** Primary `056-596060` (`tel:+97756596060`), Secondary `056-596120` (`tel:+97756596120`)
 - **Physical Address:** Kamal Nagar Marg, Narayangarh, Chitwan, Bagmati Province, Nepal (कमल नगर मार्ग, नारायणगढ, चितवन, बागमती प्रदेश, नेपाल)
 - **Geographic Coordinates:** `27.69473, 84.42161`
 - **Official Facebook Page:** [https://www.facebook.com/1032544950288241](https://www.facebook.com/1032544950288241)
@@ -19,7 +19,7 @@ A production-ready, bilingual (नेपाली & English) medical and surgica
 
 - **Surgical & Medical Supplies Distributor:** The website clearly presents Saphal Surgical House as a supplier of surgical instruments, clinical lab equipment, hospital furniture, consumables, and home-care devices.
 - **No Fabricated Claims:** Strictly avoids unverified claims such as hospital services, doctor consultations, patient treatments, unverified certifications (ISO/CE), years of experience, or delivery promises.
-- **No Fake Interactive Forms:** Inquiries are routed directly to the verified landline phone `+977 56-572060`, Google Maps directions, or official Facebook page.
+- **No Fake Interactive Forms:** Inquiries are routed directly to the verified landline phones `056-596060` / `056-596120`, WhatsApp `+977 9855055060`, Google Maps directions, or official Facebook page.
 
 ---
 
@@ -56,7 +56,7 @@ Every entry includes:
 - `Price negotiable — contact us` / `मूल्य कुराकानीमा — सम्पर्क गर्नुहोस्`
 - `Contact to confirm availability` / `उपलब्धता बुझ्न सम्पर्क गर्नुहोस्`
 - Illustrative image with clear licensing attribution label
-- Direct phone enquiry action `tel:+97756572060`
+- Direct phone enquiry action `tel:+97756596060`
 
 ---
 

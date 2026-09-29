@@ -61,7 +61,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
               aria-label={`Call ${siteConfig.phone.display}`}
             >
               <Phone className="w-3.5 h-3.5 text-[#15803D]" />
-              <span>{siteConfig.phone.display}</span>
+              <span>{locale === 'ne' ? siteConfig.phone.displayNe : siteConfig.phone.display}</span>
             </a>
             <div className="hidden sm:block">
               <LanguageSwitcher currentLocale={locale} />
@@ -179,7 +179,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
                   className="w-full min-h-[44px] text-center py-3 text-xs font-bold uppercase tracking-wider text-white bg-[#15803D] hover:bg-[#166534] rounded-xl flex items-center justify-center gap-2 shadow-xs"
                 >
                   <Phone className="w-4 h-4 text-white" />
-                  <span>{t.nav.callNow}: {siteConfig.phone.display}</span>
+                  <span>{t.nav.callNow}: {locale === 'ne' ? siteConfig.phone.displayNe : siteConfig.phone.display}</span>
                 </a>
                 <a
                   href={siteConfig.coordinates.directionsUrl}

@@ -228,7 +228,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
             </h3>
             <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
               {isNe
-                ? `सफल सर्जिकल हाउसको आधिकारिक फोन नम्बर ${siteConfig.phone.display} वा ह्वाट्सएप ${siteConfig.whatsapp.display} मार्फत यस सामग्रीको उपलब्धता, ब्रान्ड तथा दररेट सोधपुछ गर्न सक्नुहुन्छ।`
+                ? `सफल सर्जिकल हाउसको आधिकारिक फोन नम्बर ${siteConfig.phone.displayNe} वा ह्वाट्सएप ${siteConfig.whatsapp.display} मार्फत यस सामग्रीको उपलब्धता, ब्रान्ड तथा दररेट सोधपुछ गर्न सक्नुहुन्छ।`
                 : `Please call our official landline ${siteConfig.phone.display} or WhatsApp ${siteConfig.whatsapp.display} to verify live stock availability, technical brands, and pricing.`}
             </p>
 
@@ -238,7 +238,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 className="flex-1 min-h-[48px] py-3 px-4 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors shadow-2xs"
               >
                 <Phone className="w-4 h-4" />
-                <span>{t.common.inquireByPhone}: {siteConfig.phone.display}</span>
+                <span>{t.common.inquireByPhone}: {isNe ? siteConfig.phone.displayNe : siteConfig.phone.display}</span>
               </a>
 
               {whatsAppUrl && (
@@ -302,4 +302,3 @@ export default async function ProductDetailPage({ params }: PageProps) {
     </div>
   );
 }
-

@@ -66,14 +66,22 @@ export default async function ContactPage({ params }: PageProps) {
               {t.contact.phoneCardDesc}
             </p>
           </div>
-          <div className="pt-2">
+          <div className="pt-2 space-y-2">
             <a
-              href={`tel:${siteConfig.phone.raw}`}
-              className="w-full min-h-[48px] py-3 px-4 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white font-bold text-sm flex items-center justify-center gap-2 transition-colors shadow-2xs"
-              aria-label={`Call ${siteConfig.phone.display}`}
+              href={`tel:${siteConfig.phone.primary.raw}`}
+              className="w-full min-h-[44px] py-2.5 px-3 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors shadow-2xs"
+              aria-label={`Call Primary: ${siteConfig.phone.primary.display}`}
             >
               <Phone className="w-4 h-4 text-white" />
-              <span>{siteConfig.phone.display}</span>
+              <span>{isNe ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display} ({isNe ? 'मुख्य' : 'Primary'})</span>
+            </a>
+            <a
+              href={`tel:${siteConfig.phone.secondary.raw}`}
+              className="w-full min-h-[44px] py-2.5 px-3 rounded-xl bg-[#F0FDF4] hover:bg-[#DCFCE7] text-[#15803D] border border-[#DCFCE7] font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors"
+              aria-label={`Call Secondary: ${siteConfig.phone.secondary.display}`}
+            >
+              <Phone className="w-4 h-4 text-[#15803D]" />
+              <span>{isNe ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display} ({isNe ? 'सहायक' : 'Secondary'})</span>
             </a>
           </div>
         </div>

@@ -131,12 +131,21 @@ export default async function AboutPage({ params }: PageProps) {
             <div className="space-y-3 text-xs sm:text-sm">
               <div className="p-3.5 bg-[#F0FDF4] border border-[#DCFCE7] rounded-2xl">
                 <span className="text-[#475569] text-xs block">{t.common.phoneLabel}</span>
-                <a
-                  href={`tel:${siteConfig.phone.raw}`}
-                  className="text-base sm:text-lg font-bold text-[#15803D] hover:underline transition-colors block mt-1"
-                >
-                  {siteConfig.phone.display}
-                </a>
+                <div className="flex flex-wrap items-center gap-2 mt-1">
+                  <a
+                    href={`tel:${siteConfig.phone.primary.raw}`}
+                    className="text-base font-bold text-[#15803D] hover:underline transition-colors"
+                  >
+                    {isNe ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}
+                  </a>
+                  <span className="text-slate-400">/</span>
+                  <a
+                    href={`tel:${siteConfig.phone.secondary.raw}`}
+                    className="text-base font-bold text-[#15803D] hover:underline transition-colors"
+                  >
+                    {isNe ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}
+                  </a>
+                </div>
               </div>
 
               {whatsAppUrl && (

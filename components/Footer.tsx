@@ -88,11 +88,19 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
                 <MapPin className="w-4 h-4 text-[#15803D] shrink-0 mt-0.5" />
                 <span className="font-medium">{siteConfig.address.fullAddress[locale]}</span>
               </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#15803D] shrink-0" />
-                <a href={`tel:${siteConfig.phone.raw}`} className="hover:text-[#15803D] transition-colors font-bold text-[#17251C]">
-                  {siteConfig.phone.display}
-                </a>
+              <li className="space-y-1.5">
+                <div className="flex items-center gap-2.5">
+                  <Phone className="w-4 h-4 text-[#15803D] shrink-0" />
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                    <a href={`tel:${siteConfig.phone.primary.raw}`} className="hover:text-[#15803D] transition-colors font-bold text-[#17251C]">
+                      {locale === 'ne' ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}
+                    </a>
+                    <span className="hidden sm:inline text-slate-400">/</span>
+                    <a href={`tel:${siteConfig.phone.secondary.raw}`} className="hover:text-[#15803D] transition-colors font-bold text-[#17251C]">
+                      {locale === 'ne' ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}
+                    </a>
+                  </div>
+                </div>
               </li>
               <li className="pt-1">
                 <a
@@ -129,11 +137,15 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
           <p>
             &copy; {new Date().getFullYear()} {siteConfig.legalName} ({siteConfig.domain}). {t.common.allRightsReserved}
           </p>
-          <div className="flex items-center gap-4 text-[11px]">
+          <div className="flex items-center gap-2 sm:gap-4 text-[11px] flex-wrap justify-center">
             <span>{siteConfig.address.city[locale]}, {siteConfig.address.district[locale]}</span>
             <span>•</span>
-            <a href={`tel:${siteConfig.phone.raw}`} className="hover:text-[#15803D] font-semibold">
-              {siteConfig.phone.display}
+            <a href={`tel:${siteConfig.phone.primary.raw}`} className="hover:text-[#15803D] font-semibold">
+              {locale === 'ne' ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}
+            </a>
+            <span>,</span>
+            <a href={`tel:${siteConfig.phone.secondary.raw}`} className="hover:text-[#15803D] font-semibold">
+              {locale === 'ne' ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}
             </a>
           </div>
         </div>
