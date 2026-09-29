@@ -38,10 +38,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
   const whatsAppUrl = getProductWhatsAppUrl(productName, product.slug, locale, product.brand);
 
   return (
-    <article className="group bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full">
+    <article className="group bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-md hover:border-green-300 transition-all duration-300 flex flex-col justify-between h-full">
       <div>
         {/* Product Image Box with object-contain to prevent device cropping */}
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100/80 p-2 flex items-center justify-center">
+        <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-50 p-2 flex items-center justify-center border-b border-slate-100">
           <Image
             src={product.image.url}
             alt={productAlt}
@@ -52,14 +52,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
             priority={priority}
           />
           {/* Illustrative Tag */}
-          <div className="absolute top-2.5 right-2.5 bg-navy-900/85 backdrop-blur-sm text-slate-200 text-[10px] font-medium px-2 py-0.5 rounded-md flex items-center gap-1 shadow-xs pointer-events-none">
-            <HelpCircle className="w-3 h-3 text-teal-400" />
+          <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-slate-700 border border-slate-200 text-[10px] font-medium px-2 py-0.5 rounded-md flex items-center gap-1 shadow-xs pointer-events-none">
+            <HelpCircle className="w-3 h-3 text-[#15803D]" />
             <span>{isNe ? 'सांकेतिक' : 'Illustrative'}</span>
           </div>
 
           {/* Verified Brand badge if available */}
           {product.brand && (
-            <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md border border-slate-200 shadow-xs pointer-events-none">
+            <div className="absolute top-2.5 left-2.5 bg-[#F0FDF4] text-[#15803D] text-[10px] font-bold px-2 py-0.5 rounded-md border border-[#DCFCE7] shadow-xs pointer-events-none">
               <span>{isNe ? `ब्रान्ड: ${product.brand}` : `Brand: ${product.brand}`}</span>
             </div>
           )}
@@ -69,12 +69,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
         <div className="p-4 sm:p-5 space-y-3">
           {/* Price & Availability Badges */}
           <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-teal-800 bg-teal-50 px-2.5 py-1 rounded-lg border border-teal-200/70">
-              <Tag className="w-3.5 h-3.5 text-teal-700 shrink-0" />
+            <div className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-[#15803D] bg-[#F0FDF4] px-2.5 py-1 rounded-lg border border-[#DCFCE7]">
+              <Tag className="w-3.5 h-3.5 text-[#15803D] shrink-0" />
               <span>{priceLabel}</span>
             </div>
             <div>
-              <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded-md">
+              <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md">
                 <AlertCircle className="w-3 h-3 text-slate-500 shrink-0" />
                 <span>{availabilityLabel}</span>
               </span>
@@ -82,10 +82,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
           </div>
 
           {/* Product Title */}
-          <h3 className="font-heading font-bold text-base sm:text-lg text-slate-900 group-hover:text-teal-700 transition-colors leading-snug">
+          <h3 className="font-heading font-bold text-base sm:text-lg text-[#17251C] group-hover:text-[#15803D] transition-colors leading-snug">
             <Link
               href={`/${locale}/products/${product.slug}`}
-              className="focus-visible:ring-2 focus-visible:ring-teal-600 rounded"
+              className="focus-visible:ring-2 focus-visible:ring-[#15803D] rounded"
             >
               {productName}
             </Link>
@@ -104,17 +104,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
           {/* Direct Landline Call Action */}
           <a
             href={`tel:${siteConfig.phone.raw}`}
-            className="flex-1 min-h-[44px] py-2.5 px-3 text-xs font-bold text-white bg-navy-900 hover:bg-teal-800 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs focus-visible:ring-2 focus-visible:ring-teal-600"
+            className="flex-1 min-h-[44px] py-2.5 px-3 text-xs font-bold text-white bg-[#15803D] hover:bg-[#166534] rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs focus-visible:ring-2 focus-visible:ring-[#15803D]"
             aria-label={`${enquireActionLabel} for ${productName} on ${siteConfig.phone.display}`}
           >
-            <Phone className="w-3.5 h-3.5 text-teal-300" />
+            <Phone className="w-3.5 h-3.5 text-white" />
             <span>{enquireActionLabel}</span>
           </a>
 
           {/* View Details Link */}
           <Link
             href={`/${locale}/products/${product.slug}`}
-            className="min-h-[44px] py-2.5 px-3.5 text-xs font-bold text-slate-700 hover:text-teal-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors flex items-center justify-center gap-1 focus-visible:ring-2 focus-visible:ring-teal-600"
+            className="min-h-[44px] py-2.5 px-3.5 text-xs font-bold text-[#15803D] hover:text-[#166534] bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCFCE7] rounded-xl transition-colors flex items-center justify-center gap-1 focus-visible:ring-2 focus-visible:ring-[#15803D]"
             aria-label={`${detailLabel} - ${productName}`}
           >
             <span>{detailLabel}</span>

@@ -46,21 +46,21 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
   return (
     <>
       {/* Top Utility Bar */}
-      <div className="bg-navy-900 text-slate-300 text-xs py-2 border-b border-navy-800">
+      <div className="bg-[#F0FDF4] text-[#17251C] text-xs py-2 border-b border-[#DCFCE7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-2">
           <div className="flex items-center space-x-2 text-[11px] sm:text-xs min-w-0">
-            <MapPin className="w-3.5 h-3.5 text-teal-400 shrink-0" />
-            <span className="truncate text-teal-200">
+            <MapPin className="w-3.5 h-3.5 text-[#15803D] shrink-0" />
+            <span className="truncate text-slate-700 font-medium">
               {siteConfig.address.fullAddress[locale]}
             </span>
           </div>
           <div className="flex items-center space-x-4 shrink-0">
             <a
               href={`tel:${siteConfig.phone.raw}`}
-              className="hover:text-teal-300 transition-colors inline-flex items-center gap-1.5 font-bold text-white text-xs sm:text-sm py-1"
+              className="hover:text-[#166534] transition-colors inline-flex items-center gap-1.5 font-bold text-[#15803D] text-xs sm:text-sm py-1"
               aria-label={`Call ${siteConfig.phone.display}`}
             >
-              <Phone className="w-3.5 h-3.5 text-teal-400" />
+              <Phone className="w-3.5 h-3.5 text-[#15803D]" />
               <span>{siteConfig.phone.display}</span>
             </a>
             <div className="hidden sm:block">
@@ -71,24 +71,24 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
       </div>
 
       {/* Main Sticky Header */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+      <header className="sticky top-0 z-40 bg-white shadow-xs border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Brand Logo */}
             <Link
               href={`/${locale}`}
-              className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 rounded-xl py-1"
+              className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2 rounded-xl py-1"
               aria-label="Saphal Surgical House Home"
             >
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-navy-900 to-teal-700 flex items-center justify-center text-white shadow-md shadow-teal-900/10 group-hover:scale-105 transition-transform shrink-0">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#15803D] flex items-center justify-center text-white shadow-sm group-hover:bg-[#166534] transition-colors shrink-0">
                 <Cross className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
               </div>
               <div className="min-w-0">
-                <span className="font-heading font-extrabold text-lg sm:text-2xl text-navy-900 tracking-tight block leading-none truncate">
+                <span className="font-heading font-extrabold text-lg sm:text-2xl text-[#17251C] tracking-tight block leading-none truncate">
                   {locale === 'ne' ? (
-                    <>सफल <span className="text-teal-700">सर्जिकल हाउस</span></>
+                    <>सफल <span className="text-[#15803D]">सर्जिकल हाउस</span></>
                   ) : (
-                    <>SAPHAL <span className="text-teal-700">SURGICAL HOUSE</span></>
+                    <>SAPHAL <span className="text-[#15803D]">SURGICAL HOUSE</span></>
                   )}
                 </span>
                 <span className="text-[10px] sm:text-[11px] font-semibold tracking-wider text-slate-500 uppercase mt-0.5 sm:mt-1 block truncate">
@@ -98,15 +98,15 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-semibold text-slate-600" aria-label="Main Navigation">
+            <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-semibold text-slate-700" aria-label="Main Navigation">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`transition-colors py-2 px-1 focus-visible:ring-2 focus-visible:ring-teal-600 rounded ${
+                  className={`transition-colors py-2 px-1 focus-visible:ring-2 focus-visible:ring-[#15803D] rounded ${
                     isActive(link.href)
-                      ? 'text-teal-700 font-bold border-b-2 border-teal-600'
-                      : 'hover:text-teal-700'
+                      ? 'text-[#15803D] font-bold border-b-2 border-[#15803D]'
+                      : 'hover:text-[#15803D]'
                   }`}
                   aria-current={isActive(link.href) ? 'page' : undefined}
                 >
@@ -119,20 +119,20 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             <div className="hidden lg:flex items-center gap-3">
               <a
                 href={`tel:${siteConfig.phone.raw}`}
-                className="min-h-[44px] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-navy-900 hover:bg-teal-800 rounded-xl shadow-sm hover:shadow transition-all inline-flex items-center gap-2"
+                className="min-h-[44px] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-[#15803D] hover:bg-[#166534] rounded-xl shadow-xs hover:shadow transition-all inline-flex items-center gap-2"
                 aria-label={`Call ${siteConfig.phone.display}`}
               >
-                <Phone className="w-4 h-4 text-teal-300" />
+                <Phone className="w-4 h-4 text-white" />
                 <span>{t.nav.callNow}</span>
               </a>
               <a
                 href={siteConfig.coordinates.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[44px] px-4 py-2.5 text-xs font-bold text-teal-800 bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-xl transition-colors inline-flex items-center gap-1.5"
+                className="min-h-[44px] px-4 py-2.5 text-xs font-bold text-[#15803D] bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCFCE7] rounded-xl transition-colors inline-flex items-center gap-1.5"
                 aria-label={t.nav.getDirections}
               >
-                <MapPin className="w-4 h-4 text-teal-700" />
+                <MapPin className="w-4 h-4 text-[#15803D]" />
                 <span>{t.nav.getDirections}</span>
               </a>
             </div>
@@ -146,7 +146,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
                 aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
                 aria-expanded={mobileMenuOpen}
                 aria-controls="mobile-nav-menu"
-                className="min-h-[44px] min-w-[44px] p-2.5 rounded-xl text-slate-700 hover:text-navy-900 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 flex items-center justify-center"
+                className="min-h-[44px] min-w-[44px] p-2.5 rounded-xl text-slate-700 hover:text-[#15803D] hover:bg-green-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#15803D] flex items-center justify-center"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -169,8 +169,8 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`min-h-[44px] px-4 py-3 rounded-xl font-semibold text-base transition-colors flex items-center ${
                     isActive(link.href)
-                      ? 'bg-teal-50 text-teal-800 font-bold'
-                      : 'text-slate-800 hover:bg-slate-100'
+                      ? 'bg-[#F0FDF4] text-[#15803D] font-bold border-l-4 border-[#15803D]'
+                      : 'text-slate-800 hover:bg-slate-50'
                   }`}
                   aria-current={isActive(link.href) ? 'page' : undefined}
                 >
@@ -180,18 +180,18 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
               <div className="pt-3 flex flex-col gap-2.5">
                 <a
                   href={`tel:${siteConfig.phone.raw}`}
-                  className="w-full min-h-[44px] text-center py-3 text-xs font-bold uppercase tracking-wider text-white bg-navy-900 hover:bg-teal-800 rounded-xl flex items-center justify-center gap-2 shadow-sm"
+                  className="w-full min-h-[44px] text-center py-3 text-xs font-bold uppercase tracking-wider text-white bg-[#15803D] hover:bg-[#166534] rounded-xl flex items-center justify-center gap-2 shadow-xs"
                 >
-                  <Phone className="w-4 h-4 text-teal-300" />
+                  <Phone className="w-4 h-4 text-white" />
                   <span>{t.nav.callNow}: {siteConfig.phone.display}</span>
                 </a>
                 <a
                   href={siteConfig.coordinates.directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full min-h-[44px] text-center py-3 text-xs font-bold text-teal-800 bg-teal-50 border border-teal-200 rounded-xl flex items-center justify-center gap-2"
+                  className="w-full min-h-[44px] text-center py-3 text-xs font-bold text-[#15803D] bg-[#F0FDF4] border border-[#DCFCE7] rounded-xl flex items-center justify-center gap-2"
                 >
-                  <MapPin className="w-4 h-4 text-teal-700" />
+                  <MapPin className="w-4 h-4 text-[#15803D]" />
                   <span>{t.nav.getDirections}</span>
                 </a>
               </div>

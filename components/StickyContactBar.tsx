@@ -19,7 +19,7 @@ export const StickyContactBar: React.FC<StickyContactBarProps> = ({ locale }) =>
     <>
       {/* Mobile & Tablet Sticky Bottom Bar */}
       <div
-        className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-m3-4 pb-safe transition-all"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-[#DCFCE7] shadow-lg pb-safe transition-all"
         role="region"
         aria-label={isNe ? 'द्रुत सम्पर्क पट्टी' : 'Quick Contact Bar'}
       >
@@ -27,10 +27,10 @@ export const StickyContactBar: React.FC<StickyContactBarProps> = ({ locale }) =>
           {/* Direct Phone Call Button */}
           <a
             href={`tel:${siteConfig.phone.raw}`}
-            className="flex-1 min-h-[48px] py-2.5 px-3 rounded-2xl bg-m3-navy hover:bg-m3-navy-container text-white font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-m3-1 active:scale-98 transition-all"
+            className="flex-1 min-h-[48px] py-2.5 px-3 rounded-2xl bg-[#15803D] hover:bg-[#166534] text-white font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs active:scale-98 transition-all"
             aria-label={`Call Saphal Surgical House at ${siteConfig.phone.display}`}
           >
-            <Phone className="w-4 h-4 text-teal-300 shrink-0" />
+            <Phone className="w-4 h-4 text-white shrink-0" />
             <span className="truncate">{t.nav.callNow}</span>
           </a>
 
@@ -40,7 +40,7 @@ export const StickyContactBar: React.FC<StickyContactBarProps> = ({ locale }) =>
               href={whatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 min-h-[48px] py-2.5 px-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-m3-1 active:scale-98 transition-all"
+              className="flex-1 min-h-[48px] py-2.5 px-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs active:scale-98 transition-all"
               aria-label={isNe ? 'ह्वाट्सएप च्याट सुरु गर्नुहोस्' : 'Start WhatsApp Chat'}
             >
               <WhatsAppIcon className="w-4 h-4 shrink-0" />
@@ -50,7 +50,7 @@ export const StickyContactBar: React.FC<StickyContactBarProps> = ({ locale }) =>
         </div>
       </div>
 
-      {/* Desktop Floating Action Button (FAB) */}
+      {/* Desktop Floating Action Button (FAB) - hidden on mobile to avoid duplicates */}
       {whatsAppUrl && (
         <aside
           className="hidden md:flex fixed bottom-6 right-6 z-30"
@@ -60,7 +60,7 @@ export const StickyContactBar: React.FC<StickyContactBarProps> = ({ locale }) =>
             href={whatsAppUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="min-h-[52px] inline-flex items-center gap-3 px-5 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-sm shadow-m3-3 hover:shadow-m3-4 hover:scale-105 active:scale-98 transition-all focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+            className="min-h-[52px] inline-flex items-center gap-3 px-5 py-3 rounded-full bg-[#15803D] hover:bg-[#166534] text-white font-heading font-bold text-sm shadow-md hover:shadow-lg hover:scale-105 active:scale-98 transition-all focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2"
           >
             <div className="w-6 h-6 flex items-center justify-center bg-white/20 rounded-full">
               <WhatsAppIcon className="w-4 h-4 text-white" />

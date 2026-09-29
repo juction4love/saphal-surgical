@@ -9,7 +9,7 @@ export const viewport: Viewport = {
   maximumScale: 5,
   userScalable: true,
   viewportFit: 'cover',
-  themeColor: '#0b192c',
+  themeColor: '#15803D',
 };
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth">
-      <body className="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+      <body className="bg-white text-[#17251C] antialiased flex flex-col min-h-screen">
         {children}
         <SpeedInsights />
       </body>

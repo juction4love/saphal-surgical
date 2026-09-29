@@ -28,7 +28,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLocal
 
   return (
     <div
-      className={`inline-flex items-center rounded-xl border border-slate-200 bg-white/95 p-1 text-xs sm:text-sm font-medium shadow-sm backdrop-blur ${className}`}
+      className={`inline-flex items-center rounded-xl border border-green-200 bg-white p-1 text-xs sm:text-sm font-medium shadow-xs ${className}`}
       role="navigation"
       aria-label="Language Selector / भाषा चयन"
     >
@@ -36,21 +36,21 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLocal
         href={getDestinationPath('ne')}
         className={`min-h-[38px] sm:min-h-[36px] min-w-[54px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-all ${
           currentLocale === 'ne'
-            ? 'bg-navy-900 text-white font-bold shadow-xs'
-            : 'text-slate-700 hover:text-navy-900 hover:bg-slate-100'
+            ? 'bg-[#15803D] text-white font-bold shadow-xs'
+            : 'text-slate-700 hover:text-green-800 hover:bg-green-50'
         }`}
         aria-current={currentLocale === 'ne' ? 'page' : undefined}
         aria-label="नेपाली भाषा छान्नुहोस्"
       >
         नेपाली
       </Link>
-      <span className="text-slate-300 px-1 font-light" aria-hidden="true">|</span>
+      <span className="text-green-200 px-1 font-light" aria-hidden="true">|</span>
       <Link
         href={getDestinationPath('en')}
         className={`min-h-[38px] sm:min-h-[36px] min-w-[54px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-all ${
           currentLocale === 'en'
-            ? 'bg-navy-900 text-white font-bold shadow-xs'
-            : 'text-slate-700 hover:text-navy-900 hover:bg-slate-100'
+            ? 'bg-[#15803D] text-white font-bold shadow-xs'
+            : 'text-slate-700 hover:text-green-800 hover:bg-green-50'
         }`}
         aria-current={currentLocale === 'en' ? 'page' : undefined}
         aria-label="Switch to English"

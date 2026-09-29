@@ -5,9 +5,14 @@
 @tailwind utilities;
 
 :root {
-  --primary-navy: #0b192c;
-  --primary-teal: #0d9488;
-  --surface-bg: #f8fafc;
+  --primary-green: #15803d;
+  --primary-hover: #166534;
+  --bg-main: #ffffff;
+  --bg-alt: #f0fdf4;
+  --text-main: #17251c;
+  --text-muted: #475569;
+  --border-light: #dcfce7;
+  color-scheme: light;
 }
 
 html {
@@ -15,11 +20,13 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-color: #ffffff;
+  color: #17251c;
 }
 
 body {
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: #ffffff;
+  color: #17251c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,7 +62,7 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid #0d9488;
+  outline: 2px solid #15803d;
   outline-offset: 2px;
 }
 
@@ -80,16 +87,18 @@ select:focus-visible {
   padding-top: max(0.5rem, env(safe-area-inset-top, 0.5rem));
 }
 
-/* Hero and Pattern meshes */
-.hero-pattern {
-  background-color: #0b192c;
+/* Bright, clean subtle medical background */
+.hero-clean-bg {
+  background-color: #ffffff;
   background-image: 
-    radial-gradient(at 15% 15%, rgba(13, 148, 136, 0.22) 0px, transparent 50%),
-    radial-gradient(at 85% 85%, rgba(6, 182, 212, 0.15) 0px, transparent 50%),
-    radial-gradient(at 50% 50%, rgba(15, 118, 110, 0.1) 0px, transparent 60%);
+    radial-gradient(at 0% 0%, rgba(240, 253, 244, 0.9) 0px, transparent 60%),
+    radial-gradient(at 100% 100%, rgba(220, 252, 231, 0.5) 0px, transparent 60%);
 }
 
-.medical-grid-pattern {
-  background-image: radial-gradient(#0f766e 0.75px, transparent 0.75px);
-  background-size: 24px 24px;
+.clean-card-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clean-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(21, 128, 61, 0.08), 0 8px 10px -6px rgba(21, 128, 61, 0.04);
 }
