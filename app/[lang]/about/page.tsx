@@ -1,188 +1,86 @@
-import React from 'react';
-import type { Metadata } from 'next';
+﻿import React from 'react';
 import Link from 'next/link';
-import { Phone, MapPin, ShieldAlert, ArrowRight, CheckCircle2, Package } from 'lucide-react';
-import { siteConfig } from '@/config/site';
-import { translations, Locale } from '@/lib/translations';
-import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
-import { BrandsSection } from '@/components/BrandsSection';
-import { BrandSymbol } from '@/components/BrandSymbol';
-import { ChairmanGallery, ChairmanProfile } from '@/components/ChairmanPresentation';
 
-interface PageProps {
-  params: Promise<{ lang: string }> | { lang: string };
-}
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const resolvedParams = await params;
-  const lang = (resolvedParams.lang === 'en' ? 'en' : 'ne') as Locale;
-  const t = translations[lang];
-
-  return {
-    title: lang === 'ne'
-      ? 'अर्जुन रणाभाट | सफल सर्जिकल हाउसका अध्यक्ष'
-      : 'Arjun Ranabhat | Chairman of Saphal Surgical House',
-    description: lang === 'ne'
-      ? 'सफल सर्जिकल हाउसका अध्यक्ष अर्जुन रणाभाटको परिचय र सर्जिकल सामग्री आपूर्तिसम्बन्धी व्यवसायिक जानकारी।'
-      : 'Chairman Arjun Ranabhat and Saphal Surgical House: verified business leadership and surgical supply information.',
-    alternates: {
-      canonical: `${siteConfig.baseUrl}/${lang}/about`,
-      languages: {
-        ne: `${siteConfig.baseUrl}/ne/about`,
-        en: `${siteConfig.baseUrl}/en/about`,
-        'x-default': `${siteConfig.baseUrl}/ne/about`,
-      },
-    },
-  };
-}
-
-export default async function AboutPage({ params }: PageProps) {
-  const resolvedParams = await params;
-  const lang = (resolvedParams.lang === 'en' ? 'en' : 'ne') as Locale;
-  const t = translations[lang];
-  const isNe = lang === 'ne';
+export default function AboutPage({ params }: { params: { lang: string } }) {
+  const isNe = params.lang === 'ne';
 
   return (
-    <div className="py-8 sm:py-16 space-y-10 sm:space-y-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-safe bg-white">
-      {/* Page Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-3">
-        <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#15803D] bg-[#F0FDF4] px-3.5 py-1 rounded-full border border-[#DCFCE7]">
-          {t.nav.about}
-        </span>
-        <h1 className="text-2xl sm:text-4xl font-heading font-extrabold text-[#17251C] tracking-tight leading-tight">
-          {t.about.pageHeading}
-        </h1>
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-          {t.about.pageSubtitle}
-        </p>
-      </div>
-
-      {/* Prominent Introduction Banner */}
-      <div className="bg-[#F0FDF4] text-[#17251C] rounded-3xl p-6 sm:p-8 shadow-2xs border border-[#DCFCE7]">
-        <div className="max-w-4xl space-y-3">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white text-[#15803D] border border-[#DCFCE7]">
-            <Package className="w-3.5 h-3.5 text-[#15803D]" />
-            {isNe ? 'आधिकारिक आपूर्ति सूचना' : 'Official Supply Scope'}
+    <div className="min-h-screen bg-md-surface text-md-on-surface py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto space-y-12">
+        <div className="text-center space-y-3">
+          <span className="inline-flex items-center px-4 py-1.5 rounded-m3-full text-xs font-semibold bg-md-secondary-container text-md-on-secondary-container">
+            {isNe ? 'हाम्रो परिचय' : 'About Us'}
           </span>
-          <p className="text-sm sm:text-base lg:text-lg font-normal text-[#17251C] leading-relaxed">
-            {t.prominentIntro}
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+            {isNe ? 'सफल सर्जिकल हाउस' : 'Saphal Surgical House'}
+          </h1>
+          <p className="text-sm sm:text-base text-md-on-surface-variant max-w-2xl mx-auto">
+            {isNe 
+              ? 'चितवन र आसपासका स्वास्थ्य संस्थाहरूका लागि गुणस्तरीय सर्जिकल, प्रयोगशाला तथा अस्पताल उपकरण आपूर्ति केन्द्र।' 
+              : 'Trusted distributor of surgical instruments, clinical laboratory equipment, and healthcare consumables in Chitwan.'}
           </p>
         </div>
-      </div>
 
-      <ChairmanProfile locale={lang} />
-      <ChairmanGallery locale={lang} />
-
-      {/* Main Content Grid */}
-      <div className="grid lg:grid-cols-12 gap-8 items-start">
-        {/* Left Column: Business Facts */}
-        <div className="lg:col-span-8 space-y-6 sm:space-y-8">
-          {/* Introduction Card */}
-          <div className="bg-white p-5 sm:p-8 rounded-3xl border border-slate-200 shadow-2xs space-y-3.5">
-            <h2 className="text-lg sm:text-xl font-heading font-bold text-[#17251C] flex items-center gap-2">
-              <BrandSymbol size={40} className="w-10 h-10 shrink-0" />
-              <span>{t.about.introTitle}</span>
-            </h2>
-            <p className="text-[#475569] text-sm sm:text-base leading-relaxed">
-              {t.about.introP1}
-            </p>
-            <p className="text-[#475569] text-sm sm:text-base leading-relaxed">
-              {t.about.introP2}
-            </p>
-          </div>
-
-          {/* Scope of Supply */}
-          <div className="bg-white p-5 sm:p-8 rounded-3xl border border-slate-200 shadow-2xs space-y-3.5">
-            <h2 className="text-lg sm:text-xl font-heading font-bold text-[#17251C] flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-[#15803D] shrink-0" />
-              <span>{t.about.roleTitle}</span>
-            </h2>
-            <p className="text-[#475569] text-sm sm:text-base leading-relaxed">
-              {t.about.roleP1}
-            </p>
-          </div>
-
-          {/* Location & Accessibility */}
-          <div className="bg-white p-5 sm:p-8 rounded-3xl border border-slate-200 shadow-2xs space-y-3.5">
-            <h2 className="text-lg sm:text-xl font-heading font-bold text-[#17251C] flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-[#15803D] shrink-0" />
-              <span>{t.about.locationTitle}</span>
-            </h2>
-            <p className="text-[#475569] text-sm sm:text-base leading-relaxed">
-              {t.about.locationP1}
-            </p>
-          </div>
-
-          {/* Regulatory Clarification */}
-          <div className="bg-[#F0FDF4] border border-[#DCFCE7] p-5 sm:p-6 rounded-3xl space-y-2">
-            <div className="flex items-center gap-2 text-[#17251C] font-bold text-sm sm:text-base">
-              <ShieldAlert className="w-5 h-5 text-[#15803D] shrink-0" />
-              <span>{t.about.clarificationTitle}</span>
+        <section className="bg-white rounded-m3-xl border border-md-outline-variant/60 shadow-m3-1 overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-0">
+          <div className="md:col-span-5 bg-md-surface-variant/30 flex items-center justify-center p-8">
+            <div className="relative w-48 h-48 sm:w-60 sm:h-60 rounded-m3-xl overflow-hidden shadow-m3-1">
+              <img
+                src="/chairman/portrait-02-480.webp"
+                alt="Arjun Ranabhat, Chairman"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-              {t.about.clarificationP1}
-            </p>
           </div>
-        </div>
-
-        {/* Right Column: Contact & Quick Links */}
-        <div className="lg:col-span-4 space-y-6">
-          <div className="bg-white border border-[#DCFCE7] text-[#17251C] p-5 sm:p-8 rounded-3xl shadow-xs space-y-5">
-            <h3 className="font-heading font-bold text-lg text-[#17251C]">
-              {isNe ? 'सोधपुछ तथा सम्पर्क' : 'Direct Inquiries'}
-            </h3>
-            <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-              {t.common.phoneNote}
+          <div className="md:col-span-7 p-8 sm:p-10 flex flex-col justify-center space-y-4">
+            <span className="text-xs uppercase font-bold tracking-wider text-md-primary">
+              {isNe ? 'नेतृत्व' : 'Leadership'}
+            </span>
+            <h2 className="text-2xl font-bold">
+              {isNe ? 'अर्जुन रणाभाट' : 'Arjun Ranabhat'}
+            </h2>
+            <p className="text-sm text-md-on-surface-variant font-medium">
+              {isNe ? 'अध्यक्ष / संस्थापक — सफल सर्जिकल हाउस' : 'Chairman / Founder — Saphal Surgical House'}
             </p>
-
-            <div className="space-y-3 text-xs sm:text-sm">
-              <div className="p-3.5 bg-[#F0FDF4] border border-[#DCFCE7] rounded-2xl">
-                <span className="text-[#475569] text-xs block">{t.common.phoneLabel}</span>
-                <div className="flex flex-wrap items-center gap-2 mt-1">
-                  <a
-                    href={`tel:${siteConfig.phone.primary.raw}`}
-                    className="text-base font-bold text-[#15803D] hover:underline transition-colors"
-                  >
-                    {isNe ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}
-                  </a>
-                  <span className="text-slate-400">/</span>
-                  <a
-                    href={`tel:${siteConfig.phone.secondary.raw}`}
-                    className="text-base font-bold text-[#15803D] hover:underline transition-colors"
-                  >
-                    {isNe ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}
-                  </a>
-                </div>
-              </div>
-
-              <div className="p-3.5 bg-[#F0FDF4] border border-[#DCFCE7] rounded-2xl">
-                <span className="text-[#475569] text-xs block">{t.common.addressLabel}</span>
-                <p className="text-[#17251C] font-medium mt-1 leading-relaxed">
-                  {siteConfig.address.fullAddress[lang]}
-                </p>
-              </div>
-            </div>
-
-            <div className="pt-2 flex flex-col gap-2.5">
-              <Link
-                href={`/${lang}/products`}
-                className="w-full min-h-[48px] py-3 px-4 rounded-xl bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCFCE7] text-[#15803D] font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors"
+            <p className="text-sm sm:text-base text-md-on-surface-variant leading-relaxed">
+              {isNe
+                ? 'नारायणगढ, कमल नगर मार्गमा अवस्थित सफल सर्जिकल हाउसले स्थापनाकालदेखि नै अस्पताल, क्लिनिक, प्रयोगशाला तथा बिरामीको गृह-उपचार (Home-care) का लागि भरपर्दो सामग्री उपलब्ध गराउँदै आएको छ।'
+                : 'Located at Kamal Nagar Marg, Narayangarh, Chitwan, Saphal Surgical House delivers hospital essentials, surgical disposables, diagnostic reagents, and home healthcare supplies.'}
+            </p>
+            <div className="pt-2 flex flex-wrap gap-3">
+              <a 
+                href="tel:+97756596060"
+                className="px-5 py-2.5 rounded-m3-full bg-md-primary text-white text-sm font-medium hover:bg-md-primary/90 active:scale-95 transition-all inline-flex items-center gap-2"
               >
-                <span>{t.common.viewCatalog}</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <span className="material-symbols-outlined text-sm">call</span>
+                <span>{isNe ? 'सम्पर्क गर्नुहोस्' : 'Contact Us'}</span>
+              </a>
+              <a 
+                href="https://wa.me/9779855055060"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 rounded-m3-full bg-md-secondary-container text-md-on-secondary-container text-sm font-medium hover:bg-md-secondary-container/80 transition-all inline-flex items-center gap-2"
+              >
+                <span className="material-symbols-outlined text-sm">chat</span>
+                <span>WhatsApp</span>
+              </a>
             </div>
+          </div>
+        </section>
+
+        <div className="p-6 rounded-m3-lg bg-md-surface-variant/40 border border-md-outline-variant/50 flex items-start gap-4">
+          <span className="material-symbols-outlined text-md-primary text-2xl mt-0.5">info</span>
+          <div className="text-sm text-md-on-surface-variant space-y-1">
+            <h4 className="font-semibold text-md-on-surface">
+              {isNe ? 'व्यावसायिक सूचना तथा प्रष्टिकरण' : 'Business Notice'}
+            </h4>
+            <p>
+              {isNe 
+                ? 'सफल सर्जिकल हाउस केवल स्वास्थ्य सामग्री तथा सर्जिकल सामानहरूको वितरक हो। हामी अस्पताल सेवा, मेडिकल कन्सल्ट्यासन वा उपचार प्रदान गर्दैनौं।' 
+                : 'Saphal Surgical House is purely a distributor of surgical, hospital, and laboratory supplies. We do not provide clinical consultations, medical treatment, or hospital services.'}
+            </p>
           </div>
         </div>
       </div>
-
-      {/* Brands Section */}
-      <BrandsSection locale={lang} />
-
-      {/* Map Section */}
-      <section className="pt-4">
-        <GoogleMapEmbed locale={lang} />
-      </section>
     </div>
   );
 }
