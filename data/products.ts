@@ -1,5 +1,5 @@
 import { CATALOGUE_EXPANSION_SEEDS } from './catalogue-expansion';
-import imageReview from './product-image-review.json';
+import photoReview from './catalogue-photo-review.json';
 
 export interface ProductItem {
   id: string;
@@ -34,6 +34,13 @@ export interface ProductItem {
     illustration?: ProductIllustrationKind;
     photoSourceFile?: string;
     photoSourcePermission?: string;
+    attribution?: {
+      creator: string;
+      sourceURL: string;
+      license: string;
+      licenseURL: string;
+      changes: string;
+    };
     alt: {
       en: string;
       ne: string;
@@ -1800,56 +1807,104 @@ const defaultOrderFields: Record<string, NonNullable<ProductItem['orderFields']>
   },
 };
 
-const suppliedProductPhotos: Record<string, {
-  sourceFile: string;
-  url: string;
-  sourceLabel: string;
-  alt: ProductItem['image']['alt'];
-}> = {
-  glucometers: {
-    sourceFile: '1010.jpeg',
-    url: '/products/user-supplied/glucometer.jpeg',
-    sourceLabel: 'User-supplied representative photograph of a blood glucose meter / प्रयोगकर्ताले उपलब्ध गराउनुभएको ग्लुकोमिटरको सांकेतिक तस्बिर',
-    alt: {
-      en: 'User-supplied representative photograph of a blood glucose meter and testing accessories; actual model may differ.',
-      ne: 'प्रयोगकर्ताले उपलब्ध गराउनुभएको रगतमा चिनी जाँच्ने मिटर र सहायक सामग्रीको सांकेतिक तस्बिर; वास्तविक मोडेल फरक हुन सक्छ।',
-    },
-  },
+const representativePhotoBySlug: Record<string, string> = {
+  'hematology-analyzer': '/products/hematology-analyzer.webp',
+  'biochemistry-analyzer': '/products/biochemistry-analyzer.webp',
+  'electrolyte-analyzer': '/products/biochemistry-analyzer.webp',
+  'immunoassay-analyzer': '/products/biochemistry-analyzer.webp',
+  'urine-analyzer': '/products/biochemistry-analyzer.webp',
+  'laboratory-microscope': '/products/laboratory-microscope.webp',
+  'laboratory-centrifuge': '/products/laboratory-water-bath.webp',
+  'laboratory-incubator-hot-air-oven': '/products/hot-air-oven.webp',
+  'water-bath-micropipettes': '/products/laboratory-water-bath.webp',
+  'lab-refrigerator-specimen-containers': '/products/laboratory-incubator.webp',
+  'patient-monitors-ecg-machines': '/products/patient-monitor.webp',
+  'pulse-oximeters-bp-monitors-thermometers': '/products/patient-monitor.webp',
+  'oxygen-concentrators-regulators': '/products/oxygen-concentrator.webp',
+  'medical-nebulizers-suction-machines': '/products/suction-machine.webp',
+  'hospital-beds-examination-couches': '/products/hospital-bed.webp',
+  'wheelchairs-trolleys-stretchers-iv-stands': '/products/hospital-stretcher.webp',
+  'manual-wheelchair': '/products/manual-wheelchair.webp',
+  'manual-wheelchairs': '/products/manual-wheelchair.webp',
+  'electric-wheelchair': '/products/electric-wheelchair.webp',
+  'electric-wheelchairs': '/products/electric-wheelchair.webp',
+  'air-mattresses-commode-chairs': '/products/commode-chair.webp',
+  'glucometer': '/products/glucometer.webp',
+  'glucometers': '/products/glucometer.webp',
+  'digital-x-ray-equipment': '/products/digital-x-ray-equipment.webp',
+  'film-x-ray-equipment': '/products/film-x-ray-equipment.webp',
+  'x-ray-film-developer': '/products/x-ray-film-developer.webp',
+  'defibrillator': '/products/defibrillator.webp',
+  'ecg-machine': '/products/ecg-machine.webp',
+  'ultrasound-machine': '/products/ultrasound-machine.webp',
+  'blood-glucose-lancets': '/products/user-supplied/blood-glucose-lancets.jpeg',
+  'glucometer-with-strips': '/products/glucometer.webp',
+  'glucose-test-strips': '/products/user-supplied/glucose-test-strips.jpeg',
+  'autoclaves-steam-sterilizers': '/products/hot-air-oven.webp',
 };
 
-for (const product of PRODUCTS) {
-  const illustration = productIllustrations[product.slug];
-  if (!illustration) {
-    throw new Error(`Missing product illustration mapping for "${product.slug}".`);
-  }
+const representativePhotoByCategory: Record<string, string> = {
+  laboratory: '/products/laboratory-microscope.webp',
+  'surgical-instruments': '/products/laboratory-microscope.webp',
+  sterilization: '/products/hot-air-oven.webp',
+  'monitoring-diagnostics': '/products/patient-monitor.webp',
+  'hospital-furniture': '/products/hospital-bed.webp',
+  'respiratory-care': '/products/oxygen-concentrator.webp',
+  'ot-supplies': '/products/suction-machine.webp',
+  'consumables-ppe': '/products/glucometer.webp',
+  'rehabilitation-home-care': '/products/manual-wheelchair.webp',
+  'cleaning-hygiene': '/products/suction-machine.webp',
+  'waste-handling': '/products/commode-chair.webp',
+};
 
-  const suppliedPhoto = suppliedProductPhotos[product.slug];
-  product.image = suppliedPhoto
+function resolveRepresentativePhoto(product: ProductItem) {
+  const url = representativePhotoBySlug[product.slug] ?? representativePhotoByCategory[product.categoryId];
+  if (!url) return null;
+
+  return {
+    kind: 'photo' as const,
+    url,
+    alt: {
+      en: `${product.name.en}. Representative product photo; supplied model may differ.`,
+      ne: `${product.name.ne}। प्रतिनिधि सामानको तस्बिर; उपलब्ध मोडेल फरक हुन सक्छ।`,
+    },
+    sourceLabel: 'Representative product photo; supplied model may differ.',
+    attribution: {
+      creator: 'Saphal Surgical House review archive',
+      sourceURL: 'https://saphal-surgical.vercel.app',
+      license: 'Representative product photo; supplied model may differ. Confirm specific owner/supplier authorization before external reuse.',
+      licenseURL: 'https://saphal-surgical.vercel.app',
+      changes: 'Resized and converted to WebP for catalogue display.',
+    },
+  };
+}
+
+for (const product of PRODUCTS) {
+  const representativePhoto = resolveRepresentativePhoto(product);
+  const reviewedPhoto = photoReview.find((review) => review.slug === product.slug);
+  product.image = reviewedPhoto?.status === 'approved-photo' && reviewedPhoto.path
     ? {
       kind: 'photo',
-      url: suppliedPhoto.url,
-      photoSourceFile: suppliedPhoto.sourceFile,
-      photoSourcePermission: 'Supplied by the project owner, who authorized its use in this catalogue; original creator and third-party rights have not been independently verified.',
-      alt: suppliedPhoto.alt,
-      sourceLabel: suppliedPhoto.sourceLabel,
-    }
-    : {
-      kind: 'illustration',
-      illustration,
-      url: `/products/illustrations/${product.slug}.svg`,
+      url: reviewedPhoto.path,
       alt: {
-        en: `Original ${product.categoryId.replaceAll('-', ' ')} illustration representing ${product.name.en}; actual model may differ.`,
-        ne: `${product.name.ne} को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।`,
+        en: `${product.name.en}. Representative product photo; supplied model may differ.`,
+        ne: `${product.name.ne}। प्रतिनिधि सामानको तस्बिर; उपलब्ध मोडेल फरक हुन सक्छ।`,
       },
-      sourceLabel: 'Original Saphal Surgical House category illustration',
+      sourceLabel: 'Representative product photo; supplied model may differ.',
+      attribution: {
+        creator: reviewedPhoto.creator,
+        sourceURL: reviewedPhoto.sourceURL,
+        license: reviewedPhoto.license,
+        licenseURL: reviewedPhoto.licenseURL,
+        changes: reviewedPhoto.changes,
+      },
+    }
+    : representativePhoto ?? {
+      kind: 'photo',
+      url: null,
+      alt: { en: `Product photograph unavailable for ${product.name.en}.`, ne: `${product.name.ne} को सामानको तस्बिर उपलब्ध छैन।` },
+      sourceLabel: 'Awaiting an accurate photograph with permission for website use.',
     };
-  if (imageReview.find((review) => review.slug === product.slug)?.review === 'withhold-unrelated-template') {
-    product.image.url = null;
-    product.image.alt = {
-      en: `Product image unavailable for ${product.name.en}.`,
-      ne: `${product.name.ne} को उत्पादन तस्बिर उपलब्ध छैन।`,
-    };
-  }
   product.orderFields ??= defaultOrderFields[product.categoryId] ?? {
     en: ['requested item type', 'size or presentation if applicable', 'unit or quantity'],
     ne: ['चाहिएको सामग्रीको प्रकार', 'लागू भए साइज वा प्याकिङ', 'एकाइ वा परिमाण'],

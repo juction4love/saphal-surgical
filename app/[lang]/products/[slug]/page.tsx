@@ -12,6 +12,7 @@ import { CATEGORIES } from '@/data/categories';
 import { ProductCard } from '@/components/ProductCard';
 import { ProductImageUnavailable } from '@/components/ProductImageUnavailable';
 import { AddToOrderButton } from '@/components/AddToOrderButton';
+import { PhotoAttribution } from '@/components/PhotoAttribution';
 
 interface PageProps {
   params: Promise<{ lang: string; slug: string }> | { lang: string; slug: string };
@@ -48,6 +49,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
+    openGraph: {
+      title, description,
+      images: product.image.url ? [{ url: product.image.url, alt: isNe ? product.image.alt.ne : product.image.alt.en }] : [{ url: '/logo.svg', alt: siteConfig.legalName }],
+    },
+    twitter: {
+      card: 'summary_large_image', title, description,
+      images: [product.image.url || '/logo.svg'],
+    },
     alternates: {
       canonical: `${siteConfig.baseUrl}/${lang}/products/${product.slug}`,
       languages: {
@@ -142,13 +151,12 @@ export default async function ProductDetailPage({ params }: PageProps) {
               <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm border border-[#DCFCE7] text-[#17251C] text-xs p-3 rounded-2xl flex items-center gap-2 shadow-2xs pointer-events-none">
                 <HelpCircle className="w-4 h-4 text-[#15803D] shrink-0" />
                 <span className="text-[11px] sm:text-xs leading-tight text-[#475569]">
-                  {product.image.kind === 'illustration'
-                    ? (isNe ? 'सामग्रीको सांकेतिक चित्रण' : 'Schematic product illustration')
-                    : product.image.sourceLabel} — {isNe ? 'वास्तविक सामानको ब्रान्ड र स्वरूप मौज्दात अनुसार फरक पर्न सक्छ।' : 'Actual brand appearance and specs depend on current stock.'}
+                  {isNe ? 'प्रतिनिधि सामानको तस्बिर; उपलब्ध मोडेल फरक हुन सक्छ।' : 'Representative product photo; supplied model may differ.'}
                 </span>
               </div>
             )}
           </div>
+          <PhotoAttribution image={product.image} locale={lang} />
         </div>
 
         {/* Right Column: Product Information & Enquiry */}

@@ -31,3 +31,7 @@ next-env.d.ts
 
 # Local audit tools, isolated checkouts and evidence
 /.audit/
+
+*.tmp.*
+.vscode/
+

@@ -6,6 +6,7 @@ import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { PRODUCTS } from '@/data/products';
 import { CatalogueBrowser } from '@/components/CatalogueBrowser';
+import { CategoryCovers } from '@/components/CategoryCovers';
 
 interface PageProps {
   params: Promise<{ lang: string }> | { lang: string };
@@ -85,6 +86,12 @@ export default async function ProductsPage({ params }: PageProps) {
       </section>
 
       {/* Interactive Catalogue Browser */}
+      <details className="rounded-2xl border border-[#E3EDE5] bg-[#F8FCF8] p-4 sm:p-5">
+        <summary className="min-h-[44px] cursor-pointer font-bold text-[#166534]">
+          {lang === 'ne' ? 'सबै सामग्री श्रेणीहरू हेर्नुहोस्' : 'Browse all product categories'}
+        </summary>
+        <div className="mt-3"><CategoryCovers locale={lang} /></div>
+      </details>
       <CatalogueBrowser
         products={PRODUCTS}
         locale={lang}

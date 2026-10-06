@@ -48,13 +48,13 @@ Every entry includes:
 - English & Nepali names and concise descriptions
 - `Price negotiable — contact us` / `मूल्य कुराकानीमा — सम्पर्क गर्नुहोस्`
 - `Contact to confirm availability` / `उपलब्धता बुझ्न सम्पर्क गर्नुहोस्`
-- 92 repository-authored schematic SVG illustrations are labelled in English and Nepali. 246 entries use an explicit image-unavailable state after unrelated generic drawings were withheld. One owner-supplied representative glucometer photograph is used with a bilingual notice that the actual model may differ. The image-source manifest records sources, creator/permission details, and bilingual alt text. Original supplied photos are retained separately.
+- Representative real product photographs are used for matching product families and category ranges where a verified catalogue image is available. Remaining unverified gaps are intentionally labelled as unavailable rather than replaced with AI-generated or schematic artwork.
 - Product detail navigation and compact Add to order actions on product cards
 
-Regenerate the local product illustrations and source manifest after changing catalogue entries:
+When catalogue entries are changed, keep the local photo review and source manifest in sync with the verified representative images before release:
 
 ```bash
-node scripts/generate-product-illustrations.cjs
+node scripts/source-photos.mjs
 ```
 
 ---

@@ -1,7 +1,7 @@
 const fs=require('node:fs');const ts=require('typescript');const cp=require('node:child_process');
 function load(source,o={}){const m={exports:{}};new Function('require','module','exports',ts.transpileModule(source,{compilerOptions:{esModuleInterop:true,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText)(s=>o[s]||require(s),m,m.exports);return m.exports;}
 const read=p=>fs.readFileSync(p,'utf8');
-const {PRODUCTS}=load(read('data/products.ts'),{'./catalogue-expansion':load(read('data/catalogue-expansion.ts')),'./product-image-review.json':require('../data/product-image-review.json')});
+const {PRODUCTS}=load(read('data/products.ts'),{'./catalogue-expansion':load(read('data/catalogue-expansion.ts')),'./catalogue-photo-review.json':require('../data/catalogue-photo-review.json')});
 const {CATEGORIES}=load(read('data/categories.ts'));
 const original=load(cp.execFileSync('git',['show','c4cc274:data/products.ts'],{encoding:'utf8'})).PRODUCTS;
 const originalCategories=load(cp.execFileSync('git',['show','c4cc274:data/categories.ts'],{encoding:'utf8'})).CATEGORIES;

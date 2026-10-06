@@ -2,7 +2,7 @@ const {chromium,webkit} = require(process.env.PLAYWRIGHT_MODULE || '../.audit/to
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const ts = require('typescript');
-function load(p, overrides={}) {const m={exports:{}};new Function('require','module','exports',ts.transpileModule(fs.readFileSync(p,'utf8'),{compilerOptions:{esModuleInterop:true,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText)(s=>s==='./product-image-review.json'?require('../data/product-image-review.json'):overrides[s]||require(s),m,m.exports);return m.exports;}
+function load(p, overrides={}) {const m={exports:{}};new Function('require','module','exports',ts.transpileModule(fs.readFileSync(p,'utf8'),{compilerOptions:{esModuleInterop:true,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText)(s=>s==='./catalogue-photo-review.json'?require('../data/catalogue-photo-review.json'):overrides[s]||require(s),m,m.exports);return m.exports;}
 const {PRODUCTS}=load('data/products.ts',{'./catalogue-expansion':load('data/catalogue-expansion.ts')});
 const base=process.argv[2]||'http://127.0.0.1:3100';
 const evidence='.audit/evidence';fs.mkdirSync(evidence,{recursive:true});

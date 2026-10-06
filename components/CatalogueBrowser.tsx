@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, Suspense } from 'react';
+import React, { useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Search, X, Filter, Phone, RefreshCw, AlertCircle } from 'lucide-react';
 import type { ProductAudience, ProductItem } from '@/data/products';
@@ -19,23 +19,27 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
   const categoryParam = searchParams.get('category');
   const searchParam = searchParams.get('search') || '';
 
-  const [searchQuery, setSearchQuery] = useState(searchParam);
-  const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam || 'all');
-  const [selectedAudience, setSelectedAudience] = useState<ProductAudience | 'all'>('all');
+  const searchQuery = searchParam;
+  const selectedCategory = CATEGORIES.some((category) => category.id === categoryParam) ? categoryParam! : 'all';
+  const audienceParam = searchParams.get('audience');
+  const selectedAudience: ProductAudience | 'all' = audienceParam === 'home-care' || audienceParam === 'hospital-use' || audienceParam === 'pharmacy-retail' ? audienceParam : 'all';
+  const updateFilters = (changes: Record<string, string>) => {
+    const url = new URL(window.location.href);
+    for (const [key, value] of Object.entries(changes)) {
+      if (!value || value === 'all') url.searchParams.delete(key);
+      else url.searchParams.set(key, value);
+    }
+    window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+  };
+  const setSearchQuery = (value: string) => updateFilters({ search: value });
+  const setSelectedCategory = (value: string) => updateFilters({ category: value });
+  const setSelectedAudience = (value: string) => updateFilters({ audience: value });
   const isNe = locale === 'ne';
   const audienceFilters: Array<{ id: ProductAudience; label: { en: string; ne: string } }> = [
     { id: 'home-care', label: { en: 'Home care', ne: 'घरायसी हेरचाह' } },
     { id: 'hospital-use', label: { en: 'Hospital use', ne: 'अस्पताल प्रयोग' } },
     { id: 'pharmacy-retail', label: { en: 'Pharmacy retail', ne: 'फार्मेसी खुद्रा बिक्री' } },
   ];
-
-  useEffect(() => {
-    setSelectedCategory(categoryParam || 'all');
-  }, [categoryParam]);
-
-  useEffect(() => {
-    setSearchQuery(searchParam);
-  }, [searchParam]);
 
   // Filter products based on search term (in both languages and tags) and category
   const filteredProducts = useMemo(() => {
@@ -71,9 +75,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
   }, [products, searchQuery, selectedCategory, selectedAudience]);
 
   const handleReset = () => {
-    setSearchQuery('');
-    setSelectedCategory('all');
-    setSelectedAudience('all');
+    updateFilters({ search: '', category: 'all', audience: 'all' });
   };
 
   return (
