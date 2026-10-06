@@ -697,15 +697,12 @@ export function OrderSlip({ locale }: OrderSlipProps) {
                 <label className="block space-y-1 text-xs font-semibold text-[#475569]">
                   <span>
                     {labels.specification}
-                    {product.orderFields?.[locale].length
-                      ? ` (${product.orderFields[locale].join(' · ')})`
-                      : ''}
                   </span>
                   <textarea
                     rows={2}
                     value={specifications[product.slug] ?? ''}
                     onChange={(event) => setSpecifications((current) => ({ ...current, [product.slug]: event.target.value }))}
-                    placeholder={product.orderFields?.[locale].join(', ')}
+                    placeholder={locale === 'ne' ? 'आकार, मोडेल वा अन्य विवरण' : 'Size, model, or other details'}
                     className={`${inputClass} min-h-16 text-sm font-normal`}
                   />
                 </label>
