@@ -1,159 +1,109 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
-import { Phone, MapPin, Info } from 'lucide-react';
-import { FacebookIcon } from '@/components/Icons';
-import { BrandSymbol } from '@/components/BrandSymbol';
-import { siteConfig } from '@/config/site';
-import { translations, Locale } from '@/lib/translations';
 
-interface FooterProps {
-  locale: Locale;
-}
-
-export const Footer: React.FC<FooterProps> = ({ locale }) => {
-  const t = translations[locale];
+export default function Footer({ lang = 'ne' }: { lang?: 'en' | 'ne' }) {
+  const isNe = lang === 'ne';
 
   return (
-    <footer className="bg-[#F0FDF4] text-slate-700 pt-12 pb-12 sm:pt-16 border-t border-[#DCFCE7] mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#DCFCE7]">
+    <footer className="bg-[#F0F5F3] text-md-on-surface border-t border-md-outline-variant/50 pt-16 pb-12 px-4 sm:px-6 lg:px-8 mt-20">
+      <div className="max-w-7xl mx-auto space-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          
           {/* Brand Column */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:col-span-1">
             <div className="flex items-center gap-3">
-              <BrandSymbol size={36} className="w-9 h-9 shrink-0" />
-              <span className="font-heading font-extrabold text-xl text-[#17251C] tracking-tight">
-                {locale === 'ne' ? 'सफल सर्जिकल हाउस' : 'SAPHAL SURGICAL HOUSE'}
+              <img src="/logo.svg" alt="Saphal Surgical Logo" width={40} height={40} className="rounded-m3-sm" />
+              <span className="font-bold text-lg tracking-tight">
+                {isNe ? 'सफल सर्जिकल हाउस' : 'SAPHAL SURGICAL'}
               </span>
             </div>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              {locale === 'ne'
-                ? 'कमल नगर मार्ग, नारायणगढ, चितवनमा अवस्थित शल्यक्रिया औजार, ल्याब उपकरण, मेडिकल उपभोग्य सामग्री तथा होम-केयर सामग्री आपूर्तिकर्ता।'
-                : 'Supplier of surgical instruments, clinical laboratory equipment, medical consumables, and patient home-care supplies located in Narayangarh, Chitwan.'}
+            <p className="text-xs sm:text-sm text-md-on-surface-variant leading-relaxed">
+              {isNe 
+                ? 'अस्पताल उपकरण, प्रयोगशाला परीक्षण सामग्री, र शल्यक्रिया औजारहरूको भरपर्दो आपूर्तिकर्ता।' 
+                : 'Reliable supplier of medical, hospital, OT supplies, and diagnostic reagents in Chitwan.'}
             </p>
             <div className="pt-2">
-              <a
-                href={siteConfig.social.facebook}
-                target="_blank"
+              <a 
+                href="https://wa.me/9779855055060" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white border border-[#DCFCE7] text-[#15803D] hover:bg-[#DCFCE7] transition-colors text-xs font-semibold shadow-xs"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-m3-full bg-white border border-md-outline-variant/80 text-xs font-semibold text-md-primary hover:bg-md-primary hover:text-white transition-all shadow-sm"
               >
-                <FacebookIcon className="w-4 h-4 text-blue-600" />
-                <span>{t.common.followFacebook}</span>
+                <span className="material-symbols-outlined text-sm">chat</span>
+                <span>WhatsApp Enquiry</span>
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-[#17251C] text-sm font-bold uppercase tracking-wider mb-4 border-l-2 border-[#15803D] pl-2">
-              {t.common.quickLinks}
+          <div className="space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-md-primary">
+              {isNe ? 'द्रुत लिङ्कहरू' : 'Navigation'}
             </h4>
-            <ul className="space-y-2.5 text-xs">
-              <li>
-                <Link href={`/${locale}`} className="hover:text-[#15803D] transition-colors font-medium">
-                  {t.nav.home}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/about`} className="hover:text-[#15803D] transition-colors font-medium">
-                  {t.nav.about}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/products`} className="hover:text-[#15803D] transition-colors font-medium">
-                  {t.nav.products}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/order-slip`} className="hover:text-[#15803D] transition-colors font-medium">
-                  {locale === 'ne' ? 'अर्डर सूची' : 'Order slip'}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/articles`} className="hover:text-[#15803D] transition-colors font-medium">
-                  {t.nav.articles}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/contact`} className="hover:text-[#15803D] transition-colors font-medium">
-                  {t.nav.contact}
-                </Link>
-              </li>
+            <ul className="space-y-2 text-sm text-md-on-surface-variant">
+              <li><Link href={`/${lang}`} className="hover:text-md-primary transition-colors">{isNe ? 'गृहपृष्ठ' : 'Home'}</Link></li>
+              <li><Link href={`/${lang}/about`} className="hover:text-md-primary transition-colors">{isNe ? 'हाम्रोबारे' : 'About Us'}</Link></li>
+              <li><Link href={`/${lang}/products`} className="hover:text-md-primary transition-colors">{isNe ? 'सामग्री सूची' : 'Products & Catalogue'}</Link></li>
+              <li><Link href={`/${lang}/articles`} className="hover:text-md-primary transition-colors">{isNe ? 'निर्देशिकाहरू' : 'Articles & Guides'}</Link></li>
+              <li><Link href={`/${lang}/order-slip`} className="hover:text-md-primary transition-colors">{isNe ? 'अर्डर स्लिप' : 'Order Slip'}</Link></li>
             </ul>
           </div>
 
-          {/* Contact Details */}
-          <div>
-            <h4 className="text-[#17251C] text-sm font-bold uppercase tracking-wider mb-4 border-l-2 border-[#15803D] pl-2">
-              {t.common.contactInfo}
+          {/* Contact Direct */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-md-primary">
+              {isNe ? 'सम्पर्क ठेगाना' : 'Contact Us'}
             </h4>
-            <ul className="space-y-3 text-xs">
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#15803D] shrink-0 mt-0.5" />
-                <span className="font-medium">{siteConfig.address.fullAddress[locale]}</span>
-              </li>
-              <li className="space-y-1.5">
-                <div className="flex items-center gap-2.5">
-                  <Phone className="w-4 h-4 text-[#15803D] shrink-0" />
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
-                    <a href={`tel:${siteConfig.phone.primary.raw}`} className="hover:text-[#15803D] transition-colors font-bold text-[#17251C]">
-                      {locale === 'ne' ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}
-                    </a>
-                    <span className="hidden sm:inline text-slate-400">/</span>
-                    <a href={`tel:${siteConfig.phone.secondary.raw}`} className="hover:text-[#15803D] transition-colors font-bold text-[#17251C]">
-                      {locale === 'ne' ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="pt-1">
-                <a
-                  href={siteConfig.coordinates.directionsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#15803D] hover:text-[#166534] underline underline-offset-4 text-xs font-semibold inline-flex items-center gap-1"
+            <div className="space-y-2.5 text-xs sm:text-sm text-md-on-surface-variant">
+              <p className="flex items-start gap-2">
+                <span className="material-symbols-outlined text-sm mt-0.5 text-md-primary">location_on</span>
+                <span>कमल नगर मार्ग, नारायणगढ, चितवन</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-sm text-md-primary">call</span>
+                <a href="tel:+97756596060" className="hover:underline font-medium">056-596060</a>
+                <span>/</span>
+                <a href="tel:+97756596120" className="hover:underline font-medium">056-596120</a>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-sm text-md-primary">navigation</span>
+                <a 
+                  href="https://www.google.com/maps/dir/?api=1&destination=27.69473,84.42161"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:underline text-md-primary font-medium"
                 >
-                  {t.common.getDirections} &rarr;
+                  Google Maps मा हेर्नुहोस् →
                 </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Business Clarification */}
-          <div>
-            <h4 className="text-[#17251C] text-sm font-bold uppercase tracking-wider mb-4 border-l-2 border-[#15803D] pl-2">
-              {t.common.businessNotice}
-            </h4>
-            <div className="p-3.5 rounded-2xl bg-white border border-[#DCFCE7] text-xs text-slate-700 leading-relaxed space-y-2 shadow-xs">
-              <div className="flex items-center gap-1.5 text-[#15803D] font-bold text-[11px]">
-                <Info className="w-3.5 h-3.5" />
-                <span>{locale === 'ne' ? 'सामग्री आपूर्तिकर्ता' : 'Supplies Distributor'}</span>
-              </div>
-              <p className="text-[11px] text-slate-600">
-                {t.common.notHospitalNotice}
               </p>
             </div>
           </div>
+
+          {/* M3 Business Disclaimer Card */}
+          <div className="p-4 bg-white/70 rounded-m3-lg border border-md-outline-variant/60 space-y-2">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-md-on-surface">
+              <span className="material-symbols-outlined text-sm text-amber-600">verified_user</span>
+              <span>{isNe ? 'व्यावसायिक प्रष्टिकरण' : 'Notice'}</span>
+            </div>
+            <p className="text-[11px] leading-relaxed text-md-on-surface-variant">
+              {isNe 
+                ? 'हामी केवल सर्जिकल, अस्पताल र ल्याब सामग्री वितरक हौं। हामी उपचार वा क्लिनिकल सल्लाह दिँदैनौं।' 
+                : 'Distributor of surgical and laboratory supplies only. No medical consultation or treatment provided.'}
+            </p>
+          </div>
+
         </div>
 
-        {/* Copyright Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>
-            &copy; {new Date().getFullYear()} {siteConfig.legalName} ({siteConfig.domain}). {t.common.allRightsReserved}
-          </p>
-          <div className="flex items-center gap-2 sm:gap-4 text-[11px] flex-wrap justify-center">
-            <span>{siteConfig.address.city[locale]}, {siteConfig.address.district[locale]}</span>
+        {/* Bottom Rights */}
+        <div className="pt-8 border-t border-md-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-md-outline">
+          <p>© 2026 Saphal Surgical House. All rights reserved.</p>
+          <div className="flex gap-4">
+            <span>Narayangarh, Chitwan</span>
             <span>•</span>
-            <a href={`tel:${siteConfig.phone.primary.raw}`} className="hover:text-[#15803D] font-semibold">
-              {locale === 'ne' ? siteConfig.phone.primary.displayNe : siteConfig.phone.primary.display}
-            </a>
-            <span>,</span>
-            <a href={`tel:${siteConfig.phone.secondary.raw}`} className="hover:text-[#15803D] font-semibold">
-              {locale === 'ne' ? siteConfig.phone.secondary.displayNe : siteConfig.phone.secondary.display}
-            </a>
+            <span>Bagmati Province, Nepal</span>
           </div>
         </div>
       </div>
     </footer>
   );
-};
+}
