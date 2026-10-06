@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Search, X, Filter, Phone, RefreshCw, AlertCircle } from 'lucide-react';
-import { ProductItem } from '@/data/products';
+import type { ProductAudience, ProductItem } from '@/data/products';
 import { CATEGORIES } from '@/data/categories';
 import { Locale } from '@/lib/translations';
 import { siteConfig } from '@/config/site';
@@ -21,7 +21,13 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
 
   const [searchQuery, setSearchQuery] = useState(searchParam);
   const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam || 'all');
+  const [selectedAudience, setSelectedAudience] = useState<ProductAudience | 'all'>('all');
   const isNe = locale === 'ne';
+  const audienceFilters: Array<{ id: ProductAudience; label: { en: string; ne: string } }> = [
+    { id: 'home-care', label: { en: 'Home care', ne: 'घरायसी हेरचाह' } },
+    { id: 'hospital-use', label: { en: 'Hospital use', ne: 'अस्पताल प्रयोग' } },
+    { id: 'pharmacy-retail', label: { en: 'Pharmacy retail', ne: 'फार्मेसी खुद्रा बिक्री' } },
+  ];
 
   useEffect(() => {
     setSelectedCategory(categoryParam || 'all');
@@ -37,8 +43,11 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
 
     return products.filter((item) => {
       // Category match
-      const categoryMatch = selectedCategory === 'all' || item.categoryId === selectedCategory;
+      const categoryMatch = selectedCategory === 'all'
+        || item.categoryId === selectedCategory
+        || item.additionalCategoryIds?.includes(selectedCategory);
       if (!categoryMatch) return false;
+      if (selectedAudience !== 'all' && !item.audienceIds?.includes(selectedAudience)) return false;
 
       // Search match
       if (!q) return true;
@@ -59,11 +68,12 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
         tags.some((t) => t.includes(q))
       );
     });
-  }, [products, searchQuery, selectedCategory]);
+  }, [products, searchQuery, selectedCategory, selectedAudience]);
 
   const handleReset = () => {
     setSearchQuery('');
     setSelectedCategory('all');
+    setSelectedAudience('all');
   };
 
   return (
@@ -125,12 +135,17 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
               }`}
               aria-pressed={selectedCategory === 'all'}
             >
-              {isNe ? 'सबै सामग्रीहरू' : 'All Products'} ({products.length})
+              {isNe ? 'सबै सामग्रीहरू' : 'All Products'} ({products.filter((item) => (
+                selectedAudience === 'all' || item.audienceIds?.includes(selectedAudience)
+              )).length})
             </button>
 
             {/* Individual Categories */}
             {CATEGORIES.map((cat) => {
-              const catCount = products.filter((p) => p.categoryId === cat.id).length;
+              const catCount = products.filter((p) => (
+                (p.categoryId === cat.id || p.additionalCategoryIds?.includes(cat.id))
+                && (selectedAudience === 'all' || p.audienceIds?.includes(selectedAudience))
+              )).length;
               const isSelected = selectedCategory === cat.id;
 
               return (
@@ -149,6 +164,46 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
                 </button>
               );
             })}
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center gap-2 mb-2.5 text-xs font-bold text-slate-600 uppercase tracking-wider">
+            <Filter className="w-3.5 h-3.5 text-[#15803D]" />
+            <span>{isNe ? 'प्रयोगकर्ता अनुसार फिल्टर गर्नुहोस्' : 'Filter by audience'}</span>
+          </div>
+          <div
+            className="-mx-4 flex flex-nowrap gap-2 overflow-x-auto px-4 pt-1 pb-2 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0"
+            role="group"
+            aria-label={isNe ? 'प्रयोगकर्ता फिल्टर' : 'Product audience filters'}
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedAudience('all')}
+              className={`min-h-[44px] shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-[#15803D] ${
+                selectedAudience === 'all'
+                  ? 'bg-[#15803D] text-white shadow-xs font-bold'
+                  : 'bg-[#F0FDF4] text-[#15803D] border border-[#DCFCE7] hover:bg-[#DCFCE7]'
+              }`}
+              aria-pressed={selectedAudience === 'all'}
+            >
+              {isNe ? 'सबै प्रयोगकर्ता' : 'All audiences'}
+            </button>
+            {audienceFilters.map((audience) => (
+              <button
+                key={audience.id}
+                type="button"
+                onClick={() => setSelectedAudience(audience.id)}
+                className={`min-h-[44px] shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-[#15803D] ${
+                  selectedAudience === audience.id
+                    ? 'bg-[#15803D] text-white shadow-xs font-bold'
+                    : 'bg-[#F0FDF4] text-[#15803D] border border-[#DCFCE7] hover:bg-[#DCFCE7]'
+                }`}
+                aria-pressed={selectedAudience === audience.id}
+              >
+                {isNe ? audience.label.ne : audience.label.en} ({products.filter((item) => item.audienceIds?.includes(audience.id)).length})
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -171,7 +226,7 @@ function CatalogueBrowserContent({ products, locale }: CatalogueBrowserProps) {
           )}
         </div>
 
-        {(searchQuery || selectedCategory !== 'all') && (
+        {(searchQuery || selectedCategory !== 'all' || selectedAudience !== 'all') && (
           <button
             type="button"
             onClick={handleReset}

@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { AlertCircle, Phone } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
@@ -66,6 +67,23 @@ export default async function ProductsPage({ params }: PageProps) {
         </a>
       </div>
 
+      <section className="rounded-2xl border border-[#DCE9DE] bg-white p-4 sm:p-5">
+        <h2 className="font-heading text-base sm:text-lg font-bold text-[#17251C]">
+          {lang === 'ne' ? 'फार्मेसी तथा खुद्रा खरिद' : 'Pharmacy & retailer purchasing'}
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-[#475569]">
+          {lang === 'ne'
+            ? 'फार्मेसी वा खुद्रा व्यवसायका लागि आवश्यक सामग्री, परिमाण र चाहिएको प्याकिङबारे जानकारी पठाउनुहोस्। प्याकेजिङ, उपलब्धता र मूल्य सम्पर्क गरेर पुष्टि गर्नुहोस्।'
+            : 'Pharmacies and retailers can share the items, requested quantities and preferred unit, pack or carton presentation. Confirm packaging, availability and prices with us.'}
+        </p>
+        <Link
+          href={`/${lang}/contact`}
+          className="mt-3 inline-flex min-h-[44px] items-center rounded-xl border border-[#B8D8BF] bg-[#F0FDF4] px-4 py-2 text-sm font-bold text-[#166534] hover:bg-[#DCFCE7]"
+        >
+          {lang === 'ne' ? 'सम्पर्क विवरण हेर्नुहोस्' : 'View contact details'}
+        </Link>
+      </section>
+
       {/* Interactive Catalogue Browser */}
       <CatalogueBrowser
         products={PRODUCTS}
@@ -74,4 +92,3 @@ export default async function ProductsPage({ params }: PageProps) {
     </div>
   );
 }
-

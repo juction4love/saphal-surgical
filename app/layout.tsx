@@ -61,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="scroll-smooth">
+    <html lang="ne" className="scroll-smooth" suppressHydrationWarning>
       <body className="bg-white text-[#17251C] antialiased flex flex-col min-h-screen">
         {children}
         <SpeedInsights />

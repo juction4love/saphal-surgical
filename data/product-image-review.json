@@ -1,0 +1,2670 @@
+[
+  {
+    "slug": "hematology-analyzer",
+    "title": "Hematology Analyzer",
+    "kind": "illustration",
+    "template": "lab-hematology",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "biochemistry-analyzer",
+    "title": "Biochemistry Analyzer (Semi / Fully Automated)",
+    "kind": "illustration",
+    "template": "lab-biochemistry",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "electrolyte-analyzer",
+    "title": "Electrolyte Analyzer (ISE)",
+    "kind": "illustration",
+    "template": "lab-electrolyte",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "immunoassay-analyzer",
+    "title": "Immunoassay Analyzer (ELISA / CLIA / FIA)",
+    "kind": "illustration",
+    "template": "lab-immunoassay",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "urine-analyzer",
+    "title": "Urine Chemistry Analyzer",
+    "kind": "illustration",
+    "template": "lab-urine",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "laboratory-microscope",
+    "title": "Binocular / Trinocular Laboratory Microscope",
+    "kind": "illustration",
+    "template": "microscope",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "laboratory-centrifuge",
+    "title": "Clinical Laboratory Centrifuge",
+    "kind": "illustration",
+    "template": "centrifuge",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "laboratory-incubator-hot-air-oven",
+    "title": "Laboratory Bacteriological Incubator & Hot-Air Oven",
+    "kind": "illustration",
+    "template": "incubator-oven",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "water-bath-micropipettes",
+    "title": "Laboratory Water Bath & Precision Micropipettes",
+    "kind": "illustration",
+    "template": "water-bath-pipette",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "lab-refrigerator-specimen-containers",
+    "title": "Laboratory Refrigerators, Test Tubes & Specimen Containers",
+    "kind": "illustration",
+    "template": "lab-fridge-specimen",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "surgical-scissors-forceps",
+    "title": "Surgical Scissors & Forceps (Dissecting / Tissue)",
+    "kind": "illustration",
+    "template": "scissors-forceps",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "hemostatic-clamps-needle-holders",
+    "title": "Hemostatic Clamps & Needle Holders (Artery Forceps)",
+    "kind": "illustration",
+    "template": "clamps-needleholder",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "surgical-retractors-scalpels-sets",
+    "title": "Surgical Retractors, Scalpel Handles & Instrument Sets",
+    "kind": "illustration",
+    "template": "surgical-retractors",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "autoclaves-steam-sterilizers",
+    "title": "Autoclaves & Steam Sterilizers (Vertical / Tabletop)",
+    "kind": "illustration",
+    "template": "autoclave",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "sterilization-pouches-indicator-supplies",
+    "title": "Sterilization Pouches, Rolls & Chemical Indicator Tapes",
+    "kind": "illustration",
+    "template": "sterilization-pouches",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "patient-monitors-ecg-machines",
+    "title": "Multi-Parameter Patient Monitors & ECG Machines",
+    "kind": "illustration",
+    "template": "patient-monitor-ecg",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "pulse-oximeters-bp-monitors-thermometers",
+    "title": "Pulse Oximeters, BP Monitors, Thermometers & Glucometers",
+    "kind": "illustration",
+    "template": "vitals-devices",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "oxygen-concentrators-regulators",
+    "title": "Medical Oxygen Concentrators & Cylinder Regulators",
+    "kind": "illustration",
+    "template": "oxygen-concentrator",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "medical-nebulizers-suction-machines",
+    "title": "Medical Nebulizers & Suction Machines",
+    "kind": "illustration",
+    "template": "nebulizer-suction",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "hospital-beds-examination-couches",
+    "title": "Hospital Patient Beds & Examination Couches",
+    "kind": "illustration",
+    "template": "hospital-bed-couch",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "wheelchairs-trolleys-stretchers-iv-stands",
+    "title": "Wheelchairs, Medical Trolleys, Stretchers & IV Stands",
+    "kind": "illustration",
+    "template": "ward-transport",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "medical-gloves-masks-disposable-gowns",
+    "title": "Medical Gloves, 3-Ply Masks & Disposable Surgical Gowns",
+    "kind": "illustration",
+    "template": "ppe",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "syringes-iv-cannulas-catheters-gauze-dressings",
+    "title": "Syringes, IV Cannulas, Catheters & Gauze Bandages",
+    "kind": "illustration",
+    "template": "medical-consumables",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "walkers-crutches-orthopedic-supports",
+    "title": "Walkers, Crutches, Walking Sticks & Orthopedic Supports",
+    "kind": "illustration",
+    "template": "walkers-supports",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "air-mattresses-commode-chairs",
+    "title": "Anti-Decubitus Air Mattresses & Commode Chairs",
+    "kind": "illustration",
+    "template": "air-mattress-commode",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "sterile-surgical-gowns-drapes-ot-packs",
+    "title": "Sterile Surgical Gowns, Drapes & OT Procedure Packs",
+    "kind": "illustration",
+    "template": "sterile-gown-drape",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "surgical-sutures-sterile-blades",
+    "title": "Surgical Sutures & Sterile Carbon / Stainless Blades",
+    "kind": "illustration",
+    "template": "sutures-blades",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "hospital-surface-floor-disinfectants",
+    "title": "Hospital Surface Disinfectants & Floor Cleaning Solutions",
+    "kind": "illustration",
+    "template": "disinfectants",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "alcohol-hand-rubs-antiseptic-scrubs",
+    "title": "Alcohol Hand Rub Sanitizers & Antiseptic Hand Scrubs",
+    "kind": "illustration",
+    "template": "hand-rub",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "double-bucket-mop-trolleys-cleaning-tools",
+    "title": "Double-Bucket Wringer Mop Trolleys & Cleaning Tools",
+    "kind": "illustration",
+    "template": "mop-trolley",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "color-coded-biomedical-waste-bins-bags",
+    "title": "Color-Coded Biomedical Waste Bins & Biohazard Bags",
+    "kind": "illustration",
+    "template": "waste-bins-bags",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "puncture-proof-sharps-containers-needle-destroyers",
+    "title": "Puncture-Proof Sharps Containers & Needle Destroyers",
+    "kind": "illustration",
+    "template": "sharps",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "insulin-syringes-u-40-u-100",
+    "title": "Insulin Syringes (U-40 & U-100 Calibrations)",
+    "kind": "illustration",
+    "template": "insulin-syringe",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "tuberculin-syringes-1ml",
+    "title": "Tuberculin Syringes (1ml Diagnostic / Small-Volume)",
+    "kind": "illustration",
+    "template": "tuberculin-syringe",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "disposable-syringes-luer-slip-lock",
+    "title": "General Disposable Syringes (2ml to 50ml / 60ml)",
+    "kind": "illustration",
+    "template": "syringe-range",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "iv-infusion-sets-blood-administration",
+    "title": "IV Infusion Sets & Blood Administration Sets",
+    "kind": "illustration",
+    "template": "iv-infusion",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "iv-cannulas-color-coded-gauges",
+    "title": "Color-Coded IV Cannulas / Catheters (14G to 26G)",
+    "kind": "illustration",
+    "template": "iv-cannula",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "surgical-sutures-absorbable-non-absorbable",
+    "title": "Sterile Surgical Sutures (Absorbable & Non-Absorbable)",
+    "kind": "illustration",
+    "template": "suture-pack",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "ent-instruments-specula-forceps-sets",
+    "title": "ENT Instruments (Ear, Nose & Throat Specula, Forceps & Sets)",
+    "kind": "illustration",
+    "template": "ent-set",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "coral-clinical-systems-biochemistry-reagents",
+    "title": "Coral Clinical Systems Biochemistry Reagents & Test Kits",
+    "kind": "illustration",
+    "template": "reagent-kits",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "tulip-diagnostics-serology-rapid-test-kits",
+    "title": "Tulip Diagnostics Serology Reagents & Rapid Test Kits",
+    "kind": "illustration",
+    "template": "reagent-kits",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "erba-mannheim-clinical-chemistry-reagents-controls",
+    "title": "Erba Mannheim Clinical Chemistry Reagents, Hematology & Controls",
+    "kind": "illustration",
+    "template": "reagent-kits",
+    "review": "related-category-illustration"
+  },
+  {
+    "slug": "dressing-scissors",
+    "title": "Dressing scissors",
+    "kind": "illustration",
+    "template": "product-dressing-scissors",
+    "ruleLine": 131,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "plain-dissecting-forceps",
+    "title": "Plain dissecting forceps",
+    "kind": "illustration",
+    "template": "product-plain-dissecting-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "toothed-dissecting-forceps",
+    "title": "Toothed dissecting forceps",
+    "kind": "illustration",
+    "template": "product-toothed-dissecting-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "mosquito-forceps",
+    "title": "Mosquito forceps",
+    "kind": "illustration",
+    "template": "product-mosquito-forceps",
+    "ruleLine": 113,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "needle-holder",
+    "title": "Needle holder",
+    "kind": "illustration",
+    "template": "product-needle-holder",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "scalpel-handle",
+    "title": "Scalpel handle",
+    "kind": "illustration",
+    "template": "product-scalpel-handle",
+    "ruleLine": 140,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "allis-tissue-forceps",
+    "title": "Allis tissue forceps",
+    "kind": "illustration",
+    "template": "product-allis-tissue-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "babcock-tissue-forceps",
+    "title": "Babcock tissue forceps",
+    "kind": "illustration",
+    "template": "product-babcock-tissue-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "sponge-holding-forceps",
+    "title": "Sponge-holding forceps",
+    "kind": "illustration",
+    "template": "product-sponge-holding-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "towel-clips",
+    "title": "Towel clips",
+    "kind": "illustration",
+    "template": "product-towel-clips",
+    "ruleLine": 119,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-instrument-trays",
+    "title": "Surgical instrument trays",
+    "kind": "illustration",
+    "template": "product-surgical-instrument-trays",
+    "ruleLine": 152,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "kidney-trays",
+    "title": "Kidney trays",
+    "kind": "illustration",
+    "template": "product-kidney-trays",
+    "ruleLine": 152,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "dressing-drums",
+    "title": "Dressing drums",
+    "kind": "illustration",
+    "template": "product-dressing-drums",
+    "ruleLine": 152,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ear-specula",
+    "title": "Ear specula",
+    "kind": "illustration",
+    "template": "product-ear-specula",
+    "ruleLine": 149,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nasal-specula",
+    "title": "Nasal specula",
+    "kind": "illustration",
+    "template": "product-nasal-specula",
+    "ruleLine": 149,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "right-angle-forceps",
+    "title": "Right-angle forceps",
+    "kind": "illustration",
+    "template": "product-right-angle-forceps",
+    "ruleLine": 107,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "kocher-forceps",
+    "title": "Kocher forceps",
+    "kind": "illustration",
+    "template": "product-kocher-forceps",
+    "ruleLine": 110,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "bulldog-vascular-clamps",
+    "title": "Bulldog vascular clamps",
+    "kind": "illustration",
+    "template": "product-bulldog-vascular-clamps",
+    "ruleLine": 116,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "vascular-clamps",
+    "title": "Vascular clamps",
+    "kind": "illustration",
+    "template": "product-vascular-clamps",
+    "ruleLine": 116,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "intestinal-clamps",
+    "title": "Intestinal clamps",
+    "kind": "illustration",
+    "template": "product-intestinal-clamps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bone-holding-forceps",
+    "title": "Bone-holding forceps",
+    "kind": "illustration",
+    "template": "product-bone-holding-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bone-cutters",
+    "title": "Bone cutters",
+    "kind": "illustration",
+    "template": "product-bone-cutters",
+    "ruleLine": 134,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "bone-rongeurs",
+    "title": "Bone rongeurs",
+    "kind": "illustration",
+    "template": "product-bone-rongeurs",
+    "ruleLine": 134,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "periosteal-elevators",
+    "title": "Periosteal elevators",
+    "kind": "illustration",
+    "template": "product-periosteal-elevators",
+    "ruleLine": 143,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-osteotomes",
+    "title": "Surgical osteotomes",
+    "kind": "illustration",
+    "template": "product-surgical-osteotomes",
+    "ruleLine": 140,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-chisels",
+    "title": "Surgical chisels",
+    "kind": "illustration",
+    "template": "product-surgical-chisels",
+    "ruleLine": 140,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bone-curettes",
+    "title": "Bone curettes",
+    "kind": "illustration",
+    "template": "product-bone-curettes",
+    "ruleLine": 122,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "surgical-mallets",
+    "title": "Surgical mallets",
+    "kind": "illustration",
+    "template": "product-surgical-mallets",
+    "ruleLine": 137,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "skin-hooks",
+    "title": "Skin hooks",
+    "kind": "illustration",
+    "template": "product-skin-hooks",
+    "ruleLine": 125,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-probes",
+    "title": "Surgical probes",
+    "kind": "illustration",
+    "template": "product-surgical-probes",
+    "ruleLine": 128,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "grooved-directors",
+    "title": "Grooved directors",
+    "kind": "illustration",
+    "template": "product-grooved-directors",
+    "ruleLine": 128,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "sinus-forceps",
+    "title": "Sinus forceps",
+    "kind": "illustration",
+    "template": "product-sinus-forceps",
+    "ruleLine": 128,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "suction-cannulas",
+    "title": "Suction cannulas",
+    "kind": "illustration",
+    "template": "product-suction-cannulas",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ligature-carriers",
+    "title": "Ligature carriers",
+    "kind": "illustration",
+    "template": "product-ligature-carriers",
+    "ruleLine": 128,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "suture-removal-scissors",
+    "title": "Suture-removal scissors",
+    "kind": "illustration",
+    "template": "product-suture-removal-scissors",
+    "ruleLine": 131,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "vaginal-specula",
+    "title": "Vaginal specula",
+    "kind": "illustration",
+    "template": "product-vaginal-specula",
+    "ruleLine": 149,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "uterine-sounds",
+    "title": "Uterine sounds",
+    "kind": "illustration",
+    "template": "product-uterine-sounds",
+    "ruleLine": 143,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cervical-dilators",
+    "title": "Cervical dilators",
+    "kind": "illustration",
+    "template": "product-cervical-dilators",
+    "ruleLine": 143,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "uterine-curettes",
+    "title": "Uterine curettes",
+    "kind": "illustration",
+    "template": "product-uterine-curettes",
+    "ruleLine": 122,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "ovum-forceps",
+    "title": "Ovum forceps",
+    "kind": "illustration",
+    "template": "product-ovum-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "vulsellum-forceps",
+    "title": "Vulsellum forceps",
+    "kind": "illustration",
+    "template": "product-vulsellum-forceps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "umbilical-cord-clamps",
+    "title": "Umbilical cord clamps",
+    "kind": "illustration",
+    "template": "product-umbilical-cord-clamps",
+    "ruleLine": 146,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "obstetric-delivery-instrument-sets",
+    "title": "Obstetric delivery instrument sets",
+    "kind": "illustration",
+    "template": "product-obstetric-delivery-instrument-sets",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "orthopedic-instrument-sets",
+    "title": "Orthopedic instrument sets",
+    "kind": "illustration",
+    "template": "product-orthopedic-instrument-sets",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "orthopedic-measuring-instruments",
+    "title": "Orthopedic measuring instruments",
+    "kind": "illustration",
+    "template": "product-orthopedic-measuring-instruments",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-bone-drills",
+    "title": "Surgical bone drills",
+    "kind": "illustration",
+    "template": "product-surgical-bone-drills",
+    "ruleLine": 155,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-bone-saws",
+    "title": "Surgical bone saws",
+    "kind": "illustration",
+    "template": "product-surgical-bone-saws",
+    "ruleLine": 155,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "hypodermic-needles",
+    "title": "Hypodermic needles",
+    "kind": "illustration",
+    "template": "product-hypodermic-needles",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "blood-administration-sets",
+    "title": "Blood administration sets",
+    "kind": "illustration",
+    "template": "product-blood-administration-sets",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "three-way-stopcocks",
+    "title": "Three-way stopcocks",
+    "kind": "illustration",
+    "template": "product-three-way-stopcocks",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "iv-extension-lines",
+    "title": "IV extension lines",
+    "kind": "illustration",
+    "template": "product-iv-extension-lines",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "non-absorbable-sutures",
+    "title": "Non-absorbable sutures",
+    "kind": "illustration",
+    "template": "product-non-absorbable-sutures",
+    "ruleLine": 170,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "sterile-surgical-gloves",
+    "title": "Sterile surgical gloves",
+    "kind": "illustration",
+    "template": "product-sterile-surgical-gloves",
+    "ruleLine": 179,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "surgical-masks",
+    "title": "Surgical masks",
+    "kind": "illustration",
+    "template": "product-surgical-masks",
+    "ruleLine": 182,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-drapes",
+    "title": "Surgical drapes",
+    "kind": "illustration",
+    "template": "product-surgical-drapes",
+    "ruleLine": 185,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "gauze-swabs",
+    "title": "Gauze swabs",
+    "kind": "illustration",
+    "template": "product-gauze-swabs",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cotton-rolls",
+    "title": "Cotton rolls",
+    "kind": "illustration",
+    "template": "product-cotton-rolls",
+    "ruleLine": 20,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "adhesive-medical-tape",
+    "title": "Adhesive medical tape",
+    "kind": "illustration",
+    "template": "product-adhesive-medical-tape",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "urine-collection-bags",
+    "title": "Urine collection bags",
+    "kind": "illustration",
+    "template": "product-urine-collection-bags",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "elastic-compression-bandages",
+    "title": "Elastic compression bandages",
+    "kind": "illustration",
+    "template": "product-elastic-compression-bandages",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "crepe-bandages",
+    "title": "Crepe bandages",
+    "kind": "illustration",
+    "template": "product-crepe-bandages",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "plaster-of-paris-bandages",
+    "title": "Plaster-of-Paris bandages",
+    "kind": "illustration",
+    "template": "product-plaster-of-paris-bandages",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "fibreglass-casting-tape",
+    "title": "Fibreglass casting tape",
+    "kind": "illustration",
+    "template": "product-fibreglass-casting-tape",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "transparent-film-dressings",
+    "title": "Transparent film dressings",
+    "kind": "illustration",
+    "template": "product-transparent-film-dressings",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "foam-wound-dressings",
+    "title": "Foam wound dressings",
+    "kind": "illustration",
+    "template": "product-foam-wound-dressings",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "hydrocolloid-dressings",
+    "title": "Hydrocolloid dressings",
+    "kind": "illustration",
+    "template": "product-hydrocolloid-dressings",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "non-adherent-wound-dressings",
+    "title": "Non-adherent wound dressings",
+    "kind": "illustration",
+    "template": "product-non-adherent-wound-dressings",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "wound-closure-adhesive-strips",
+    "title": "Wound-closure adhesive strips",
+    "kind": "illustration",
+    "template": "product-wound-closure-adhesive-strips",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "surgical-skin-staplers",
+    "title": "Surgical skin staplers",
+    "kind": "illustration",
+    "template": "product-surgical-skin-staplers",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "skin-staple-removers",
+    "title": "Skin staple removers",
+    "kind": "illustration",
+    "template": "product-skin-staple-removers",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "closed-wound-drainage-sets",
+    "title": "Closed wound-drainage sets",
+    "kind": "illustration",
+    "template": "product-closed-wound-drainage-sets",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "penrose-drains",
+    "title": "Penrose drains",
+    "kind": "illustration",
+    "template": "product-penrose-drains",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "chest-drainage-systems",
+    "title": "Chest drainage systems",
+    "kind": "illustration",
+    "template": "product-chest-drainage-systems",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nasogastric-feeding-tubes",
+    "title": "Nasogastric feeding tubes",
+    "kind": "illustration",
+    "template": "product-nasogastric-feeding-tubes",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "sterilization-wrapping-sheets",
+    "title": "Sterilization wrapping sheets",
+    "kind": "illustration",
+    "template": "product-sterilization-wrapping-sheets",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "autoclave-indicator-tape",
+    "title": "Autoclave indicator tape",
+    "kind": "illustration",
+    "template": "product-autoclave-indicator-tape",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "chemical-sterilization-indicators",
+    "title": "Chemical sterilization indicators",
+    "kind": "illustration",
+    "template": "product-chemical-sterilization-indicators",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "biological-sterilization-indicators",
+    "title": "Biological sterilization indicators",
+    "kind": "illustration",
+    "template": "product-biological-sterilization-indicators",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bowie-dick-test-packs",
+    "title": "Bowie–Dick test packs",
+    "kind": "illustration",
+    "template": "product-bowie-dick-test-packs",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "disposable-shoe-covers",
+    "title": "Disposable shoe covers",
+    "kind": "illustration",
+    "template": "product-disposable-shoe-covers",
+    "ruleLine": 185,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "oxygen-face-masks",
+    "title": "Oxygen face masks",
+    "kind": "illustration",
+    "template": "product-oxygen-face-masks",
+    "ruleLine": 182,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nasal-oxygen-cannulas",
+    "title": "Nasal oxygen cannulas",
+    "kind": "illustration",
+    "template": "product-nasal-oxygen-cannulas",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "anaesthesia-face-masks",
+    "title": "Anaesthesia face masks",
+    "kind": "illustration",
+    "template": "product-anaesthesia-face-masks",
+    "ruleLine": 182,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "heat-and-moisture-exchange-filters",
+    "title": "Heat-and-moisture exchange filters",
+    "kind": "illustration",
+    "template": "product-heat-and-moisture-exchange-filters",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bacterial-viral-breathing-filters",
+    "title": "Bacterial/viral breathing filters",
+    "kind": "illustration",
+    "template": "product-bacterial-viral-breathing-filters",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "breathing-circuits",
+    "title": "Breathing circuits",
+    "kind": "illustration",
+    "template": "product-breathing-circuits",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "endotracheal-tubes",
+    "title": "Endotracheal tubes",
+    "kind": "illustration",
+    "template": "product-endotracheal-tubes",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "tracheostomy-tubes",
+    "title": "Tracheostomy tubes",
+    "kind": "illustration",
+    "template": "product-tracheostomy-tubes",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "laryngeal-mask-airways",
+    "title": "Laryngeal mask airways",
+    "kind": "illustration",
+    "template": "product-laryngeal-mask-airways",
+    "ruleLine": 182,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "oropharyngeal-airways",
+    "title": "Oropharyngeal airways",
+    "kind": "illustration",
+    "template": "product-oropharyngeal-airways",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nasopharyngeal-airways",
+    "title": "Nasopharyngeal airways",
+    "kind": "illustration",
+    "template": "product-nasopharyngeal-airways",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "suction-catheters",
+    "title": "Suction catheters",
+    "kind": "illustration",
+    "template": "product-suction-catheters",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "manual-resuscitator-bags",
+    "title": "Manual resuscitator bags",
+    "kind": "illustration",
+    "template": "product-manual-resuscitator-bags",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "laryngoscope-sets",
+    "title": "Laryngoscope sets",
+    "kind": "illustration",
+    "template": "product-laryngoscope-sets",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "foley-urinary-catheters",
+    "title": "Foley urinary catheters",
+    "kind": "illustration",
+    "template": "product-foley-urinary-catheters",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "intermittent-urinary-catheters",
+    "title": "Intermittent urinary catheters",
+    "kind": "illustration",
+    "template": "product-intermittent-urinary-catheters",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "urometer-drainage-systems",
+    "title": "Urometer drainage systems",
+    "kind": "illustration",
+    "template": "product-urometer-drainage-systems",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "urinary-catheterization-kits",
+    "title": "Urinary catheterization kits",
+    "kind": "illustration",
+    "template": "product-urinary-catheterization-kits",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "suprapubic-catheter-kits",
+    "title": "Suprapubic catheter kits",
+    "kind": "illustration",
+    "template": "product-suprapubic-catheter-kits",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bladder-irrigation-sets",
+    "title": "Bladder irrigation sets",
+    "kind": "illustration",
+    "template": "product-bladder-irrigation-sets",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "hospital-mattresses",
+    "title": "Hospital mattresses",
+    "kind": "illustration",
+    "template": "product-hospital-mattresses",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bedside-lockers",
+    "title": "Bedside lockers",
+    "kind": "illustration",
+    "template": "product-bedside-lockers",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "overbed-tables",
+    "title": "Overbed tables",
+    "kind": "illustration",
+    "template": "product-overbed-tables",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "iv-stands",
+    "title": "IV stands",
+    "kind": "illustration",
+    "template": "product-iv-stands",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "hospital-stretchers",
+    "title": "Hospital stretchers",
+    "kind": "illustration",
+    "template": "product-hospital-stretchers",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "examination-couches",
+    "title": "Examination couches",
+    "kind": "illustration",
+    "template": "product-examination-couches",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "instrument-trolleys",
+    "title": "Instrument trolleys",
+    "kind": "illustration",
+    "template": "product-instrument-trolleys",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "dressing-trolleys",
+    "title": "Dressing trolleys",
+    "kind": "illustration",
+    "template": "product-dressing-trolleys",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "operating-tables",
+    "title": "Operating tables",
+    "kind": "illustration",
+    "template": "product-operating-tables",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "operating-lights",
+    "title": "Operating lights",
+    "kind": "illustration",
+    "template": "product-operating-lights",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "emergency-crash-carts",
+    "title": "Emergency crash carts",
+    "kind": "illustration",
+    "template": "product-emergency-crash-carts",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "patient-privacy-screens",
+    "title": "Patient privacy screens",
+    "kind": "illustration",
+    "template": "product-patient-privacy-screens",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "medication-trolleys",
+    "title": "Medication trolleys",
+    "kind": "illustration",
+    "template": "product-medication-trolleys",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "linen-trolleys",
+    "title": "Linen trolleys",
+    "kind": "illustration",
+    "template": "product-linen-trolleys",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "laundry-collection-carts",
+    "title": "Laundry collection carts",
+    "kind": "illustration",
+    "template": "product-laundry-collection-carts",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "gynaecological-examination-tables",
+    "title": "Gynaecological examination tables",
+    "kind": "illustration",
+    "template": "product-gynaecological-examination-tables",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-changing-tables",
+    "title": "Baby changing tables",
+    "kind": "illustration",
+    "template": "product-baby-changing-tables",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "electrosurgical-units",
+    "title": "Electrosurgical units",
+    "kind": "illustration",
+    "template": "product-electrosurgical-units",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "medical-suction-machines",
+    "title": "Medical suction machines",
+    "kind": "illustration",
+    "template": "product-medical-suction-machines",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ecg-machines",
+    "title": "ECG machines",
+    "kind": "illustration",
+    "template": "product-ecg-machines",
+    "ruleLine": 101,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "defibrillators",
+    "title": "Defibrillators",
+    "kind": "illustration",
+    "template": "product-defibrillators",
+    "ruleLine": 104,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "anaesthesia-machines",
+    "title": "Anaesthesia machines",
+    "kind": "illustration",
+    "template": "product-anaesthesia-machines",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "infusion-pumps",
+    "title": "Infusion pumps",
+    "kind": "illustration",
+    "template": "product-infusion-pumps",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "syringe-pumps",
+    "title": "Syringe pumps",
+    "kind": "illustration",
+    "template": "product-syringe-pumps",
+    "ruleLine": 161,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "medical-ventilators",
+    "title": "Medical ventilators",
+    "kind": "illustration",
+    "template": "product-medical-ventilators",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "capnography-monitors",
+    "title": "Capnography monitors",
+    "kind": "illustration",
+    "template": "product-capnography-monitors",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "patient-warming-systems",
+    "title": "Patient warming systems",
+    "kind": "illustration",
+    "template": "product-patient-warming-systems",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ultrasonic-instrument-cleaners",
+    "title": "Ultrasonic instrument cleaners",
+    "kind": "illustration",
+    "template": "product-ultrasonic-instrument-cleaners",
+    "ruleLine": 251,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "instrument-washer-disinfectors",
+    "title": "Instrument washer-disinfectors",
+    "kind": "illustration",
+    "template": "product-instrument-washer-disinfectors",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "sterilization-container-systems",
+    "title": "Sterilization container systems",
+    "kind": "illustration",
+    "template": "product-sterilization-container-systems",
+    "ruleLine": 152,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "hospital-weighing-scales",
+    "title": "Hospital weighing scales",
+    "kind": "illustration",
+    "template": "product-hospital-weighing-scales",
+    "ruleLine": 224,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "height-measuring-stadiometers",
+    "title": "Height-measuring stadiometers",
+    "kind": "illustration",
+    "template": "product-height-measuring-stadiometers",
+    "ruleLine": 224,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "enteral-feeding-pumps",
+    "title": "Enteral feeding pumps",
+    "kind": "illustration",
+    "template": "product-enteral-feeding-pumps",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "enteral-feeding-bags-and-sets",
+    "title": "Enteral feeding bags and sets",
+    "kind": "illustration",
+    "template": "product-enteral-feeding-bags-and-sets",
+    "ruleLine": 254,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "sequential-compression-devices",
+    "title": "Sequential compression devices",
+    "kind": "illustration",
+    "template": "product-sequential-compression-devices",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "oxygen-cylinders-and-regulator-sets",
+    "title": "Oxygen cylinders and regulator sets",
+    "kind": "illustration",
+    "template": "product-oxygen-cylinders-and-regulator-sets",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "portable-suction-units",
+    "title": "Portable suction units",
+    "kind": "illustration",
+    "template": "product-portable-suction-units",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cpap-devices",
+    "title": "CPAP devices",
+    "kind": "illustration",
+    "template": "product-cpap-devices",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "tens-devices",
+    "title": "TENS devices",
+    "kind": "illustration",
+    "template": "product-tens-devices",
+    "ruleLine": 65,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "electrical-muscle-stimulators",
+    "title": "Electrical muscle stimulators",
+    "kind": "illustration",
+    "template": "product-electrical-muscle-stimulators",
+    "ruleLine": 65,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "therapeutic-ultrasound-units",
+    "title": "Therapeutic ultrasound units",
+    "kind": "illustration",
+    "template": "product-therapeutic-ultrasound-units",
+    "ruleLine": 68,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "digital-blood-pressure-monitors",
+    "title": "Digital blood-pressure monitors",
+    "kind": "illustration",
+    "template": "product-digital-blood-pressure-monitors",
+    "ruleLine": 86,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "manual-blood-pressure-apparatus",
+    "title": "Manual blood-pressure apparatus",
+    "kind": "illustration",
+    "template": "product-manual-blood-pressure-apparatus",
+    "ruleLine": 89,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "stethoscopes",
+    "title": "Stethoscopes",
+    "kind": "illustration",
+    "template": "product-stethoscopes",
+    "ruleLine": 92,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "infrared-thermometers",
+    "title": "Infrared thermometers",
+    "kind": "illustration",
+    "template": "product-infrared-thermometers",
+    "ruleLine": 95,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "glucometers",
+    "title": "Glucometers",
+    "kind": "photo",
+    "review": "representative-photo"
+  },
+  {
+    "slug": "glucose-test-strips",
+    "title": "Glucose test strips",
+    "kind": "illustration",
+    "template": "product-glucose-test-strips",
+    "ruleLine": 17,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "peak-flow-meters",
+    "title": "Peak-flow meters",
+    "kind": "illustration",
+    "template": "product-peak-flow-meters",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "incentive-spirometers",
+    "title": "Incentive spirometers",
+    "kind": "illustration",
+    "template": "product-incentive-spirometers",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "micropipettes",
+    "title": "Micropipettes",
+    "kind": "illustration",
+    "template": "product-micropipettes",
+    "ruleLine": 248,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "micropipette-tips",
+    "title": "Micropipette tips",
+    "kind": "illustration",
+    "template": "product-micropipette-tips",
+    "ruleLine": 248,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "laboratory-hot-air-ovens",
+    "title": "Laboratory hot-air ovens",
+    "kind": "illustration",
+    "template": "product-laboratory-hot-air-ovens",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "specimen-containers",
+    "title": "Specimen containers",
+    "kind": "illustration",
+    "template": "product-specimen-containers",
+    "ruleLine": 152,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "erba-laboratory-reagents",
+    "title": "Erba laboratory reagents",
+    "kind": "illustration",
+    "template": "product-erba-laboratory-reagents",
+    "ruleLine": 248,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "spine-boards",
+    "title": "Spine boards",
+    "kind": "illustration",
+    "template": "product-spine-boards",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cervical-immobilization-collars",
+    "title": "Cervical immobilization collars",
+    "kind": "illustration",
+    "template": "product-cervical-immobilization-collars",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "scoop-stretchers",
+    "title": "Scoop stretchers",
+    "kind": "illustration",
+    "template": "product-scoop-stretchers",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "fluid-and-blood-warmers",
+    "title": "Fluid and blood warmers",
+    "kind": "illustration",
+    "template": "product-fluid-and-blood-warmers",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "patient-transfer-boards",
+    "title": "Patient transfer boards",
+    "kind": "illustration",
+    "template": "product-patient-transfer-boards",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "patient-hoists",
+    "title": "Patient hoists",
+    "kind": "illustration",
+    "template": "product-patient-hoists",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "transfer-slings",
+    "title": "Transfer slings",
+    "kind": "illustration",
+    "template": "product-transfer-slings",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bedpans",
+    "title": "Bedpans",
+    "kind": "illustration",
+    "template": "product-bedpans",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "urinal-bottles",
+    "title": "Urinal bottles",
+    "kind": "illustration",
+    "template": "product-urinal-bottles",
+    "ruleLine": 212,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "electric-wheelchairs",
+    "title": "Electric wheelchairs",
+    "kind": "illustration",
+    "template": "product-electric-wheelchairs",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "commode-chairs",
+    "title": "Commode chairs",
+    "kind": "illustration",
+    "template": "product-commode-chairs",
+    "ruleLine": 239,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "walking-sticks-quadripod-tripod",
+    "title": "Walking sticks (quadripod / tripod)",
+    "kind": "illustration",
+    "template": "product-walking-sticks-quadripod-tripod",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "crutches-including-forearm-crutches",
+    "title": "Crutches (including forearm crutches)",
+    "kind": "illustration",
+    "template": "product-crutches-including-forearm-crutches",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "rollators",
+    "title": "Rollators",
+    "kind": "illustration",
+    "template": "product-rollators",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "home-care-adjustable-beds",
+    "title": "Home-care adjustable beds",
+    "kind": "illustration",
+    "template": "product-home-care-adjustable-beds",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "knee-supports-including-hinged-braces-immobilizers-and-patellar-straps",
+    "title": "Knee supports (including hinged braces, immobilizers and patellar straps)",
+    "kind": "illustration",
+    "template": "product-knee-supports-including-hinged-braces-immobilizers-and-patellar-straps",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "lumbar-supports-including-thoracolumbar-braces-and-sacroiliac-belts",
+    "title": "Lumbar supports (including thoracolumbar braces and sacroiliac belts)",
+    "kind": "illustration",
+    "template": "product-lumbar-supports-including-thoracolumbar-braces-and-sacroiliac-belts",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "exercise-pulleys",
+    "title": "Exercise pulleys",
+    "kind": "illustration",
+    "template": "product-exercise-pulleys",
+    "ruleLine": 257,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "stationary-exercise-cycles",
+    "title": "Stationary exercise cycles",
+    "kind": "illustration",
+    "template": "product-stationary-exercise-cycles",
+    "ruleLine": 257,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ankle-supports",
+    "title": "Ankle supports",
+    "kind": "illustration",
+    "template": "product-ankle-supports",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ankle-stabilizing-braces",
+    "title": "Ankle stabilizing braces",
+    "kind": "illustration",
+    "template": "product-ankle-stabilizing-braces",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "walking-boots",
+    "title": "Walking boots",
+    "kind": "illustration",
+    "template": "product-walking-boots",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "foot-drop-splints",
+    "title": "Foot-drop splints",
+    "kind": "illustration",
+    "template": "product-foot-drop-splints",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "wrist-supports",
+    "title": "Wrist supports",
+    "kind": "illustration",
+    "template": "product-wrist-supports",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "wrist-cock-up-splints",
+    "title": "Wrist cock-up splints",
+    "kind": "illustration",
+    "template": "product-wrist-cock-up-splints",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "thumb-spica-splints",
+    "title": "Thumb-spica splints",
+    "kind": "illustration",
+    "template": "product-thumb-spica-splints",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "finger-splints",
+    "title": "Finger splints",
+    "kind": "illustration",
+    "template": "product-finger-splints",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "elbow-supports",
+    "title": "Elbow supports",
+    "kind": "illustration",
+    "template": "product-elbow-supports",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "tennis-elbow-straps",
+    "title": "Tennis-elbow straps",
+    "kind": "illustration",
+    "template": "product-tennis-elbow-straps",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "shoulder-immobilizers",
+    "title": "Shoulder immobilizers",
+    "kind": "illustration",
+    "template": "product-shoulder-immobilizers",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "arm-slings",
+    "title": "Arm slings",
+    "kind": "illustration",
+    "template": "product-arm-slings",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "clavicle-braces",
+    "title": "Clavicle braces",
+    "kind": "illustration",
+    "template": "product-clavicle-braces",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "rib-belts",
+    "title": "Rib belts",
+    "kind": "illustration",
+    "template": "product-rib-belts",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "abdominal-binders",
+    "title": "Abdominal binders",
+    "kind": "illustration",
+    "template": "product-abdominal-binders",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "postoperative-abdominal-supports",
+    "title": "Postoperative abdominal supports",
+    "kind": "illustration",
+    "template": "product-postoperative-abdominal-supports",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "maternity-support-belts",
+    "title": "Maternity support belts",
+    "kind": "illustration",
+    "template": "product-maternity-support-belts",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "soft-cervical-collars",
+    "title": "Soft cervical collars",
+    "kind": "illustration",
+    "template": "product-soft-cervical-collars",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "heel-cushions",
+    "title": "Heel cushions",
+    "kind": "illustration",
+    "template": "product-heel-cushions",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "heel-cups",
+    "title": "Heel cups",
+    "kind": "illustration",
+    "template": "product-heel-cups",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "arch-support-insoles",
+    "title": "Arch-support insoles",
+    "kind": "illustration",
+    "template": "product-arch-support-insoles",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "metatarsal-pads",
+    "title": "Metatarsal pads",
+    "kind": "illustration",
+    "template": "product-metatarsal-pads",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "toe-separators",
+    "title": "Toe separators",
+    "kind": "illustration",
+    "template": "product-toe-separators",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bunion-supports",
+    "title": "Bunion supports",
+    "kind": "illustration",
+    "template": "product-bunion-supports",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "orthopedic-seat-cushions",
+    "title": "Orthopedic seat cushions",
+    "kind": "illustration",
+    "template": "product-orthopedic-seat-cushions",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "casting-stockinette",
+    "title": "Casting stockinette",
+    "kind": "illustration",
+    "template": "product-casting-stockinette",
+    "ruleLine": 185,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "undercast-padding",
+    "title": "Undercast padding",
+    "kind": "illustration",
+    "template": "product-undercast-padding",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "plaster-splints",
+    "title": "Plaster splints",
+    "kind": "illustration",
+    "template": "product-plaster-splints",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "aluminium-foam-splints",
+    "title": "Aluminium foam splints",
+    "kind": "illustration",
+    "template": "product-aluminium-foam-splints",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "traction-kits",
+    "title": "Traction kits",
+    "kind": "illustration",
+    "template": "product-traction-kits",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "traction-weights",
+    "title": "Traction weights",
+    "kind": "illustration",
+    "template": "product-traction-weights",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "orthopedic-traction-frames",
+    "title": "Orthopedic traction frames",
+    "kind": "illustration",
+    "template": "product-orthopedic-traction-frames",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cast-shoes",
+    "title": "Cast shoes",
+    "kind": "illustration",
+    "template": "product-cast-shoes",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cast-saws",
+    "title": "Cast saws",
+    "kind": "illustration",
+    "template": "product-cast-saws",
+    "ruleLine": 155,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cast-spreaders",
+    "title": "Cast spreaders",
+    "kind": "illustration",
+    "template": "product-cast-spreaders",
+    "ruleLine": 140,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cast-removal-shears",
+    "title": "Cast-removal shears",
+    "kind": "illustration",
+    "template": "product-cast-removal-shears",
+    "ruleLine": 131,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "wheelchair-cushions",
+    "title": "Wheelchair cushions",
+    "kind": "illustration",
+    "template": "product-wheelchair-cushions",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "wheelchair-positioning-belts",
+    "title": "Wheelchair positioning belts",
+    "kind": "illustration",
+    "template": "product-wheelchair-positioning-belts",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "raised-toilet-seats",
+    "title": "Raised toilet seats",
+    "kind": "illustration",
+    "template": "product-raised-toilet-seats",
+    "ruleLine": 239,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "toilet-safety-frames",
+    "title": "Toilet safety frames",
+    "kind": "illustration",
+    "template": "product-toilet-safety-frames",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "shower-chairs",
+    "title": "Shower chairs",
+    "kind": "illustration",
+    "template": "product-shower-chairs",
+    "ruleLine": 221,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bath-transfer-benches",
+    "title": "Bath transfer benches",
+    "kind": "illustration",
+    "template": "product-bath-transfer-benches",
+    "ruleLine": 221,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bedside-grab-rails",
+    "title": "Bedside grab rails",
+    "kind": "illustration",
+    "template": "product-bedside-grab-rails",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "patient-transfer-belts",
+    "title": "Patient transfer belts",
+    "kind": "illustration",
+    "template": "product-patient-transfer-belts",
+    "ruleLine": 230,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "slide-sheets",
+    "title": "Slide sheets",
+    "kind": "illustration",
+    "template": "product-slide-sheets",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "portable-access-ramps",
+    "title": "Portable access ramps",
+    "kind": "illustration",
+    "template": "product-portable-access-ramps",
+    "ruleLine": 233,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "hot-water-bags",
+    "title": "Hot-water bags",
+    "kind": "illustration",
+    "template": "product-hot-water-bags",
+    "ruleLine": 173,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "reusable-cold-packs",
+    "title": "Reusable cold packs",
+    "kind": "illustration",
+    "template": "product-reusable-cold-packs",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "reusable-hot-cold-gel-packs",
+    "title": "Reusable hot/cold gel packs",
+    "kind": "illustration",
+    "template": "product-reusable-hot-cold-gel-packs",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "electric-heating-pads",
+    "title": "Electric heating pads",
+    "kind": "illustration",
+    "template": "product-electric-heating-pads",
+    "ruleLine": 173,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "reusable-finger-prick-devices",
+    "title": "Reusable finger-prick devices",
+    "kind": "illustration",
+    "template": "product-reusable-finger-prick-devices",
+    "ruleLine": 77,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "blood-glucose-lancets",
+    "title": "Blood-glucose lancets",
+    "kind": "illustration",
+    "template": "product-blood-glucose-lancets",
+    "ruleLine": 77,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "insulin-pen-needles",
+    "title": "Insulin pen needles",
+    "kind": "illustration",
+    "template": "product-insulin-pen-needles",
+    "ruleLine": 80,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "pill-organizers",
+    "title": "Pill organizers",
+    "kind": "illustration",
+    "template": "product-pill-organizers",
+    "ruleLine": 191,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "tablet-cutters",
+    "title": "Tablet cutters",
+    "kind": "illustration",
+    "template": "product-tablet-cutters",
+    "ruleLine": 71,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "tablet-crushers",
+    "title": "Tablet crushers",
+    "kind": "illustration",
+    "template": "product-tablet-crushers",
+    "ruleLine": 74,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "oral-dosing-syringes",
+    "title": "Oral dosing syringes",
+    "kind": "illustration",
+    "template": "product-oral-dosing-syringes",
+    "ruleLine": 161,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "medicine-measuring-cups",
+    "title": "Medicine measuring cups",
+    "kind": "illustration",
+    "template": "product-medicine-measuring-cups",
+    "ruleLine": 191,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "adult-incontinence-briefs",
+    "title": "Adult incontinence briefs",
+    "kind": "illustration",
+    "template": "product-adult-incontinence-briefs",
+    "ruleLine": 215,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "disposable-underpads",
+    "title": "Disposable underpads",
+    "kind": "illustration",
+    "template": "product-disposable-underpads",
+    "ruleLine": 188,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "reusable-bed-protection-pads",
+    "title": "Reusable bed-protection pads",
+    "kind": "illustration",
+    "template": "product-reusable-bed-protection-pads",
+    "ruleLine": 236,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "waterproof-mattress-protectors",
+    "title": "Waterproof mattress protectors",
+    "kind": "illustration",
+    "template": "product-waterproof-mattress-protectors",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "graduated-compression-stockings",
+    "title": "Graduated compression stockings",
+    "kind": "illustration",
+    "template": "product-graduated-compression-stockings",
+    "ruleLine": 176,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "anti-embolism-stockings",
+    "title": "Anti-embolism stockings",
+    "kind": "illustration",
+    "template": "product-anti-embolism-stockings",
+    "ruleLine": 176,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "ostomy-pouches",
+    "title": "Ostomy pouches",
+    "kind": "illustration",
+    "template": "product-ostomy-pouches",
+    "ruleLine": 158,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ostomy-skin-barriers",
+    "title": "Ostomy skin barriers",
+    "kind": "illustration",
+    "template": "product-ostomy-skin-barriers",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "ostomy-support-accessories",
+    "title": "Ostomy support accessories",
+    "kind": "illustration",
+    "template": "product-ostomy-support-accessories",
+    "ruleLine": 167,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nebulizer-replacement-kits",
+    "title": "Nebulizer replacement kits",
+    "kind": "illustration",
+    "template": "product-nebulizer-replacement-kits",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "inhaler-spacers",
+    "title": "Inhaler spacers",
+    "kind": "illustration",
+    "template": "product-inhaler-spacers",
+    "ruleLine": 182,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cpap-masks",
+    "title": "CPAP masks",
+    "kind": "illustration",
+    "template": "product-cpap-masks",
+    "ruleLine": 182,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "cpap-tubing",
+    "title": "CPAP tubing",
+    "kind": "illustration",
+    "template": "product-cpap-tubing",
+    "ruleLine": 164,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "portable-oxygen-concentrator-carrying-accessories",
+    "title": "Portable oxygen-concentrator carrying accessories",
+    "kind": "illustration",
+    "template": "product-portable-oxygen-concentrator-carrying-accessories",
+    "ruleLine": 242,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "resistance-exercise-bands",
+    "title": "Resistance exercise bands",
+    "kind": "illustration",
+    "template": "product-resistance-exercise-bands",
+    "ruleLine": 44,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "hand-exercise-balls",
+    "title": "Hand exercise balls",
+    "kind": "illustration",
+    "template": "product-hand-exercise-balls",
+    "ruleLine": 47,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "therapy-putty",
+    "title": "Therapy putty",
+    "kind": "illustration",
+    "template": "product-therapy-putty",
+    "ruleLine": 50,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "finger-exercisers",
+    "title": "Finger exercisers",
+    "kind": "illustration",
+    "template": "product-finger-exercisers",
+    "ruleLine": 53,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "pedal-exercisers",
+    "title": "Pedal exercisers",
+    "kind": "illustration",
+    "template": "product-pedal-exercisers",
+    "ruleLine": 56,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "balance-boards",
+    "title": "Balance boards",
+    "kind": "illustration",
+    "template": "product-balance-boards",
+    "ruleLine": 59,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "foam-exercise-rollers",
+    "title": "Foam exercise rollers",
+    "kind": "illustration",
+    "template": "product-foam-exercise-rollers",
+    "ruleLine": 62,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "instrument-cleaning-detergents",
+    "title": "Instrument-cleaning detergents",
+    "kind": "illustration",
+    "template": "product-instrument-cleaning-detergents",
+    "ruleLine": 251,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-diapers",
+    "title": "Baby diapers",
+    "kind": "illustration",
+    "template": "product-baby-diapers",
+    "ruleLine": 215,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "baby-wipes",
+    "title": "Baby wipes",
+    "kind": "illustration",
+    "template": "product-baby-wipes",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-changing-mats",
+    "title": "Baby changing mats",
+    "kind": "illustration",
+    "template": "product-baby-changing-mats",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-cotton-wool",
+    "title": "Baby cotton wool",
+    "kind": "illustration",
+    "template": "product-baby-cotton-wool",
+    "ruleLine": 23,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "baby-washcloths",
+    "title": "Baby washcloths",
+    "kind": "illustration",
+    "template": "product-baby-washcloths",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-bath-towels",
+    "title": "Baby bath towels",
+    "kind": "illustration",
+    "template": "product-baby-bath-towels",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-bathtubs",
+    "title": "Baby bathtubs",
+    "kind": "illustration",
+    "template": "product-baby-bathtubs",
+    "ruleLine": 221,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-bath-supports",
+    "title": "Baby bath supports",
+    "kind": "illustration",
+    "template": "product-baby-bath-supports",
+    "ruleLine": 221,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-cleansers",
+    "title": "Baby cleansers",
+    "kind": "illustration",
+    "template": "product-baby-cleansers",
+    "ruleLine": 29,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "baby-shampoos",
+    "title": "Baby shampoos",
+    "kind": "illustration",
+    "template": "product-baby-shampoos",
+    "ruleLine": 29,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "baby-moisturizers",
+    "title": "Baby moisturizers",
+    "kind": "illustration",
+    "template": "product-baby-moisturizers",
+    "ruleLine": 29,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "diaper-barrier-creams",
+    "title": "Diaper barrier creams",
+    "kind": "illustration",
+    "template": "product-diaper-barrier-creams",
+    "ruleLine": 29,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "baby-grooming-kits",
+    "title": "Baby grooming kits",
+    "kind": "illustration",
+    "template": "product-baby-grooming-kits",
+    "ruleLine": 209,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-nail-clippers",
+    "title": "Baby nail clippers",
+    "kind": "illustration",
+    "template": "product-baby-nail-clippers",
+    "ruleLine": 209,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-hairbrushes",
+    "title": "Baby hairbrushes",
+    "kind": "illustration",
+    "template": "product-baby-hairbrushes",
+    "ruleLine": 209,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-combs",
+    "title": "Baby combs",
+    "kind": "illustration",
+    "template": "product-baby-combs",
+    "ruleLine": 209,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "feeding-bottles",
+    "title": "Feeding bottles",
+    "kind": "illustration",
+    "template": "product-feeding-bottles",
+    "ruleLine": 212,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "replacement-bottle-teats",
+    "title": "Replacement bottle teats",
+    "kind": "illustration",
+    "template": "product-replacement-bottle-teats",
+    "ruleLine": 212,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bottle-cleaning-brushes",
+    "title": "Bottle-cleaning brushes",
+    "kind": "illustration",
+    "template": "product-bottle-cleaning-brushes",
+    "ruleLine": 26,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "bottle-drying-racks",
+    "title": "Bottle drying racks",
+    "kind": "illustration",
+    "template": "product-bottle-drying-racks",
+    "ruleLine": 206,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "feeding-bottle-sterilizers",
+    "title": "Feeding-bottle sterilizers",
+    "kind": "illustration",
+    "template": "product-feeding-bottle-sterilizers",
+    "ruleLine": 194,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "bottle-warmers",
+    "title": "Bottle warmers",
+    "kind": "illustration",
+    "template": "product-bottle-warmers",
+    "ruleLine": 194,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "breast-milk-storage-bags",
+    "title": "Breast-milk storage bags",
+    "kind": "illustration",
+    "template": "product-breast-milk-storage-bags",
+    "ruleLine": 41,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "breast-milk-storage-containers",
+    "title": "Breast-milk storage containers",
+    "kind": "illustration",
+    "template": "product-breast-milk-storage-containers",
+    "ruleLine": 41,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "manual-breast-pumps",
+    "title": "Manual breast pumps",
+    "kind": "illustration",
+    "template": "product-manual-breast-pumps",
+    "ruleLine": 203,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "electric-breast-pumps",
+    "title": "Electric breast pumps",
+    "kind": "illustration",
+    "template": "product-electric-breast-pumps",
+    "ruleLine": 203,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "breast-pump-replacement-accessories",
+    "title": "Breast-pump replacement accessories",
+    "kind": "illustration",
+    "template": "product-breast-pump-replacement-accessories",
+    "ruleLine": 203,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-feeding-cups",
+    "title": "Baby feeding cups",
+    "kind": "illustration",
+    "template": "product-baby-feeding-cups",
+    "ruleLine": 212,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "baby-feeding-spoons",
+    "title": "Baby feeding spoons",
+    "kind": "illustration",
+    "template": "product-baby-feeding-spoons",
+    "ruleLine": 32,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "baby-feeding-bowls",
+    "title": "Baby feeding bowls",
+    "kind": "illustration",
+    "template": "product-baby-feeding-bowls",
+    "ruleLine": 260,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "feeding-bibs",
+    "title": "Feeding bibs",
+    "kind": "illustration",
+    "template": "product-feeding-bibs",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "pacifiers",
+    "title": "Pacifiers",
+    "kind": "illustration",
+    "template": "product-pacifiers",
+    "ruleLine": 200,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "pacifier-storage-cases",
+    "title": "Pacifier storage cases",
+    "kind": "illustration",
+    "template": "product-pacifier-storage-cases",
+    "ruleLine": 200,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "teething-rings",
+    "title": "Teething rings",
+    "kind": "illustration",
+    "template": "product-teething-rings",
+    "ruleLine": 197,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nasal-aspirators",
+    "title": "Nasal aspirators",
+    "kind": "illustration",
+    "template": "product-nasal-aspirators",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nasal-aspirator-replacement-accessories",
+    "title": "Nasal aspirator replacement accessories",
+    "kind": "illustration",
+    "template": "product-nasal-aspirator-replacement-accessories",
+    "ruleLine": 245,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "infant-medicine-droppers",
+    "title": "Infant medicine droppers",
+    "kind": "illustration",
+    "template": "product-infant-medicine-droppers",
+    "ruleLine": 83,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "baby-and-infant-weighing-scales",
+    "title": "Baby and infant weighing scales",
+    "kind": "illustration",
+    "template": "product-baby-and-infant-weighing-scales",
+    "ruleLine": 224,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "infant-length-measuring-boards",
+    "title": "Infant length-measuring boards",
+    "kind": "illustration",
+    "template": "product-infant-length-measuring-boards",
+    "ruleLine": 224,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nursing-pads",
+    "title": "Nursing pads",
+    "kind": "illustration",
+    "template": "product-nursing-pads",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "maternity-pads",
+    "title": "Maternity pads",
+    "kind": "illustration",
+    "template": "product-maternity-pads",
+    "ruleLine": 218,
+    "review": "withhold-unrelated-template"
+  },
+  {
+    "slug": "nursing-pillows",
+    "title": "Nursing pillows",
+    "kind": "illustration",
+    "template": "product-nursing-pillows",
+    "ruleLine": 35,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "nursing-bras",
+    "title": "Nursing bras",
+    "kind": "illustration",
+    "template": "product-nursing-bras",
+    "ruleLine": 38,
+    "review": "related-illustration"
+  },
+  {
+    "slug": "breast-milk-collection-cups",
+    "title": "Breast-milk collection cups",
+    "kind": "illustration",
+    "template": "product-breast-milk-collection-cups",
+    "ruleLine": 260,
+    "review": "withhold-unrelated-template"
+  }
+]

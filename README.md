@@ -34,29 +34,36 @@ Default language is **नेपाली (`/ne`)** with a visible language switc
 | `/ne/about` | `/en/about` | Business facts, geographical location, and scope of supplies |
 | `/ne/products` | `/en/products` | Live bilingual search and category filtering |
 | `/ne/products/[slug]` | `/en/products/[slug]` | Bilingual individual product detail and enquiry pages |
+| `/ne/order-slip` | `/en/order-slip` | Local order list with quantities, customer details, PDF download, WhatsApp text sharing, and copy fallback |
+| `/ne/order` | `/en/order` | Compatibility aliases for the order-slip pages; canonical URLs remain `/order-slip` |
 | `/ne/contact` | `/en/contact` | Verified landline, address, directions, Facebook, and interactive map |
 
 ---
 
 ## 📦 Catalogue Categories
 
-The catalogue is organized into 8 proposed enquiry categories in `data/categories.ts` and `data/products.ts`:
-
-1. **Laboratory Equipment & Supplies (`laboratory`):** Hematology analyzers, biochemistry analyzers, electrolyte analyzers, immunoassay platforms, urine analyzers, microscopes, centrifuges, bacteriological incubators, hot-air ovens, water baths, micropipettes, and specimen containers.
-2. **Surgical Instruments (`surgical-instruments`):** Mayo & Metzenbaum scissors, dissecting forceps, hemostatic clamps, artery forceps, needle holders, retractors, scalpel handles, and surgical trays.
-3. **Sterilization & Infection Control (`sterilization`):** High-pressure steam autoclaves, sterilization pouches, indicator rolls, and chemical test strips.
-4. **Monitoring & Diagnostics (`monitoring-diagnostics`):** Multi-parameter patient monitors, ECG machines, pulse oximeters, digital/mercury BP machines, clinical thermometers, and glucometers.
-5. **Respiratory Care (`respiratory-care`):** Medical oxygen concentrators (5L/10L), oxygen cylinder regulators/flowmeters, compressor nebulizers, and electric suction machines.
-6. **Hospital Furniture (`hospital-furniture`):** Fowler/semi-fowler patient beds, examination tables/couches, dressing trolleys, wheelchairs, emergency stretchers, and IV drip stands.
-7. **Consumables & PPE (`consumables-ppe`):** Latex/nitrile gloves, 3-ply surgical masks, disposable surgical gowns, sterile syringes, IV cannulas, Foley catheters, and gauze dressings.
-8. **Rehabilitation & Home Care (`rehabilitation-home-care`):** Adjustable walking frames, crutches, walking sticks, orthopedic braces/collars, anti-decubitus air mattresses, and commode chairs.
+The catalogue contains 339 distinct bilingual enquiry entries across 19 categories in `data/categories.ts`, `data/products.ts`, and `data/catalogue-expansion.ts`. It includes the original 200-item hospital lists plus the requested orthopedic, mobility, pharmacy-retail, physiotherapy, and baby/maternity expansions. Matching existing products retain their existing slugs and routes.
 
 Every entry includes:
 - English & Nepali names and concise descriptions
 - `Price negotiable — contact us` / `मूल्य कुराकानीमा — सम्पर्क गर्नुहोस्`
 - `Contact to confirm availability` / `उपलब्धता बुझ्न सम्पर्क गर्नुहोस्`
-- Illustrative image with clear licensing attribution label
-- Direct phone enquiry action `tel:+97756596060`
+- 92 repository-authored schematic SVG illustrations are labelled in English and Nepali. 246 entries use an explicit image-unavailable state after unrelated generic drawings were withheld. One owner-supplied representative glucometer photograph is used with a bilingual notice that the actual model may differ. The image-source manifest records sources, creator/permission details, and bilingual alt text. Original supplied photos are retained separately.
+- Product detail navigation and compact Add to order actions on product cards
+
+Regenerate the local product illustrations and source manifest after changing catalogue entries:
+
+```bash
+node scripts/generate-product-illustrations.cjs
+```
+
+---
+
+## 🧾 Order Slip
+
+The bilingual order slip stores product selections and positive integer quantities in the visitor's browser. Customer name, phone, organization, address, notes, and item specifications are used only for the current page session and are not saved by default. Customers can review and download a PDF, share the PDF through a supported device share sheet, share a text summary to WhatsApp, or copy the summary for another messaging channel. No order is submitted to the business automatically; customers should confirm stock, options, and pricing directly.
+
+Canvas-generated order PDFs contain rasterized page images, not embedded/selectable text. Their Nepali appearance depends on the browser's available Devanagari font shaping. The WhatsApp link sends text only; it does **not** automatically attach the PDF. Attach the downloaded file manually in WhatsApp if needed.
 
 ---
 
@@ -75,10 +82,9 @@ whatsapp: {
 ```
 
 Features enabled with WhatsApp integration:
-1. **Mobile Sticky Bottom Bar**: Quick one-tap direct WhatsApp chat with safe-area spacing.
-2. **Desktop Floating Action Button (FAB)**: Accessible floating WhatsApp button.
-3. **Product Card & Detail Enquiry**: Automatic URL-encoded message prefilled with product title and absolute canonical product URL in the visitor's selected language (Nepali/English).
-4. **Contact Page**: Dedicated WhatsApp enquiry card linking directly to `https://wa.me/9779855055060`.
+1. **Product Detail Enquiry**: URL-encoded message prefilled with product title and absolute product URL in the visitor's selected language (Nepali/English).
+2. **Order Slip Sharing**: Can share a PDF using the device share sheet where supported; the WhatsApp fallback sends an order-text summary and requires the PDF to be attached manually.
+3. **Contact Page**: Dedicated WhatsApp enquiry card linking directly to `https://wa.me/9779855055060`.
 
 ---
 
@@ -132,7 +138,7 @@ npx vercel
 
 ## 🔍 SEO & Structured Data
 
-- **Canonical URLs:** Configured on all routes pointing to `https://www.saphalsurgical.com`.
+- **Canonical URLs:** Configured on all routes pointing to `https://saphal-surgical.vercel.app`.
 - **Hreflang Tags:** Declared for both `ne`, `en`, and `x-default`.
 - **Sitemap & Robots:** Dynamically generated at `/sitemap.xml` and `/robots.txt`.
 - **Schema.org:** Accurate `MedicalSupplyStore` / `LocalBusiness` JSON-LD structured data on all pages using only verified coordinates, phone, and address. (No Hospital schema).
@@ -141,7 +147,6 @@ npx vercel
 
 ## 📋 Remaining Owner Inputs for Future Updates
 
-1. **WhatsApp Mobile Number:** Confirm exact 10-digit number to activate WhatsApp inquiry buttons.
-2. **Business Operating Hours:** Specify official weekly opening and closing hours.
-3. **Official Email Address:** Add an official domain email (e.g. `info@saphalsurgical.com`).
-4. **Specific Authorized Dealerships:** If Saphal Surgical House holds authorized distribution rights for specific medical brands in Chitwan, these can be added with verification documents.
+1. **Business Operating Hours:** Specify official weekly opening and closing hours.
+2. **Official Email Address:** Add an official domain email (e.g. `info@saphalsurgical.com`).
+3. **Specific Authorized Dealerships:** If Saphal Surgical House holds authorized distribution rights for specific medical brands in Chitwan, these can be added with verification documents.

@@ -1,0 +1,11 @@
+const fs=require('node:fs');const ts=require('typescript');const cp=require('node:child_process');
+function load(source,o={}){const m={exports:{}};new Function('require','module','exports',ts.transpileModule(source,{compilerOptions:{esModuleInterop:true,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText)(s=>o[s]||require(s),m,m.exports);return m.exports;}
+const read=p=>fs.readFileSync(p,'utf8');
+const {PRODUCTS}=load(read('data/products.ts'),{'./catalogue-expansion':load(read('data/catalogue-expansion.ts')),'./product-image-review.json':require('../data/product-image-review.json')});
+const {CATEGORIES}=load(read('data/categories.ts'));
+const original=load(cp.execFileSync('git',['show','c4cc274:data/products.ts'],{encoding:'utf8'})).PRODUCTS;
+const originalCategories=load(cp.execFileSync('git',['show','c4cc274:data/categories.ts'],{encoding:'utf8'})).CATEGORIES;
+const duplicates=(items,key)=>{const groups=new Map;for(const i of items){const k=key(i);groups.set(k,[...(groups.get(k)||[]),i.slug||i.id]);}return [...groups].filter(([,v])=>v.length>1);};
+const images=PRODUCTS.reduce((a,p)=>(a[p.image.url?p.image.kind:'unavailable']=(a[p.image.url?p.image.kind:'unavailable']||0)+1,a),{});
+const result={baseline:{commit:'c4cc274',products:original.length,categories:originalCategories.length,distinctImageURLs:new Set(original.map(p=>p.image.url).filter(Boolean)).size,missingImages:original.filter(p=>!p.image.url).length},current:{products:PRODUCTS.length,distinctSlugs:new Set(PRODUCTS.map(p=>p.slug)).size,categories:CATEGORIES.length,duplicateSlugs:duplicates(PRODUCTS,p=>p.slug),duplicateEnglishTitles:duplicates(PRODUCTS,p=>p.name.en.toLowerCase().trim()),duplicateNepaliTitles:duplicates(PRODUCTS,p=>p.name.ne.trim()),duplicateCategories:duplicates(CATEGORIES,p=>p.id),images,missingAssets:PRODUCTS.filter(p=>p.image.url&&!fs.existsSync('public'+p.image.url)).map(p=>p.slug),missingBilingualFields:PRODUCTS.filter(p=>['name','shortDesc','description','keyPoints'].some(k=>!p[k].en||!p[k].ne)).map(p=>p.slug),primaryCategoryCounts:Object.fromEntries(CATEGORIES.map(c=>[c.id,PRODUCTS.filter(p=>p.categoryId===c.id).length]))}};
+fs.mkdirSync('.audit/evidence',{recursive:true});fs.writeFileSync('.audit/evidence/catalogue-results.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

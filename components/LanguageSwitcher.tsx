@@ -34,6 +34,12 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLocal
     >
       <Link
         href={getDestinationPath('ne')}
+        onClick={(event) => {
+          if (window.location.search || window.location.hash) {
+            event.preventDefault();
+            window.location.assign(getDestinationPath('ne') + window.location.search + window.location.hash);
+          }
+        }}
         className={`min-h-[44px] min-w-[58px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-colors ${
           currentLocale === 'ne'
             ? 'bg-[#15803D] text-white font-bold shadow-xs'
@@ -47,6 +53,12 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLocal
       <span className="text-green-200 px-1 font-light" aria-hidden="true">|</span>
       <Link
         href={getDestinationPath('en')}
+        onClick={(event) => {
+          if (window.location.search || window.location.hash) {
+            event.preventDefault();
+            window.location.assign(getDestinationPath('en') + window.location.search + window.location.hash);
+          }
+        }}
         className={`min-h-[44px] min-w-[58px] px-3 py-1.5 rounded-lg flex items-center justify-center transition-colors ${
           currentLocale === 'en'
             ? 'bg-[#15803D] text-white font-bold shadow-xs'

@@ -142,7 +142,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
               <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm border border-[#DCFCE7] text-[#17251C] text-xs p-3 rounded-2xl flex items-center gap-2 shadow-2xs pointer-events-none">
                 <HelpCircle className="w-4 h-4 text-[#15803D] shrink-0" />
                 <span className="text-[11px] sm:text-xs leading-tight text-[#475569]">
-                  {product.image.sourceLabel} — {isNe ? 'वास्तविक सामानको ब्रान्ड र स्वरूप मौज्दात अनुसार फरक पर्न सक्छ।' : 'Actual brand appearance and specs depend on current stock.'}
+                  {product.image.kind === 'illustration'
+                    ? (isNe ? 'सामग्रीको सांकेतिक चित्रण' : 'Schematic product illustration')
+                    : product.image.sourceLabel} — {isNe ? 'वास्तविक सामानको ब्रान्ड र स्वरूप मौज्दात अनुसार फरक पर्न सक्छ।' : 'Actual brand appearance and specs depend on current stock.'}
                 </span>
               </div>
             )}

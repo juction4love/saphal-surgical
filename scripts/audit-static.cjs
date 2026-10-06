@@ -1,0 +1,9 @@
+const fs=require('node:fs');const assert=require('node:assert/strict');const path=require('node:path');
+const root=process.argv[2]||'out';const checks=[];
+const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+assert.equal(new Set(urls).size,urls.length);assert.equal(urls.filter(u=>u.includes('/products/')).length,678);
+for(const url of urls){const pathname=new URL(url).pathname;const file=path.join(root,pathname+'.html');assert(fs.existsSync(file),url);const s=fs.readFileSync(file,'utf8');const canonical=s.match(/<link rel="canonical" href="([^"]+)"/);assert.equal(canonical?.[1],url);assert(s.includes('hrefLang="ne"')||s.includes('hrefLang="en"')||s.includes('hrefLang="x-default"')||s.includes('hrefLang="ne-NP"')||s.includes('hreflang="ne"'),url);for(const m of s.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)){const schema=JSON.parse(m[1]);assert(!JSON.stringify(schema).includes('"Hospital"'));}checks.push(pathname);}
+for(const locale of ['en','ne']){const s=fs.readFileSync(path.join(root,locale,'contact.html'),'utf8');for(const target of ['tel:+97756596060','tel:+97756596120','https://wa.me/9779855055060'])assert(s.includes(target),target);}
+for(const p of ['logo.svg','favicon.svg','favicon.ico','apple-touch-icon.png','manifest.json','robots.txt'])assert(fs.existsSync(path.join(root,p)),p);
+const manifest=JSON.parse(fs.readFileSync('data/product-image-sources.json'));for(const row of manifest.filter(r=>r.path))assert(fs.existsSync(path.join(root,row.path)),row.path);
+const result={sitemapURLs:urls.length,productURLs:678,allCanonicalsMatch:true,hreflang:true,structuredDataParsed:true,contactLinks:true,assetsPresent:true,checkedRoutes:checks.length};fs.writeFileSync('.audit/evidence/static-results.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));

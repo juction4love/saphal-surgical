@@ -1,7 +1,12 @@
+import { CATALOGUE_EXPANSION_SEEDS } from './catalogue-expansion';
+import imageReview from './product-image-review.json';
+
 export interface ProductItem {
   id: string;
   slug: string;
   categoryId: string;
+  additionalCategoryIds?: string[];
+  audienceIds?: ProductAudience[];
   brand?: string;
   name: {
     en: string;
@@ -25,14 +30,67 @@ export interface ProductItem {
   };
   image: {
     url: string | null;
+    kind?: 'photo' | 'illustration';
+    illustration?: ProductIllustrationKind;
+    photoSourceFile?: string;
+    photoSourcePermission?: string;
     alt: {
       en: string;
       ne: string;
     };
     sourceLabel: string;
   };
+  orderFields?: {
+    en: string[];
+    ne: string[];
+  };
   tags: string[];
 }
+
+export type ProductAudience = 'home-care' | 'hospital-use' | 'pharmacy-retail';
+
+export type ProductIllustrationKind =
+  | 'lab-hematology'
+  | 'lab-biochemistry'
+  | 'lab-electrolyte'
+  | 'lab-immunoassay'
+  | 'lab-urine'
+  | 'microscope'
+  | 'centrifuge'
+  | 'incubator-oven'
+  | 'water-bath-pipette'
+  | 'lab-fridge-specimen'
+  | 'scissors-forceps'
+  | 'clamps-needleholder'
+  | 'surgical-retractors'
+  | 'autoclave'
+  | 'sterilization-pouches'
+  | 'patient-monitor-ecg'
+  | 'vitals-devices'
+  | 'oxygen-concentrator'
+  | 'nebulizer-suction'
+  | 'hospital-bed-couch'
+  | 'ward-transport'
+  | 'ppe'
+  | 'medical-consumables'
+  | 'walkers-supports'
+  | 'air-mattress-commode'
+  | 'sterile-gown-drape'
+  | 'sutures-blades'
+  | 'disinfectants'
+  | 'hand-rub'
+  | 'mop-trolley'
+  | 'waste-bins-bags'
+  | 'sharps'
+  | 'insulin-syringe'
+  | 'tuberculin-syringe'
+  | 'syringe-range'
+  | 'iv-infusion'
+  | 'iv-cannula'
+  | 'suture-pack'
+  | 'ent-set'
+  | 'reagent-kits'
+  | `product-${string}`;
 
 export const PRODUCTS: ProductItem[] = [
   // 1. LABORATORY
@@ -1610,3 +1668,199 @@ export const PRODUCTS: ProductItem[] = [
     tags: ['erba', 'erba mannheim', 'chemistry analyzer', 'hematology diluent', 'lyse', 'multical', 'control serum', 'एर्बा', 'एनालाइजर रिअजेन्ट', 'कन्ट्रोल सिरम'],
   },
 ];
+
+const productIllustrations: Record<string, ProductIllustrationKind> = {
+  'hematology-analyzer': 'lab-hematology',
+  'biochemistry-analyzer': 'lab-biochemistry',
+  'electrolyte-analyzer': 'lab-electrolyte',
+  'immunoassay-analyzer': 'lab-immunoassay',
+  'urine-analyzer': 'lab-urine',
+  'laboratory-microscope': 'microscope',
+  'laboratory-centrifuge': 'centrifuge',
+  'laboratory-incubator-hot-air-oven': 'incubator-oven',
+  'water-bath-micropipettes': 'water-bath-pipette',
+  'lab-refrigerator-specimen-containers': 'lab-fridge-specimen',
+  'surgical-scissors-forceps': 'scissors-forceps',
+  'hemostatic-clamps-needle-holders': 'clamps-needleholder',
+  'surgical-retractors-scalpels-sets': 'surgical-retractors',
+  'autoclaves-steam-sterilizers': 'autoclave',
+  'sterilization-pouches-indicator-supplies': 'sterilization-pouches',
+  'patient-monitors-ecg-machines': 'patient-monitor-ecg',
+  'pulse-oximeters-bp-monitors-thermometers': 'vitals-devices',
+  'oxygen-concentrators-regulators': 'oxygen-concentrator',
+  'medical-nebulizers-suction-machines': 'nebulizer-suction',
+  'hospital-beds-examination-couches': 'hospital-bed-couch',
+  'wheelchairs-trolleys-stretchers-iv-stands': 'ward-transport',
+  'medical-gloves-masks-disposable-gowns': 'ppe',
+  'syringes-iv-cannulas-catheters-gauze-dressings': 'medical-consumables',
+  'walkers-crutches-orthopedic-supports': 'walkers-supports',
+  'air-mattresses-commode-chairs': 'air-mattress-commode',
+  'sterile-surgical-gowns-drapes-ot-packs': 'sterile-gown-drape',
+  'surgical-sutures-sterile-blades': 'sutures-blades',
+  'hospital-surface-floor-disinfectants': 'disinfectants',
+  'alcohol-hand-rubs-antiseptic-scrubs': 'hand-rub',
+  'double-bucket-mop-trolleys-cleaning-tools': 'mop-trolley',
+  'color-coded-biomedical-waste-bins-bags': 'waste-bins-bags',
+  'puncture-proof-sharps-containers-needle-destroyers': 'sharps',
+  'insulin-syringes-u-40-u-100': 'insulin-syringe',
+  'tuberculin-syringes-1ml': 'tuberculin-syringe',
+  'disposable-syringes-luer-slip-lock': 'syringe-range',
+  'iv-infusion-sets-blood-administration': 'iv-infusion',
+  'iv-cannulas-color-coded-gauges': 'iv-cannula',
+  'surgical-sutures-absorbable-non-absorbable': 'suture-pack',
+  'ent-instruments-specula-forceps-sets': 'ent-set',
+  'coral-clinical-systems-biochemistry-reagents': 'reagent-kits',
+  'tulip-diagnostics-serology-rapid-test-kits': 'reagent-kits',
+  'erba-mannheim-clinical-chemistry-reagents-controls': 'reagent-kits',
+};
+
+for (const seed of CATALOGUE_EXPANSION_SEEDS) {
+  const existing = PRODUCTS.find((product) => product.slug === seed.slug || product.slug === seed.legacySlug);
+  if (existing) {
+    existing.audienceIds = [...new Set([...(existing.audienceIds ?? []), ...seed.audienceIds])];
+    existing.additionalCategoryIds = [...new Set([
+      ...(existing.additionalCategoryIds ?? []),
+      ...(existing.categoryId !== seed.categoryId ? [seed.categoryId] : []),
+      ...(seed.additionalCategoryIds ?? []),
+    ])];
+    existing.tags = [...new Set([...existing.tags, ...seed.keywords.en, ...seed.keywords.ne])];
+    continue;
+  }
+
+  const product: ProductItem = {
+    id: seed.slug,
+    slug: seed.slug,
+    categoryId: seed.categoryId,
+    ...(seed.additionalCategoryIds ? { additionalCategoryIds: seed.additionalCategoryIds } : {}),
+    audienceIds: seed.audienceIds,
+    name: seed.name,
+    shortDesc: seed.description,
+    description: seed.description,
+    keyPoints: {
+      en: [`When enquiring, specify ${seed.orderFields.en.join(', ')}.`],
+      ne: [`सोधपुछ गर्दा ${seed.orderFields.ne.join(', ')} उल्लेख गर्नुहोस्।`],
+    },
+    image: {
+      url: null,
+      kind: 'illustration',
+      illustration: seed.illustrationKey,
+      alt: {
+        en: `Original illustration of ${seed.name.en}; actual model may differ.`,
+        ne: `${seed.name.ne} को मौलिक चित्रण; वास्तविक मोडेल फरक हुन सक्छ।`,
+      },
+      sourceLabel: 'Original Saphal Surgical House product illustration',
+    },
+    orderFields: seed.orderFields,
+    tags: [...seed.keywords.en, ...seed.keywords.ne],
+  };
+  PRODUCTS.push(product);
+  productIllustrations[seed.slug] = seed.illustrationKey;
+}
+
+const defaultOrderFields: Record<string, NonNullable<ProductItem['orderFields']>> = {
+  'surgical-instruments': {
+    en: ['instrument type', 'preferred size or pattern', 'unit or pack quantity'],
+    ne: ['औजारको प्रकार', 'चाहिएको साइज वा बनोट', 'एकाइ वा प्याक परिमाण'],
+  },
+  laboratory: {
+    en: ['equipment or consumable type', 'model or capacity if known', 'related accessories or consumables'],
+    ne: ['उपकरण वा उपभोग्य सामग्रीको प्रकार', 'थाहा भए मोडेल वा क्षमता', 'सम्बन्धित सहायक वा उपभोग्य सामग्री'],
+  },
+  'monitoring-diagnostics': {
+    en: ['device type', 'preferred model or configuration if known', 'accessories'],
+    ne: ['यन्त्रको प्रकार', 'थाहा भए चाहिएको मोडेल वा बनोट', 'सहायक सामग्री'],
+  },
+  'hospital-furniture': {
+    en: ['item type', 'size or configuration', 'accessories or quantity'],
+    ne: ['सामग्रीको प्रकार', 'साइज वा बनोट', 'सहायक सामग्री वा परिमाण'],
+  },
+  'ot-supplies': {
+    en: ['item or set type', 'size or configuration', 'unit, pack or quantity'],
+    ne: ['सामग्री वा सेटको प्रकार', 'साइज वा बनोट', 'एकाइ, प्याक वा परिमाण'],
+  },
+  'consumables-ppe': {
+    en: ['size or gauge if applicable', 'type or presentation', 'unit, pack or carton quantity'],
+    ne: ['लागू भए साइज वा गेज', 'प्रकार वा प्याकिङ', 'एकाइ, प्याक वा कार्टन परिमाण'],
+  },
+  'rehabilitation-home-care': {
+    en: ['size and fit if applicable', 'side or style if applicable', 'preferred model'],
+    ne: ['लागू भए साइज र फिट', 'लागू भए दायाँ/बायाँ वा बनोट', 'चाहिएको मोडेल'],
+  },
+  'respiratory-care': {
+    en: ['equipment or supply type', 'model or configuration if known', 'accessories or quantity'],
+    ne: ['उपकरण वा सामग्रीको प्रकार', 'थाहा भए मोडेल वा बनोट', 'सहायक सामग्री वा परिमाण'],
+  },
+  'cleaning-hygiene': {
+    en: ['product type', 'preferred container or pack presentation', 'quantity'],
+    ne: ['सामग्रीको प्रकार', 'चाहिएको कन्टेनर वा प्याकिङ', 'परिमाण'],
+  },
+  'waste-handling': {
+    en: ['container or item type', 'capacity or size if known', 'quantity'],
+    ne: ['कन्टेनर वा सामग्रीको प्रकार', 'थाहा भए क्षमता वा साइज', 'परिमाण'],
+  },
+};
+
+const suppliedProductPhotos: Record<string, {
+  sourceFile: string;
+  url: string;
+  sourceLabel: string;
+  alt: ProductItem['image']['alt'];
+}> = {
+  glucometers: {
+    sourceFile: '1010.jpeg',
+    url: '/products/user-supplied/glucometer.jpeg',
+    sourceLabel: 'User-supplied representative photograph of a blood glucose meter / प्रयोगकर्ताले उपलब्ध गराउनुभएको ग्लुकोमिटरको सांकेतिक तस्बिर',
+    alt: {
+      en: 'User-supplied representative photograph of a blood glucose meter and testing accessories; actual model may differ.',
+      ne: 'प्रयोगकर्ताले उपलब्ध गराउनुभएको रगतमा चिनी जाँच्ने मिटर र सहायक सामग्रीको सांकेतिक तस्बिर; वास्तविक मोडेल फरक हुन सक्छ।',
+    },
+  },
+};
+
+for (const product of PRODUCTS) {
+  const illustration = productIllustrations[product.slug];
+  if (!illustration) {
+    throw new Error(`Missing product illustration mapping for "${product.slug}".`);
+  }
+
+  const suppliedPhoto = suppliedProductPhotos[product.slug];
+  product.image = suppliedPhoto
+    ? {
+      kind: 'photo',
+      url: suppliedPhoto.url,
+      photoSourceFile: suppliedPhoto.sourceFile,
+      photoSourcePermission: 'Supplied by the project owner, who authorized its use in this catalogue; original creator and third-party rights have not been independently verified.',
+      alt: suppliedPhoto.alt,
+      sourceLabel: suppliedPhoto.sourceLabel,
+    }
+    : {
+      kind: 'illustration',
+      illustration,
+      url: `/products/illustrations/${product.slug}.svg`,
+      alt: {
+        en: `Original ${product.categoryId.replaceAll('-', ' ')} illustration representing ${product.name.en}; actual model may differ.`,
+        ne: `${product.name.ne} को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।`,
+      },
+      sourceLabel: 'Original Saphal Surgical House category illustration',
+    };
+  if (imageReview.find((review) => review.slug === product.slug)?.review === 'withhold-unrelated-template') {
+    product.image.url = null;
+    product.image.alt = {
+      en: `Product image unavailable for ${product.name.en}.`,
+      ne: `${product.name.ne} को उत्पादन तस्बिर उपलब्ध छैन।`,
+    };
+  }
+  product.orderFields ??= defaultOrderFields[product.categoryId] ?? {
+    en: ['requested item type', 'size or presentation if applicable', 'unit or quantity'],
+    ne: ['चाहिएको सामग्रीको प्रकार', 'लागू भए साइज वा प्याकिङ', 'एकाइ वा परिमाण'],
+  };
+  if (!product.audienceIds) {
+    product.audienceIds = product.categoryId === 'rehabilitation-home-care'
+      ? ['home-care', 'hospital-use']
+      : product.categoryId === 'respiratory-care'
+        ? ['home-care', 'hospital-use']
+        : product.categoryId === 'consumables-ppe'
+          ? ['hospital-use', 'pharmacy-retail']
+          : ['hospital-use'];
+  }
+}

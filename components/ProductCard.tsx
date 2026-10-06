@@ -59,7 +59,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
           {product.image.url && (
             <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-slate-700 border border-slate-200 text-[10px] font-medium px-2 py-0.5 rounded-md flex items-center gap-1 shadow-xs pointer-events-none">
               <HelpCircle className="w-3 h-3 text-[#15803D]" />
-              <span>{isNe ? 'सांकेतिक' : 'Illustrative'}</span>
+              <span>{product.image.kind === 'photo'
+                ? (isNe ? 'सांकेतिक तस्बिर' : 'Representative photo')
+                : (isNe ? 'सामग्री चित्रण' : 'Illustration')}</span>
             </div>
           )}
 

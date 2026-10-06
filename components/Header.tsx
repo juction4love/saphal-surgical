@@ -20,6 +20,8 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
   const pathname = usePathname() || `/${locale}`;
   const t = translations[locale];
 
+  useEffect(() => { document.documentElement.lang = locale; }, [locale]);
+
   // Close mobile menu on Escape key press
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

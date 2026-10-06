@@ -14,6 +14,16 @@ export interface CategoryData {
 
 export const CATEGORIES: CategoryData[] = [
   {
+    id: 'sterilization',
+    slug: 'sterilization',
+    name: { en: 'Sterilizers & Sterilization Supplies', ne: 'स्टेरिलाइजर तथा स्टेरिलाइजेसन सामग्री' },
+    shortDescription: {
+      en: 'Autoclaves, sterilization pouches and indicators; contact to confirm models and availability.',
+      ne: 'अटोक्लेभ, स्टेरिलाइजेसन पाउच तथा इन्डिकेटर; मोडेल र उपलब्धता बुझ्न सम्पर्क गर्नुहोस्।',
+    },
+    iconName: 'ShieldAlert',
+  },
+  {
     id: 'surgical-instruments',
     slug: 'surgical-instruments',
     name: {
@@ -140,6 +150,110 @@ export const CATEGORIES: CategoryData[] = [
     shortDescription: {
       en: 'Folding wheelchairs, walkers, crutches, walking sticks, air mattresses, and commode chairs.',
       ne: 'फोल्डिङ ह्विलचेयर, वाकर, वैशाखी, वाकिङ स्टिक, एयर म्याट्रेस र कमोड चेयर।',
+    },
+    iconName: 'HeartPulse',
+  },
+  {
+    id: 'orthopedics-supports-braces',
+    slug: 'orthopedics-supports-braces',
+    name: {
+      en: 'Orthopedic Supports, Braces & Casting Supplies',
+      ne: 'अर्थोपेडिक सपोर्ट, ब्रेस तथा कास्टिङ सामग्री',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for orthopedic braces, supports, casting supplies, traction and related instruments.',
+      ne: 'अर्थोपेडिक ब्रेस, सपोर्ट, कास्टिङ सामग्री, ट्र्याक्सन तथा सम्बन्धित उपकरणका लागि सोधपुछ क्याटलग।',
+    },
+    iconName: 'HeartPulse',
+  },
+  {
+    id: 'obstetrics-gynaecology-urology',
+    slug: 'obstetrics-gynaecology-urology',
+    name: {
+      en: 'Obstetrics, Gynaecology & Urology Supplies',
+      ne: 'प्रसूति, स्त्रीरोग तथा युरोलोजी सामग्री',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for obstetric, gynaecological and urinary-care instruments and supplies.',
+      ne: 'प्रसूति, स्त्रीरोग तथा मूत्र हेरचाहका उपकरण र सामग्रीका लागि सोधपुछ क्याटलग।',
+    },
+    iconName: 'ShieldAlert',
+  },
+  {
+    id: 'airway-anesthesia-respiratory',
+    slug: 'airway-anesthesia-respiratory',
+    name: {
+      en: 'Airway, Anaesthesia & Respiratory Supplies',
+      ne: 'एयरवे, एनेस्थेसिया तथा श्वासप्रश्वास सामग्री',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for hospital airway, anaesthesia and respiratory equipment and consumables.',
+      ne: 'अस्पताल प्रयोजनका एयरवे, एनेस्थेसिया तथा श्वासप्रश्वास उपकरण र उपभोग्य सामग्रीका लागि सोधपुछ क्याटलग।',
+    },
+    iconName: 'Wind',
+  },
+  {
+    id: 'emergency-critical-care',
+    slug: 'emergency-critical-care',
+    name: {
+      en: 'Emergency & Critical-Care Equipment',
+      ne: 'आकस्मिक तथा सघन हेरचाह उपकरण',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for hospital emergency and critical-care equipment.',
+      ne: 'अस्पतालका आकस्मिक तथा सघन हेरचाह उपकरणका लागि सोधपुछ क्याटलग।',
+    },
+    iconName: 'Activity',
+  },
+  {
+    id: 'dressings-drains-procedure',
+    slug: 'dressings-drains-procedure',
+    name: {
+      en: 'Dressings, Drains & Procedure Supplies',
+      ne: 'ड्रेसिङ, ड्रेन तथा प्रोसिजर सामग्री',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for dressings, drainage supplies and procedure consumables.',
+      ne: 'ड्रेसिङ, ड्रेनेज सामग्री तथा प्रोसिजर उपभोग्य सामग्रीका लागि सोधपुछ क्याटलग।',
+    },
+    iconName: 'Package',
+  },
+  {
+    id: 'sterilization-infection-control',
+    slug: 'sterilization-infection-control',
+    name: {
+      en: 'Sterilization & Infection-Control Supplies',
+      ne: 'निर्जीविकरण तथा संक्रमण नियन्त्रण सामग्री',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for sterilization equipment, packaging and process indicators.',
+      ne: 'निर्जीविकरण उपकरण, प्याकेजिङ तथा प्रक्रिया सूचकका लागि सोधपुछ क्याटलग।',
+    },
+    iconName: 'ShieldAlert',
+  },
+  {
+    id: 'ward-patient-support',
+    slug: 'ward-patient-support',
+    name: {
+      en: 'Ward, Patient-Handling & Support Supplies',
+      ne: 'वार्ड, बिरामी स्थानान्तरण तथा सहायक सामग्री',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for ward equipment, patient handling and support supplies.',
+      ne: 'वार्ड उपकरण, बिरामी स्थानान्तरण तथा सहायक सामग्रीका लागि सोधपुछ क्याटलग।',
+    },
+    iconName: 'Bed',
+  },
+  {
+    id: 'baby-maternity',
+    slug: 'baby-maternity',
+    name: {
+      en: 'Baby & Maternity Care',
+      ne: 'शिशु तथा मातृ हेरचाह',
+    },
+    shortDescription: {
+      en: 'Enquiry catalogue for baby daily-care and feeding accessories, maternity supplies and related equipment.',
+      ne: 'शिशु दैनिक हेरचाह तथा खुवाउने सामग्री, मातृ सामग्री र सम्बन्धित उपकरणका लागि सोधपुछ क्याटलग।',
     },
     iconName: 'HeartPulse',
   },

@@ -1,3 +1,7 @@
+import { PRODUCTS } from '@/data/products';
+
+const catalogueSlugs = new Set(PRODUCTS.map((product) => product.slug));
+
 export interface OrderLine {
   slug: string;
   quantity: number;
@@ -22,14 +26,23 @@ export function readOrder(): OrderLine[] {
       typeof line === 'object'
       && line !== null
       && typeof line.slug === 'string'
+      && catalogueSlugs.has(line.slug)
       && Number.isSafeInteger(line.quantity)
       && line.quantity > 0
     )).map(({ slug, quantity }) => ({ slug, quantity }));
 
-    if (JSON.stringify(parsed) !== JSON.stringify(sanitized)) {
-      window.localStorage.setItem(ORDER_STORAGE_KEY, JSON.stringify(sanitized));
+    const unique = new Map<string, OrderLine>();
+    for (const line of sanitized) {
+      const previous = unique.get(line.slug);
+      const quantity = (previous?.quantity ?? 0) + line.quantity;
+      if (Number.isSafeInteger(quantity)) unique.set(line.slug, { slug: line.slug, quantity });
     }
-    return sanitized;
+    const selections = [...unique.values()];
+
+    if (JSON.stringify(parsed) !== JSON.stringify(selections)) {
+      window.localStorage.setItem(ORDER_STORAGE_KEY, JSON.stringify(selections));
+    }
+    return selections;
   } catch (error) {
     console.error('Unable to read the saved order from browser storage.', error);
     return [];
@@ -37,7 +50,8 @@ export function readOrder(): OrderLine[] {
 }
 
 export function writeOrder(lines: OrderLine[]): void {
-  if (lines.some((line) => !line.slug || !Number.isSafeInteger(line.quantity) || line.quantity < 1)) {
+  if (lines.some((line) => !catalogueSlugs.has(line.slug) || !Number.isSafeInteger(line.quantity) || line.quantity < 1)
+    || new Set(lines.map((line) => line.slug)).size !== lines.length) {
     throw new RangeError('Order quantities must be positive safe integers.');
   }
   const selections = lines.map(({ slug, quantity }) => ({ slug, quantity }));

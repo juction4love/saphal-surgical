@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Download, Eye, Minus, Plus, Share2, Trash2 } from 'lucide-react';
 import { siteConfig } from '@/config/site';
@@ -184,7 +184,7 @@ async function createOrderPdf(data: PdfData): Promise<Blob> {
     context.fillText(`${texts.ref}: ${data.reference}`, margin, 185, contentWidth);
     context.fillText(`${texts.date}: ${formatNepalTime(generatedAt, data.locale)}`, margin, 220, contentWidth);
     context.fillText(`${siteConfig.phone.primary.display}  |  ${siteConfig.phone.secondary.display}  |  WhatsApp ${siteConfig.whatsapp.display}`, margin, 255, contentWidth);
-    context.fillText(siteConfig.address.fullAddress.en, margin, 287, contentWidth);
+    context.fillText(siteConfig.address.fullAddress[data.locale], margin, 287, contentWidth);
     context.strokeStyle = '#b8d8bf';
     context.lineWidth = 2;
     context.beginPath();
@@ -233,6 +233,8 @@ async function createOrderPdf(data: PdfData): Promise<Blob> {
     const gap = options.gap ?? lineHeight;
     for (const line of wrapCanvasText(context, text, width)) {
       ensureRoom(gap);
+      context.font = options.font;
+      context.fillStyle = options.color;
       if (line) context.fillText(line, x, cursorY, width);
       cursorY += gap;
     }
@@ -345,9 +347,13 @@ export function OrderSlip({ locale }: OrderSlipProps) {
   const [reference, setReference] = useState('');
   const [pdfUrl, setPdfUrl] = useState('');
   const [notice, setNotice] = useState('');
+  const generatedPdf = useRef<{ key: string; file: File } | null>(null);
 
   useEffect(() => {
-    const syncOrder = () => setOrder(readOrder());
+    const syncOrder = () => {
+      setPdfUrl('');
+      setOrder(readOrder());
+    };
     syncOrder();
     setReference(makeReference(new Date()));
     setReady(true);
@@ -457,6 +463,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
   };
 
   const updateQuantity = (slug: string, value: string) => {
+    setPdfUrl('');
     setQuantityDrafts((current) => ({ ...current, [slug]: value }));
     const quantity = Number(value);
     if (!Number.isSafeInteger(quantity) || quantity < 1) {
@@ -477,6 +484,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
     if (!line) return;
     const quantity = line.quantity + amount;
     if (!Number.isSafeInteger(quantity) || quantity < 1) return;
+    setPdfUrl('');
     setQuantityError('');
     setQuantityDrafts((current) => {
       const next = { ...current };
@@ -487,6 +495,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
   };
 
   const removeLine = (slug: string) => {
+    setPdfUrl('');
     setQuantityError('');
     setQuantityDrafts((current) => {
       const next = { ...current };
@@ -497,6 +506,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
   };
 
   const updateCustomer = (field: keyof CustomerDetails, value: string) => {
+    setPdfUrl('');
     setCustomer((current) => ({ ...current, [field]: value }));
   };
 
@@ -516,7 +526,8 @@ export function OrderSlip({ locale }: OrderSlipProps) {
       setNotice(labels.validation);
       return false;
     }
-    if (order.some((line) => !Number.isSafeInteger(line.quantity) || line.quantity < 1) || quantityError) {
+    if (order.some((line) => !Number.isSafeInteger(line.quantity) || line.quantity < 1)
+      || Object.values(quantityDrafts).some((value) => !Number.isSafeInteger(Number(value)) || Number(value) < 1)) {
       setNotice(labels.validation);
       return false;
     }
@@ -524,8 +535,13 @@ export function OrderSlip({ locale }: OrderSlipProps) {
   };
 
   const createPdfFile = async () => {
-    const blob = await createOrderPdf(buildPdfData());
-    return new File([blob], `saphal-order-${reference}.pdf`, { type: 'application/pdf' });
+    const data = buildPdfData();
+    const key = JSON.stringify(data);
+    if (generatedPdf.current?.key === key) return generatedPdf.current.file;
+    const blob = await createOrderPdf(data);
+    const file = new File([blob], `saphal-order-${reference}.pdf`, { type: 'application/pdf' });
+    generatedPdf.current = { key, file };
+    return file;
   };
 
   const downloadPdf = async () => {
@@ -536,8 +552,10 @@ export function OrderSlip({ locale }: OrderSlipProps) {
       const anchor = document.createElement('a');
       anchor.href = url;
       anchor.download = file.name;
+      document.body.appendChild(anchor);
       anchor.click();
-      window.setTimeout(() => URL.revokeObjectURL(url), 1500);
+      anchor.remove();
+      window.setTimeout(() => URL.revokeObjectURL(url), 60_000);
       setNotice('');
     } catch (error) {
       console.error('Unable to generate or download the order PDF.', error);
@@ -581,7 +599,10 @@ export function OrderSlip({ locale }: OrderSlipProps) {
 
   const orderSummary = [
     `${labels.title} — ${labels.slipReference}: ${reference}`,
-    ...products.map(({ product, quantity }) => `- ${product.name[locale]} — ${labels.quantity}: ${quantity}`),
+    ...products.map(({ product, quantity }) => [
+      `- ${product.name[locale]} — ${labels.quantity}: ${quantity}`,
+      specifications[product.slug]?.trim() ? `  ${labels.specification}: ${specifications[product.slug].trim()}` : '',
+    ].filter(Boolean).join('\n')),
     labels.orderEnquiry,
     labels.manualAttach,
   ].join('\n');
@@ -701,7 +722,10 @@ export function OrderSlip({ locale }: OrderSlipProps) {
                   <textarea
                     rows={2}
                     value={specifications[product.slug] ?? ''}
-                    onChange={(event) => setSpecifications((current) => ({ ...current, [product.slug]: event.target.value }))}
+                    onChange={(event) => {
+                      setPdfUrl('');
+                      setSpecifications((current) => ({ ...current, [product.slug]: event.target.value }));
+                    }}
                     placeholder={locale === 'ne' ? 'आकार, मोडेल वा अन्य विवरण' : 'Size, model, or other details'}
                     className={`${inputClass} min-h-16 text-sm font-normal`}
                   />
@@ -738,7 +762,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
               {labels.shareFile}
             </button>
             {whatsappUrl && (
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
+              <a href={whatsappUrl} onClick={(event) => { if (!customerIsValid()) event.preventDefault(); }} target="_blank" rel="noopener noreferrer" className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
                 <Share2 className="w-4 h-4" />
                 {labels.whatsapp}
               </a>

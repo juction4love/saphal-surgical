@@ -1,0 +1,3670 @@
+[
+  {
+    "slug": "hematology-analyzer",
+    "path": "/products/illustrations/hematology-analyzer.svg",
+    "kind": "illustration",
+    "illustration": "lab-hematology",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Hematology Analyzer; actual model may differ.",
+      "ne": "हेमाटोलोजी एनालाइजर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "biochemistry-analyzer",
+    "path": "/products/illustrations/biochemistry-analyzer.svg",
+    "kind": "illustration",
+    "illustration": "lab-biochemistry",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Biochemistry Analyzer (Semi / Fully Automated); actual model may differ.",
+      "ne": "बायोकेमिस्ट्री एनालाइजर (सेमी / फुल्ली अटोमेटेड) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "electrolyte-analyzer",
+    "path": "/products/illustrations/electrolyte-analyzer.svg",
+    "kind": "illustration",
+    "illustration": "lab-electrolyte",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Electrolyte Analyzer (ISE); actual model may differ.",
+      "ne": "इलेक्ट्रोलाइट एनालाइजर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "immunoassay-analyzer",
+    "path": "/products/illustrations/immunoassay-analyzer.svg",
+    "kind": "illustration",
+    "illustration": "lab-immunoassay",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Immunoassay Analyzer (ELISA / CLIA / FIA); actual model may differ.",
+      "ne": "इम्युनोएस्से एनालाइजर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "urine-analyzer",
+    "path": "/products/illustrations/urine-analyzer.svg",
+    "kind": "illustration",
+    "illustration": "lab-urine",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Urine Chemistry Analyzer; actual model may differ.",
+      "ne": "युरिन एनालाइजर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "laboratory-microscope",
+    "path": "/products/illustrations/laboratory-microscope.svg",
+    "kind": "illustration",
+    "illustration": "microscope",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Binocular / Trinocular Laboratory Microscope; actual model may differ.",
+      "ne": "प्रयोगशाला माइक्रोस्कोप (बाइनोकुलर / ट्राइनोकुलर) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "laboratory-centrifuge",
+    "path": "/products/illustrations/laboratory-centrifuge.svg",
+    "kind": "illustration",
+    "illustration": "centrifuge",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Clinical Laboratory Centrifuge; actual model may differ.",
+      "ne": "सेन्ट्रिफ्यूज मेसिन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "laboratory-incubator-hot-air-oven",
+    "path": "/products/illustrations/laboratory-incubator-hot-air-oven.svg",
+    "kind": "illustration",
+    "illustration": "incubator-oven",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Laboratory Bacteriological Incubator & Hot-Air Oven; actual model may differ.",
+      "ne": "इन्क्युबेटर तथा हट-एयर ओभन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "water-bath-micropipettes",
+    "path": "/products/illustrations/water-bath-micropipettes.svg",
+    "kind": "illustration",
+    "illustration": "water-bath-pipette",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Laboratory Water Bath & Precision Micropipettes; actual model may differ.",
+      "ne": "वाटर बाथ तथा माइक्रोपिपेट को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "lab-refrigerator-specimen-containers",
+    "path": "/products/illustrations/lab-refrigerator-specimen-containers.svg",
+    "kind": "illustration",
+    "illustration": "lab-fridge-specimen",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Laboratory Refrigerators, Test Tubes & Specimen Containers; actual model may differ.",
+      "ne": "ल्याब रेफ्रिजरेटर, टेस्ट ट्युब तथा नमुना कन्टेनर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "surgical-scissors-forceps",
+    "path": "/products/illustrations/surgical-scissors-forceps.svg",
+    "kind": "illustration",
+    "illustration": "scissors-forceps",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Surgical Scissors & Forceps (Dissecting / Tissue); actual model may differ.",
+      "ne": "शल्यक्रिया कैंची तथा फोर्सेप्स को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "hemostatic-clamps-needle-holders",
+    "path": "/products/illustrations/hemostatic-clamps-needle-holders.svg",
+    "kind": "illustration",
+    "illustration": "clamps-needleholder",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Hemostatic Clamps & Needle Holders (Artery Forceps); actual model may differ.",
+      "ne": "हेमोस्ट्याटिक क्ल्याम्प तथा निडल होल्डर (धमनी फोर्सेप्स) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "surgical-retractors-scalpels-sets",
+    "path": "/products/illustrations/surgical-retractors-scalpels-sets.svg",
+    "kind": "illustration",
+    "illustration": "surgical-retractors",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Surgical Retractors, Scalpel Handles & Instrument Sets; actual model may differ.",
+      "ne": "सर्जिकल रिट्रयाक्टर, स्काल्पेल ह्यान्डल तथा औजार सेटहरू को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "autoclaves-steam-sterilizers",
+    "path": "/products/illustrations/autoclaves-steam-sterilizers.svg",
+    "kind": "illustration",
+    "illustration": "autoclave",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original sterilization illustration representing Autoclaves & Steam Sterilizers (Vertical / Tabletop); actual model may differ.",
+      "ne": "अटोक्लेभ तथा स्टिम स्टेरिलाइजर (भर्टिकल / टेबलटप) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "sterilization-pouches-indicator-supplies",
+    "path": "/products/illustrations/sterilization-pouches-indicator-supplies.svg",
+    "kind": "illustration",
+    "illustration": "sterilization-pouches",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original sterilization illustration representing Sterilization Pouches, Rolls & Chemical Indicator Tapes; actual model may differ.",
+      "ne": "स्टेरिलाइजेसन पाउच, रोल तथा इन्डिकेटर टेप को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "patient-monitors-ecg-machines",
+    "path": "/products/illustrations/patient-monitors-ecg-machines.svg",
+    "kind": "illustration",
+    "illustration": "patient-monitor-ecg",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing Multi-Parameter Patient Monitors & ECG Machines; actual model may differ.",
+      "ne": "मल्टी-प्यारामिटर बिरामी मोनिटर तथा ईसीजी मेसिन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "pulse-oximeters-bp-monitors-thermometers",
+    "path": "/products/illustrations/pulse-oximeters-bp-monitors-thermometers.svg",
+    "kind": "illustration",
+    "illustration": "vitals-devices",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing Pulse Oximeters, BP Monitors, Thermometers & Glucometers; actual model may differ.",
+      "ne": "पल्स अक्सिमिटर, बीपी मोनिटर, थर्मोमिटर तथा ग्लुकोमिटर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "oxygen-concentrators-regulators",
+    "path": "/products/illustrations/oxygen-concentrators-regulators.svg",
+    "kind": "illustration",
+    "illustration": "oxygen-concentrator",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original respiratory care illustration representing Medical Oxygen Concentrators & Cylinder Regulators; actual model may differ.",
+      "ne": "अक्सिजन कन्सेन्ट्रेटर तथा सिलिन्डर रेगुलेटर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "medical-nebulizers-suction-machines",
+    "path": "/products/illustrations/medical-nebulizers-suction-machines.svg",
+    "kind": "illustration",
+    "illustration": "nebulizer-suction",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original respiratory care illustration representing Medical Nebulizers & Suction Machines; actual model may differ.",
+      "ne": "नेबुलाइजर मेसिन तथा सक्सन मेसिन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "hospital-beds-examination-couches",
+    "path": "/products/illustrations/hospital-beds-examination-couches.svg",
+    "kind": "illustration",
+    "illustration": "hospital-bed-couch",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original hospital furniture illustration representing Hospital Patient Beds & Examination Couches; actual model may differ.",
+      "ne": "अस्पताल बिरामी बेड तथा परीक्षण काउच को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "wheelchairs-trolleys-stretchers-iv-stands",
+    "path": "/products/illustrations/wheelchairs-trolleys-stretchers-iv-stands.svg",
+    "kind": "illustration",
+    "illustration": "ward-transport",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original hospital furniture illustration representing Wheelchairs, Medical Trolleys, Stretchers & IV Stands; actual model may differ.",
+      "ne": "ह्विलचेयर, मेडिकल ट्रली, स्ट्रेचर तथा आईभी स्ट्यान्ड को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "medical-gloves-masks-disposable-gowns",
+    "path": "/products/illustrations/medical-gloves-masks-disposable-gowns.svg",
+    "kind": "illustration",
+    "illustration": "ppe",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Medical Gloves, 3-Ply Masks & Disposable Surgical Gowns; actual model may differ.",
+      "ne": "मेडिकल पञ्जा, ३-प्लाई मास्क तथा डिस्पोजेबल सर्जिकल गाउन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "syringes-iv-cannulas-catheters-gauze-dressings",
+    "path": "/products/illustrations/syringes-iv-cannulas-catheters-gauze-dressings.svg",
+    "kind": "illustration",
+    "illustration": "medical-consumables",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Syringes, IV Cannulas, Catheters & Gauze Bandages; actual model may differ.",
+      "ne": "सिरिन्ज, आईभी क्यानुला, क्याथेटर तथा गज ब्यान्डेज को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "walkers-crutches-orthopedic-supports",
+    "path": "/products/illustrations/walkers-crutches-orthopedic-supports.svg",
+    "kind": "illustration",
+    "illustration": "walkers-supports",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Walkers, Crutches, Walking Sticks & Orthopedic Supports; actual model may differ.",
+      "ne": "वाकर, वैशाखी, वाकिङ स्टिक तथा अर्थोपेडिक सपोर्ट को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "air-mattresses-commode-chairs",
+    "path": "/products/illustrations/air-mattresses-commode-chairs.svg",
+    "kind": "illustration",
+    "illustration": "air-mattress-commode",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Anti-Decubitus Air Mattresses & Commode Chairs; actual model may differ.",
+      "ne": "एंटी-बेडसोर एयर म्याट्रेस तथा कमोड चेयर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "sterile-surgical-gowns-drapes-ot-packs",
+    "path": "/products/illustrations/sterile-surgical-gowns-drapes-ot-packs.svg",
+    "kind": "illustration",
+    "illustration": "sterile-gown-drape",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original ot supplies illustration representing Sterile Surgical Gowns, Drapes & OT Procedure Packs; actual model may differ.",
+      "ne": "स्टेराइल सर्जिकल गाउन, ड्रेप्स तथा ओटी प्याक को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "surgical-sutures-sterile-blades",
+    "path": "/products/illustrations/surgical-sutures-sterile-blades.svg",
+    "kind": "illustration",
+    "illustration": "sutures-blades",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original ot supplies illustration representing Surgical Sutures & Sterile Carbon / Stainless Blades; actual model may differ.",
+      "ne": "सर्जिकल सुचर धागो तथा स्टेराइल ब्लेड को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "hospital-surface-floor-disinfectants",
+    "path": "/products/illustrations/hospital-surface-floor-disinfectants.svg",
+    "kind": "illustration",
+    "illustration": "disinfectants",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original cleaning hygiene illustration representing Hospital Surface Disinfectants & Floor Cleaning Solutions; actual model may differ.",
+      "ne": "अस्पताल सतह निसङ्क्रमण घोल तथा भुइँ सफाइ रसायन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "alcohol-hand-rubs-antiseptic-scrubs",
+    "path": "/products/illustrations/alcohol-hand-rubs-antiseptic-scrubs.svg",
+    "kind": "illustration",
+    "illustration": "hand-rub",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original cleaning hygiene illustration representing Alcohol Hand Rub Sanitizers & Antiseptic Hand Scrubs; actual model may differ.",
+      "ne": "अल्कोहल ह्यान्ड रब स्यानिटाइजर तथा एन्टीसेप्टिक स्क्रब को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "double-bucket-mop-trolleys-cleaning-tools",
+    "path": "/products/illustrations/double-bucket-mop-trolleys-cleaning-tools.svg",
+    "kind": "illustration",
+    "illustration": "mop-trolley",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original cleaning hygiene illustration representing Double-Bucket Wringer Mop Trolleys & Cleaning Tools; actual model may differ.",
+      "ne": "डबल-बाल्टी मोप ट्रली तथा सरसफाइ सामग्री को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "color-coded-biomedical-waste-bins-bags",
+    "path": "/products/illustrations/color-coded-biomedical-waste-bins-bags.svg",
+    "kind": "illustration",
+    "illustration": "waste-bins-bags",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original waste handling illustration representing Color-Coded Biomedical Waste Bins & Biohazard Bags; actual model may differ.",
+      "ne": "रंग-संकेतयुक्त बायोमेडिकल फोहोर पेडल डस्टबिन तथा झोला को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "puncture-proof-sharps-containers-needle-destroyers",
+    "path": "/products/illustrations/puncture-proof-sharps-containers-needle-destroyers.svg",
+    "kind": "illustration",
+    "illustration": "sharps",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original waste handling illustration representing Puncture-Proof Sharps Containers & Needle Destroyers; actual model may differ.",
+      "ne": "सार्प्स कन्टेनर तथा निडल कटर/डिस्ट्रोयर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "insulin-syringes-u-40-u-100",
+    "path": "/products/illustrations/insulin-syringes-u-40-u-100.svg",
+    "kind": "illustration",
+    "illustration": "insulin-syringe",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Insulin Syringes (U-40 & U-100 Calibrations); actual model may differ.",
+      "ne": "इन्सुलिन सिरिन्जहरू (U-40 तथा U-100 क्यालिब्रेसन) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "tuberculin-syringes-1ml",
+    "path": "/products/illustrations/tuberculin-syringes-1ml.svg",
+    "kind": "illustration",
+    "illustration": "tuberculin-syringe",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Tuberculin Syringes (1ml Diagnostic / Small-Volume); actual model may differ.",
+      "ne": "ट्युबरकुलिन सिरिन्जहरू (१ मिलि डायग्नोस्टिक / सानो परिमाण) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "disposable-syringes-luer-slip-lock",
+    "path": "/products/illustrations/disposable-syringes-luer-slip-lock.svg",
+    "kind": "illustration",
+    "illustration": "syringe-range",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing General Disposable Syringes (2ml to 50ml / 60ml); actual model may differ.",
+      "ne": "नियमित डिस्पोजेबल सिरिन्जहरू (२ मिलि देखि ५०/६० मिलि) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "iv-infusion-sets-blood-administration",
+    "path": "/products/illustrations/iv-infusion-sets-blood-administration.svg",
+    "kind": "illustration",
+    "illustration": "iv-infusion",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing IV Infusion Sets & Blood Administration Sets; actual model may differ.",
+      "ne": "आईभी इन्फ्युजन सेट तथा ब्लड ट्रान्सफ्युजन सेट को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "iv-cannulas-color-coded-gauges",
+    "path": "/products/illustrations/iv-cannulas-color-coded-gauges.svg",
+    "kind": "illustration",
+    "illustration": "iv-cannula",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Color-Coded IV Cannulas / Catheters (14G to 26G); actual model may differ.",
+      "ne": "रंग-संकेतयुक्त आईभी क्यानुला / क्याथेटरहरू (१४G देखि २६G) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "surgical-sutures-absorbable-non-absorbable",
+    "path": "/products/illustrations/surgical-sutures-absorbable-non-absorbable.svg",
+    "kind": "illustration",
+    "illustration": "suture-pack",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original ot supplies illustration representing Sterile Surgical Sutures (Absorbable & Non-Absorbable); actual model may differ.",
+      "ne": "स्टेराइल सर्जिकल सुचर धागोहरू (घुलनशील तथा नघुलनशील) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "ent-instruments-specula-forceps-sets",
+    "path": "/products/illustrations/ent-instruments-specula-forceps-sets.svg",
+    "kind": "illustration",
+    "illustration": "ent-set",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing ENT Instruments (Ear, Nose & Throat Specula, Forceps & Sets); actual model may differ.",
+      "ne": "ईएनटी औजारहरू (कान, नाक तथा घाँटीका स्पेकुलम, फोर्सेप्स तथा सेट) को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "coral-clinical-systems-biochemistry-reagents",
+    "path": "/products/illustrations/coral-clinical-systems-biochemistry-reagents.svg",
+    "kind": "illustration",
+    "illustration": "reagent-kits",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Coral Clinical Systems Biochemistry Reagents & Test Kits; actual model may differ.",
+      "ne": "कोरल क्लिनिकल सिस्टम्स बायोकेमिस्ट्री रिअजेन्ट तथा टेस्ट किटहरू को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "tulip-diagnostics-serology-rapid-test-kits",
+    "path": "/products/illustrations/tulip-diagnostics-serology-rapid-test-kits.svg",
+    "kind": "illustration",
+    "illustration": "reagent-kits",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Tulip Diagnostics Serology Reagents & Rapid Test Kits; actual model may differ.",
+      "ne": "ट्युलिप डायग्नोस्टिक्स सेरोलोजी रिअजेन्ट तथा र्‍यापिड टेस्ट किटहरू को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "erba-mannheim-clinical-chemistry-reagents-controls",
+    "path": "/products/illustrations/erba-mannheim-clinical-chemistry-reagents-controls.svg",
+    "kind": "illustration",
+    "illustration": "reagent-kits",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original laboratory illustration representing Erba Mannheim Clinical Chemistry Reagents, Hematology & Controls; actual model may differ.",
+      "ne": "एर्बा म्यानहाइम क्लिनिकल बायोकेमिस्ट्री रिअजेन्ट, हेमाटोलोजी तथा कन्ट्रोल को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "dressing-scissors",
+    "path": "/products/illustrations/dressing-scissors.svg",
+    "kind": "illustration",
+    "illustration": "product-dressing-scissors",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Dressing scissors; actual model may differ.",
+      "ne": "ड्रेसिङ कैंची को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "plain-dissecting-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Plain dissecting forceps.",
+      "ne": "प्लेन डिसेक्टिङ फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "toothed-dissecting-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Toothed dissecting forceps.",
+      "ne": "टुथ्ड डिसेक्टिङ फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "mosquito-forceps",
+    "path": "/products/illustrations/mosquito-forceps.svg",
+    "kind": "illustration",
+    "illustration": "product-mosquito-forceps",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Mosquito forceps; actual model may differ.",
+      "ne": "मस्किटो फोर्सेप्स को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "needle-holder",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Needle holder.",
+      "ne": "निडल होल्डर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "scalpel-handle",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Scalpel handle.",
+      "ne": "स्काल्पेल ह्यान्डल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "allis-tissue-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Allis tissue forceps.",
+      "ne": "एलिस टिस्यु फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "babcock-tissue-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Babcock tissue forceps.",
+      "ne": "ब्याबकक टिस्यु फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "sponge-holding-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Sponge-holding forceps.",
+      "ne": "स्पन्ज होल्डिङ फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "towel-clips",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Towel clips.",
+      "ne": "टावेल क्लिप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-instrument-trays",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical instrument trays.",
+      "ne": "सर्जिकल इन्स्ट्रुमेन्ट ट्रे को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "kidney-trays",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Kidney trays.",
+      "ne": "किड्नी ट्रे को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "dressing-drums",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Dressing drums.",
+      "ne": "ड्रेसिङ ड्रम को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ear-specula",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ear specula.",
+      "ne": "कानको स्पेकुलम को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nasal-specula",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nasal specula.",
+      "ne": "नाकको स्पेकुलम को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "right-angle-forceps",
+    "path": "/products/illustrations/right-angle-forceps.svg",
+    "kind": "illustration",
+    "illustration": "product-right-angle-forceps",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Right-angle forceps; actual model may differ.",
+      "ne": "राइट-एङ्गल फोर्सेप्स को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "kocher-forceps",
+    "path": "/products/illustrations/kocher-forceps.svg",
+    "kind": "illustration",
+    "illustration": "product-kocher-forceps",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Kocher forceps; actual model may differ.",
+      "ne": "कोचर फोर्सेप्स को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "bulldog-vascular-clamps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bulldog vascular clamps.",
+      "ne": "बुलडग भास्कुलर क्ल्याम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "vascular-clamps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Vascular clamps.",
+      "ne": "भास्कुलर क्ल्याम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "intestinal-clamps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Intestinal clamps.",
+      "ne": "इन्टेस्टाइनल क्ल्याम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bone-holding-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bone-holding forceps.",
+      "ne": "बोन-होल्डिङ फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bone-cutters",
+    "path": "/products/illustrations/bone-cutters.svg",
+    "kind": "illustration",
+    "illustration": "product-bone-cutters",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Bone cutters; actual model may differ.",
+      "ne": "बोन कटर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "bone-rongeurs",
+    "path": "/products/illustrations/bone-rongeurs.svg",
+    "kind": "illustration",
+    "illustration": "product-bone-rongeurs",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Bone rongeurs; actual model may differ.",
+      "ne": "बोन रन्जर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "periosteal-elevators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Periosteal elevators.",
+      "ne": "पेरिओस्टियल एलिभेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-osteotomes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical osteotomes.",
+      "ne": "सर्जिकल ओस्टियोटोम को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-chisels",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical chisels.",
+      "ne": "सर्जिकल छिनो को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bone-curettes",
+    "path": "/products/illustrations/bone-curettes.svg",
+    "kind": "illustration",
+    "illustration": "product-bone-curettes",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Bone curettes; actual model may differ.",
+      "ne": "बोन क्युरेट को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "surgical-mallets",
+    "path": "/products/illustrations/surgical-mallets.svg",
+    "kind": "illustration",
+    "illustration": "product-surgical-mallets",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Surgical mallets; actual model may differ.",
+      "ne": "सर्जिकल मालेट को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "skin-hooks",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Skin hooks.",
+      "ne": "स्किन हुक को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-probes",
+    "path": "/products/illustrations/surgical-probes.svg",
+    "kind": "illustration",
+    "illustration": "product-surgical-probes",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Surgical probes; actual model may differ.",
+      "ne": "सर्जिकल प्रोब को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "grooved-directors",
+    "path": "/products/illustrations/grooved-directors.svg",
+    "kind": "illustration",
+    "illustration": "product-grooved-directors",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Grooved directors; actual model may differ.",
+      "ne": "ग्रुभ्ड डाइरेक्टर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "sinus-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Sinus forceps.",
+      "ne": "साइनस फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "suction-cannulas",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Suction cannulas.",
+      "ne": "सक्सन क्यानुला को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ligature-carriers",
+    "path": "/products/illustrations/ligature-carriers.svg",
+    "kind": "illustration",
+    "illustration": "product-ligature-carriers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Ligature carriers; actual model may differ.",
+      "ne": "लिगेचर क्यारियर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "suture-removal-scissors",
+    "path": "/products/illustrations/suture-removal-scissors.svg",
+    "kind": "illustration",
+    "illustration": "product-suture-removal-scissors",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original surgical instruments illustration representing Suture-removal scissors; actual model may differ.",
+      "ne": "टाँका हटाउने कैंची को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "vaginal-specula",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Vaginal specula.",
+      "ne": "भ्याजाइनल स्पेकुलम को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "uterine-sounds",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Uterine sounds.",
+      "ne": "युटेराइन साउन्ड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cervical-dilators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Cervical dilators.",
+      "ne": "सर्भिकल डाइलेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "uterine-curettes",
+    "path": "/products/illustrations/uterine-curettes.svg",
+    "kind": "illustration",
+    "illustration": "product-uterine-curettes",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original obstetrics gynaecology urology illustration representing Uterine curettes; actual model may differ.",
+      "ne": "युटेराइन क्युरेट को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "ovum-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ovum forceps.",
+      "ne": "ओभम फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "vulsellum-forceps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Vulsellum forceps.",
+      "ne": "भल्सेलम फोर्सेप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "umbilical-cord-clamps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Umbilical cord clamps.",
+      "ne": "नाभीको डोरी क्ल्याम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "obstetric-delivery-instrument-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Obstetric delivery instrument sets.",
+      "ne": "प्रसूति इन्स्ट्रुमेन्ट सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "orthopedic-instrument-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Orthopedic instrument sets.",
+      "ne": "अर्थोपेडिक इन्स्ट्रुमेन्ट सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "orthopedic-measuring-instruments",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Orthopedic measuring instruments.",
+      "ne": "अर्थोपेडिक मापन उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-bone-drills",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical bone drills.",
+      "ne": "सर्जिकल बोन ड्रिल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-bone-saws",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical bone saws.",
+      "ne": "सर्जिकल बोन स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "hypodermic-needles",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Hypodermic needles.",
+      "ne": "हाइपोडर्मिक सुई को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "blood-administration-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Blood administration sets.",
+      "ne": "रगत चढाउने सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "three-way-stopcocks",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Three-way stopcocks.",
+      "ne": "थ्री-वे स्टपकक को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "iv-extension-lines",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for IV extension lines.",
+      "ne": "आईभी एक्सटेन्सन लाइन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "non-absorbable-sutures",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Non-absorbable sutures.",
+      "ne": "नघुल्ने सर्जिकल धागो को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "sterile-surgical-gloves",
+    "path": "/products/illustrations/sterile-surgical-gloves.svg",
+    "kind": "illustration",
+    "illustration": "product-sterile-surgical-gloves",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Sterile surgical gloves; actual model may differ.",
+      "ne": "स्टेराइल सर्जिकल पञ्जा को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "surgical-masks",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical masks.",
+      "ne": "सर्जिकल मास्क को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-drapes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical drapes.",
+      "ne": "सर्जिकल ड्रेप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "gauze-swabs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Gauze swabs.",
+      "ne": "गज स्वाब को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cotton-rolls",
+    "path": "/products/illustrations/cotton-rolls.svg",
+    "kind": "illustration",
+    "illustration": "product-cotton-rolls",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original dressings drains procedure illustration representing Cotton rolls; actual model may differ.",
+      "ne": "कटन रोल को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "adhesive-medical-tape",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Adhesive medical tape.",
+      "ne": "टाँसिने मेडिकल टेप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "urine-collection-bags",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Urine collection bags.",
+      "ne": "पिसाब सङ्कलन ब्याग को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "elastic-compression-bandages",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Elastic compression bandages.",
+      "ne": "इलास्टिक कम्प्रेसन ब्यान्डेज को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "crepe-bandages",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Crepe bandages.",
+      "ne": "क्रेप ब्यान्डेज को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "plaster-of-paris-bandages",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Plaster-of-Paris bandages.",
+      "ne": "प्लास्टर अफ पेरिस ब्यान्डेज को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "fibreglass-casting-tape",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Fibreglass casting tape.",
+      "ne": "फाइबरग्लास कास्टिङ टेप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "transparent-film-dressings",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Transparent film dressings.",
+      "ne": "पारदर्शी फिल्म ड्रेसिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "foam-wound-dressings",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Foam wound dressings.",
+      "ne": "फोम घाउ ड्रेसिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "hydrocolloid-dressings",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Hydrocolloid dressings.",
+      "ne": "हाइड्रोकोलोइड ड्रेसिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "non-adherent-wound-dressings",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Non-adherent wound dressings.",
+      "ne": "नटाँसिने घाउ ड्रेसिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "wound-closure-adhesive-strips",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Wound-closure adhesive strips.",
+      "ne": "घाउ बन्द गर्ने टाँसिने स्ट्रिप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "surgical-skin-staplers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Surgical skin staplers.",
+      "ne": "सर्जिकल स्किन स्ट्यापलर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "skin-staple-removers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Skin staple removers.",
+      "ne": "स्किन स्ट्यापल हटाउने उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "closed-wound-drainage-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Closed wound-drainage sets.",
+      "ne": "बन्द घाउ ड्रेनेज सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "penrose-drains",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Penrose drains.",
+      "ne": "पेनरोज ड्रेन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "chest-drainage-systems",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Chest drainage systems.",
+      "ne": "छाती ड्रेनेज प्रणाली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nasogastric-feeding-tubes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nasogastric feeding tubes.",
+      "ne": "नाकबाट पेटसम्म जाने फिडिङ ट्युब को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "sterilization-wrapping-sheets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Sterilization wrapping sheets.",
+      "ne": "स्टेरिलाइजेसन र्‍यापिङ पाना को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "autoclave-indicator-tape",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Autoclave indicator tape.",
+      "ne": "अटोक्लेभ इन्डिकेटर टेप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "chemical-sterilization-indicators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Chemical sterilization indicators.",
+      "ne": "केमिकल स्टेरिलाइजेसन इन्डिकेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "biological-sterilization-indicators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Biological sterilization indicators.",
+      "ne": "बायोलोजिकल स्टेरिलाइजेसन इन्डिकेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bowie-dick-test-packs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bowie–Dick test packs.",
+      "ne": "बोवी–डिक परीक्षण प्याक को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "disposable-shoe-covers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Disposable shoe covers.",
+      "ne": "डिस्पोजेबल जुत्ता कभर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "oxygen-face-masks",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Oxygen face masks.",
+      "ne": "अक्सिजन फेस मास्क को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nasal-oxygen-cannulas",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nasal oxygen cannulas.",
+      "ne": "नाकको अक्सिजन क्यानुला को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "anaesthesia-face-masks",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Anaesthesia face masks.",
+      "ne": "एनेस्थेसिया फेस मास्क को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "heat-and-moisture-exchange-filters",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Heat-and-moisture exchange filters.",
+      "ne": "हिट-मोइस्चर एक्सचेन्ज फिल्टर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bacterial-viral-breathing-filters",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bacterial/viral breathing filters.",
+      "ne": "ब्याक्टेरियल/भाइरल ब्रीदिङ फिल्टर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "breathing-circuits",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Breathing circuits.",
+      "ne": "ब्रीदिङ सर्किट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "endotracheal-tubes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Endotracheal tubes.",
+      "ne": "एन्डोट्राकियल ट्युब को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "tracheostomy-tubes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Tracheostomy tubes.",
+      "ne": "ट्र्याकियोस्टोमी ट्युब को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "laryngeal-mask-airways",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Laryngeal mask airways.",
+      "ne": "लारिन्जियल मास्क एयरवे को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "oropharyngeal-airways",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Oropharyngeal airways.",
+      "ne": "ओरोफारिन्जियल एयरवे को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nasopharyngeal-airways",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nasopharyngeal airways.",
+      "ne": "नासोफारिन्जियल एयरवे को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "suction-catheters",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Suction catheters.",
+      "ne": "सक्सन क्याथेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "manual-resuscitator-bags",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Manual resuscitator bags.",
+      "ne": "म्यानुअल रिससिटेटर ब्याग को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "laryngoscope-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Laryngoscope sets.",
+      "ne": "ल्यारिङ्गोस्कोप सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "foley-urinary-catheters",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Foley urinary catheters.",
+      "ne": "फोली पिसाबको क्याथेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "intermittent-urinary-catheters",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Intermittent urinary catheters.",
+      "ne": "इन्टरमिटेन्ट पिसाबको क्याथेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "urometer-drainage-systems",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Urometer drainage systems.",
+      "ne": "युरोमिटर ड्रेनेज प्रणाली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "urinary-catheterization-kits",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Urinary catheterization kits.",
+      "ne": "युरिनरी क्याथेटराइजेसन किट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "suprapubic-catheter-kits",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Suprapubic catheter kits.",
+      "ne": "सुप्राप्युबिक क्याथेटर किट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bladder-irrigation-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bladder irrigation sets.",
+      "ne": "ब्लाडर इरिगेसन सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "hospital-mattresses",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Hospital mattresses.",
+      "ne": "अस्पतालका म्याट्रेस को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bedside-lockers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bedside lockers.",
+      "ne": "बेडसाइड लकर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "overbed-tables",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Overbed tables.",
+      "ne": "बेडमाथि राख्ने टेबल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "iv-stands",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for IV stands.",
+      "ne": "आईभी स्ट्यान्ड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "hospital-stretchers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Hospital stretchers.",
+      "ne": "अस्पताल स्ट्रेचर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "examination-couches",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Examination couches.",
+      "ne": "जाँच काउच को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "instrument-trolleys",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Instrument trolleys.",
+      "ne": "इन्स्ट्रुमेन्ट ट्रली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "dressing-trolleys",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Dressing trolleys.",
+      "ne": "ड्रेसिङ ट्रली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "operating-tables",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Operating tables.",
+      "ne": "अपरेशन टेबल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "operating-lights",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Operating lights.",
+      "ne": "अपरेशन लाइट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "emergency-crash-carts",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Emergency crash carts.",
+      "ne": "इमर्जेन्सी क्र्यास कार्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "patient-privacy-screens",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Patient privacy screens.",
+      "ne": "बिरामी गोपनीयता स्क्रिन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "medication-trolleys",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Medication trolleys.",
+      "ne": "औषधि ट्रली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "linen-trolleys",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Linen trolleys.",
+      "ne": "लिनेन ट्रली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "laundry-collection-carts",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Laundry collection carts.",
+      "ne": "लुगा सङ्कलन कार्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "gynaecological-examination-tables",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Gynaecological examination tables.",
+      "ne": "स्त्रीरोग जाँच टेबल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-changing-tables",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby changing tables.",
+      "ne": "शिशु फेर्ने टेबल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "electrosurgical-units",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Electrosurgical units.",
+      "ne": "इलेक्ट्रोसर्जिकल युनिट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "medical-suction-machines",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Medical suction machines.",
+      "ne": "मेडिकल सक्सन मेसिन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ecg-machines",
+    "path": "/products/illustrations/ecg-machines.svg",
+    "kind": "illustration",
+    "illustration": "product-ecg-machines",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing ECG machines; actual model may differ.",
+      "ne": "ईसीजी मेसिन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "defibrillators",
+    "path": "/products/illustrations/defibrillators.svg",
+    "kind": "illustration",
+    "illustration": "product-defibrillators",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original emergency critical care illustration representing Defibrillators; actual model may differ.",
+      "ne": "डिफिब्रिलेटर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "anaesthesia-machines",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Anaesthesia machines.",
+      "ne": "एनेस्थेसिया मेसिन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "infusion-pumps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Infusion pumps.",
+      "ne": "इन्फ्युजन पम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "syringe-pumps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Syringe pumps.",
+      "ne": "सिरिन्ज पम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "medical-ventilators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Medical ventilators.",
+      "ne": "मेडिकल भेन्टिलेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "capnography-monitors",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Capnography monitors.",
+      "ne": "क्याप्नोग्राफी मोनिटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "patient-warming-systems",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Patient warming systems.",
+      "ne": "बिरामी न्यानो राख्ने प्रणाली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ultrasonic-instrument-cleaners",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ultrasonic instrument cleaners.",
+      "ne": "अल्ट्रासोनिक इन्स्ट्रुमेन्ट क्लिनर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "instrument-washer-disinfectors",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Instrument washer-disinfectors.",
+      "ne": "इन्स्ट्रुमेन्ट धुने तथा निसङ्क्रमण मेसिन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "sterilization-container-systems",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Sterilization container systems.",
+      "ne": "स्टेरिलाइजेसन कन्टेनर प्रणाली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "hospital-weighing-scales",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Hospital weighing scales.",
+      "ne": "अस्पतालका तौल मेसिन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "height-measuring-stadiometers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Height-measuring stadiometers.",
+      "ne": "उचाइ नाप्ने स्ट्याडियोमिटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "enteral-feeding-pumps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Enteral feeding pumps.",
+      "ne": "इन्टरल फिडिङ पम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "enteral-feeding-bags-and-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Enteral feeding bags and sets.",
+      "ne": "इन्टरल फिडिङ ब्याग तथा सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "sequential-compression-devices",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Sequential compression devices.",
+      "ne": "क्रमिक कम्प्रेसन उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "oxygen-cylinders-and-regulator-sets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Oxygen cylinders and regulator sets.",
+      "ne": "अक्सिजन सिलिन्डर तथा रेगुलेटर सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "portable-suction-units",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Portable suction units.",
+      "ne": "पोर्टेबल सक्सन युनिट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cpap-devices",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for CPAP devices.",
+      "ne": "सीप्याप उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "tens-devices",
+    "path": "/products/illustrations/tens-devices.svg",
+    "kind": "illustration",
+    "illustration": "product-tens-devices",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing TENS devices; actual model may differ.",
+      "ne": "टेन्स उपकरण को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "electrical-muscle-stimulators",
+    "path": "/products/illustrations/electrical-muscle-stimulators.svg",
+    "kind": "illustration",
+    "illustration": "product-electrical-muscle-stimulators",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Electrical muscle stimulators; actual model may differ.",
+      "ne": "विद्युतीय मांसपेशी स्टिमुलेटर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "therapeutic-ultrasound-units",
+    "path": "/products/illustrations/therapeutic-ultrasound-units.svg",
+    "kind": "illustration",
+    "illustration": "product-therapeutic-ultrasound-units",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Therapeutic ultrasound units; actual model may differ.",
+      "ne": "थेराप्युटिक अल्ट्रासाउन्ड युनिट को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "digital-blood-pressure-monitors",
+    "path": "/products/illustrations/digital-blood-pressure-monitors.svg",
+    "kind": "illustration",
+    "illustration": "product-digital-blood-pressure-monitors",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing Digital blood-pressure monitors; actual model may differ.",
+      "ne": "डिजिटल रक्तचाप मोनिटर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "manual-blood-pressure-apparatus",
+    "path": "/products/illustrations/manual-blood-pressure-apparatus.svg",
+    "kind": "illustration",
+    "illustration": "product-manual-blood-pressure-apparatus",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing Manual blood-pressure apparatus; actual model may differ.",
+      "ne": "म्यानुअल रक्तचाप उपकरण को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "stethoscopes",
+    "path": "/products/illustrations/stethoscopes.svg",
+    "kind": "illustration",
+    "illustration": "product-stethoscopes",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing Stethoscopes; actual model may differ.",
+      "ne": "स्टेथोस्कोप को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "infrared-thermometers",
+    "path": "/products/illustrations/infrared-thermometers.svg",
+    "kind": "illustration",
+    "illustration": "product-infrared-thermometers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing Infrared thermometers; actual model may differ.",
+      "ne": "इन्फ्रारेड थर्मोमिटर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "glucometers",
+    "path": "/products/user-supplied/glucometer.jpeg",
+    "kind": "photo",
+    "source": "User-supplied photograph (1010.jpeg)",
+    "creator": "Original creator not identified; supplied by the project owner",
+    "license": "Supplied by the project owner, who authorized its use in this catalogue; original creator and third-party rights have not been independently verified.",
+    "alt": {
+      "en": "User-supplied representative photograph of a blood glucose meter and testing accessories; actual model may differ.",
+      "ne": "प्रयोगकर्ताले उपलब्ध गराउनुभएको रगतमा चिनी जाँच्ने मिटर र सहायक सामग्रीको सांकेतिक तस्बिर; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "glucose-test-strips",
+    "path": "/products/illustrations/glucose-test-strips.svg",
+    "kind": "illustration",
+    "illustration": "product-glucose-test-strips",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original monitoring diagnostics illustration representing Glucose test strips; actual model may differ.",
+      "ne": "ग्लुकोज जाँच स्ट्रिप को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "peak-flow-meters",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Peak-flow meters.",
+      "ne": "पिक-फ्लो मिटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "incentive-spirometers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Incentive spirometers.",
+      "ne": "इन्सेन्टिभ स्पाइरोमिटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "micropipettes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Micropipettes.",
+      "ne": "माइक्रोपिपेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "micropipette-tips",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Micropipette tips.",
+      "ne": "माइक्रोपिपेट टिप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "laboratory-hot-air-ovens",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Laboratory hot-air ovens.",
+      "ne": "प्रयोगशाला हट-एयर ओभन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "specimen-containers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Specimen containers.",
+      "ne": "नमुना सङ्कलन कन्टेनर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "erba-laboratory-reagents",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Erba laboratory reagents.",
+      "ne": "एर्बा प्रयोगशाला रिअजेन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "spine-boards",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Spine boards.",
+      "ne": "स्पाइन बोर्ड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cervical-immobilization-collars",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Cervical immobilization collars.",
+      "ne": "घाँटी स्थिर राख्ने कलर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "scoop-stretchers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Scoop stretchers.",
+      "ne": "स्कुप स्ट्रेचर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "fluid-and-blood-warmers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Fluid and blood warmers.",
+      "ne": "तरल तथा रगत न्यानो पार्ने उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "patient-transfer-boards",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Patient transfer boards.",
+      "ne": "बिरामी सार्ने बोर्ड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "patient-hoists",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Patient hoists.",
+      "ne": "बिरामी उठाउने होइस्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "transfer-slings",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Transfer slings.",
+      "ne": "बिरामी सार्ने स्लिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bedpans",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bedpans.",
+      "ne": "बेडप्यान को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "urinal-bottles",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Urinal bottles.",
+      "ne": "युरिनल बोतल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "electric-wheelchairs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Electric wheelchairs.",
+      "ne": "विद्युतीय ह्विलचेयर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "commode-chairs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Commode chairs.",
+      "ne": "कमोड चेयर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "walking-sticks-quadripod-tripod",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Walking sticks (quadripod / tripod).",
+      "ne": "वाकिङ स्टिक (क्वाड्रिपोड / ट्राइपोड) को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "crutches-including-forearm-crutches",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Crutches (including forearm crutches).",
+      "ne": "वैशाखी (फोरआर्म क्रचसहित) को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "rollators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Rollators.",
+      "ne": "रोलाटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "home-care-adjustable-beds",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Home-care adjustable beds.",
+      "ne": "घरायसी समायोज्य बेड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "knee-supports-including-hinged-braces-immobilizers-and-patellar-straps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Knee supports (including hinged braces, immobilizers and patellar straps).",
+      "ne": "घुँडा सपोर्ट (हिन्ज्ड ब्रेस, इम्मोबिलाइजर र पटेलर स्ट्र्यापसहित) को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "lumbar-supports-including-thoracolumbar-braces-and-sacroiliac-belts",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Lumbar supports (including thoracolumbar braces and sacroiliac belts).",
+      "ne": "कम्मर सपोर्ट (थोराको-लम्बर ब्रेस र स्याक्रोइलियाक बेल्टसहित) को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "exercise-pulleys",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Exercise pulleys.",
+      "ne": "व्यायाम पुली को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "stationary-exercise-cycles",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Stationary exercise cycles.",
+      "ne": "स्थिर व्यायाम साइकल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ankle-supports",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ankle supports.",
+      "ne": "खुट्टाको गोलीगाँठो सपोर्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ankle-stabilizing-braces",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ankle stabilizing braces.",
+      "ne": "गोलीगाँठो स्थिर राख्ने ब्रेस को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "walking-boots",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Walking boots.",
+      "ne": "हिँड्ने बुट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "foot-drop-splints",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Foot-drop splints.",
+      "ne": "फुट-ड्रप स्प्लिन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "wrist-supports",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Wrist supports.",
+      "ne": "कलाई सपोर्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "wrist-cock-up-splints",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Wrist cock-up splints.",
+      "ne": "कलाई सीधा राख्ने स्प्लिन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "thumb-spica-splints",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Thumb-spica splints.",
+      "ne": "औँठा स्पाइका स्प्लिन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "finger-splints",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Finger splints.",
+      "ne": "औँला स्प्लिन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "elbow-supports",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Elbow supports.",
+      "ne": "कुहिनो सपोर्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "tennis-elbow-straps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Tennis-elbow straps.",
+      "ne": "टे니스 एल्बो स्ट्र्याप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "shoulder-immobilizers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Shoulder immobilizers.",
+      "ne": "काँध स्थिर राख्ने सपोर्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "arm-slings",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Arm slings.",
+      "ne": "हातको स्लिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "clavicle-braces",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Clavicle braces.",
+      "ne": "कलर बोन ब्रेस को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "rib-belts",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Rib belts.",
+      "ne": "करङको बेल्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "abdominal-binders",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Abdominal binders.",
+      "ne": "पेट बाँध्ने बेल्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "postoperative-abdominal-supports",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Postoperative abdominal supports.",
+      "ne": "शल्यक्रियापछिको पेट सपोर्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "maternity-support-belts",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Maternity support belts.",
+      "ne": "गर्भावस्था सपोर्ट बेल्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "soft-cervical-collars",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Soft cervical collars.",
+      "ne": "नरम घाँटी कलर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "heel-cushions",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Heel cushions.",
+      "ne": "एडी कुशन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "heel-cups",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Heel cups.",
+      "ne": "एडी कप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "arch-support-insoles",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Arch-support insoles.",
+      "ne": "खुट्टाको आर्च सपोर्ट इनसोल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "metatarsal-pads",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Metatarsal pads.",
+      "ne": "मेटाटार्सल प्याड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "toe-separators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Toe separators.",
+      "ne": "खुट्टाका औँला छुट्याउने प्याड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bunion-supports",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bunion supports.",
+      "ne": "बनियन सपोर्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "orthopedic-seat-cushions",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Orthopedic seat cushions.",
+      "ne": "अर्थोपेडिक सिट कुशन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "casting-stockinette",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Casting stockinette.",
+      "ne": "कास्टिङ स्टकनेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "undercast-padding",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Undercast padding.",
+      "ne": "कास्टमुनिको प्याडिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "plaster-splints",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Plaster splints.",
+      "ne": "प्लास्टर स्प्लिन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "aluminium-foam-splints",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Aluminium foam splints.",
+      "ne": "आल्मुनियम फोम स्प्लिन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "traction-kits",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Traction kits.",
+      "ne": "ट्र्याक्सन किट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "traction-weights",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Traction weights.",
+      "ne": "ट्र्याक्सन तौल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "orthopedic-traction-frames",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Orthopedic traction frames.",
+      "ne": "अर्थोपेडिक ट्र्याक्सन फ्रेम को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cast-shoes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Cast shoes.",
+      "ne": "कास्ट जुत्ता को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cast-saws",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Cast saws.",
+      "ne": "कास्ट काट्ने स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cast-spreaders",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Cast spreaders.",
+      "ne": "कास्ट स्प्रेडर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cast-removal-shears",
+    "path": "/products/illustrations/cast-removal-shears.svg",
+    "kind": "illustration",
+    "illustration": "product-cast-removal-shears",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original orthopedics supports braces illustration representing Cast-removal shears; actual model may differ.",
+      "ne": "कास्ट हटाउने कैंची को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "wheelchair-cushions",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Wheelchair cushions.",
+      "ne": "ह्विलचेयर कुशन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "wheelchair-positioning-belts",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Wheelchair positioning belts.",
+      "ne": "ह्विलचेयर पोजिसनिङ बेल्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "raised-toilet-seats",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Raised toilet seats.",
+      "ne": "अग्लो ट्वाइलेट सिट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "toilet-safety-frames",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Toilet safety frames.",
+      "ne": "ट्वाइलेट सेफ्टी फ्रेम को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "shower-chairs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Shower chairs.",
+      "ne": "शावर चेयर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bath-transfer-benches",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bath transfer benches.",
+      "ne": "बाथ ट्रान्सफर बेन्च को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bedside-grab-rails",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bedside grab rails.",
+      "ne": "बेडसाइड समाउने रेल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "patient-transfer-belts",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Patient transfer belts.",
+      "ne": "बिरामी सार्ने बेल्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "slide-sheets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Slide sheets.",
+      "ne": "स्लाइड सिट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "portable-access-ramps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Portable access ramps.",
+      "ne": "पोर्टेबल पहुँच र्‍याम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "hot-water-bags",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Hot-water bags.",
+      "ne": "तातोपानी ब्याग को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "reusable-cold-packs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Reusable cold packs.",
+      "ne": "पुनःप्रयोग गर्न मिल्ने चिसो प्याक को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "reusable-hot-cold-gel-packs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Reusable hot/cold gel packs.",
+      "ne": "पुनःप्रयोग गर्न मिल्ने तातो/चिसो जेल प्याक को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "electric-heating-pads",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Electric heating pads.",
+      "ne": "विद्युतीय तताउने प्याड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "reusable-finger-prick-devices",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Reusable finger-prick devices.",
+      "ne": "पुनःप्रयोग गर्न मिल्ने औँला छेड्ने उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "blood-glucose-lancets",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Blood-glucose lancets.",
+      "ne": "रगतमा चिनी जाँच्ने ल्यान्सेट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "insulin-pen-needles",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Insulin pen needles.",
+      "ne": "इन्सुलिन पेन सुई को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "pill-organizers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Pill organizers.",
+      "ne": "औषधि मिलाएर राख्ने बाकस को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "tablet-cutters",
+    "path": "/products/illustrations/tablet-cutters.svg",
+    "kind": "illustration",
+    "illustration": "product-tablet-cutters",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Tablet cutters; actual model may differ.",
+      "ne": "ट्याब्लेट काट्ने उपकरण को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "tablet-crushers",
+    "path": "/products/illustrations/tablet-crushers.svg",
+    "kind": "illustration",
+    "illustration": "product-tablet-crushers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Tablet crushers; actual model may differ.",
+      "ne": "ट्याब्लेट पिस्ने उपकरण को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "oral-dosing-syringes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Oral dosing syringes.",
+      "ne": "मुखबाट औषधि दिने सिरिन्ज को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "medicine-measuring-cups",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Medicine measuring cups.",
+      "ne": "औषधि नाप्ने कप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "adult-incontinence-briefs",
+    "path": "/products/illustrations/adult-incontinence-briefs.svg",
+    "kind": "illustration",
+    "illustration": "product-adult-incontinence-briefs",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Adult incontinence briefs; actual model may differ.",
+      "ne": "वयस्क इनकन्टिनेन्स ब्रीफ को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "disposable-underpads",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Disposable underpads.",
+      "ne": "डिस्पोजेबल अन्डरप्याड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "reusable-bed-protection-pads",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Reusable bed-protection pads.",
+      "ne": "पुनःप्रयोग गर्न मिल्ने ओछ्यान सुरक्षा प्याड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "waterproof-mattress-protectors",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Waterproof mattress protectors.",
+      "ne": "पानी नछिर्ने म्याट्रेस कभर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "graduated-compression-stockings",
+    "path": "/products/illustrations/graduated-compression-stockings.svg",
+    "kind": "illustration",
+    "illustration": "product-graduated-compression-stockings",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Graduated compression stockings; actual model may differ.",
+      "ne": "ग्राजुएटेड कम्प्रेसन मोजा को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "anti-embolism-stockings",
+    "path": "/products/illustrations/anti-embolism-stockings.svg",
+    "kind": "illustration",
+    "illustration": "product-anti-embolism-stockings",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original consumables ppe illustration representing Anti-embolism stockings; actual model may differ.",
+      "ne": "एन्टी-एम्बोलिज्म मोजा को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "ostomy-pouches",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ostomy pouches.",
+      "ne": "ओस्टोमी पाउच को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ostomy-skin-barriers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ostomy skin barriers.",
+      "ne": "ओस्टोमी स्किन ब्यारियर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "ostomy-support-accessories",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Ostomy support accessories.",
+      "ne": "ओस्टोमी सपोर्ट सामग्री को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nebulizer-replacement-kits",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nebulizer replacement kits.",
+      "ne": "नेबुलाइजर बदल्ने पार्ट्स किट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "inhaler-spacers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Inhaler spacers.",
+      "ne": "इनहेलर स्पेसर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cpap-masks",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for CPAP masks.",
+      "ne": "सीप्याप मास्क को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "cpap-tubing",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for CPAP tubing.",
+      "ne": "सीप्याप ट्युबिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "portable-oxygen-concentrator-carrying-accessories",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Portable oxygen-concentrator carrying accessories.",
+      "ne": "पोर्टेबल अक्सिजन कन्सेन्ट्रेटर बोक्ने सामग्री को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "resistance-exercise-bands",
+    "path": "/products/illustrations/resistance-exercise-bands.svg",
+    "kind": "illustration",
+    "illustration": "product-resistance-exercise-bands",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Resistance exercise bands; actual model may differ.",
+      "ne": "प्रतिरोध व्यायाम ब्यान्ड को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "hand-exercise-balls",
+    "path": "/products/illustrations/hand-exercise-balls.svg",
+    "kind": "illustration",
+    "illustration": "product-hand-exercise-balls",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Hand exercise balls; actual model may differ.",
+      "ne": "हातको व्यायाम बल को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "therapy-putty",
+    "path": "/products/illustrations/therapy-putty.svg",
+    "kind": "illustration",
+    "illustration": "product-therapy-putty",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Therapy putty; actual model may differ.",
+      "ne": "थेरापी पुट्टी को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "finger-exercisers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Finger exercisers.",
+      "ne": "औँलाको व्यायाम उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "pedal-exercisers",
+    "path": "/products/illustrations/pedal-exercisers.svg",
+    "kind": "illustration",
+    "illustration": "product-pedal-exercisers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Pedal exercisers; actual model may differ.",
+      "ne": "पेडल व्यायाम उपकरण को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "balance-boards",
+    "path": "/products/illustrations/balance-boards.svg",
+    "kind": "illustration",
+    "illustration": "product-balance-boards",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Balance boards; actual model may differ.",
+      "ne": "सन्तुलन बोर्ड को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "foam-exercise-rollers",
+    "path": "/products/illustrations/foam-exercise-rollers.svg",
+    "kind": "illustration",
+    "illustration": "product-foam-exercise-rollers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original rehabilitation home care illustration representing Foam exercise rollers; actual model may differ.",
+      "ne": "फोम व्यायाम रोलर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "instrument-cleaning-detergents",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Instrument-cleaning detergents.",
+      "ne": "इन्स्ट्रुमेन्ट सफा गर्ने डिटरजेन्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-diapers",
+    "path": "/products/illustrations/baby-diapers.svg",
+    "kind": "illustration",
+    "illustration": "product-baby-diapers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Baby diapers; actual model may differ.",
+      "ne": "बेबी डाइपर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "baby-wipes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby wipes.",
+      "ne": "बेबी वाइप्स को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-changing-mats",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby changing mats.",
+      "ne": "बेबी चेन्जिङ म्याट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-cotton-wool",
+    "path": "/products/illustrations/baby-cotton-wool.svg",
+    "kind": "illustration",
+    "illustration": "product-baby-cotton-wool",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Baby cotton wool; actual model may differ.",
+      "ne": "बेबी कटन को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "baby-washcloths",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby washcloths.",
+      "ne": "बेबी वाशक्लोथ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-bath-towels",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby bath towels.",
+      "ne": "बेबी बाथ टावेल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-bathtubs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby bathtubs.",
+      "ne": "बेबी बाथटब को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-bath-supports",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby bath supports.",
+      "ne": "बेबी बाथ सपोर्ट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-cleansers",
+    "path": "/products/illustrations/baby-cleansers.svg",
+    "kind": "illustration",
+    "illustration": "product-baby-cleansers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Baby cleansers; actual model may differ.",
+      "ne": "बेबी क्लिन्जर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "baby-shampoos",
+    "path": "/products/illustrations/baby-shampoos.svg",
+    "kind": "illustration",
+    "illustration": "product-baby-shampoos",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Baby shampoos; actual model may differ.",
+      "ne": "बेबी स्याम्पु को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "baby-moisturizers",
+    "path": "/products/illustrations/baby-moisturizers.svg",
+    "kind": "illustration",
+    "illustration": "product-baby-moisturizers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Baby moisturizers; actual model may differ.",
+      "ne": "बेबी मोइस्चराइजर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "diaper-barrier-creams",
+    "path": "/products/illustrations/diaper-barrier-creams.svg",
+    "kind": "illustration",
+    "illustration": "product-diaper-barrier-creams",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Diaper barrier creams; actual model may differ.",
+      "ne": "डाइपर ब्यारियर क्रिम को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "baby-grooming-kits",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby grooming kits.",
+      "ne": "बेबी ग्रुमिङ किट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-nail-clippers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby nail clippers.",
+      "ne": "बेबी नङ काट्ने क्लिपर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-hairbrushes",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby hairbrushes.",
+      "ne": "बेबी हेयरब्रस को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-combs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby combs.",
+      "ne": "बेबी काइँयो को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "feeding-bottles",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Feeding bottles.",
+      "ne": "फिडिङ बोतल को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "replacement-bottle-teats",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Replacement bottle teats.",
+      "ne": "बोतलका बदल्ने टिट को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bottle-cleaning-brushes",
+    "path": "/products/illustrations/bottle-cleaning-brushes.svg",
+    "kind": "illustration",
+    "illustration": "product-bottle-cleaning-brushes",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Bottle-cleaning brushes; actual model may differ.",
+      "ne": "बोतल सफा गर्ने ब्रस को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "bottle-drying-racks",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bottle drying racks.",
+      "ne": "बोतल सुकाउने र्‍याक को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "feeding-bottle-sterilizers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Feeding-bottle sterilizers.",
+      "ne": "फिडिङ बोतल स्टेरिलाइजर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "bottle-warmers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Bottle warmers.",
+      "ne": "बोतल न्यानो पार्ने उपकरण को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "breast-milk-storage-bags",
+    "path": "/products/illustrations/breast-milk-storage-bags.svg",
+    "kind": "illustration",
+    "illustration": "product-breast-milk-storage-bags",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Breast-milk storage bags; actual model may differ.",
+      "ne": "आमाको दूध राख्ने ब्याग को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "breast-milk-storage-containers",
+    "path": "/products/illustrations/breast-milk-storage-containers.svg",
+    "kind": "illustration",
+    "illustration": "product-breast-milk-storage-containers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Breast-milk storage containers; actual model may differ.",
+      "ne": "आमाको दूध राख्ने कन्टेनर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "manual-breast-pumps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Manual breast pumps.",
+      "ne": "म्यानुअल ब्रेस्ट पम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "electric-breast-pumps",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Electric breast pumps.",
+      "ne": "विद्युतीय ब्रेस्ट पम्प को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "breast-pump-replacement-accessories",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Breast-pump replacement accessories.",
+      "ne": "ब्रेस्ट पम्पका बदल्ने सामग्री को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-feeding-cups",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby feeding cups.",
+      "ne": "बेबी फिडिङ कप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "baby-feeding-spoons",
+    "path": "/products/illustrations/baby-feeding-spoons.svg",
+    "kind": "illustration",
+    "illustration": "product-baby-feeding-spoons",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Baby feeding spoons; actual model may differ.",
+      "ne": "बेबी फिडिङ चम्चा को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "baby-feeding-bowls",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby feeding bowls.",
+      "ne": "बेबी फिडिङ कचौरा को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "feeding-bibs",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Feeding bibs.",
+      "ne": "फिडिङ बिब को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "pacifiers",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Pacifiers.",
+      "ne": "प्यासिफायर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "pacifier-storage-cases",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Pacifier storage cases.",
+      "ne": "प्यासिफायर राख्ने केस को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "teething-rings",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Teething rings.",
+      "ne": "दाँत उम्रँदा चपाउने रिङ को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nasal-aspirators",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nasal aspirators.",
+      "ne": "नाक सफा गर्ने एस्पिरेटर को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nasal-aspirator-replacement-accessories",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nasal aspirator replacement accessories.",
+      "ne": "नाक एस्पिरेटरका बदल्ने सामग्री को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "infant-medicine-droppers",
+    "path": "/products/illustrations/infant-medicine-droppers.svg",
+    "kind": "illustration",
+    "illustration": "product-infant-medicine-droppers",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Infant medicine droppers; actual model may differ.",
+      "ne": "शिशुलाई औषधि दिने ड्रपर को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "baby-and-infant-weighing-scales",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Baby and infant weighing scales.",
+      "ne": "शिशु तौल मेसिन को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "infant-length-measuring-boards",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Infant length-measuring boards.",
+      "ne": "शिशुको लम्बाइ नाप्ने बोर्ड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nursing-pads",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Nursing pads.",
+      "ne": "स्तनपान प्याड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "maternity-pads",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Maternity pads.",
+      "ne": "प्रसूति प्याड को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  },
+  {
+    "slug": "nursing-pillows",
+    "path": "/products/illustrations/nursing-pillows.svg",
+    "kind": "illustration",
+    "illustration": "product-nursing-pillows",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Nursing pillows; actual model may differ.",
+      "ne": "स्तनपान तकिया को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "nursing-bras",
+    "path": "/products/illustrations/nursing-bras.svg",
+    "kind": "illustration",
+    "illustration": "product-nursing-bras",
+    "source": "Original SVG artwork stored in this repository",
+    "creator": "Saphal Surgical House catalogue project",
+    "license": "Original repository-authored artwork; no third-party image used",
+    "alt": {
+      "en": "Original baby maternity illustration representing Nursing bras; actual model may differ.",
+      "ne": "स्तनपान ब्रा को चित्रण; वास्तविक मोडेल फरक हुन सक्छ।"
+    }
+  },
+  {
+    "slug": "breast-milk-collection-cups",
+    "path": null,
+    "kind": "unavailable",
+    "reason": "Unrelated generic illustration withheld after title-to-template review",
+    "alt": {
+      "en": "Product image unavailable for Breast-milk collection cups.",
+      "ne": "आमाको दूध सङ्कलन कप को उत्पादन तस्बिर उपलब्ध छैन।"
+    }
+  }
+]
