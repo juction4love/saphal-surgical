@@ -2,8 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone, MapPin, ShieldAlert, ArrowRight, CheckCircle2, Package } from 'lucide-react';
-import { WhatsAppIcon } from '@/components/Icons';
-import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
+import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { GoogleMapEmbed } from '@/components/GoogleMapEmbed';
 import { BrandsSection } from '@/components/BrandsSection';
@@ -42,7 +41,6 @@ export default async function AboutPage({ params }: PageProps) {
   const lang = (resolvedParams.lang === 'en' ? 'en' : 'ne') as Locale;
   const t = translations[lang];
   const isNe = lang === 'ne';
-  const whatsAppUrl = getGeneralWhatsAppUrl(lang);
 
   return (
     <div className="py-8 sm:py-16 space-y-10 sm:space-y-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-safe bg-white">
@@ -157,20 +155,6 @@ export default async function AboutPage({ params }: PageProps) {
                 </div>
               </div>
 
-              {whatsAppUrl && (
-                <div className="p-3.5 bg-[#F0FDF4] border border-[#DCFCE7] rounded-2xl">
-                  <span className="text-[#475569] text-xs block">WhatsApp</span>
-                  <a
-                    href={whatsAppUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-base sm:text-lg font-bold text-[#15803D] hover:underline transition-colors block mt-1"
-                  >
-                    {siteConfig.whatsapp.display}
-                  </a>
-                </div>
-              )}
-
               <div className="p-3.5 bg-[#F0FDF4] border border-[#DCFCE7] rounded-2xl">
                 <span className="text-[#475569] text-xs block">{t.common.addressLabel}</span>
                 <p className="text-[#17251C] font-medium mt-1 leading-relaxed">
@@ -180,18 +164,6 @@ export default async function AboutPage({ params }: PageProps) {
             </div>
 
             <div className="pt-2 flex flex-col gap-2.5">
-              {whatsAppUrl && (
-                <a
-                  href={whatsAppUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full min-h-[48px] py-3 px-4 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors shadow-2xs"
-                >
-                  <WhatsAppIcon className="w-4 h-4" />
-                  <span>{t.common.inquireByWhatsApp}</span>
-                </a>
-              )}
-
               <Link
                 href={`/${lang}/products`}
                 className="w-full min-h-[48px] py-3 px-4 rounded-xl bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCFCE7] text-[#15803D] font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors"
@@ -214,4 +186,3 @@ export default async function AboutPage({ params }: PageProps) {
     </div>
   );
 }
-

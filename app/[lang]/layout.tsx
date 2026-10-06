@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { Locale } from '@/lib/translations';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { StickyContactBar } from '@/components/StickyContactBar';
 import { LocalBusinessSchema } from '@/components/LocalBusinessSchema';
 
 export function generateStaticParams() {
@@ -27,9 +26,8 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
     <>
       <LocalBusinessSchema lang={lang} />
       <Header locale={lang} />
-      <main className="flex-1 pb-24 md:pb-0">{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer locale={lang} />
-      <StickyContactBar locale={lang} />
     </>
   );
 }

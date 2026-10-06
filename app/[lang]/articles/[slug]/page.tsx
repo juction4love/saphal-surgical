@@ -10,8 +10,7 @@ import {
   CheckCircle2,
   AlertTriangle,
 } from 'lucide-react';
-import { WhatsAppIcon } from '@/components/Icons';
-import { siteConfig, getArticleWhatsAppUrl } from '@/config/site';
+import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { ARTICLES, ArticleItem } from '@/data/articles';
 
@@ -81,8 +80,6 @@ export default async function ArticleDetailPage({ params }: PageProps) {
   const checklist = isNe ? article.checklist.ne : article.checklist.en;
   const disclaimer = isNe ? article.disclaimer.ne : article.disclaimer.en;
   const enquiryPrompt = isNe ? article.enquiryPrompt.ne : article.enquiryPrompt.en;
-
-  const whatsAppUrl = getArticleWhatsAppUrl(title, article.slug, lang);
 
   return (
     <div className="py-8 sm:py-14 space-y-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-safe bg-white">
@@ -205,18 +202,6 @@ export default async function ArticleDetailPage({ params }: PageProps) {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 pt-2">
-          {whatsAppUrl && (
-            <a
-              href={whatsAppUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 min-h-[48px] py-3 px-5 rounded-2xl bg-[#15803D] hover:bg-[#166534] text-white font-heading font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-2xs"
-            >
-              <WhatsAppIcon className="w-4 h-4" />
-              <span>{t.articles.whatsappEnquiry}</span>
-            </a>
-          )}
-
           <a
             href={`tel:${siteConfig.phone.raw}`}
             className="flex-1 min-h-[48px] py-3 px-5 rounded-2xl bg-white hover:bg-slate-50 text-[#17251C] font-heading font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 border border-[#DCFCE7] transition-all"

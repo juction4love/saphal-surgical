@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { Sparkles, ArrowRight, ShieldAlert, CheckCircle2, FlaskConical } from 'lucide-react';
 import { BRANDS, BrandItem } from '@/data/brands';
 import { Locale, translations } from '@/lib/translations';
-import { getWhatsAppUrl, siteConfig } from '@/config/site';
-import { WhatsAppIcon } from '@/components/Icons';
 
 interface BrandsSectionProps {
   locale: Locale;
@@ -49,12 +47,6 @@ export const BrandsSection: React.FC<BrandsSectionProps> = ({ locale, showAllLin
           const brandLabel = isNe ? brand.label.ne : brand.label.en;
           const brandDesc = isNe ? brand.shortDescription.ne : brand.shortDescription.en;
           const productTypes = isNe ? brand.productTypes.ne : brand.productTypes.en;
-          
-          const brandWhatsAppUrl = getWhatsAppUrl(
-            isNe
-              ? `नमस्ते सफल सर्जिकल हाउस, म "${brand.name}" ब्रान्डका प्रयोगशाला रिअजेन्ट/सामग्रीहरूको उपलब्धता र मूल्य सोधपुछ गर्न चाहन्छु।`
-              : `Hello Saphal Surgical House, I would like to inquire about availability and pricing for "${brand.name}" brand laboratory reagents/products.`
-          );
 
           return (
             <div
@@ -103,19 +95,8 @@ export const BrandsSection: React.FC<BrandsSectionProps> = ({ locale, showAllLin
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="pt-5 mt-4 border-t border-slate-100 space-y-2">
-                {brandWhatsAppUrl && (
-                  <a
-                    href={brandWhatsAppUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full min-h-[44px] py-2.5 px-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors shadow-xs"
-                  >
-                    <WhatsAppIcon className="w-3.5 h-3.5" />
-                    <span>{isNe ? `${brand.name} सोधपुछ (WhatsApp)` : `Inquire for ${brand.name}`}</span>
-                  </a>
-                )}
+              {/* Catalogue Link */}
+              <div className="pt-5 mt-4 border-t border-slate-100">
                 <Link
                   href={`/${locale}/products?search=${encodeURIComponent(brand.name)}`}
                   className="w-full min-h-[44px] py-2 px-3 rounded-xl bg-[#F0FDF4] hover:bg-[#DCFCE7] text-[#15803D] border border-[#DCFCE7] font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"

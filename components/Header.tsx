@@ -3,11 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Phone, MapPin, Menu, X } from 'lucide-react';
+import { Phone, MapPin, Menu, X, ShoppingBag } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { BrandSymbol } from './BrandSymbol';
+import { ORDER_UPDATED_EVENT, readOrder } from '@/lib/order';
 
 interface HeaderProps {
   locale: Locale;
@@ -15,6 +16,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ locale }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [orderCount, setOrderCount] = useState(0);
   const pathname = usePathname() || `/${locale}`;
   const t = translations[locale];
 
@@ -29,10 +31,38 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [mobileMenuOpen]);
 
+  useEffect(() => {
+    const updateCount = () => {
+      setOrderCount(readOrder().reduce((total, line) => total + line.quantity, 0));
+    };
+    updateCount();
+    window.addEventListener(ORDER_UPDATED_EVENT, updateCount);
+    window.addEventListener('storage', updateCount);
+    return () => {
+      window.removeEventListener(ORDER_UPDATED_EVENT, updateCount);
+      window.removeEventListener('storage', updateCount);
+    };
+  }, []);
+
+  const orderLink = (
+    <Link
+      href={`/${locale}/order-slip`}
+      className="relative min-h-[44px] min-w-[44px] inline-flex items-center justify-center rounded-xl border border-[#DCFCE7] bg-[#F0FDF4] text-[#15803D] hover:bg-[#DCFCE7] focus-visible:ring-2 focus-visible:ring-[#15803D]"
+      aria-label={`${locale === 'ne' ? 'अर्डर सूची' : 'Order slip'} (${orderCount})`}
+      title={locale === 'ne' ? 'अर्डर सूची' : 'Order slip'}
+    >
+      <ShoppingBag className="h-5 w-5" aria-hidden="true" />
+      <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#15803D] px-1 text-[10px] font-bold text-white">
+        {orderCount}
+      </span>
+    </Link>
+  );
+
   const navLinks = [
     { href: `/${locale}`, label: t.nav.home },
     { href: `/${locale}/about`, label: t.nav.about },
     { href: `/${locale}/products`, label: t.nav.products },
+    { href: `/${locale}/order-slip`, label: locale === 'ne' ? 'अर्डर सूची' : 'Order slip' },
     { href: `/${locale}/articles`, label: t.nav.articles },
     { href: `/${locale}/contact`, label: t.nav.contact },
   ];
@@ -112,6 +142,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
 
             {/* Header Right Actions */}
             <div className="hidden lg:flex col-start-2 row-start-1 items-center gap-3 whitespace-nowrap">
+              {orderLink}
               <a
                 href={`tel:${siteConfig.phone.raw}`}
                 className="min-h-[44px] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-[#15803D] hover:bg-[#166534] rounded-xl shadow-xs hover:shadow transition-all inline-flex items-center gap-2"
@@ -135,6 +166,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             {/* Mobile Header Controls */}
             <div className="col-span-2 sm:col-span-1 flex justify-end items-center gap-2 lg:hidden">
               <LanguageSwitcher currentLocale={locale} />
+              {orderLink}
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

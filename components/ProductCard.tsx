@@ -1,12 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, ArrowRight, Tag, HelpCircle, AlertCircle } from 'lucide-react';
-import { WhatsAppIcon } from '@/components/Icons';
+import { ArrowRight, Tag, HelpCircle, AlertCircle } from 'lucide-react';
 import { ProductItem } from '@/data/products';
-import { siteConfig, getProductWhatsAppUrl } from '@/config/site';
 import { Locale } from '@/lib/translations';
 import { ProductImageUnavailable } from './ProductImageUnavailable';
+import { AddToOrderButton } from './AddToOrderButton';
 
 interface ProductCardProps {
   product: ProductItem;
@@ -28,34 +27,34 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
     ? 'उपलब्धता बुझ्न सम्पर्क गर्नुहोस्'
     : 'Contact to confirm availability';
 
-  const enquireActionLabel = isNe
-    ? 'फोन सोधपुछ'
-    : 'Call to Inquire';
-
   const detailLabel = isNe
     ? 'विस्तृत विवरण'
     : 'View Details';
-
-  const whatsAppUrl = getProductWhatsAppUrl(productName, product.slug, locale, product.brand);
 
   return (
     <article className="group bg-white rounded-2xl border border-[#E3EDE5] shadow-sm hover:shadow-md hover:border-[#86C995] transition-all duration-300 flex flex-col justify-between h-full overflow-hidden">
       <div>
         {/* Product Image Box with object-contain to prevent device cropping */}
         <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#F7FAF7] p-2 flex items-center justify-center border-b border-[#EDF2ED]">
-          {product.image.url ? (
-            <Image
-              src={product.image.url}
-              alt={productAlt}
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-              className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
-              loading={priority ? undefined : 'lazy'}
-              priority={priority}
-            />
-          ) : (
-            <ProductImageUnavailable locale={locale} alt={productAlt} />
-          )}
+          <Link
+            href={`/${locale}/products/${product.slug}`}
+            aria-label={productName}
+            className="absolute inset-0 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#15803D]"
+          >
+            {product.image.url ? (
+              <Image
+                src={product.image.url}
+                alt={productAlt}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                loading={priority ? undefined : 'lazy'}
+                priority={priority}
+              />
+            ) : (
+              <ProductImageUnavailable locale={locale} alt={productAlt} />
+            )}
+          </Link>
           {/* Illustrative Tag */}
           {product.image.url && (
             <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-slate-700 border border-slate-200 text-[10px] font-medium px-2 py-0.5 rounded-md flex items-center gap-1 shadow-xs pointer-events-none">
@@ -107,28 +106,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, prior
 
       {/* Card Footer Actions with 44px minimum touch targets */}
       <div className="p-4 sm:p-5 pt-0 border-t border-[#EDF2ED] mt-3">
-        {/* WhatsApp Button (Shown only when confirmed & enabled in config) */}
-        {whatsAppUrl && (
-          <a
-            href={whatsAppUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 w-full min-h-[46px] py-2.5 px-3 text-xs font-bold text-white bg-[#15803D] hover:bg-[#166534] rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-sm focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2"
-          >
-            <WhatsAppIcon className="w-4 h-4" />
-            <span>{isNe ? 'ह्वाट्सएपमा सोधपुछ' : 'Inquire on WhatsApp'}</span>
-          </a>
-        )}
-
-        <div className="mt-2 grid grid-cols-2 gap-2">
-          <a
-            href={`tel:${siteConfig.phone.raw}`}
-            className="min-h-[44px] py-2 px-2.5 text-xs font-bold text-[#166534] bg-white hover:bg-[#F0FDF4] border border-[#DCE9DE] rounded-xl transition-colors flex items-center justify-center gap-1.5 focus-visible:ring-2 focus-visible:ring-[#15803D]"
-            aria-label={`${enquireActionLabel} for ${productName} on ${siteConfig.phone.display}`}
-          >
-            <Phone className="w-3.5 h-3.5 shrink-0" />
-            <span>{enquireActionLabel}</span>
-          </a>
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          <AddToOrderButton
+            productSlug={product.slug}
+            productName={productName}
+            locale={locale}
+            compact
+          />
           <Link
             href={`/${locale}/products/${product.slug}`}
             className="min-h-[44px] py-2 px-2.5 text-xs font-bold text-[#166534] bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCE9DE] rounded-xl transition-colors flex items-center justify-center gap-1 focus-visible:ring-2 focus-visible:ring-[#15803D]"

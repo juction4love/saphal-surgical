@@ -11,6 +11,7 @@ import { PRODUCTS, ProductItem } from '@/data/products';
 import { CATEGORIES } from '@/data/categories';
 import { ProductCard } from '@/components/ProductCard';
 import { ProductImageUnavailable } from '@/components/ProductImageUnavailable';
+import { AddToOrderButton } from '@/components/AddToOrderButton';
 
 interface PageProps {
   params: Promise<{ lang: string; slug: string }> | { lang: string; slug: string };
@@ -259,6 +260,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
                   <span>{t.common.inquireByWhatsApp}</span>
                 </a>
               )}
+              <AddToOrderButton
+                productSlug={product.slug}
+                productName={productName}
+                locale={lang}
+              />
             </div>
           </div>
 

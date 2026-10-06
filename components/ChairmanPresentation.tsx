@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import { preload } from 'react-dom';
-import { ArrowUpRight, MessageCircle } from 'lucide-react';
-import { getWhatsAppUrl } from '@/config/site';
+import { MessageCircle } from 'lucide-react';
 import { Locale } from '@/lib/translations';
-import { WhatsAppIcon } from '@/components/Icons';
 
 type PortraitNumber = '01' | '02' | '03' | '04' | '05' | '06';
 
@@ -60,9 +58,6 @@ export function ChairmanHero({ locale }: ChairmanHeroProps) {
     .map((width) => `/chairman/portrait-02-${width}.webp ${width}w`).join(', ');
   const heroSizes = '(max-width: 461px) calc(100vw - 32px), (max-width: 767px) 430px, (max-width: 1023px) calc((100vw - 80px) / 2), (max-width: 1079px) calc((100vw - 120px) * 5 / 12), 400px';
   preload(heroSrc, { as: 'image', type: 'image/webp', imageSrcSet: heroSrcSet, imageSizes: heroSizes, fetchPriority: 'high' });
-  const whatsAppUrl = getWhatsAppUrl(isNe
-    ? 'नमस्ते सफल सर्जिकल हाउस, मलाई सर्जिकल तथा मेडिकल सामग्रीसम्बन्धी जानकारी चाहिन्छ।'
-    : 'Hello Saphal Surgical House, I would like to enquire about surgical and medical supplies.');
 
   return (
     <section className="border-b border-[#D8EBDD] bg-[#F4FBF5] py-4 pb-safe sm:py-8 lg:py-10" aria-labelledby="chairman-home-heading">
@@ -107,18 +102,13 @@ export function ChairmanHero({ locale }: ChairmanHeroProps) {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-3 md:max-w-2xl">
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:max-w-2xl">
             <a href={`/${locale}/products`} className="min-h-[48px] rounded-xl bg-[#15803D] px-4 py-3 text-sm font-bold text-white inline-flex items-center justify-center hover:bg-[#166534] focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2">
               {isNe ? 'क्याटलग हेर्नुहोस्' : 'Browse Catalogue'}
             </a>
             <a href="tel:+97756596060" className="min-h-[48px] rounded-xl border border-[#CFE3D3] bg-white px-4 py-3 text-sm font-bold text-[#166534] inline-flex items-center justify-center hover:bg-[#F0FDF4] focus-visible:ring-2 focus-visible:ring-[#15803D]">
               {isNe ? 'फोन गर्नुहोस्' : 'Call Us'}
             </a>
-            {whatsAppUrl && (
-              <a href={whatsAppUrl} target="_blank" rel="noopener noreferrer" className="min-h-[48px] rounded-xl bg-[#166534] px-4 py-3 text-sm font-bold text-white inline-flex items-center justify-center hover:bg-[#14532D] focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2">
-                {isNe ? 'WhatsApp सोधपुछ' : 'WhatsApp Enquiry'}
-              </a>
-            )}
           </div>
         </div>
       </div>

@@ -2,10 +2,9 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Activity, ArrowRight, BookOpen, Building2, Clock, FlaskConical, Info, Layers, Package, Phone, Scissors, ShieldAlert, Sparkles } from 'lucide-react';
-import { WhatsAppIcon } from '@/components/Icons';
 import { BrandSymbol } from '@/components/BrandSymbol';
 import { ChairmanHero } from '@/components/ChairmanPresentation';
-import { siteConfig, getGeneralWhatsAppUrl } from '@/config/site';
+import { siteConfig } from '@/config/site';
 import { translations, Locale } from '@/lib/translations';
 import { PRODUCTS } from '@/data/products';
 import { ARTICLES } from '@/data/articles';
@@ -51,7 +50,6 @@ export default async function HomePage({ params }: PageProps) {
   const lang = (resolvedParams.lang === 'en' ? 'en' : 'ne') as Locale;
   const t = translations[lang];
   const isNe = lang === 'ne';
-  const whatsAppUrl = getGeneralWhatsAppUrl(lang);
 
   // Preview up to 8 featured products for 4-column balanced desktop grid
   const previewProducts = PRODUCTS.slice(0, 8);
@@ -148,22 +146,11 @@ export default async function HomePage({ params }: PageProps) {
             </h2>
             <p className="text-sm leading-relaxed text-[#475569]">
               {isNe
-                ? 'मौज्दात, ब्रान्ड र दररेट फोन वा WhatsApp मार्फत पुष्टि गर्नुहोस्।'
-                : 'Confirm current availability, brands, and pricing directly by phone or WhatsApp.'}
+                ? 'मौज्दात, ब्रान्ड र दररेट फोनमार्फत पुष्टि गर्नुहोस्।'
+                : 'Confirm current availability, brands, and pricing by phone.'}
             </p>
           </div>
           <div className="flex flex-col xs:flex-row gap-2.5">
-            {whatsAppUrl && (
-              <a
-                href={whatsAppUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="min-h-[48px] px-5 py-3 rounded-xl bg-[#15803D] hover:bg-[#166534] text-white font-bold text-sm inline-flex items-center justify-center gap-2 shadow-sm focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2"
-              >
-                <WhatsAppIcon className="w-4 h-4" />
-                <span>{isNe ? 'WhatsApp मा सोध्नुहोस्' : 'WhatsApp Enquiry'}</span>
-              </a>
-            )}
             <a
               href={`tel:${siteConfig.phone.primary.raw}`}
               className="min-h-[48px] px-5 py-3 rounded-xl bg-white hover:bg-[#F8FCF8] text-[#166534] border border-[#CFE3D3] font-bold text-sm inline-flex items-center justify-center gap-2 focus-visible:ring-2 focus-visible:ring-[#15803D] focus-visible:ring-offset-2"
@@ -300,4 +287,3 @@ export default async function HomePage({ params }: PageProps) {
     </div>
   );
 }
-

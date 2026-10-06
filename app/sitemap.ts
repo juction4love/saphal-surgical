@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.baseUrl;
   const currentDate = new Date().toISOString();
 
-  const routes = ['', '/about', '/products', '/articles', '/contact'];
+  const routes = ['', '/about', '/products', '/order-slip', '/articles', '/contact'];
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
   // Static routes for both languages
