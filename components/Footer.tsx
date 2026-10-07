@@ -1,8 +1,14 @@
-﻿import React from 'react';
+import React from 'react';
 import Link from 'next/link';
 
-export default function Footer({ lang = 'ne' }: { lang?: 'en' | 'ne' }) {
-  const isNe = lang === 'ne';
+interface FooterProps {
+  lang?: 'en' | 'ne';
+  locale?: 'en' | 'ne';
+}
+
+export function Footer({ lang, locale }: FooterProps) {
+  const activeLang = locale || lang || 'ne';
+  const isNe = activeLang === 'ne';
 
   return (
     <footer className="bg-[#F0F5F3] text-md-on-surface border-t border-md-outline-variant/50 pt-16 pb-12 px-4 sm:px-6 lg:px-8 mt-20">
@@ -107,3 +113,5 @@ export default function Footer({ lang = 'ne' }: { lang?: 'en' | 'ne' }) {
     </footer>
   );
 }
+
+export default Footer;

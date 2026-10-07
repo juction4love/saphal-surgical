@@ -1,65 +1,134 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowRight, Tag, HelpCircle, AlertCircle } from 'lucide-react';
+import { ProductItem } from '@/data/products';
+import { Locale } from '@/lib/translations';
+import { ProductImageUnavailable } from './ProductImageUnavailable';
+import { AddToOrderButton } from './AddToOrderButton';
 
-export interface ProductItem {
-  slug: string;
-  name: string;
-  nameNe?: string;
-  category: string;
-  categoryNe?: string;
-  description?: string;
-  descriptionNe?: string;
-  image?: string;
-  inStock?: boolean;
-}
-
-interface ProductCardProps {
+export interface ProductCardProps {
   product: ProductItem;
-  lang?: 'en' | 'ne';
-  onAddSlip?: (product: ProductItem) => void;
+  locale?: Locale;
+  lang?: Locale;
+  priority?: boolean;
 }
 
-export default function ProductCard({ product, lang = 'ne', onAddSlip }: ProductCardProps) {
-  const title = lang === 'ne' && product.nameNe ? product.nameNe : product.name;
-  const categoryTitle = lang === 'ne' && product.categoryNe ? product.categoryNe : product.category;
-  const desc = lang === 'ne' && product.descriptionNe ? product.descriptionNe : product.description;
+export const ProductCard: React.FC<ProductCardProps> = ({ product, locale, lang, priority = false }) => {
+  const activeLocale = locale || lang || 'ne';
+  const isNe = activeLocale === 'ne';
+  const productName = isNe ? product.name.ne : product.name.en;
+  const productAlt = isNe ? product.image.alt.ne : product.image.alt.en;
+  const productDesc = isNe ? product.shortDesc.ne : product.shortDesc.en;
+
+  const priceLabel = isNe
+    ? 'मूल्य कुराकानीमा — सम्पर्क गर्नुहोस्'
+    : 'Price negotiable — contact us';
+
+  const availabilityLabel = isNe
+    ? 'उपलब्धता बुझ्न सम्पर्क गर्नुहोस्'
+    : 'Contact to confirm availability';
+
+  const detailLabel = isNe
+    ? 'विस्तृत विवरण'
+    : 'View Details';
 
   return (
-    <article className="group relative flex flex-col bg-white rounded-m3-lg border border-md-outline-variant overflow-hidden hover:shadow-m3-2 transition-all duration-300">
-      <div className="relative w-full aspect-[4/3] bg-md-surface-variant/30 flex items-center justify-center p-4 overflow-hidden">
-        <img
-          src={product.image || '/logo.svg'}
-          alt={title}
-          className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-          loading="lazy"
-        />
-        <span className="absolute top-3 left-3 px-3 py-1 rounded-m3-full text-[11px] font-medium bg-md-secondary-container text-md-on-secondary-container">
-          {categoryTitle}
-        </span>
+    <article className="group bg-white rounded-2xl border border-[#E3EDE5] shadow-xs hover:shadow-md hover:border-[#86C995] transition-all duration-300 flex flex-col justify-between h-full overflow-hidden">
+      <div>
+        {/* Product Image Box with object-contain to prevent device cropping */}
+        <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#F7FAF7] p-2 flex items-center justify-center border-b border-[#EDF2ED]">
+          <Link
+            href={`/${activeLocale}/products/${product.slug}`}
+            aria-label={productName}
+            className="absolute inset-0 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#15803D]"
+          >
+            {product.image.url ? (
+              <Image
+                src={product.image.url}
+                alt={productAlt}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                loading={priority ? undefined : 'lazy'}
+                priority={priority}
+              />
+            ) : (
+              <ProductImageUnavailable locale={activeLocale} alt={productAlt} />
+            )}
+          </Link>
+          {/* Representative Photo Notice */}
+          {product.image.url && (
+            <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-slate-700 border border-slate-200 text-[10px] font-medium px-2 py-0.5 rounded-md flex items-center gap-1 shadow-xs pointer-events-none max-w-[80%] truncate">
+              <HelpCircle className="w-3 h-3 text-[#15803D] shrink-0" />
+              <span className="truncate">
+                {product.image.sourceLabel || (isNe ? 'प्रतिनिधि सामानको तस्बिर' : 'Representative photo')}
+              </span>
+            </div>
+          )}
+
+          {/* Verified Brand badge if available */}
+          {product.brand && (
+            <div className="absolute top-2.5 left-2.5 bg-[#F0FDF4] text-[#15803D] text-[10px] font-bold px-2 py-0.5 rounded-md border border-[#DCFCE7] shadow-xs pointer-events-none">
+              <span>{isNe ? `ब्रान्ड: ${product.brand}` : `Brand: ${product.brand}`}</span>
+            </div>
+          )}
+        </div>
+
+        {/* Card Body */}
+        <div className="p-4 sm:p-5 space-y-3">
+          {/* Price & Availability Badges */}
+          <div className="space-y-1.5">
+            <div className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-[#15803D] bg-[#F0FDF4] px-2.5 py-1 rounded-lg border border-[#DCFCE7]">
+              <Tag className="w-3.5 h-3.5 text-[#15803D] shrink-0" />
+              <span>{priceLabel}</span>
+            </div>
+            <div>
+              <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md">
+                <AlertCircle className="w-3 h-3 text-slate-500 shrink-0" />
+                <span>{availabilityLabel}</span>
+              </span>
+            </div>
+          </div>
+
+          {/* Product Title */}
+          <h3 className="font-heading font-bold text-base sm:text-lg text-[#17251C] group-hover:text-[#15803D] transition-colors leading-snug">
+            <Link
+              href={`/${activeLocale}/products/${product.slug}`}
+              className="focus-visible:ring-2 focus-visible:ring-[#15803D] rounded"
+            >
+              {productName}
+            </Link>
+          </h3>
+
+          {/* Product Short Description */}
+          <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
+            {productDesc}
+          </p>
+        </div>
       </div>
 
-      <div className="flex flex-col flex-1 p-4 gap-2">
-        <h3 className="text-base font-semibold text-md-on-surface line-clamp-1 group-hover:text-md-primary transition-colors">
-          <Link href={`/${lang}/products/${product.slug}`}>{title}</Link>
-        </h3>
-        {desc && <p className="text-xs text-md-on-surface-variant line-clamp-2">{desc}</p>}
-
-        <div className="mt-auto pt-3 flex items-center justify-between gap-2 border-t border-md-outline-variant/40">
+      {/* Card Footer Actions */}
+      <div className="p-4 sm:p-5 pt-0 border-t border-[#EDF2ED] mt-3">
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          <AddToOrderButton
+            productSlug={product.slug}
+            productName={productName}
+            locale={activeLocale}
+            compact
+          />
           <Link
-            href={`/${lang}/products/${product.slug}`}
-            className="text-xs font-medium text-md-primary hover:underline"
+            href={`/${activeLocale}/products/${product.slug}`}
+            className="min-h-[44px] py-2 px-2.5 text-xs font-bold text-[#166534] bg-[#F0FDF4] hover:bg-[#DCFCE7] border border-[#DCE9DE] rounded-xl transition-colors flex items-center justify-center gap-1 focus-visible:ring-2 focus-visible:ring-[#15803D]"
+            aria-label={`${detailLabel} - ${productName}`}
           >
-            {lang === 'ne' ? 'विवरण हेर्नुहोस् →' : 'Details →'}
+            <span>{detailLabel}</span>
+            <ArrowRight className="w-3.5 h-3.5 shrink-0" />
           </Link>
-          <button
-            onClick={() => onAddSlip && onAddSlip(product)}
-            className="px-3 py-1.5 rounded-m3-full bg-md-primary text-white text-xs font-medium hover:bg-md-primary/90 active:scale-95 transition-all flex items-center gap-1 shadow-sm"
-          >
-            <span className="material-symbols-outlined text-sm">add</span>
-            <span>{lang === 'ne' ? 'अर्डर स्लिप' : 'Add to slip'}</span>
-          </button>
         </div>
       </div>
     </article>
   );
-}
+};
+
+export default ProductCard;
