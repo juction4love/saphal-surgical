@@ -1,0 +1,1199 @@
+[
+  {
+    "slug": "electrolyte-analyzer",
+    "titleEn": "Electrolyte Analyzer (ISE)",
+    "titleNe": "इलेक्ट्रोलाइट एनालाइजर",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "immunoassay-analyzer",
+    "titleEn": "Immunoassay Analyzer (ELISA / CLIA / FIA)",
+    "titleNe": "इम्युनोएस्से एनालाइजर",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "urine-analyzer",
+    "titleEn": "Urine Chemistry Analyzer",
+    "titleNe": "युरिन एनालाइजर",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "lab-refrigerator-specimen-containers",
+    "titleEn": "Laboratory Refrigerators, Test Tubes & Specimen Containers",
+    "titleNe": "ल्याब रेफ्रिजरेटर, टेस्ट ट्युब तथा नमुना कन्टेनर",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "sterilization-pouches-indicator-supplies",
+    "titleEn": "Sterilization Pouches, Rolls & Chemical Indicator Tapes",
+    "titleNe": "स्टेरिलाइजेसन पाउच, रोल तथा इन्डिकेटर टेप",
+    "category": "sterilization",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "pulse-oximeters-bp-monitors-thermometers",
+    "titleEn": "Pulse Oximeters, BP Monitors, Thermometers & Glucometers",
+    "titleNe": "पल्स अक्सिमिटर, बीपी मोनिटर, थर्मोमिटर तथा ग्लुकोमिटर",
+    "category": "monitoring-diagnostics",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "medical-nebulizers-suction-machines",
+    "titleEn": "Medical Nebulizers & Suction Machines",
+    "titleNe": "नेबुलाइजर मेसिन तथा सक्सन मेसिन",
+    "category": "respiratory-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "medical-gloves-masks-disposable-gowns",
+    "titleEn": "Medical Gloves, 3-Ply Masks & Disposable Surgical Gowns",
+    "titleNe": "मेडिकल पञ्जा, ३-प्लाई मास्क तथा डिस्पोजेबल सर्जिकल गाउन",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "walkers-crutches-orthopedic-supports",
+    "titleEn": "Walkers, Crutches, Walking Sticks & Orthopedic Supports",
+    "titleNe": "वाकर, वैशाखी, वाकिङ स्टिक तथा अर्थोपेडिक सपोर्ट",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "sterile-surgical-gowns-drapes-ot-packs",
+    "titleEn": "Sterile Surgical Gowns, Drapes & OT Procedure Packs",
+    "titleNe": "स्टेराइल सर्जिकल गाउन, ड्रेप्स तथा ओटी प्याक",
+    "category": "ot-supplies",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "hospital-surface-floor-disinfectants",
+    "titleEn": "Hospital Surface Disinfectants & Floor Cleaning Solutions",
+    "titleNe": "अस्पताल सतह निसङ्क्रमण घोल तथा भुइँ सफाइ रसायन",
+    "category": "cleaning-hygiene",
+    "obstacle": "Commercial sanitation/waste handling equipment; open web photos are branded commercial supplier assets without explicit open licensing."
+  },
+  {
+    "slug": "double-bucket-mop-trolleys-cleaning-tools",
+    "titleEn": "Double-Bucket Wringer Mop Trolleys & Cleaning Tools",
+    "titleNe": "डबल-बाल्टी मोप ट्रली तथा सरसफाइ सामग्री",
+    "category": "cleaning-hygiene",
+    "obstacle": "Commercial sanitation/waste handling equipment; open web photos are branded commercial supplier assets without explicit open licensing."
+  },
+  {
+    "slug": "disposable-syringes-luer-slip-lock",
+    "titleEn": "General Disposable Syringes (2ml to 50ml / 60ml)",
+    "titleNe": "नियमित डिस्पोजेबल सिरिन्जहरू (२ मिलि देखि ५०/६० मिलि)",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "iv-infusion-sets-blood-administration",
+    "titleEn": "IV Infusion Sets & Blood Administration Sets",
+    "titleNe": "आईभी इन्फ्युजन सेट तथा ब्लड ट्रान्सफ्युजन सेट",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "coral-clinical-systems-biochemistry-reagents",
+    "titleEn": "Coral Clinical Systems Biochemistry Reagents & Test Kits",
+    "titleNe": "कोरल क्लिनिकल सिस्टम्स बायोकेमिस्ट्री रिअजेन्ट तथा टेस्ट किटहरू",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "tulip-diagnostics-serology-rapid-test-kits",
+    "titleEn": "Tulip Diagnostics Serology Reagents & Rapid Test Kits",
+    "titleNe": "ट्युलिप डायग्नोस्टिक्स सेरोलोजी रिअजेन्ट तथा र्‍यापिड टेस्ट किटहरू",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "erba-mannheim-clinical-chemistry-reagents-controls",
+    "titleEn": "Erba Mannheim Clinical Chemistry Reagents, Hematology & Controls",
+    "titleNe": "एर्बा म्यानहाइम क्लिनिकल बायोकेमिस्ट्री रिअजेन्ट, हेमाटोलोजी तथा कन्ट्रोल",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "dressing-drums",
+    "titleEn": "Dressing drums",
+    "titleNe": "ड्रेसिङ ड्रम",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "ear-specula",
+    "titleEn": "Ear specula",
+    "titleNe": "कानको स्पेकुलम",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "bulldog-vascular-clamps",
+    "titleEn": "Bulldog vascular clamps",
+    "titleNe": "बुलडग भास्कुलर क्ल्याम्प",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "intestinal-clamps",
+    "titleEn": "Intestinal clamps",
+    "titleNe": "इन्टेस्टाइनल क्ल्याम्प",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "bone-holding-forceps",
+    "titleEn": "Bone-holding forceps",
+    "titleNe": "बोन-होल्डिङ फोर्सेप्स",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "surgical-mallets",
+    "titleEn": "Surgical mallets",
+    "titleNe": "सर्जिकल मालेट",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "skin-hooks",
+    "titleEn": "Skin hooks",
+    "titleNe": "स्किन हुक",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "grooved-directors",
+    "titleEn": "Grooved directors",
+    "titleNe": "ग्रुभ्ड डाइरेक्टर",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "sinus-forceps",
+    "titleEn": "Sinus forceps",
+    "titleNe": "साइनस फोर्सेप्स",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "ligature-carriers",
+    "titleEn": "Ligature carriers",
+    "titleNe": "लिगेचर क्यारियर",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "suture-removal-scissors",
+    "titleEn": "Suture-removal scissors",
+    "titleNe": "टाँका हटाउने कैंची",
+    "category": "surgical-instruments",
+    "obstacle": "Specialized surgical instrument; Wikimedia Commons only contains historical surgical treatises, antique collections, or clinical intraoperative procedure views; clean standalone catalog photography requires owner showroom stock."
+  },
+  {
+    "slug": "ovum-forceps",
+    "titleEn": "Ovum forceps",
+    "titleNe": "ओभम फोर्सेप्स",
+    "category": "obstetrics-gynaecology-urology",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "obstetric-delivery-instrument-sets",
+    "titleEn": "Obstetric delivery instrument sets",
+    "titleNe": "प्रसूति इन्स्ट्रुमेन्ट सेट",
+    "category": "obstetrics-gynaecology-urology",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "orthopedic-measuring-instruments",
+    "titleEn": "Orthopedic measuring instruments",
+    "titleNe": "अर्थोपेडिक मापन उपकरण",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "surgical-bone-drills",
+    "titleEn": "Surgical bone drills",
+    "titleNe": "सर्जिकल बोन ड्रिल",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "surgical-bone-saws",
+    "titleEn": "Surgical bone saws",
+    "titleNe": "सर्जिकल बोन स",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "blood-administration-sets",
+    "titleEn": "Blood administration sets",
+    "titleNe": "रगत चढाउने सेट",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "iv-extension-lines",
+    "titleEn": "IV extension lines",
+    "titleNe": "आईभी एक्सटेन्सन लाइन",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "non-absorbable-sutures",
+    "titleEn": "Non-absorbable sutures",
+    "titleNe": "नघुल्ने सर्जिकल धागो",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "surgical-drapes",
+    "titleEn": "Surgical drapes",
+    "titleNe": "सर्जिकल ड्रेप",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "gauze-swabs",
+    "titleEn": "Gauze swabs",
+    "titleNe": "गज स्वाब",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "cotton-rolls",
+    "titleEn": "Cotton rolls",
+    "titleNe": "कटन रोल",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "urine-collection-bags",
+    "titleEn": "Urine collection bags",
+    "titleNe": "पिसाब सङ्कलन ब्याग",
+    "category": "obstetrics-gynaecology-urology",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "plaster-of-paris-bandages",
+    "titleEn": "Plaster-of-Paris bandages",
+    "titleNe": "प्लास्टर अफ पेरिस ब्यान्डेज",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "fibreglass-casting-tape",
+    "titleEn": "Fibreglass casting tape",
+    "titleNe": "फाइबरग्लास कास्टिङ टेप",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "transparent-film-dressings",
+    "titleEn": "Transparent film dressings",
+    "titleNe": "पारदर्शी फिल्म ड्रेसिङ",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "non-adherent-wound-dressings",
+    "titleEn": "Non-adherent wound dressings",
+    "titleNe": "नटाँसिने घाउ ड्रेसिङ",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "penrose-drains",
+    "titleEn": "Penrose drains",
+    "titleNe": "पेनरोज ड्रेन",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "chest-drainage-systems",
+    "titleEn": "Chest drainage systems",
+    "titleNe": "छाती ड्रेनेज प्रणाली",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "nasogastric-feeding-tubes",
+    "titleEn": "Nasogastric feeding tubes",
+    "titleNe": "नाकबाट पेटसम्म जाने फिडिङ ट्युब",
+    "category": "dressings-drains-procedure",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "sterilization-wrapping-sheets",
+    "titleEn": "Sterilization wrapping sheets",
+    "titleNe": "स्टेरिलाइजेसन र्‍यापिङ पाना",
+    "category": "sterilization-infection-control",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "autoclave-indicator-tape",
+    "titleEn": "Autoclave indicator tape",
+    "titleNe": "अटोक्लेभ इन्डिकेटर टेप",
+    "category": "sterilization-infection-control",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "biological-sterilization-indicators",
+    "titleEn": "Biological sterilization indicators",
+    "titleNe": "बायोलोजिकल स्टेरिलाइजेसन इन्डिकेटर",
+    "category": "sterilization-infection-control",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "bowie-dick-test-packs",
+    "titleEn": "Bowie–Dick test packs",
+    "titleNe": "बोवी–डिक परीक्षण प्याक",
+    "category": "sterilization-infection-control",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "disposable-shoe-covers",
+    "titleEn": "Disposable shoe covers",
+    "titleNe": "डिस्पोजेबल जुत्ता कभर",
+    "category": "sterilization-infection-control",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "oxygen-face-masks",
+    "titleEn": "Oxygen face masks",
+    "titleNe": "अक्सिजन फेस मास्क",
+    "category": "airway-anesthesia-respiratory",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "anaesthesia-face-masks",
+    "titleEn": "Anaesthesia face masks",
+    "titleNe": "एनेस्थेसिया फेस मास्क",
+    "category": "airway-anesthesia-respiratory",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "heat-and-moisture-exchange-filters",
+    "titleEn": "Heat-and-moisture exchange filters",
+    "titleNe": "हिट-मोइस्चर एक्सचेन्ज फिल्टर",
+    "category": "airway-anesthesia-respiratory",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "bacterial-viral-breathing-filters",
+    "titleEn": "Bacterial/viral breathing filters",
+    "titleNe": "ब्याक्टेरियल/भाइरल ब्रीदिङ फिल्टर",
+    "category": "airway-anesthesia-respiratory",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "breathing-circuits",
+    "titleEn": "Breathing circuits",
+    "titleNe": "ब्रीदिङ सर्किट",
+    "category": "airway-anesthesia-respiratory",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "urometer-drainage-systems",
+    "titleEn": "Urometer drainage systems",
+    "titleNe": "युरोमिटर ड्रेनेज प्रणाली",
+    "category": "obstetrics-gynaecology-urology",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "suprapubic-catheter-kits",
+    "titleEn": "Suprapubic catheter kits",
+    "titleNe": "सुप्राप्युबिक क्याथेटर किट",
+    "category": "obstetrics-gynaecology-urology",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "bladder-irrigation-sets",
+    "titleEn": "Bladder irrigation sets",
+    "titleNe": "ब्लाडर इरिगेसन सेट",
+    "category": "obstetrics-gynaecology-urology",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "hospital-mattresses",
+    "titleEn": "Hospital mattresses",
+    "titleNe": "अस्पतालका म्याट्रेस",
+    "category": "hospital-furniture",
+    "obstacle": "Hospital ward furniture/fixture; existing web imagery consists of proprietary distributor media or complex hospital room wide angles; isolated equipment photography requires owner showroom capture."
+  },
+  {
+    "slug": "bedside-lockers",
+    "titleEn": "Bedside lockers",
+    "titleNe": "बेडसाइड लकर",
+    "category": "hospital-furniture",
+    "obstacle": "Hospital ward furniture/fixture; existing web imagery consists of proprietary distributor media or complex hospital room wide angles; isolated equipment photography requires owner showroom capture."
+  },
+  {
+    "slug": "overbed-tables",
+    "titleEn": "Overbed tables",
+    "titleNe": "बेडमाथि राख्ने टेबल",
+    "category": "hospital-furniture",
+    "obstacle": "Hospital ward furniture/fixture; existing web imagery consists of proprietary distributor media or complex hospital room wide angles; isolated equipment photography requires owner showroom capture."
+  },
+  {
+    "slug": "iv-stands",
+    "titleEn": "IV stands",
+    "titleNe": "आईभी स्ट्यान्ड",
+    "category": "hospital-furniture",
+    "obstacle": "Hospital ward furniture/fixture; existing web imagery consists of proprietary distributor media or complex hospital room wide angles; isolated equipment photography requires owner showroom capture."
+  },
+  {
+    "slug": "examination-couches",
+    "titleEn": "Examination couches",
+    "titleNe": "जाँच काउच",
+    "category": "hospital-furniture",
+    "obstacle": "Hospital ward furniture/fixture; existing web imagery consists of proprietary distributor media or complex hospital room wide angles; isolated equipment photography requires owner showroom capture."
+  },
+  {
+    "slug": "instrument-trolleys",
+    "titleEn": "Instrument trolleys",
+    "titleNe": "इन्स्ट्रुमेन्ट ट्रली",
+    "category": "hospital-furniture",
+    "obstacle": "Hospital ward furniture/fixture; existing web imagery consists of proprietary distributor media or complex hospital room wide angles; isolated equipment photography requires owner showroom capture."
+  },
+  {
+    "slug": "medication-trolleys",
+    "titleEn": "Medication trolleys",
+    "titleNe": "औषधि ट्रली",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "linen-trolleys",
+    "titleEn": "Linen trolleys",
+    "titleNe": "लिनेन ट्रली",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "laundry-collection-carts",
+    "titleEn": "Laundry collection carts",
+    "titleNe": "लुगा सङ्कलन कार्ट",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-changing-tables",
+    "titleEn": "Baby changing tables",
+    "titleNe": "शिशु फेर्ने टेबल",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "electrosurgical-units",
+    "titleEn": "Electrosurgical units",
+    "titleNe": "इलेक्ट्रोसर्जिकल युनिट",
+    "category": "ot-supplies",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "medical-ventilators",
+    "titleEn": "Medical ventilators",
+    "titleNe": "मेडिकल भेन्टिलेटर",
+    "category": "emergency-critical-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "capnography-monitors",
+    "titleEn": "Capnography monitors",
+    "titleNe": "क्याप्नोग्राफी मोनिटर",
+    "category": "emergency-critical-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "patient-warming-systems",
+    "titleEn": "Patient warming systems",
+    "titleNe": "बिरामी न्यानो राख्ने प्रणाली",
+    "category": "emergency-critical-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "instrument-washer-disinfectors",
+    "titleEn": "Instrument washer-disinfectors",
+    "titleNe": "इन्स्ट्रुमेन्ट धुने तथा निसङ्क्रमण मेसिन",
+    "category": "sterilization-infection-control",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "sterilization-container-systems",
+    "titleEn": "Sterilization container systems",
+    "titleNe": "स्टेरिलाइजेसन कन्टेनर प्रणाली",
+    "category": "sterilization-infection-control",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "hospital-weighing-scales",
+    "titleEn": "Hospital weighing scales",
+    "titleNe": "अस्पतालका तौल मेसिन",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "height-measuring-stadiometers",
+    "titleEn": "Height-measuring stadiometers",
+    "titleNe": "उचाइ नाप्ने स्ट्याडियोमिटर",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "enteral-feeding-bags-and-sets",
+    "titleEn": "Enteral feeding bags and sets",
+    "titleNe": "इन्टरल फिडिङ ब्याग तथा सेट",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "sequential-compression-devices",
+    "titleEn": "Sequential compression devices",
+    "titleNe": "क्रमिक कम्प्रेसन उपकरण",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "portable-suction-units",
+    "titleEn": "Portable suction units",
+    "titleNe": "पोर्टेबल सक्सन युनिट",
+    "category": "respiratory-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "tens-devices",
+    "titleEn": "TENS devices",
+    "titleNe": "टेन्स उपकरण",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "therapeutic-ultrasound-units",
+    "titleEn": "Therapeutic ultrasound units",
+    "titleNe": "थेराप्युटिक अल्ट्रासाउन्ड युनिट",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "erba-laboratory-reagents",
+    "titleEn": "Erba laboratory reagents",
+    "titleNe": "एर्बा प्रयोगशाला रिअजेन्ट",
+    "category": "laboratory",
+    "obstacle": "Specialized clinical diagnostic equipment/reagents; available imagery consists of proprietary manufacturer marketing assets or historical diagrams lacking documented CC/open reuse rights."
+  },
+  {
+    "slug": "fluid-and-blood-warmers",
+    "titleEn": "Fluid and blood warmers",
+    "titleNe": "तरल तथा रगत न्यानो पार्ने उपकरण",
+    "category": "emergency-critical-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "patient-transfer-boards",
+    "titleEn": "Patient transfer boards",
+    "titleNe": "बिरामी सार्ने बोर्ड",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "patient-hoists",
+    "titleEn": "Patient hoists",
+    "titleNe": "बिरामी उठाउने होइस्ट",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "transfer-slings",
+    "titleEn": "Transfer slings",
+    "titleNe": "बिरामी सार्ने स्लिङ",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "bedpans",
+    "titleEn": "Bedpans",
+    "titleNe": "बेडप्यान",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "urinal-bottles",
+    "titleEn": "Urinal bottles",
+    "titleNe": "युरिनल बोतल",
+    "category": "ward-patient-support",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "rollators",
+    "titleEn": "Rollators",
+    "titleNe": "रोलाटर",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "home-care-adjustable-beds",
+    "titleEn": "Home-care adjustable beds",
+    "titleNe": "घरायसी समायोज्य बेड",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "knee-supports-including-hinged-braces-immobilizers-and-patellar-straps",
+    "titleEn": "Knee supports (including hinged braces, immobilizers and patellar straps)",
+    "titleNe": "घुँडा सपोर्ट (हिन्ज्ड ब्रेस, इम्मोबिलाइजर र पटेलर स्ट्र्यापसहित)",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "exercise-pulleys",
+    "titleEn": "Exercise pulleys",
+    "titleNe": "व्यायाम पुली",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "ankle-supports",
+    "titleEn": "Ankle supports",
+    "titleNe": "खुट्टाको गोलीगाँठो सपोर्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "wrist-cock-up-splints",
+    "titleEn": "Wrist cock-up splints",
+    "titleNe": "कलाई सीधा राख्ने स्प्लिन्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "thumb-spica-splints",
+    "titleEn": "Thumb-spica splints",
+    "titleNe": "औँठा स्पाइका स्प्लिन्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "elbow-supports",
+    "titleEn": "Elbow supports",
+    "titleNe": "कुहिनो सपोर्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "shoulder-immobilizers",
+    "titleEn": "Shoulder immobilizers",
+    "titleNe": "काँध स्थिर राख्ने सपोर्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "clavicle-braces",
+    "titleEn": "Clavicle braces",
+    "titleNe": "कलर बोन ब्रेस",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "rib-belts",
+    "titleEn": "Rib belts",
+    "titleNe": "करङको बेल्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "abdominal-binders",
+    "titleEn": "Abdominal binders",
+    "titleNe": "पेट बाँध्ने बेल्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "postoperative-abdominal-supports",
+    "titleEn": "Postoperative abdominal supports",
+    "titleNe": "शल्यक्रियापछिको पेट सपोर्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "soft-cervical-collars",
+    "titleEn": "Soft cervical collars",
+    "titleNe": "नरम घाँटी कलर",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "heel-cups",
+    "titleEn": "Heel cups",
+    "titleNe": "एडी कप",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "arch-support-insoles",
+    "titleEn": "Arch-support insoles",
+    "titleNe": "खुट्टाको आर्च सपोर्ट इनसोल",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "metatarsal-pads",
+    "titleEn": "Metatarsal pads",
+    "titleNe": "मेटाटार्सल प्याड",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "toe-separators",
+    "titleEn": "Toe separators",
+    "titleNe": "खुट्टाका औँला छुट्याउने प्याड",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "bunion-supports",
+    "titleEn": "Bunion supports",
+    "titleNe": "बनियन सपोर्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "orthopedic-seat-cushions",
+    "titleEn": "Orthopedic seat cushions",
+    "titleNe": "अर्थोपेडिक सिट कुशन",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "casting-stockinette",
+    "titleEn": "Casting stockinette",
+    "titleNe": "कास्टिङ स्टकनेट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "undercast-padding",
+    "titleEn": "Undercast padding",
+    "titleNe": "कास्टमुनिको प्याडिङ",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "aluminium-foam-splints",
+    "titleEn": "Aluminium foam splints",
+    "titleNe": "आल्मुनियम फोम स्प्लिन्ट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "traction-kits",
+    "titleEn": "Traction kits",
+    "titleNe": "ट्र्याक्सन किट",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "traction-weights",
+    "titleEn": "Traction weights",
+    "titleNe": "ट्र्याक्सन तौल",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "orthopedic-traction-frames",
+    "titleEn": "Orthopedic traction frames",
+    "titleNe": "अर्थोपेडिक ट्र्याक्सन फ्रेम",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "cast-shoes",
+    "titleEn": "Cast shoes",
+    "titleNe": "कास्ट जुत्ता",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "cast-spreaders",
+    "titleEn": "Cast spreaders",
+    "titleNe": "कास्ट स्प्रेडर",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "cast-removal-shears",
+    "titleEn": "Cast-removal shears",
+    "titleNe": "कास्ट हटाउने कैंची",
+    "category": "orthopedics-supports-braces",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "wheelchair-cushions",
+    "titleEn": "Wheelchair cushions",
+    "titleNe": "ह्विलचेयर कुशन",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "wheelchair-positioning-belts",
+    "titleEn": "Wheelchair positioning belts",
+    "titleNe": "ह्विलचेयर पोजिसनिङ बेल्ट",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "toilet-safety-frames",
+    "titleEn": "Toilet safety frames",
+    "titleNe": "ट्वाइलेट सेफ्टी फ्रेम",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "shower-chairs",
+    "titleEn": "Shower chairs",
+    "titleNe": "शावर चेयर",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "bath-transfer-benches",
+    "titleEn": "Bath transfer benches",
+    "titleNe": "बाथ ट्रान्सफर बेन्च",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "bedside-grab-rails",
+    "titleEn": "Bedside grab rails",
+    "titleNe": "बेडसाइड समाउने रेल",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "slide-sheets",
+    "titleEn": "Slide sheets",
+    "titleNe": "स्लाइड सिट",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "portable-access-ramps",
+    "titleEn": "Portable access ramps",
+    "titleNe": "पोर्टेबल पहुँच र्‍याम्प",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "reusable-cold-packs",
+    "titleEn": "Reusable cold packs",
+    "titleNe": "पुनःप्रयोग गर्न मिल्ने चिसो प्याक",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "reusable-hot-cold-gel-packs",
+    "titleEn": "Reusable hot/cold gel packs",
+    "titleNe": "पुनःप्रयोग गर्न मिल्ने तातो/चिसो जेल प्याक",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "electric-heating-pads",
+    "titleEn": "Electric heating pads",
+    "titleNe": "विद्युतीय तताउने प्याड",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "reusable-finger-prick-devices",
+    "titleEn": "Reusable finger-prick devices",
+    "titleNe": "पुनःप्रयोग गर्न मिल्ने औँला छेड्ने उपकरण",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "tablet-crushers",
+    "titleEn": "Tablet crushers",
+    "titleNe": "ट्याब्लेट पिस्ने उपकरण",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "disposable-underpads",
+    "titleEn": "Disposable underpads",
+    "titleNe": "डिस्पोजेबल अन्डरप्याड",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "reusable-bed-protection-pads",
+    "titleEn": "Reusable bed-protection pads",
+    "titleNe": "पुनःप्रयोग गर्न मिल्ने ओछ्यान सुरक्षा प्याड",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "waterproof-mattress-protectors",
+    "titleEn": "Waterproof mattress protectors",
+    "titleNe": "पानी नछिर्ने म्याट्रेस कभर",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "ostomy-skin-barriers",
+    "titleEn": "Ostomy skin barriers",
+    "titleNe": "ओस्टोमी स्किन ब्यारियर",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "ostomy-support-accessories",
+    "titleEn": "Ostomy support accessories",
+    "titleNe": "ओस्टोमी सपोर्ट सामग्री",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "nebulizer-replacement-kits",
+    "titleEn": "Nebulizer replacement kits",
+    "titleNe": "नेबुलाइजर बदल्ने पार्ट्स किट",
+    "category": "consumables-ppe",
+    "obstacle": "Sterile medical consumable/dressing; web imagery consists of proprietary manufacturer packaging (Romsons, Polymed, BD, etc.) without explicit open reuse permissions; requires owner inventory photography."
+  },
+  {
+    "slug": "cpap-tubing",
+    "titleEn": "CPAP tubing",
+    "titleNe": "सीप्याप ट्युबिङ",
+    "category": "respiratory-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "portable-oxygen-concentrator-carrying-accessories",
+    "titleEn": "Portable oxygen-concentrator carrying accessories",
+    "titleNe": "पोर्टेबल अक्सिजन कन्सेन्ट्रेटर बोक्ने सामग्री",
+    "category": "respiratory-care",
+    "obstacle": "Clinical ICU/emergency/respiratory hardware; available public images are intra-hospital operational shots or copyrighted distributor marketing materials without documented reuse authorization."
+  },
+  {
+    "slug": "finger-exercisers",
+    "titleEn": "Finger exercisers",
+    "titleNe": "औँलाको व्यायाम उपकरण",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "pedal-exercisers",
+    "titleEn": "Pedal exercisers",
+    "titleNe": "पेडल व्यायाम उपकरण",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "balance-boards",
+    "titleEn": "Balance boards",
+    "titleNe": "सन्तुलन बोर्ड",
+    "category": "rehabilitation-home-care",
+    "obstacle": "Orthopedic brace/rehabilitation aid; public open commons only offer general patient application or sports photos; authentic standalone medical device shots require distributor open license or owner stock photo."
+  },
+  {
+    "slug": "instrument-cleaning-detergents",
+    "titleEn": "Instrument-cleaning detergents",
+    "titleNe": "इन्स्ट्रुमेन्ट सफा गर्ने डिटरजेन्ट",
+    "category": "cleaning-hygiene",
+    "obstacle": "Commercial sanitation/waste handling equipment; open web photos are branded commercial supplier assets without explicit open licensing."
+  },
+  {
+    "slug": "baby-diapers",
+    "titleEn": "Baby diapers",
+    "titleNe": "बेबी डाइपर",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-cotton-wool",
+    "titleEn": "Baby cotton wool",
+    "titleNe": "बेबी कटन",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-washcloths",
+    "titleEn": "Baby washcloths",
+    "titleNe": "बेबी वाशक्लोथ",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-bath-towels",
+    "titleEn": "Baby bath towels",
+    "titleNe": "बेबी बाथ टावेल",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-bathtubs",
+    "titleEn": "Baby bathtubs",
+    "titleNe": "बेबी बाथटब",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-bath-supports",
+    "titleEn": "Baby bath supports",
+    "titleNe": "बेबी बाथ सपोर्ट",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-moisturizers",
+    "titleEn": "Baby moisturizers",
+    "titleNe": "बेबी मोइस्चराइजर",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-grooming-kits",
+    "titleEn": "Baby grooming kits",
+    "titleNe": "बेबी ग्रुमिङ किट",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-nail-clippers",
+    "titleEn": "Baby nail clippers",
+    "titleNe": "बेबी नङ काट्ने क्लिपर",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-hairbrushes",
+    "titleEn": "Baby hairbrushes",
+    "titleNe": "बेबी हेयरब्रस",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-combs",
+    "titleEn": "Baby combs",
+    "titleNe": "बेबी काइँयो",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "feeding-bottles",
+    "titleEn": "Feeding bottles",
+    "titleNe": "फिडिङ बोतल",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "feeding-bottle-sterilizers",
+    "titleEn": "Feeding-bottle sterilizers",
+    "titleNe": "फिडिङ बोतल स्टेरिलाइजर",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "breast-milk-storage-bags",
+    "titleEn": "Breast-milk storage bags",
+    "titleNe": "आमाको दूध राख्ने ब्याग",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "breast-pump-replacement-accessories",
+    "titleEn": "Breast-pump replacement accessories",
+    "titleNe": "ब्रेस्ट पम्पका बदल्ने सामग्री",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-feeding-cups",
+    "titleEn": "Baby feeding cups",
+    "titleNe": "बेबी फिडिङ कप",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-feeding-spoons",
+    "titleEn": "Baby feeding spoons",
+    "titleNe": "बेबी फिडिङ चम्चा",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-feeding-bowls",
+    "titleEn": "Baby feeding bowls",
+    "titleNe": "बेबी फिडिङ कचौरा",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "feeding-bibs",
+    "titleEn": "Feeding bibs",
+    "titleNe": "फिडिङ बिब",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "pacifier-storage-cases",
+    "titleEn": "Pacifier storage cases",
+    "titleNe": "प्यासिफायर राख्ने केस",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "nasal-aspirator-replacement-accessories",
+    "titleEn": "Nasal aspirator replacement accessories",
+    "titleNe": "नाक एस्पिरेटरका बदल्ने सामग्री",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "infant-medicine-droppers",
+    "titleEn": "Infant medicine droppers",
+    "titleNe": "शिशुलाई औषधि दिने ड्रपर",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "baby-and-infant-weighing-scales",
+    "titleEn": "Baby and infant weighing scales",
+    "titleNe": "शिशु तौल मेसिन",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "infant-length-measuring-boards",
+    "titleEn": "Infant length-measuring boards",
+    "titleNe": "शिशुको लम्बाइ नाप्ने बोर्ड",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "nursing-pads",
+    "titleEn": "Nursing pads",
+    "titleNe": "स्तनपान प्याड",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "maternity-pads",
+    "titleEn": "Maternity pads",
+    "titleNe": "प्रसूति प्याड",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  },
+  {
+    "slug": "breast-milk-collection-cups",
+    "titleEn": "Breast-milk collection cups",
+    "titleNe": "आमाको दूध सङ्कलन कप",
+    "category": "baby-maternity",
+    "obstacle": "Proprietary distributor/manufacturer catalog media without documented open license or verified owner-provided photography."
+  }
+]
