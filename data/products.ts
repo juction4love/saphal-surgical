@@ -1807,55 +1807,9 @@ const defaultOrderFields: Record<string, NonNullable<ProductItem['orderFields']>
   },
 };
 
-const representativePhotoBySlug: Record<string, string> = {
-  'hematology-analyzer': '/products/hematology-analyzer.webp',
-  'biochemistry-analyzer': '/products/biochemistry-analyzer.webp',
-  'electrolyte-analyzer': '/products/biochemistry-analyzer.webp',
-  'immunoassay-analyzer': '/products/biochemistry-analyzer.webp',
-  'urine-analyzer': '/products/biochemistry-analyzer.webp',
-  'laboratory-microscope': '/products/laboratory-microscope.webp',
-  'laboratory-centrifuge': '/products/laboratory-water-bath.webp',
-  'laboratory-incubator-hot-air-oven': '/products/hot-air-oven.webp',
-  'water-bath-micropipettes': '/products/laboratory-water-bath.webp',
-  'lab-refrigerator-specimen-containers': '/products/laboratory-incubator.webp',
-  'patient-monitors-ecg-machines': '/products/patient-monitor.webp',
-  'pulse-oximeters-bp-monitors-thermometers': '/products/patient-monitor.webp',
-  'oxygen-concentrators-regulators': '/products/oxygen-concentrator.webp',
-  'medical-nebulizers-suction-machines': '/products/suction-machine.webp',
-  'hospital-beds-examination-couches': '/products/hospital-bed.webp',
-  'wheelchairs-trolleys-stretchers-iv-stands': '/products/hospital-stretcher.webp',
-  'manual-wheelchair': '/products/manual-wheelchair.webp',
-  'manual-wheelchairs': '/products/manual-wheelchair.webp',
-  'electric-wheelchair': '/products/electric-wheelchair.webp',
-  'electric-wheelchairs': '/products/electric-wheelchair.webp',
-  'air-mattresses-commode-chairs': '/products/commode-chair.webp',
-  'glucometer': '/products/glucometer.webp',
-  'glucometers': '/products/glucometer.webp',
-  'digital-x-ray-equipment': '/products/digital-x-ray-equipment.webp',
-  'film-x-ray-equipment': '/products/film-x-ray-equipment.webp',
-  'x-ray-film-developer': '/products/x-ray-film-developer.webp',
-  'defibrillator': '/products/defibrillator.webp',
-  'ecg-machine': '/products/ecg-machine.webp',
-  'ultrasound-machine': '/products/ultrasound-machine.webp',
-  'blood-glucose-lancets': '/products/user-supplied/blood-glucose-lancets.jpeg',
-  'glucometer-with-strips': '/products/glucometer.webp',
-  'glucose-test-strips': '/products/user-supplied/glucose-test-strips.jpeg',
-  'autoclaves-steam-sterilizers': '/products/hot-air-oven.webp',
-};
+const representativePhotoBySlug: Record<string, string> = {};
 
-const representativePhotoByCategory: Record<string, string> = {
-  laboratory: '/products/laboratory-microscope.webp',
-  'surgical-instruments': '/products/laboratory-microscope.webp',
-  sterilization: '/products/hot-air-oven.webp',
-  'monitoring-diagnostics': '/products/patient-monitor.webp',
-  'hospital-furniture': '/products/hospital-bed.webp',
-  'respiratory-care': '/products/oxygen-concentrator.webp',
-  'ot-supplies': '/products/suction-machine.webp',
-  'consumables-ppe': '/products/glucometer.webp',
-  'rehabilitation-home-care': '/products/manual-wheelchair.webp',
-  'cleaning-hygiene': '/products/suction-machine.webp',
-  'waste-handling': '/products/commode-chair.webp',
-};
+const representativePhotoByCategory: Record<string, string> = {};
 
 function resolveRepresentativePhoto(product: ProductItem) {
   const url = representativePhotoBySlug[product.slug] ?? representativePhotoByCategory[product.categoryId];

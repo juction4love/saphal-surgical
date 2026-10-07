@@ -76,29 +76,37 @@ function joinBytes(parts: Uint8Array[]): Uint8Array {
 }
 
 function formatNepalTime(date: Date, locale: Locale): string {
-  return new Intl.DateTimeFormat(locale === 'ne' ? 'ne-NP-u-ca-gregory' : 'en-GB', {
-    dateStyle: 'medium',
-    timeStyle: 'short',
-    timeZone: 'Asia/Kathmandu',
-  }).format(date);
+  try {
+    return new Intl.DateTimeFormat(locale === 'ne' ? 'ne-NP-u-ca-gregory' : 'en-GB', {
+      dateStyle: 'medium',
+      timeStyle: 'short',
+      timeZone: 'Asia/Kathmandu',
+    }).format(date);
+  } catch {
+    return date.toLocaleString();
+  }
 }
 
 function makeReference(date: Date): string {
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'Asia/Kathmandu',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hourCycle: 'h23',
-  }).formatToParts(date);
-  const get = (type: Intl.DateTimeFormatPartTypes) => parts.find((part) => part.type === type)?.value ?? '00';
-  const suffix = globalThis.crypto?.randomUUID
-    ? globalThis.crypto.randomUUID().slice(0, 8).toUpperCase()
-    : Math.random().toString(36).slice(2, 10).toUpperCase();
-  return `SS-${get('year')}${get('month')}${get('day')}-${get('hour')}${get('minute')}${get('second')}-${suffix}`;
+  try {
+    const parts = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Asia/Kathmandu',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hourCycle: 'h23',
+    }).formatToParts(date);
+    const get = (type: Intl.DateTimeFormatPartTypes) => parts.find((part) => part.type === type)?.value ?? '00';
+    const suffix = globalThis.crypto?.randomUUID
+      ? globalThis.crypto.randomUUID().slice(0, 8).toUpperCase()
+      : Math.random().toString(36).slice(2, 10).toUpperCase();
+    return `SS-${get('year')}${get('month')}${get('day')}-${get('hour')}${get('minute')}${get('second')}-${suffix}`;
+  } catch {
+    return `SS-${Date.now()}`;
+  }
 }
 
 function loadLogo(): Promise<HTMLImageElement> {
@@ -345,6 +353,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
   const [quantityError, setQuantityError] = useState('');
   const [ready, setReady] = useState(false);
   const [reference, setReference] = useState('');
+  const [timeString, setTimeString] = useState('');
   const [pdfUrl, setPdfUrl] = useState('');
   const [notice, setNotice] = useState('');
   const generatedPdf = useRef<{ key: string; file: File } | null>(null);
@@ -356,6 +365,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
     };
     syncOrder();
     setReference(makeReference(new Date()));
+    setTimeString(formatNepalTime(new Date(), locale));
     setReady(true);
     window.addEventListener(ORDER_UPDATED_EVENT, syncOrder);
     window.addEventListener('storage', syncOrder);
@@ -363,7 +373,7 @@ export function OrderSlip({ locale }: OrderSlipProps) {
       window.removeEventListener(ORDER_UPDATED_EVENT, syncOrder);
       window.removeEventListener('storage', syncOrder);
     };
-  }, []);
+  }, [locale]);
 
   useEffect(() => () => {
     if (pdfUrl) URL.revokeObjectURL(pdfUrl);
@@ -634,7 +644,6 @@ export function OrderSlip({ locale }: OrderSlipProps) {
     }
   };
 
-  if (!ready) return <div className="min-h-[50vh]" aria-busy="true" />;
   const inputClass = 'min-h-[46px] w-full rounded-xl border border-[#DCE9DE] bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#15803D]';
 
   return (
@@ -645,147 +654,154 @@ export function OrderSlip({ locale }: OrderSlipProps) {
       </Link>
 
       <header className="space-y-2">
-        <p className="text-xs font-bold text-[#15803D]">{labels.slipReference}: {reference || '...'}</p>
+        <p className="text-xs font-bold text-[#15803D]">{labels.slipReference}: {reference || '—'}</p>
         <h1 className="text-2xl sm:text-4xl font-heading font-extrabold text-[#17251C]">{labels.title}</h1>
-        <p className="text-sm sm:text-base text-[#475569]">{labels.date}: {formatNepalTime(new Date(), locale)}</p>
+        <p className="text-sm sm:text-base text-[#475569]">{labels.date}: {timeString || formatNepalTime(new Date(), locale)}</p>
         <p className="text-sm sm:text-base text-[#475569]">{labels.subtitle}</p>
       </header>
 
-      <section className="rounded-2xl border border-[#E3EDE5] bg-[#F8FCF8] p-4 sm:p-6 space-y-4">
-        <h2 className="font-heading font-bold text-lg text-[#17251C]">{labels.customer}</h2>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {([
-            ['name', labels.name, 'text', true],
-            ['organization', labels.organization, 'text', false],
-            ['phone', labels.phone, 'tel', true],
-            ['address', labels.address, 'text', false],
-          ] as const).map(([field, label, type, required]) => (
-            <label key={field} className="space-y-1.5 text-sm font-semibold text-[#17251C]">
-              <span>{label}{required ? ' *' : ''}</span>
-              <input
-                type={type}
-                required={required}
-                value={customer[field]}
-                onChange={(event) => updateCustomer(field, event.target.value)}
-                className={inputClass}
-                autoComplete={field === 'name' ? 'name' : field === 'organization' ? 'organization' : field === 'phone' ? 'tel' : 'street-address'}
-                aria-invalid={required && !customer[field].trim()}
-              />
-            </label>
-          ))}
-        </div>
-        <label className="block space-y-1.5 text-sm font-semibold text-[#17251C]">
-          <span>{labels.notes}</span>
-          <textarea value={customer.notes} onChange={(event) => updateCustomer('notes', event.target.value)} rows={3} className={`${inputClass} min-h-24`} />
-        </label>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="font-heading font-bold text-lg text-[#17251C]">{labels.items}</h2>
-        {products.length > 0 ? (
-          <ul className="divide-y divide-[#E3EDE5] rounded-2xl border border-[#E3EDE5] bg-white">
-            {products.map(({ product, quantity }) => (
-              <li key={product.slug} className="flex flex-col gap-3 p-4 sm:p-5">
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                  <Link href={`/${locale}/products/${product.slug}`} className="font-semibold text-[#17251C] hover:text-[#15803D]">
-                    {product.name[locale]}
-                  </Link>
-                  <div className="flex items-center gap-2">
-                    <span className="sr-only">{labels.quantity}</span>
-                    <button type="button" onClick={() => changeQuantity(product.slug, -1)} aria-label={`${labels.quantity} -: ${product.name[locale]}`} className="min-h-[44px] min-w-[44px] rounded-lg border border-[#DCE9DE] flex items-center justify-center">
-                      <Minus className="w-4 h-4" />
-                    </button>
-                    <input
-                      aria-label={`${labels.quantity}: ${product.name[locale]}`}
-                      type="number"
-                      min={1}
-                      max={Number.MAX_SAFE_INTEGER}
-                      step={1}
-                      required
-                      value={quantityDrafts[product.slug] ?? String(quantity)}
-                      onChange={(event) => updateQuantity(product.slug, event.target.value)}
-                      aria-invalid={Boolean(quantityDrafts[product.slug] !== undefined)}
-                      className="h-11 w-24 rounded-lg border border-[#DCE9DE] text-center"
-                    />
-                    <button type="button" onClick={() => changeQuantity(product.slug, 1)} aria-label={`${labels.quantity} +: ${product.name[locale]}`} className="min-h-[44px] min-w-[44px] rounded-lg border border-[#DCE9DE] flex items-center justify-center">
-                      <Plus className="w-4 h-4" />
-                    </button>
-                    <button type="button" onClick={() => removeLine(product.slug)} aria-label={`${labels.remove}: ${product.name[locale]}`} className="min-h-[44px] min-w-[44px] rounded-lg text-red-700 hover:bg-red-50 flex items-center justify-center">
-                      <Trash2 className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>
-                <label className="block space-y-1 text-xs font-semibold text-[#475569]">
-                  <span>
-                    {labels.specification}
-                  </span>
-                  <textarea
-                    rows={2}
-                    value={specifications[product.slug] ?? ''}
-                    onChange={(event) => {
-                      setPdfUrl('');
-                      setSpecifications((current) => ({ ...current, [product.slug]: event.target.value }));
-                    }}
-                    placeholder={locale === 'ne' ? 'आकार, मोडेल वा अन्य विवरण' : 'Size, model, or other details'}
-                    className={`${inputClass} min-h-16 text-sm font-normal`}
+      {products.length > 0 ? (
+        <>
+          <section className="rounded-2xl border border-[#E3EDE5] bg-[#F8FCF8] p-4 sm:p-6 space-y-4">
+            <h2 className="font-heading font-bold text-lg text-[#17251C]">{labels.customer}</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {([
+                ['name', labels.name, 'text', true],
+                ['organization', labels.organization, 'text', false],
+                ['phone', labels.phone, 'tel', true],
+                ['address', labels.address, 'text', false],
+              ] as const).map(([field, label, type, required]) => (
+                <label key={field} className="space-y-1.5 text-sm font-semibold text-[#17251C]">
+                  <span>{label}{required ? ' *' : ''}</span>
+                  <input
+                    type={type}
+                    required={required}
+                    value={customer[field]}
+                    onChange={(event) => updateCustomer(field, event.target.value)}
+                    className={inputClass}
+                    autoComplete={field === 'name' ? 'name' : field === 'organization' ? 'organization' : field === 'phone' ? 'tel' : 'street-address'}
+                    aria-invalid={required && !customer[field].trim()}
                   />
                 </label>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <div className="rounded-2xl border border-dashed border-[#B8D8BF] bg-[#F8FCF8] p-6 text-center space-y-3">
-            <p className="text-sm text-[#475569]">{labels.empty}</p>
-            <Link href={`/${locale}/products`} className="inline-flex min-h-[44px] items-center rounded-xl bg-[#15803D] px-4 py-2 text-sm font-bold text-white">
+              ))}
+            </div>
+            <label className="block space-y-1.5 text-sm font-semibold text-[#17251C]">
+              <span>{labels.notes}</span>
+              <textarea value={customer.notes} onChange={(event) => updateCustomer('notes', event.target.value)} rows={3} className={`${inputClass} min-h-24`} />
+            </label>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="font-heading font-bold text-lg text-[#17251C]">{labels.items}</h2>
+            <ul className="divide-y divide-[#E3EDE5] rounded-2xl border border-[#E3EDE5] bg-white">
+              {products.map(({ product, quantity }) => (
+                <li key={product.slug} className="flex flex-col gap-3 p-4 sm:p-5">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <Link href={`/${locale}/products/${product.slug}`} className="font-semibold text-[#17251C] hover:text-[#15803D]">
+                      {product.name[locale]}
+                    </Link>
+                    <div className="flex items-center gap-2">
+                      <span className="sr-only">{labels.quantity}</span>
+                      <button type="button" onClick={() => changeQuantity(product.slug, -1)} aria-label={`${labels.quantity} -: ${product.name[locale]}`} className="min-h-[44px] min-w-[44px] rounded-lg border border-[#DCE9DE] flex items-center justify-center">
+                        <Minus className="w-4 h-4" />
+                      </button>
+                      <input
+                        aria-label={`${labels.quantity}: ${product.name[locale]}`}
+                        type="number"
+                        min={1}
+                        max={Number.MAX_SAFE_INTEGER}
+                        step={1}
+                        required
+                        value={quantityDrafts[product.slug] ?? String(quantity)}
+                        onChange={(event) => updateQuantity(product.slug, event.target.value)}
+                        aria-invalid={Boolean(quantityDrafts[product.slug] !== undefined)}
+                        className="h-11 w-24 rounded-lg border border-[#DCE9DE] text-center"
+                      />
+                      <button type="button" onClick={() => changeQuantity(product.slug, 1)} aria-label={`${labels.quantity} +: ${product.name[locale]}`} className="min-h-[44px] min-w-[44px] rounded-lg border border-[#DCE9DE] flex items-center justify-center">
+                        <Plus className="w-4 h-4" />
+                      </button>
+                      <button type="button" onClick={() => removeLine(product.slug)} aria-label={`${labels.remove}: ${product.name[locale]}`} className="min-h-[44px] min-w-[44px] rounded-lg text-red-700 hover:bg-red-50 flex items-center justify-center">
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+                  <label className="block space-y-1 text-xs font-semibold text-[#475569]">
+                    <span>
+                      {labels.specification}
+                    </span>
+                    <textarea
+                      rows={2}
+                      value={specifications[product.slug] ?? ''}
+                      onChange={(event) => {
+                        setPdfUrl('');
+                        setSpecifications((current) => ({ ...current, [product.slug]: event.target.value }));
+                      }}
+                      placeholder={locale === 'ne' ? 'आकार, मोडेल वा अन्य विवरण' : 'Size, model, or other details'}
+                      className={`${inputClass} min-h-16 text-sm font-normal`}
+                    />
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {quantityError && <p role="alert" className="text-sm font-semibold text-red-700">{quantityError}</p>}
+
+          <section className="rounded-2xl border border-[#D8EBDD] bg-[#F0FDF4] p-4 sm:p-6 space-y-4">
+            <p className="text-sm leading-relaxed text-[#475569]">{labels.pdfNotice}</p>
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <button type="button" onClick={() => void previewPdf()} className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
+                <Eye className="w-4 h-4" />
+                {labels.preview}
+              </button>
+              <button type="button" onClick={() => void downloadPdf()} className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-bold text-white hover:bg-[#166534]">
+                <Download className="w-4 h-4" />
+                {labels.download}
+              </button>
+              <button type="button" onClick={() => void sharePdfFile()} className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
+                <Share2 className="w-4 h-4" />
+                {labels.shareFile}
+              </button>
+              {whatsappUrl && (
+                <a href={whatsappUrl} onClick={(event) => { if (!customerIsValid()) event.preventDefault(); }} target="_blank" rel="noopener noreferrer" className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
+                  <Share2 className="w-4 h-4" />
+                  {labels.whatsapp}
+                </a>
+              )}
+              <button type="button" onClick={() => void copyOrder()} className="min-h-[48px] inline-flex items-center justify-center rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
+                {labels.copy}
+              </button>
+              <a href={`tel:${siteConfig.phone.primary.raw}`} className="min-h-[48px] inline-flex items-center justify-center rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
+                {labels.contact}: {siteConfig.phone.primary.display}
+              </a>
+            </div>
+            {pdfUrl && (
+              <section className="space-y-3" aria-label={labels.previewTitle}>
+                <div className="flex items-center justify-between gap-3">
+                  <h3 className="font-semibold text-[#17251C]">{labels.previewTitle}</h3>
+                  <button type="button" onClick={() => setPdfUrl('')} className="min-h-[44px] rounded-lg px-3 text-sm font-semibold text-[#166534]">
+                    {labels.closePreview}
+                  </button>
+                </div>
+                <iframe title={labels.previewTitle} src={pdfUrl} className="h-[70vh] min-h-96 w-full rounded-xl border border-[#DCE9DE] bg-white" />
+              </section>
+            )}
+            {notice && <p role="status" aria-live="polite" className="text-sm font-semibold text-[#166534]">{notice}</p>}
+          </section>
+        </>
+      ) : (
+        <section className="rounded-2xl border border-dashed border-[#B8D8BF] bg-[#F8FCF8] p-8 sm:p-12 text-center space-y-4">
+          <p className="text-base font-semibold text-[#17251C]">{labels.empty}</p>
+          <p className="text-sm text-[#475569] max-w-md mx-auto">
+            {isNe 
+              ? 'तपाईंले कुनै सामग्री थप्नुभएको छैन। क्याटलगबाट आवश्यक अस्पताल, क्लिनिक वा ल्याबका सामानहरू छानेर यहाँ अर्डर स्लिप तयार गर्न सक्नुहुन्छ।' 
+              : 'Your order slip is empty. Choose required hospital, clinic, or laboratory supplies from our catalogue to prepare an enquiry slip.'}
+          </p>
+          <div>
+            <Link href={`/${locale}/products`} className="inline-flex min-h-[44px] items-center justify-center rounded-xl bg-[#15803D] px-6 py-2.5 text-sm font-bold text-white hover:bg-[#166534]">
               {labels.browse}
             </Link>
           </div>
-        )}
-      </section>
-
-      {quantityError && <p role="alert" className="text-sm font-semibold text-red-700">{quantityError}</p>}
-
-      {products.length > 0 && (
-        <section className="rounded-2xl border border-[#D8EBDD] bg-[#F0FDF4] p-4 sm:p-6 space-y-4">
-          <p className="text-sm leading-relaxed text-[#475569]">{labels.pdfNotice}</p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <button type="button" onClick={() => void previewPdf()} className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
-              <Eye className="w-4 h-4" />
-              {labels.preview}
-            </button>
-            <button type="button" onClick={() => void downloadPdf()} className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-bold text-white hover:bg-[#166534]">
-              <Download className="w-4 h-4" />
-              {labels.download}
-            </button>
-            <button type="button" onClick={() => void sharePdfFile()} className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
-              <Share2 className="w-4 h-4" />
-              {labels.shareFile}
-            </button>
-            {whatsappUrl && (
-              <a href={whatsappUrl} onClick={(event) => { if (!customerIsValid()) event.preventDefault(); }} target="_blank" rel="noopener noreferrer" className="min-h-[48px] inline-flex items-center justify-center gap-2 rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
-                <Share2 className="w-4 h-4" />
-                {labels.whatsapp}
-              </a>
-            )}
-            <button type="button" onClick={() => void copyOrder()} className="min-h-[48px] inline-flex items-center justify-center rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
-              {labels.copy}
-            </button>
-            <a href={`tel:${siteConfig.phone.primary.raw}`} className="min-h-[48px] inline-flex items-center justify-center rounded-xl border border-[#B8D8BF] bg-white px-5 py-3 text-sm font-bold text-[#166534]">
-              {labels.contact}: {siteConfig.phone.primary.display}
-            </a>
-          </div>
-          {pdfUrl && (
-            <section className="space-y-3" aria-label={labels.previewTitle}>
-              <div className="flex items-center justify-between gap-3">
-                <h3 className="font-semibold text-[#17251C]">{labels.previewTitle}</h3>
-                <button type="button" onClick={() => setPdfUrl('')} className="min-h-[44px] rounded-lg px-3 text-sm font-semibold text-[#166534]">
-                  {labels.closePreview}
-                </button>
-              </div>
-              <iframe title={labels.previewTitle} src={pdfUrl} className="h-[70vh] min-h-96 w-full rounded-xl border border-[#DCE9DE] bg-white" />
-            </section>
-          )}
-          {notice && <p role="status" aria-live="polite" className="text-sm font-semibold text-[#166534]">{notice}</p>}
         </section>
       )}
     </div>

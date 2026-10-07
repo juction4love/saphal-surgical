@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { MapPin, Phone, Navigation, ShieldCheck } from 'lucide-react';
 
 interface FooterProps {
   lang?: 'en' | 'ne';
@@ -28,17 +29,6 @@ export function Footer({ lang, locale }: FooterProps) {
                 ? 'अस्पताल उपकरण, प्रयोगशाला परीक्षण सामग्री, र शल्यक्रिया औजारहरूको भरपर्दो आपूर्तिकर्ता।' 
                 : 'Reliable supplier of medical, hospital, OT supplies, and diagnostic reagents in Chitwan.'}
             </p>
-            <div className="pt-2">
-              <a 
-                href="https://wa.me/9779855055060" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-m3-full bg-white border border-md-outline-variant/80 text-xs font-semibold text-md-primary hover:bg-md-primary hover:text-white transition-all shadow-sm"
-              >
-                <span className="material-symbols-outlined text-sm">chat</span>
-                <span>WhatsApp Enquiry</span>
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -47,11 +37,11 @@ export function Footer({ lang, locale }: FooterProps) {
               {isNe ? 'द्रुत लिङ्कहरू' : 'Navigation'}
             </h4>
             <ul className="space-y-2 text-sm text-md-on-surface-variant">
-              <li><Link href={`/${lang}`} className="hover:text-md-primary transition-colors">{isNe ? 'गृहपृष्ठ' : 'Home'}</Link></li>
-              <li><Link href={`/${lang}/about`} className="hover:text-md-primary transition-colors">{isNe ? 'हाम्रोबारे' : 'About Us'}</Link></li>
-              <li><Link href={`/${lang}/products`} className="hover:text-md-primary transition-colors">{isNe ? 'सामग्री सूची' : 'Products & Catalogue'}</Link></li>
-              <li><Link href={`/${lang}/articles`} className="hover:text-md-primary transition-colors">{isNe ? 'निर्देशिकाहरू' : 'Articles & Guides'}</Link></li>
-              <li><Link href={`/${lang}/order-slip`} className="hover:text-md-primary transition-colors">{isNe ? 'अर्डर स्लिप' : 'Order Slip'}</Link></li>
+              <li><Link href={`/${activeLang}`} className="hover:text-md-primary transition-colors">{isNe ? 'गृहपृष्ठ' : 'Home'}</Link></li>
+              <li><Link href={`/${activeLang}/about`} className="hover:text-md-primary transition-colors">{isNe ? 'हाम्रोबारे' : 'About Us'}</Link></li>
+              <li><Link href={`/${activeLang}/products`} className="hover:text-md-primary transition-colors">{isNe ? 'सामग्री सूची' : 'Products & Catalogue'}</Link></li>
+              <li><Link href={`/${activeLang}/articles`} className="hover:text-md-primary transition-colors">{isNe ? 'निर्देशिकाहरू' : 'Articles & Guides'}</Link></li>
+              <li><Link href={`/${activeLang}/order-slip`} className="hover:text-md-primary transition-colors">{isNe ? 'अर्डर स्लिप' : 'Order Slip'}</Link></li>
             </ul>
           </div>
 
@@ -62,24 +52,24 @@ export function Footer({ lang, locale }: FooterProps) {
             </h4>
             <div className="space-y-2.5 text-xs sm:text-sm text-md-on-surface-variant">
               <p className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-sm mt-0.5 text-md-primary">location_on</span>
-                <span>कमल नगर मार्ग, नारायणगढ, चितवन</span>
+                <MapPin className="w-4 h-4 mt-0.5 text-md-primary shrink-0" aria-hidden="true" />
+                <span>{isNe ? 'कमल नगर मार्ग, नारायणगढ, चितवन' : 'Kamal Nagar Marg, Narayangarh, Chitwan'}</span>
               </p>
               <p className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-sm text-md-primary">call</span>
+                <Phone className="w-4 h-4 text-md-primary shrink-0" aria-hidden="true" />
                 <a href="tel:+97756596060" className="hover:underline font-medium">056-596060</a>
                 <span>/</span>
                 <a href="tel:+97756596120" className="hover:underline font-medium">056-596120</a>
               </p>
               <p className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-sm text-md-primary">navigation</span>
+                <Navigation className="w-4 h-4 text-md-primary shrink-0" aria-hidden="true" />
                 <a 
                   href="https://www.google.com/maps/dir/?api=1&destination=27.69473,84.42161"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:underline text-md-primary font-medium"
                 >
-                  Google Maps मा हेर्नुहोस् →
+                  {isNe ? 'गुगल म्याप्समा हेर्नुहोस् →' : 'View on Google Maps →'}
                 </a>
               </p>
             </div>
@@ -88,7 +78,7 @@ export function Footer({ lang, locale }: FooterProps) {
           {/* M3 Business Disclaimer Card */}
           <div className="p-4 bg-white/70 rounded-m3-lg border border-md-outline-variant/60 space-y-2">
             <div className="flex items-center gap-1.5 text-xs font-bold text-md-on-surface">
-              <span className="material-symbols-outlined text-sm text-amber-600">verified_user</span>
+              <ShieldCheck className="w-4 h-4 text-amber-600 shrink-0" aria-hidden="true" />
               <span>{isNe ? 'व्यावसायिक प्रष्टिकरण' : 'Notice'}</span>
             </div>
             <p className="text-[11px] leading-relaxed text-md-on-surface-variant">
@@ -102,11 +92,11 @@ export function Footer({ lang, locale }: FooterProps) {
 
         {/* Bottom Rights */}
         <div className="pt-8 border-t border-md-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-md-outline">
-          <p>© 2026 Saphal Surgical House. All rights reserved.</p>
+          <p>{isNe ? '© २०२६ सफल सर्जिकल हाउस। सर्वाधिकार सुरक्षित।' : '© 2026 Saphal Surgical House. All rights reserved.'}</p>
           <div className="flex gap-4">
-            <span>Narayangarh, Chitwan</span>
+            <span>{isNe ? 'नारायणगढ, चितवन' : 'Narayangarh, Chitwan'}</span>
             <span>•</span>
-            <span>Bagmati Province, Nepal</span>
+            <span>{isNe ? 'बागमती प्रदेश, नेपाल' : 'Bagmati Province, Nepal'}</span>
           </div>
         </div>
       </div>
